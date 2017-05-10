@@ -5,7 +5,6 @@ package es.eurohelp.ldts;
 
 import java.io.File;
 import java.io.FileWriter;
-import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.util.HashMap;
 import java.util.List;
@@ -69,12 +68,13 @@ public class ReportManager {
         // 2.3. Generate the output
 
         // Write output to the console
-        Writer consoleWriter = new OutputStreamWriter(System.out);
-        template.process(input, consoleWriter);
+        //Writer consoleWriter = new OutputStreamWriter(System.out);
+        //template.process(input, consoleWriter);
 
+        String resultsPath = PropertiesManager.getInstance().getProperty("lod.report.path");
         // For the sake of example, also write output into a file:
-        Writer fileWriter = new FileWriter(new File("C:/Temp/report.html"));
-        try {
+        Writer fileWriter = new FileWriter(new File(resultsPath + "report.html"));
+        try{
                 template.process(input, fileWriter);
         } finally {
                 fileWriter.close();

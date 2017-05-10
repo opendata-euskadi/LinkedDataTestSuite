@@ -31,8 +31,6 @@ public class HttpManager {
 
 	private static HttpManager INSTANCE = null;
 	
-	private String resultsPath = "c:/Temp/";
-	
 	/**
 	 * Get a HttpManager instance
 	 * @return HttpManager instance
@@ -107,6 +105,9 @@ public class HttpManager {
 			}
 			
 			requestBean.setStatus(response.getStatusLine().getStatusCode());
+			
+			String resultsPath = PropertiesManager.getInstance().getProperty("lod.report.path");
+			
 			System.out.println("Status: " + requestBean.getStatus());
 			System.out.println("Response file: " + resultsPath + requestBean.getTestName());
 			System.out.println("*********************");
