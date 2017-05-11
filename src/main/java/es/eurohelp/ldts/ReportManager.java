@@ -57,7 +57,7 @@ public class ReportManager {
         // 2.1. Prepare the template input:
 
         Map<String, Object> input = new HashMap<String, Object>();
-        input.put("title", "Test suite Report");
+        input.put("title", "Linked Data Test Suite Report");
         
         input.put("tests", testList);
 

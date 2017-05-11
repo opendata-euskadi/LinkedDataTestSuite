@@ -36,6 +36,7 @@
 
 	<table>
    	<thead>
+   		<th>Test name</th>
    		<th>Uri</th>
    		<th>Method</th>
    		<th>Accept</th>
@@ -46,6 +47,7 @@
    	
    	<#list tests as test>
    		<tr>
+   		<td>NOMBRE TEST AQUI</td>
    		<td>${test.completeUri}</td>
    		<td>${test.method}</td>
    		<td>${test.accept}</td>
