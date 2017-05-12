@@ -175,6 +175,51 @@ public class LodTest  {
 		}
 	}
 	
+	@Test
+	public final void SPARQLPOSTMassiveCSV200 (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.POST.methodtypevalue();
+			String accept = MIMEtype.CSV.mimetypevalue();
+			String pathUri = "sparql";
+			String name = "SPARQLPOSTMassiveCSV200";
+			Map<String, String> parameters = new HashMap<String, String>();
+			parameters.put("query",
+					"SELECT ?g ?p ?o "
+					+ "WHERE { "
+					+ "	?g ?p ?o ."
+					+ "} LIMIT 145000");
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			assertEquals(requestBean.getStatus(), 200);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void SPARQLPOSTInsert405 (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.POST.methodtypevalue();
+			String accept = MIMEtype.CSV.mimetypevalue();
+			String pathUri = "sparql";
+			String name = " SPARQLPOSTInsert405";
+			Map<String, String> parameters = new HashMap<String, String>();
+			parameters.put("query",
+					"INSERT DATA { "
+					+ "GRAPH <http://lod.eurohelp.es> "
+					+ "{ "
+					+ "<http://lod.eurohelp.es/mikel> <http://lod.eurohelp.es/position> <http://lod.eurohelp.es/analist> "
+					+ "} }");
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			assertEquals(requestBean.getStatus(),405);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	@Rule
 	public TestRule watchman = new TestWatcher() {
  
