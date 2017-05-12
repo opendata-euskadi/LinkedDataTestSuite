@@ -13,6 +13,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 import org.apache.commons.io.IOUtils;
+import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
@@ -21,6 +22,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
 
 /**
  * Utilities to http connections
@@ -113,12 +115,12 @@ public class HttpManager {
 			System.out.println("*********************");
 
 			
-			
 			// redirect the output
 			InputStream aInStream = null;
 			FileOutputStream aOutStream = null;
 			try {
 				aInStream = response.getEntity().getContent();
+
 				File file = new File(resultsPath + requestBean.getTestName());
 				
 				// if file doesn't exists, then create it
