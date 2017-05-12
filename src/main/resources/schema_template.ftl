@@ -24,6 +24,9 @@
 		
 		th{
 			background-color:grey;
+			padding: 4px;
+    		background-color: rgba(40, 30, 226, 0.59);
+    		color: #fff;
 		}
     </style>
   </head>
