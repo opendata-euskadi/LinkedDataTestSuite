@@ -6,6 +6,7 @@ package es.eurohelp.ldts;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.Writer;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -59,6 +60,8 @@ public class ReportManager {
         Map<String, Object> input = new HashMap<String, Object>();
         input.put("title", "Linked Data Test Suite Report");
         
+        testList.sort(new NameComparator());
+        
         input.put("tests", testList);
 
         // 2.2. Get the template
@@ -80,6 +83,11 @@ public class ReportManager {
                 fileWriter.close();
         }
 	}	
-	
-	
+}
+
+class NameComparator implements Comparator<LinkedDataRequestBean> {
+    @Override
+    public int compare(LinkedDataRequestBean a, LinkedDataRequestBean b) {
+        return a.getMethod().compareTo(b.getMethod());
+    }
 }
