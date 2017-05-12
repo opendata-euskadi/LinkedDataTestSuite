@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Linked Data Test Suite Report</title>
+    <meta charset="UTF-8" />
+    <style type="text/css">
+      span.h {
+        padding-left: 0px;
+        font-weight: bold;
+      }
+      span {
+        display: block;
+        padding-left: 10px;
+      }
+      
+      table {
+    	border-collapse: collapse;
+    	width:100%;
+		}
+
+		table, th, td {
+    		border: 1px solid black;
+		}
+		
+		th{
+			background-color:grey;
+		}
+    </style>
+  </head>
+
+  <body>
+    <h1>Linked Data Test Suite Report</h1>
+
+    <hr />
+
+
+	<table>
+   	<thead>
+   		<th>Test name</th>
+   		<th>Target Uri</th>
+   		<th>HTTP Method</th>
+   		<th>Accept Header</th>
+   		<th>Status</th>
+   		<th>Result file</th>
+   	</thead>
+   	<tbody>
+   	
+   		<tr>
+   		<td>SPARQLPOSTNamedGraphsMetadataCSVContent</td>
+   		<td>http://172.16.0.81:8008/sparql</td>
+   		<td>POST</td>
+   		<td>text/csv</td>
+   		<td style="color:green;">OK</td>
+   		<td><a href="POSTtext_csvsparql">view response</a></td>
+    	</tr>
+   		<tr>
+   		<td>GETResourceHTMLDocRedirect303</td>
+   		<td>http://172.16.0.81:8008/id/sector-publico/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</td>
+   		<td>GET</td>
+   		<td>text/html</td>
+   		<td style="color:red;">ERROR</td>
+   		<td><a href="GETtext_htmlid_sector-publico_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09">view response</a></td>
+    	</tr>
+   		<tr>
+   		<td>GETResourceRDFXML200</td>
+   		<td>http://172.16.0.81:8008/id/sector-publico/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</td>
+   		<td>GET</td>
+   		<td>application/rdf+xml</td>
+   		<td style="color:green;">OK</td>
+   		<td><a href="GETapplication_rdf+xmlid_sector-publico_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09">view response</a></td>
+    	</tr>
+   		<tr>
+   		<td>GETSPARQLHTML200</td>
+   		<td>http://172.16.0.81:8008/sparql</td>
+   		<td>GET</td>
+   		<td>text/html</td>
+   		<td style="color:green;">OK</td>
+   		<td><a href="GETtext_htmlsparql">view response</a></td>
+    	</tr>
+   		<tr>
+   		<td>GETResourceHTMLPageRedirect303</td>
+   		<td>http://172.16.0.81:8008/id/sector-publico/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22</td>
+   		<td>GET</td>
+   		<td>text/html</td>
+   		<td style="color:red;">ERROR</td>
+   		<td><a href="GETtext_htmlid_sector-publico_contrato_asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22">view response</a></td>
+    	</tr>
+   		<tr>
+   		<td>SPARQLPOSTNamedGraphsMetadataCSV200</td>
+   		<td>http://172.16.0.81:8008/sparql</td>
+   		<td>POST</td>
+   		<td>text/csv</td>
+   		<td style="color:green;">OK</td>
+   		<td><a href="POSTtext_csvsparql">view response</a></td>
+    	</tr>
+   		<tr>
+   		<td>GETResourceRDFXMLContent</td>
+   		<td>http://172.16.0.81:8008/id/sector-publico/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</td>
+   		<td>GET</td>
+   		<td>application/rdf+xml</td>
+   		<td style="color:green;">OK</td>
+   		<td><a href="GETapplication_rdf+xmlid_sector-publico_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09">view response</a></td>
+    	</tr>
+    
+    </tbody>
+   </table>
+
+</body>
+</html>
