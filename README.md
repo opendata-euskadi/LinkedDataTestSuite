@@ -1,2 +1,2 @@
 # LinkedDataTestSuite
-Tests and reporting for Linked Data systems
+Tests and reporting for Linked Data systems, alpha version.
