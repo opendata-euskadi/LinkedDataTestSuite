@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix hint: <http://www.bigdata.com/queryHints#> .
+@prefix bd: <http://www.bigdata.com/rdf#> .
+@prefix bds: <http://www.bigdata.com/rdf/search#> .
+
+<http://es.euskadi.eus/id/sector-publico/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09> <http://contsem.unizar.es/def/sector-publico/pproc#ContractEconomicConditions> "3670496"^^xsd:long ;
+	<http://contsem.unizar.es/def/sector-publico/pproc#formalizedDate> "2000-03-31"^^xsd:date ;
+	<http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> <http://es.euskadi.eus/id/sector-publico/departamento/desarrollo-economico-e-infraestructuras> ;
+	<http://dbpedia.org/ontology/occupation> "jefe grupo inspector pesca"@es ;
+	<http://es.euskadi.eus/def/sector-publico/contrato/centro-organico> "dir.pesca y acuicultura"@es ;
+	<http://es.euskadi.eus/def/sector-publico/contrato/categoria-retributiva> "10.0"^^xsd:double ;
+	<http://es.euskadi.eus/def/sector-publico/contrato/cod-centro-destino> "gobierno vasco donostia easo 10"@es ;
+	<http://es.euskadi.eus/def/sector-publico/contrato/cod-centro-organico> "33300000000"^^xsd:long ;
+	<http://es.euskadi.eus/def/sector-publico/contrato/cod-departamento> "3"^^xsd:long ;
+	<http://es.euskadi.eus/def/sector-publico/contrato/cod-puesto> "3024.0"^^xsd:double ;
+	<http://es.euskadi.eus/def/sector-publico/contrato/dotacion> "1"^^xsd:long ;
+	<http://es.euskadi.eus/def/sector-publico/contrato/fecha-descarga> "2017-03-09"^^xsd:date ;
+	<http://es.euskadi.eus/def/sector-publico/contrato/perfil-linguistico> "2.0"^^xsd:double ;
+	a <http://purl.org/cerif/frapo/EmploymentContract> ;
+	<http://purl.org/dc/terms/modified> "2016-05-09"^^xsd:date .
