@@ -62,7 +62,7 @@ public class LinkedDataRequestBean {
 	}
 		
 	public String getTestName(){
-		return this.method + generateNameFromUrl(this.accept) + generateNameFromUrl(this.pathUri); 
+		return this.method + generateNameFromUrl(this.accept) + generateNameFromUrl(this.pathUri) + this.name; 
 	}
 
 	public String getCompleteUri(){
