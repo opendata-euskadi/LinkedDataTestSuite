@@ -1,4 +1,6 @@
 g,p,o
+http://es.euskadi.eus/dataset/id/retribuciones-altos-cargos-y-personal-eventual-gobierno-vasco-y-organismos-autonomos-y-entes-publicos,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
+http://es.euskadi.eus/dataset/id/retribuciones-altos-cargos-y-personal-eventual-gobierno-vasco-y-organismos-autonomos-y-entes-publicos,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://rdfs.org/ns/void#Dataset
 http://es.euskadi.eus/dataset/id/calidad-aire-en-euskadi-2017,http://www.w3.org/ns/prov#wasGeneratedBy,_:t948
 http://es.euskadi.eus/dataset/id/calidad-aire-en-euskadi-2017,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
 http://es.euskadi.eus/dataset/id/calidad-aire-en-euskadi-2017,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://schema.org/Distribution
@@ -20,7 +22,5 @@ http://es.euskadi.eus/dataset/id/registro-de-contratos-del-sector-publico-de-eus
 http://es.euskadi.eus/dataset/id/registro-de-contratos-del-sector-publico-de-euskadi,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://rdfs.org/ns/void#Dataset
 http://es.euskadi.eus/dataset/id/relaciones-de-puestos-de-trabajo-de-los-departamentos-y-organismos-autonomos-de-la-administracion-de-la-comunidad-autonoma,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
 http://es.euskadi.eus/dataset/id/relaciones-de-puestos-de-trabajo-de-los-departamentos-y-organismos-autonomos-de-la-administracion-de-la-comunidad-autonoma,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://rdfs.org/ns/void#Dataset
-http://es.euskadi.eus/dataset/id/retribuciones-altos-cargos-y-personal-eventual-gobierno-vasco-y-organismos-autonomos-y-entes-publicos,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
-http://es.euskadi.eus/dataset/id/retribuciones-altos-cargos-y-personal-eventual-gobierno-vasco-y-organismos-autonomos-y-entes-publicos,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://rdfs.org/ns/void#Dataset
 http://es.euskadi.eus/dataset/id/estaciones-meteorologicas-lecturas-recogidas-en-2017,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
 http://es.euskadi.eus/dataset/id/estaciones-meteorologicas-lecturas-recogidas-en-2017,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://rdfs.org/ns/void#Dataset

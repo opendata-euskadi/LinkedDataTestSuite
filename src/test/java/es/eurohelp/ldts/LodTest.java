@@ -28,7 +28,6 @@ public class LodTest  {
 
 	LinkedDataRequestBean requestBean;
 	static List<LinkedDataRequestBean> tests = new ArrayList<LinkedDataRequestBean>();
-	
 
 	@Test
 	public final void GETSPARQLHTML200 () {
@@ -124,6 +123,212 @@ public class LodTest  {
 	}
 	
 	@Test
+	public final void GETResourceJSONLD200 (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.JSONLD.mimetypevalue();
+			String pathUri = "id/sector-publico/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+			String name = "GETResourceJSONLD200";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			assertEquals(requestBean.getStatus(), 200);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETResourceN3200 (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.N3.mimetypevalue();
+			String pathUri = "id/sector-publico/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+			String name = "GETResourceN3200";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			assertEquals(requestBean.getStatus(), 200);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETResourceNQuads200 (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.NQuads.mimetypevalue();
+			String pathUri = "id/sector-publico/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+			String name = "GETResourceNQuads200";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			assertEquals(requestBean.getStatus(), 200);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETResourceNTriples200 (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.NTriples.mimetypevalue();
+			String pathUri = "id/sector-publico/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+			String name = "GETResourceNTriples200";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			assertEquals(requestBean.getStatus(), 200);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETResourceRDFJSON200 (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.RDFJSON.mimetypevalue();
+			String pathUri = "id/sector-publico/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+			String name = "GETResourceRDFJSON200";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			assertEquals(requestBean.getStatus(), 200);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETResourceTriG200 (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.TriG.mimetypevalue();
+			String pathUri = "id/sector-publico/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+			String name = "GETResourceTriG200";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			assertEquals(requestBean.getStatus(), 200);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETResourceTriX200 (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.TriX.mimetypevalue();
+			String pathUri = "id/sector-publico/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+			String name = "GETResourceTriX200";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			assertEquals(requestBean.getStatus(), 200);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETResourceTurtle200 (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.Turtle.mimetypevalue();
+			String pathUri = "id/sector-publico/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+			String name = "GETResourceTurtle200";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			assertEquals(requestBean.getStatus(), 200);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETClassRDFXML200 (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.RDFXML.mimetypevalue();
+			String pathUri = "def/turismo/alojamiento/Hotel";
+			String name = "GETClassRDFXML200";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			assertEquals(requestBean.getStatus(), 200);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETClassHTML200 (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.HTML.mimetypevalue();
+			String pathUri = "def/turismo/alojamiento/Hotel";
+			String name = "GETClassHTML200";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			assertEquals(requestBean.getStatus(), 200);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETOntologyHTML200 (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.HTML.mimetypevalue();
+			String pathUri = "def/turismo/alojamiento"; // Segun la NTI
+			//String pathUri = "def/Euskadipedia"; // mas realista?
+			String name = "GETOntologyHTML200";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			assertEquals(requestBean.getStatus(), 200);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETOntologyRDFXML200 (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.RDFXML.mimetypevalue();
+			String pathUri = "def/turismo/alojamiento"; // Segun la NTI
+			//String pathUri = "def/Euskadipedia"; // mas realista?
+			String name = "GETOntologyRDFXML200";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			assertEquals(requestBean.getStatus(), 200);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
 	public final void SPARQLPOSTNamedGraphsMetadataCSV200 (){ 
 		try {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
@@ -198,13 +403,13 @@ public class LodTest  {
 	}
 	
 	@Test
-	public final void SPARQLPOSTInsert405 (){ 
+	public final void SPARQLPOSTInsert400 (){ 
 		try {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.POST.methodtypevalue();
 			String accept = MIMEtype.CSV.mimetypevalue();
 			String pathUri = "sparql";
-			String name = " SPARQLPOSTInsert405";
+			String name = " SPARQLPOSTInsert400";
 			Map<String, String> parameters = new HashMap<String, String>();
 			parameters.put("query",
 					"INSERT DATA { "
@@ -214,7 +419,7 @@ public class LodTest  {
 					+ "} }");
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			assertEquals(requestBean.getStatus(),405);
+			assertEquals(requestBean.getStatus(),400);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
