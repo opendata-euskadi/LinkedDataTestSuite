@@ -85,6 +85,24 @@ public class LodTest  {
 	}
 	
 	@Test
+	public final void GETResourceDirectlyDoc(){
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.HTML.mimetypevalue();
+			String pathUri = "doc/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02";
+//			String pathUri = "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+			String name = "GETResourceDirectlyDoc";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			assertEquals(requestBean.getStatus(), 200);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
 	public final void GETResourceRDFXMLContent (){ 
 		try {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
@@ -92,6 +110,30 @@ public class LodTest  {
 			String accept = MIMEtype.RDFXML.mimetypevalue();
 			String pathUri = "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
 			String name = "GETResourceRDFXMLContent";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			
+			// TODO: meter el content del HTTP entity en el Bean, para no tener que leer desde disco
+			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
+			File file = new File(resultsPathName);
+			String response_string = FileUtils.readFileToString(file);
+			assertTrue(response_string.contains(
+					"<ContractEconomicConditions xmlns=\"http://contsem.unizar.es/def/sector-publico/pproc#\" "
+					+ "rdf:datatype=\"http://www.w3.org/2001/XMLSchema#long\">3670496</ContractEconomicConditions>"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETResourceDirectlyDataRDFXMLContent (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.RDFXML.mimetypevalue();
+			String pathUri = "data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+			String name = "GETResourceDirectlyDataRDFXMLContent";
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
