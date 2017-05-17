@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TriX xmlns='http://www.w3.org/2004/03/trix/trix-1/'>
+	<graph>
+		<triple>
+			<uri>http://es.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</uri>
+			<uri>http://contsem.unizar.es/def/sector-publico/pproc#ContractEconomicConditions</uri>
+			<typedLiteral datatype='http://www.w3.org/2001/XMLSchema#long'>3670496</typedLiteral>
+		</triple>
+		<triple>
+			<uri>http://es.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</uri>
+			<uri>http://contsem.unizar.es/def/sector-publico/pproc#formalizedDate</uri>
+			<typedLiteral datatype='http://www.w3.org/2001/XMLSchema#date'>2000-03-31</typedLiteral>
+		</triple>
+		<triple>
+			<uri>http://es.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</uri>
+			<uri>http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment</uri>
+			<uri>http://es.euskadi.eus/id/sector-publico/departamento/desarrollo-economico-e-infraestructuras</uri>
+		</triple>
+		<triple>
+			<uri>http://es.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</uri>
+			<uri>http://dbpedia.org/ontology/occupation</uri>
+			<plainLiteral xml:lang='es'>jefe grupo inspector pesca</plainLiteral>
+		</triple>
+		<triple>
+			<uri>http://es.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</uri>
+			<uri>http://es.euskadi.eus/def/sector-publico/puestos-trabajo/contrato/centro-organico</uri>
+			<plainLiteral xml:lang='es'>dir.pesca y acuicultura</plainLiteral>
+		</triple>
+		<triple>
+			<uri>http://es.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</uri>
+			<uri>http://es.euskadi.eus/def/sector-publico/puestos-trabajo/contrato/categoria-retributiva</uri>
+			<typedLiteral datatype='http://www.w3.org/2001/XMLSchema#double'>10.0</typedLiteral>
+		</triple>
+		<triple>
+			<uri>http://es.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</uri>
+			<uri>http://es.euskadi.eus/def/sector-publico/puestos-trabajo/contrato/cod-centro-destino</uri>
+			<plainLiteral xml:lang='es'>gobierno vasco donostia easo 10</plainLiteral>
+		</triple>
+		<triple>
+			<uri>http://es.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</uri>
+			<uri>http://es.euskadi.eus/def/sector-publico/puestos-trabajo/contrato/cod-centro-organico</uri>
+			<typedLiteral datatype='http://www.w3.org/2001/XMLSchema#long'>33300000000</typedLiteral>
+		</triple>
+		<triple>
+			<uri>http://es.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</uri>
+			<uri>http://es.euskadi.eus/def/sector-publico/puestos-trabajo/contrato/cod-departamento</uri>
+			<typedLiteral datatype='http://www.w3.org/2001/XMLSchema#long'>3</typedLiteral>
+		</triple>
+		<triple>
+			<uri>http://es.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</uri>
+			<uri>http://es.euskadi.eus/def/sector-publico/puestos-trabajo/contrato/cod-puesto</uri>
+			<typedLiteral datatype='http://www.w3.org/2001/XMLSchema#double'>3024.0</typedLiteral>
+		</triple>
+		<triple>
+			<uri>http://es.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</uri>
+			<uri>http://es.euskadi.eus/def/sector-publico/puestos-trabajo/contrato/dotacion</uri>
+			<typedLiteral datatype='http://www.w3.org/2001/XMLSchema#long'>1</typedLiteral>
+		</triple>
+		<triple>
+			<uri>http://es.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</uri>
+			<uri>http://es.euskadi.eus/def/sector-publico/puestos-trabajo/contrato/fecha-descarga</uri>
+			<typedLiteral datatype='http://www.w3.org/2001/XMLSchema#date'>2017-03-09</typedLiteral>
+		</triple>
+		<triple>
+			<uri>http://es.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</uri>
+			<uri>http://es.euskadi.eus/def/sector-publico/puestos-trabajo/contrato/perfil-linguistico</uri>
+			<typedLiteral datatype='http://www.w3.org/2001/XMLSchema#double'>2.0</typedLiteral>
+		</triple>
+		<triple>
+			<uri>http://es.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</uri>
+			<uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+			<uri>http://purl.org/cerif/frapo/EmploymentContract</uri>
+		</triple>
+		<triple>
+			<uri>http://es.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</uri>
+			<uri>http://purl.org/dc/terms/modified</uri>
+			<typedLiteral datatype='http://www.w3.org/2001/XMLSchema#date'>2016-05-09</typedLiteral>
+		</triple>
+	</graph>
+</TriX>

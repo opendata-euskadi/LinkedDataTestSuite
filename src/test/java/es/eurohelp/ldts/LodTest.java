@@ -53,12 +53,13 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.HTML.mimetypevalue();
-			String pathUri = "id/sector-publico/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22";
+			String pathUri = "id/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22";
 			String name = "GETResourceHTMLPageRedirect303";
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			assertEquals(requestBean.getStatus(), 200);
+			assertTrue(requestBean.getLocation().contains("/doc/"));
+			assertEquals(requestBean.getStatus(), 303);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -68,7 +69,7 @@ public class LodTest  {
 	public final void GETResourceHTMLDocRedirect303(){
 		try {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-			String method = Methodtype.GET.methodtypevalue();
+			String method = Methodtype.GETNO303.methodtypevalue();
 			String accept = MIMEtype.HTML.mimetypevalue();
 			String pathUri = "id/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02";
 //			String pathUri = "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
@@ -76,7 +77,8 @@ public class LodTest  {
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			assertEquals(requestBean.getStatus(), 200);
+			assertTrue(requestBean.getLocation().contains("/doc/"));
+			assertEquals(requestBean.getStatus(), 303);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
