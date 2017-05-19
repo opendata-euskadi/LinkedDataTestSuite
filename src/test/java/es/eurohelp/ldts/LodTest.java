@@ -149,6 +149,69 @@ public class LodTest  {
 			e.printStackTrace();
 		}
 	}
+	
+	@Test
+	public final void GETResourceDirectlyDataRDFXMLContentHTMLHeader (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.HTML.mimetypevalue();
+			String pathUri = "data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.rdf";
+			String name = "GETResourceDirectlyDataRDFXMLContentHTMLHeader";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
+			File file = new File(resultsPathName);
+			String response_string = FileUtils.readFileToString(file);
+			assertTrue(response_string.contains(
+					"Trololo"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETResourceDirectlyDataTTLContentHTMLHeader (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.HTML.mimetypevalue();
+			String pathUri = "data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.ttl";
+			String name = "GETResourceDirectlyDataTTLContentHTMLHeader";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
+			File file = new File(resultsPathName);
+			String response_string = FileUtils.readFileToString(file);
+			assertTrue(response_string.contains(
+					"Trololo"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETResourceDirectlyDataJSONLDContentHTMLHeader (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.HTML.mimetypevalue();
+			String pathUri = "data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.jsonld";
+			String name = "GETResourceDirectlyDataJSONLDContentHTMLHeader";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
+			File file = new File(resultsPathName);
+			String response_string = FileUtils.readFileToString(file);
+			assertTrue(response_string.contains(
+					"Trololo"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 
 //  Si la respuesta contiene lo que buscamos, ya implica una respuesta 200, luego este test es redundante	
 	
