@@ -48,13 +48,13 @@ public class LodTest  {
 	
 	
 	@Test
-	public final void GETResourceHTMLPageRedirect303(){
+	public final void GETResourceHTMLPageNoRedirect303(){
 		try {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-			String method = Methodtype.GET.methodtypevalue();
+			String method = Methodtype.GETNO303.methodtypevalue();
 			String accept = MIMEtype.HTML.mimetypevalue();
 			String pathUri = "id/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22";
-			String name = "GETResourceHTMLPageRedirect303";
+			String name = "GETResourceHTMLPageNoRedirect303";
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
@@ -64,21 +64,64 @@ public class LodTest  {
 			e.printStackTrace();
 		}
 	}
-	
+		
 	@Test
-	public final void GETResourceHTMLDocRedirect303(){
+	public final void GETResourceHTMLDocNoRedirect303(){
 		try {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GETNO303.methodtypevalue();
 			String accept = MIMEtype.HTML.mimetypevalue();
 			String pathUri = "id/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02";
 //			String pathUri = "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
-			String name = "GETResourceHTMLDocRedirect303";
+			String name = "GETResourceHTMLDocNoRedirect303";
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			assertTrue(requestBean.getLocation().contains("/doc/"));
+			assertTrue(requestBean.getLocation().contains("/doc/es/"));
 			assertEquals(requestBean.getStatus(), 303);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETResourceHTMLDoc(){
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.HTML.mimetypevalue();
+			String pathUri = "id/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02";
+//			String pathUri = "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+			String name = "GETResourceHTMLDoc";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
+			File file = new File(resultsPathName);
+			String response_string = FileUtils.readFileToString(file);
+			assertTrue(response_string.contains(
+					"XXX"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETResourceHTMLPage(){
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.HTML.mimetypevalue();
+			String pathUri = "id/sector-publico/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22";
+			String name = "GETResourceHTMLDoc";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
+			File file = new File(resultsPathName);
+			String response_string = FileUtils.readFileToString(file);
+			assertTrue(response_string.contains(
+					"XXX"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -90,7 +133,7 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.HTML.mimetypevalue();
-			String pathUri = "doc/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02";
+			String pathUri = "doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02";
 //			String pathUri = "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
 			String name = "GETResourceDirectlyDoc";
 			Map<String, String> parameters = new HashMap<String, String>();
@@ -132,7 +175,7 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.RDFXML.mimetypevalue();
-			String pathUri = "data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+			String pathUri = "data/es/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
 			String name = "GETResourceDirectlyDataRDFXMLContent";
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
@@ -156,7 +199,7 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.HTML.mimetypevalue();
-			String pathUri = "data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.rdf";
+			String pathUri = "data/es/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.rdf";
 			String name = "GETResourceDirectlyDataRDFXMLContentHTMLHeader";
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
@@ -177,7 +220,7 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.HTML.mimetypevalue();
-			String pathUri = "data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.ttl";
+			String pathUri = "data/es/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.ttl";
 			String name = "GETResourceDirectlyDataTTLContentHTMLHeader";
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
@@ -198,7 +241,7 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.HTML.mimetypevalue();
-			String pathUri = "data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.jsonld";
+			String pathUri = "data/es/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.jsonld";
 			String name = "GETResourceDirectlyDataJSONLDContentHTMLHeader";
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
