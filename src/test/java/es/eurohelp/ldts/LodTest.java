@@ -175,7 +175,7 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.RDFXML.mimetypevalue();
-			String pathUri = "data/es/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+			String pathUri = "data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
 			String name = "GETResourceDirectlyDataRDFXMLContent";
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
@@ -199,7 +199,7 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.HTML.mimetypevalue();
-			String pathUri = "data/es/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.rdf";
+			String pathUri = "data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.rdf";
 			String name = "GETResourceDirectlyDataRDFXMLContentHTMLHeader";
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
@@ -220,7 +220,7 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.HTML.mimetypevalue();
-			String pathUri = "data/es/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.ttl";
+			String pathUri = "data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.ttl";
 			String name = "GETResourceDirectlyDataTTLContentHTMLHeader";
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
@@ -241,7 +241,7 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.HTML.mimetypevalue();
-			String pathUri = "data/es/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.jsonld";
+			String pathUri = "data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.jsonld";
 			String name = "GETResourceDirectlyDataJSONLDContentHTMLHeader";
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
@@ -537,6 +537,7 @@ public class LodTest  {
 //		}
 //	}
 	
+		
 	@Test
 	public final void GETOntologyHTMLContent (){ 
 		try {
@@ -575,6 +576,28 @@ public class LodTest  {
 //			e.printStackTrace();
 //		}
 //	}
+	
+	@Test
+	public final void GETOntologyRDFXMLContentHTMLHeader (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.HTML.mimetypevalue();
+			String pathUri = "def/euskadi.owl"; // Segun la NTI
+			//String pathUri = "def/Euskadipedia"; // mas realista?
+			String name = "GETOntologyRDFXMLContentHTMLHeader";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
+			File file = new File(resultsPathName);
+			String response_string = FileUtils.readFileToString(file);
+			assertTrue(response_string.contains("<owl:Ontology rdf:about=\"http://opendata.aragon.es/def/Aragopedia\">"));
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 	
 	@Test
 	public final void GETOntologyRDFXMLContent (){ 
