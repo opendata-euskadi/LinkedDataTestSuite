@@ -40,6 +40,7 @@
 	<table>
    	<thead>
    		<th>Test name</th>
+   		<th>Test comment</th>
    		<th>Target Uri</th>
    		<th>HTTP Method</th>
    		<th>Accept Header</th>
@@ -51,6 +52,7 @@
    	<#list tests as test>
    		<tr>
    		<td>${test.name}</td>
+   		<td>${test.comment}</td>
    		<td>${test.completeUri}</td>
    		<td>${test.method}</td>
    		<td>${test.accept}</td>

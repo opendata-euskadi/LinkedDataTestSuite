@@ -13,6 +13,26 @@ public class LinkedDataRequestBean {
 	private int status;
 	private String name = "";
 	private String location = "";
+	private String comment = "";
+
+	public LinkedDataRequestBean(String method, String accept, String baseUri, String pathUri, String name, String comment,Map<String, String> parameters) {
+		super();
+		this.method = method;
+		this.accept = accept;
+		this.baseUri = baseUri;
+		this.parameters = parameters;
+		this.pathUri = pathUri;
+		this.name = name;
+		this.comment = comment;
+	}
+	
+	public String getComment() {
+		return comment;
+	}
+
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
 
 	public String getLocation() {
 		return location;
@@ -27,16 +47,6 @@ public class LinkedDataRequestBean {
 	}
 
 	public void setName(String name) {
-		this.name = name;
-	}
-
-	public LinkedDataRequestBean(String method, String accept, String baseUri, String pathUri, String name, Map<String, String> parameters) {
-		super();
-		this.method = method;
-		this.accept = accept;
-		this.baseUri = baseUri;
-		this.parameters = parameters;
-		this.pathUri = pathUri;
 		this.name = name;
 	}
 	
