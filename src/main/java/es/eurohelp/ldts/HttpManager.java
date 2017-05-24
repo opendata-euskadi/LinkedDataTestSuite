@@ -118,8 +118,9 @@ public class HttpManager {
 				response = httpclient.execute(httpget);
 
 				if ("GETNO303".equals(requestBean.getMethod())) {
-//					System.out.println(response.getFirstHeader("Location").getValue());
-					requestBean.setLocation(response.getFirstHeader("Location").getValue());
+					String LocationHEaderValue = response.getFirstHeader("Location").getValue();
+					System.out.println("Location: " + LocationHEaderValue);
+					requestBean.setLocation(LocationHEaderValue);
 				}
 
 				// File file = new File(resultsPath +
@@ -137,6 +138,7 @@ public class HttpManager {
 			String resultsPath = PropertiesManager.getInstance().getProperty("lod.report.path");
 
 			System.out.println("Status: " + requestBean.getStatus());
+			System.out.println("Test name: " + requestBean.getName());
 			System.out.println("Response file: " + resultsPath + requestBean.getTestName());
 			System.out.println("*********************");
 
