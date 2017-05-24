@@ -11,7 +11,8 @@ package es.eurohelp.ldts;
 public enum Methodtype {
 
 	POST("POST"), 
-	GET("GET");
+	GET("GET"),
+	GETNO303("GETNO303");
 	
 	private String methodtypestring;
 

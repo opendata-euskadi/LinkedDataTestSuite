@@ -3,8 +3,6 @@ package es.eurohelp.ldts;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.http.HttpEntity;
-
 public class LinkedDataRequestBean {
 	
 	private String method = "";
@@ -14,22 +12,41 @@ public class LinkedDataRequestBean {
 	private Map<String, String> parameters = new HashMap<String, String>();
 	private int status;
 	private String name = "";
+	private String location = "";
+	private String comment = "";
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public LinkedDataRequestBean(String method, String accept, String baseUri, String pathUri, String name, Map<String, String> parameters) {
+	public LinkedDataRequestBean(String method, String accept, String baseUri, String pathUri, String name, String comment,Map<String, String> parameters) {
 		super();
 		this.method = method;
 		this.accept = accept;
 		this.baseUri = baseUri;
 		this.parameters = parameters;
 		this.pathUri = pathUri;
+		this.name = name;
+		this.comment = comment;
+	}
+	
+	public String getComment() {
+		return comment;
+	}
+
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
 		this.name = name;
 	}
 	

@@ -1,8 +1,8 @@
 g,p,o
-http://es.euskadi.eus/dataset/id/registro-de-contratos-del-sector-publico-de-euskadi,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
-http://es.euskadi.eus/dataset/id/registro-de-contratos-del-sector-publico-de-euskadi,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://rdfs.org/ns/void#Dataset
 http://es.euskadi.eus/dataset/id/retribuciones-altos-cargos-y-personal-eventual-gobierno-vasco-y-organismos-autonomos-y-entes-publicos,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
 http://es.euskadi.eus/dataset/id/retribuciones-altos-cargos-y-personal-eventual-gobierno-vasco-y-organismos-autonomos-y-entes-publicos,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://rdfs.org/ns/void#Dataset
+http://es.euskadi.eus/dataset/id/registro-de-contratos-del-sector-publico-de-euskadi,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
+http://es.euskadi.eus/dataset/id/registro-de-contratos-del-sector-publico-de-euskadi,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://rdfs.org/ns/void#Dataset
 http://es.euskadi.eus/dataset/id/calidad-aire-en-euskadi-2017,http://rdfs.org/ns/void#uriLookupEndpoint,http://es.euskadi.eus/search?qt=term&q=
 http://es.euskadi.eus/dataset/id/calidad-aire-en-euskadi-2017,http://rdfs.org/ns/void#uriRegexPattern,^http://es.euskadi.eus\.net/resource/*
 http://es.euskadi.eus/dataset/id/calidad-aire-en-euskadi-2017,http://rdfs.org/ns/void#uriSpace,http://es.euskadi.eus/id/es/medio-ambiente/
