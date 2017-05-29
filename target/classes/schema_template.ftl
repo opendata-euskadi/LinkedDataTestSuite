@@ -33,6 +33,7 @@
 
   <body>
     <h1>${title}</h1>
+    <h2>${dateTime}</h2>
 
     <hr />
 
