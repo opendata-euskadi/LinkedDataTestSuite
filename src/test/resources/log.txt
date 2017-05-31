@@ -8,13 +8,22 @@ Test name: GETResourceDirectlyDataJSONLDContentHTMLHeader
 Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmldata_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09_jsonldGETResourceDirectlyDataJSONLDContentHTMLHeader
 *********************
 *********************
-Uri: http://es.euskadi.eus:8008/def/turismo/alojamiento
+Uri: http://es.euskadi.eus:8008/def/euskadipedia
 Method: GET
 Accept: text/html
 Params: {}
-Status: 404
+Status: 200
 Test name: GETOntologyHTMLContent
-Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmldef_turismo_alojamientoGETOntologyHTMLContent
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmldef_euskadipediaGETOntologyHTMLContent
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/def/euskadipedia.html#Hotel
+Method: GET
+Accept: text/html
+Params: {}
+Status: 200
+Test name: GETClassHTML200
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmldef_euskadipedia_html#HotelGETClassHTML200
 *********************
 *********************
 Uri: http://es.euskadi.eus:8008/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09
@@ -35,13 +44,22 @@ Test name: SPARQLPOSTNamedGraphsMetadataCSVContent
 Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/POSTtext_csvsparqlSPARQLPOSTNamedGraphsMetadataCSVContent
 *********************
 *********************
-Uri: http://es.euskadi.eus:8008/def/turismo/alojamiento
+Uri: http://es.euskadi.eus:8008/def/euskadipedia.owl
 Method: GET
 Accept: application/rdf+xml
 Params: {}
-Status: 200
+Status: 404
+Test name: GETOntologyRDFXMLContentFileExtensionOWL 
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapplication_rdf+xmldef_euskadipedia_owlGETOntologyRDFXMLContentFileExtensionOWL 
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/def/euskadipedia.owl
+Method: GET
+Accept: application/rdf+xml
+Params: {}
+Status: 404
 Test name: GETOntologyRDFXMLContent
-Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapplication_rdf+xmldef_turismo_alojamientoGETOntologyRDFXMLContent
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapplication_rdf+xmldef_euskadipedia_owlGETOntologyRDFXMLContent
 *********************
 *********************
 Uri: http://es.euskadi.eus:8008/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09
@@ -66,85 +84,10 @@ Uri: http://es.euskadi.eus:8008/id/sector-publico/contrato/asesor-de-la-secretar
 Method: GET
 Accept: text/html
 Params: {}
-org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.eus refused
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:643)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
-	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
-	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
-	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
-	at es.eurohelp.ldts.HttpManager.doRequest(HttpManager.java:118)
-	at es.eurohelp.ldts.LodTest.GETResourceHTMLPage(LodTest.java:123)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	... 34 more
-java.io.FileNotFoundException: File 'C:\Users\megana\git\LinkedDataTestSuite\src\test\resources\GETtext_htmlid_sector-publico_contrato_asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22GETResourceHTMLDoc' does not exist
-	at org.apache.commons.io.FileUtils.openInputStream(FileUtils.java:292)
-	at org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:1765)
-	at org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:1800)
-	at es.eurohelp.ldts.LodTest.GETResourceHTMLPage(LodTest.java:126)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Status: 404
+Test name: GETResourceHTMLDoc
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmlid_sector-publico_contrato_asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22GETResourceHTMLDoc
+*********************
 *********************
 Uri: http://es.euskadi.eus:8008/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09
 Method: GET
@@ -155,13 +98,22 @@ Test name: GETResourceTriGContent
 Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapplication_trigid_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceTriGContent
 *********************
 *********************
-Uri: http://es.euskadi.eus:8008/def/turismo/alojamiento/precio
+Uri: http://es.euskadi.eus:8008/def/euskadipedia/precio
 Method: GET
 Accept: text/html
 Params: {}
-Status: 404
+Status: 200
 Test name: GETPropertyHTML200
-Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmldef_turismo_alojamiento_precioGETPropertyHTML200
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmldef_euskadipedia_precioGETPropertyHTML200
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/def/euskadipedia.html
+Method: GET
+Accept: text/html
+Params: {}
+Status: 200
+Test name: GETOntologyHTMLContent
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmldef_euskadipedia_htmlGETOntologyHTMLContent
 *********************
 *********************
 Uri: http://es.euskadi.eus:8008/sparql
@@ -177,7 +129,7 @@ Uri: http://es.euskadi.eus:8008/def/euskadi.owl
 Method: GET
 Accept: text/html
 Params: {}
-Status: 200
+Status: 404
 Test name: GETOntologyRDFXMLContentHTMLHeader
 Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmldef_euskadi_owlGETOntologyRDFXMLContentHTMLHeader
 *********************
@@ -218,13 +170,13 @@ Test name: GETResourceTurtleContent
 Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_turtleid_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceTurtleContent
 *********************
 *********************
-Uri: http://es.euskadi.eus:8008/def/turismo/alojamiento/Hotel
+Uri: http://es.euskadi.eus:8008/def/euskadipedia/Hotel
 Method: GET
 Accept: text/html
 Params: {}
-Status: 404
+Status: 200
 Test name: GETClassHTML200
-Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmldef_turismo_alojamiento_HotelGETClassHTML200
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmldef_euskadipedia_HotelGETClassHTML200
 *********************
 *********************
 Uri: http://es.euskadi.eus:8008/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09
@@ -236,13 +188,13 @@ Test name: GETResourceN3Content
 Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_rdf+n3id_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceN3Content
 *********************
 *********************
-Uri: http://es.euskadi.eus:8008/def/turismo/alojamiento/precio
+Uri: http://es.euskadi.eus:8008/def/euskadipedia/precio
 Method: GET
 Accept: application/rdf+xml
 Params: {}
 Status: 200
 Test name: GETPropertyRDFXMLContent
-Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapplication_rdf+xmldef_turismo_alojamiento_precioGETPropertyRDFXMLContent
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapplication_rdf+xmldef_euskadipedia_precioGETPropertyRDFXMLContent
 *********************
 *********************
 Uri: http://es.euskadi.eus:8008/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09
@@ -299,13 +251,13 @@ Test name: GETResourceNTriplesContent
 Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_plainid_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceNTriplesContent
 *********************
 *********************
-Uri: http://es.euskadi.eus:8008/def/turismo/alojamiento/Hotel
+Uri: http://es.euskadi.eus:8008/def/euskadipedia/Hotel
 Method: GET
 Accept: application/rdf+xml
 Params: {}
 Status: 200
 Test name: GETClassRDFXMLContent
-Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapplication_rdf+xmldef_turismo_alojamiento_HotelGETClassRDFXMLContent
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapplication_rdf+xmldef_euskadipedia_HotelGETClassRDFXMLContent
 *********************
 *********************
 Uri: http://es.euskadi.eus:8008/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09

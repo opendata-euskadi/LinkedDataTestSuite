@@ -215,8 +215,7 @@ public class LodTest  {
 			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
 			File file = new File(resultsPathName);
 			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
-					"XXX"));
+			assertTrue(response_string.contains("<http://contsem.unizar.es/def/sector-publico/pproc#formalizedDate> \"2000-03-31\"^^xsd:date ;"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -237,8 +236,7 @@ public class LodTest  {
 			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
 			File file = new File(resultsPathName);
 			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
-					"XXX"));
+			assertTrue(response_string.contains("\"@value\" : \"10.0\""));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -260,7 +258,7 @@ public class LodTest  {
 			File file = new File(resultsPathName);
 			String response_string = FileUtils.readFileToString(file);
 			assertTrue(response_string.contains(
-					"Trololo"));
+					"<occupation xmlns=\"http://dbpedia.org/ontology/\" xml:lang=\"es\">jefe grupo inspector pesca</occupation>"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -282,7 +280,7 @@ public class LodTest  {
 			File file = new File(resultsPathName);
 			String response_string = FileUtils.readFileToString(file);
 			assertTrue(response_string.contains(
-					"Trololo"));
+					"<http://contsem.unizar.es/def/sector-publico/pproc#formalizedDate> \"2000-03-31\"^^xsd:date ;"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -303,8 +301,7 @@ public class LodTest  {
 			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
 			File file = new File(resultsPathName);
 			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
-					"Trololo"));
+			assertTrue(response_string.contains("\"@value\" : \"2000-03-31\""));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -511,7 +508,7 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.RDFXML.mimetypevalue();
-			String pathUri = "def/turismo/alojamiento/Hotel";
+			String pathUri = "def/euskadipedia/Hotel";
 			String name = "GETClassRDFXMLContent";
 			String comment = "Obtener clase en RDF/XML, parsear contenido";
 			Map<String, String> parameters = new HashMap<String, String>();
@@ -521,7 +518,7 @@ public class LodTest  {
 			File file = new File(resultsPathName);
 			String response_string = FileUtils.readFileToString(file);
 			assertTrue(response_string.contains(
-					"<owl:ObjectProperty rdf:about=\"http://dbpedia.org/ontology/country\">"));
+					"http://dbpedia.org/ontology/country"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -533,7 +530,7 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.HTML.mimetypevalue();
-			String pathUri = "def/turismo/alojamiento/Hotel";
+			String pathUri = "def/euskadipedia/Hotel";
 			String name = "GETClassHTML200";
 			String comment = "Obtener clase en HTML, sin parsear contenido";
 			Map<String, String> parameters = new HashMap<String, String>();
@@ -546,12 +543,31 @@ public class LodTest  {
 	}
 	
 	@Test
+	public final void GETClassHTMLAnchorContent (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.HTML.mimetypevalue();
+			String pathUri = "def/euskadipedia.html#Hotel";
+			String name = "GETClassHTML200";
+			String comment = "Obtener clase en HTML con ancla, parsear contenido";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			assertEquals(requestBean.getStatus(), 200);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	@Test
 	public final void GETPropertyRDFXMLContent (){ 
 		try {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.RDFXML.mimetypevalue();
-			String pathUri = "def/turismo/alojamiento/precio";
+			String pathUri = "def/euskadipedia/precio";
 			String name = "GETPropertyRDFXMLContent";
 			String comment = "Obtener propiedad en RDF/XML, parsear contenido";
 			Map<String, String> parameters = new HashMap<String, String>();
@@ -573,7 +589,7 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.HTML.mimetypevalue();
-			String pathUri = "def/turismo/alojamiento/precio";
+			String pathUri = "def/euskadipedia/precio";
 			String name = "GETPropertyHTML200";
 			String comment = "Obtener propiedad en HTML, sin parsear contenido";
 			Map<String, String> parameters = new HashMap<String, String>();
@@ -610,10 +626,32 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.HTML.mimetypevalue();
-			String pathUri = "def/turismo/alojamiento"; // Segun la NTI
-			//String pathUri = "def/Euskadipedia"; // mas realista?
+//			String pathUri = "def/turismo/alojamiento"; // Segun la NTI
+			String pathUri = "def/euskadipedia"; // mas realista?
 			String name = "GETOntologyHTMLContent";
 			String comment = "Obtener ontologia en HTML, parsear contenido";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
+			File file = new File(resultsPathName);
+			String response_string = FileUtils.readFileToString(file);
+			assertTrue(response_string.contains("http://opendata.aragon.es/def/Aragopedia"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETOntologyHTMLContentFileExtensionHTML (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.HTML.mimetypevalue();
+//			String pathUri = "def/turismo/alojamiento"; // Segun la NTI
+			String pathUri = "def/euskadipedia.html"; // mas realista?
+			String name = "GETOntologyHTMLContent";
+			String comment = "Obtener ontologia en HTML con .html, parsear contenido";
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
@@ -673,10 +711,33 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.RDFXML.mimetypevalue();
-			String pathUri = "def/turismo/alojamiento"; // Segun la NTI
-			//String pathUri = "def/Euskadipedia"; // mas realista?
+//			String pathUri = "def/turismo/alojamiento"; // Segun la NTI
+			String pathUri = "def/euskadipedia.owl"; // mas realista?
 			String name = "GETOntologyRDFXMLContent";
 			String comment = "Obtener ontologia en RDF/XML, parsear contenido";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
+			File file = new File(resultsPathName);
+			String response_string = FileUtils.readFileToString(file);
+			assertTrue(response_string.contains("<owl:Ontology rdf:about=\"http://opendata.aragon.es/def/Aragopedia\">"));
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETOntologyRDFXMLContentFileExtensionOWL (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.RDFXML.mimetypevalue();
+//			String pathUri = "def/turismo/alojamiento"; // Segun la NTI
+			String pathUri = "def/euskadipedia.owl"; // mas realista?
+			String name = "GETOntologyRDFXMLContentFileExtensionOWL ";
+			String comment = "Obtener ontologia en RDF/XML con .owl, parsear contenido";
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
