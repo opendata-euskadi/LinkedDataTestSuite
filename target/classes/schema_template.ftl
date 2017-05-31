@@ -45,12 +45,28 @@
     
     <h3>Test realizados:</h3>
     
+    POST:
+    
     <#list tests as test>
-    	<ul>
-    		<li>
-    			<a href=#${test.testIndex}>${test.name}</a>
-    		</li>
-    	</ul>
+    	<#if test.method == "POST">
+	   		<ul>
+    			<li>
+    				<a href=#${test.testIndex}>${test.name}</a>
+    			</li>
+    		</ul>
+	   	</#if>
+    </#list>
+    
+    GET:
+    
+    <#list tests as test>
+    	<#if test.method == "GET" || test.method == "GETNO303" >
+	   		<ul>
+    			<li>
+    				<a href=#${test.testIndex}>${test.name}</a>
+    			</li>
+    		</ul>
+	   	</#if>
     </#list>
 
 	<table>
