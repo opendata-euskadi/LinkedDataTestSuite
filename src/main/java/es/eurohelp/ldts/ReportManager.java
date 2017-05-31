@@ -6,7 +6,10 @@ package es.eurohelp.ldts;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.Writer;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -59,6 +62,12 @@ public class ReportManager {
 
         Map<String, Object> input = new HashMap<String, Object>();
         input.put("title", "Linked Data Test Suite Report");
+        
+        //Setting system date & time for the current test.
+        DateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy HH:mm:ss");
+        Date date = new Date();
+        String dateTimeView = dateFormat.format(date);
+        input.put("dateTime", dateTimeView);
         
         testList.sort(new NameComparator());
         
