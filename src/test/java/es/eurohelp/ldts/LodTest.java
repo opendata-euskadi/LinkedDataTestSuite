@@ -786,6 +786,9 @@ public class LodTest  {
 				tests.add(requestBean);
 			} catch (Exception e1) {
 				System.out.println(e1.getMessage());
+			}finally {
+				//System.out.println(tests.indexOf(requestBean));
+				requestBean.setTestIndex(tests.indexOf(requestBean));
 			}
 		}
  
@@ -796,6 +799,9 @@ public class LodTest  {
 				tests.add(requestBean);
 			} catch (Exception e2) {
 				System.out.println(e2.getMessage());
+			}finally {
+				//System.out.println(tests.indexOf(requestBean));
+				requestBean.setTestIndex(tests.indexOf(requestBean));
 			}
 		}
 	};

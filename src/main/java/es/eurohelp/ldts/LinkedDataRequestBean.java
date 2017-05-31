@@ -11,6 +11,7 @@ public class LinkedDataRequestBean {
 	private String pathUri;
 	private Map<String, String> parameters = new HashMap<String, String>();
 	private int status;
+	private int testIndex = 0;
 	private String name = "";
 	private String location = "";
 	private String comment = "";
@@ -78,6 +79,14 @@ public class LinkedDataRequestBean {
 		this.status = status;
 	}
 		
+	public int getTestIndex() {
+		return testIndex;
+	}
+
+	public void setTestIndex(int testIndex) {
+		this.testIndex = testIndex;
+	}
+
 	public String getTestName(){
 		return this.method + generateNameFromUrl(this.accept) + generateNameFromUrl(this.pathUri) + this.name; 
 	}
