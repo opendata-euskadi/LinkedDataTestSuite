@@ -13,7 +13,6 @@ import java.util.Iterator;
 import java.util.Map;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
@@ -36,7 +35,7 @@ import org.apache.http.util.EntityUtils;
 public class HttpManager {
 
 	private static HttpManager INSTANCE = null;
-
+	
 	/**
 	 * Get a HttpManager instance
 	 * 
@@ -86,6 +85,8 @@ public class HttpManager {
 
 				httppost.setEntity(new UrlEncodedFormEntity(postParameters));
 
+				final String content = EntityUtils.toString(httpclient.execute(httppost).getEntity());
+				requestBean.setResponseString(content);
 				response = httpclient.execute(httppost);
 			} else {
 				String completeUri = requestBean.getCompleteUri();
@@ -115,6 +116,8 @@ public class HttpManager {
 					httpget.setParams(params);
 				}
 
+				final String content = EntityUtils.toString(httpclient.execute(httpget).getEntity());
+				requestBean.setResponseString(content);
 				response = httpclient.execute(httpget);
 
 				if ("GETNO303".equals(requestBean.getMethod())) {
@@ -132,7 +135,7 @@ public class HttpManager {
 				// }
 
 			}
-
+			
 			requestBean.setStatus(response.getStatusLine().getStatusCode());
 
 			String resultsPath = PropertiesManager.getInstance().getProperty("lod.report.path");
@@ -173,6 +176,7 @@ public class HttpManager {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
 		return response;
 	}
 }
