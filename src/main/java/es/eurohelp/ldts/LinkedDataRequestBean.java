@@ -15,6 +15,7 @@ public class LinkedDataRequestBean {
 	private String name = "";
 	private String location = "";
 	private String comment = "";
+	private String responseString = "";
 
 	public LinkedDataRequestBean(String method, String accept, String baseUri, String pathUri, String name, String comment,Map<String, String> parameters) {
 		super();
@@ -100,6 +101,14 @@ public class LinkedDataRequestBean {
 	    // Replace useless chareacters with UNDERSCORE
 	    String uniqueName = url.replace("://", "_").replace(".", "_").replace("/", "_");
 	    return uniqueName;
+	}
+
+	public String getResponseString() {
+		return responseString;
+	}
+
+	public void setResponseString(String responseString) {
+		this.responseString = responseString;
 	}
 	
 }
