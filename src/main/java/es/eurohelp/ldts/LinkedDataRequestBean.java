@@ -11,9 +11,11 @@ public class LinkedDataRequestBean {
 	private String pathUri;
 	private Map<String, String> parameters = new HashMap<String, String>();
 	private int status;
+	private int testIndex = 0;
 	private String name = "";
 	private String location = "";
 	private String comment = "";
+	private String responseString = "";
 
 	public LinkedDataRequestBean(String method, String accept, String baseUri, String pathUri, String name, String comment,Map<String, String> parameters) {
 		super();
@@ -78,6 +80,14 @@ public class LinkedDataRequestBean {
 		this.status = status;
 	}
 		
+	public int getTestIndex() {
+		return testIndex;
+	}
+
+	public void setTestIndex(int testIndex) {
+		this.testIndex = testIndex;
+	}
+
 	public String getTestName(){
 		return this.method + generateNameFromUrl(this.accept) + generateNameFromUrl(this.pathUri) + this.name; 
 	}
@@ -91,6 +101,14 @@ public class LinkedDataRequestBean {
 	    // Replace useless chareacters with UNDERSCORE
 	    String uniqueName = url.replace("://", "_").replace(".", "_").replace("/", "_");
 	    return uniqueName;
+	}
+
+	public String getResponseString() {
+		return responseString;
+	}
+
+	public void setResponseString(String responseString) {
+		this.responseString = responseString;
 	}
 	
 }
