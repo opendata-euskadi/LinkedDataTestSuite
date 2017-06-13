@@ -13,14 +13,15 @@ import java.util.Iterator;
 import java.util.Map;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
+import org.apache.http.ParseException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.params.ClientPNames;
+import org.apache.http.entity.BufferedHttpEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.params.BasicHttpParams;
@@ -36,7 +37,8 @@ import org.apache.http.util.EntityUtils;
 public class HttpManager {
 
 	private static HttpManager INSTANCE = null;
-
+	private BufferedHttpEntity bfHttpEntity;
+	
 	/**
 	 * Get a HttpManager instance
 	 * 
@@ -86,7 +88,13 @@ public class HttpManager {
 
 				httppost.setEntity(new UrlEncodedFormEntity(postParameters));
 
+				/* VERSIÓN NO OPTIMIZADA (EJECUTABA PETICIÓN 2 VECES)
+				final String content = EntityUtils.toString(httpclient.execute(httppost).getEntity());
+				requestBean.setResponseString(content);
+				*/
+				
 				response = httpclient.execute(httppost);
+				
 			} else {
 				String completeUri = requestBean.getCompleteUri();
 				int numParam = 0;
@@ -115,6 +123,11 @@ public class HttpManager {
 					httpget.setParams(params);
 				}
 
+				/* VERSIÓN NO OPTIMIZADA (EJECUTABA PETICIÓN 2 VECES)
+				final String content = EntityUtils.toString(httpclient.execute(httppost).getEntity());
+				requestBean.setResponseString(content);
+				*/
+				
 				response = httpclient.execute(httpget);
 
 				if ("GETNO303".equals(requestBean.getMethod())) {
@@ -132,7 +145,7 @@ public class HttpManager {
 				// }
 
 			}
-
+			
 			requestBean.setStatus(response.getStatusLine().getStatusCode());
 
 			String resultsPath = PropertiesManager.getInstance().getProperty("lod.report.path");
@@ -142,11 +155,15 @@ public class HttpManager {
 			System.out.println("Response file: " + resultsPath + requestBean.getTestName());
 			System.out.println("*********************");
 
+			//Con la clase BufferedHttpEntity podemos consumir varias veces la HttpEntity(non-repeatable) de la response
+			bfHttpEntity = new BufferedHttpEntity(response.getEntity());
+			
 			// redirect the output
 			InputStream aInStream = null;
 			FileOutputStream aOutStream = null;
+			
 			try {
-				aInStream = response.getEntity().getContent();
+				aInStream = bfHttpEntity.getContent();
 
 				File file = new File(resultsPath + requestBean.getTestName());
 
@@ -173,6 +190,16 @@ public class HttpManager {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+		try {
+			String responseString = EntityUtils.toString(bfHttpEntity);
+			requestBean.setResponseString(responseString);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
 		return response;
 	}
 }

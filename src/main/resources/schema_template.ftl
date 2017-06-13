@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>${title}</title>
     <meta charset="UTF-8" />
@@ -49,23 +50,19 @@
     
     <#list tests as test>
     	<#if test.method == "POST">
-	   		<ul>
-    			<li>
-    				<a href=#${test.testIndex}>${test.name}</a>
-    			</li>
-    		</ul>
+
+    				[<a href=#${test.testIndex}>${test.name}</a>]
+
 	   	</#if>
     </#list>
-    
+    <br/>
     GET:
     
     <#list tests as test>
     	<#if test.method == "GET" || test.method == "GETNO303" >
-	   		<ul>
-    			<li>
-    				<a href=#${test.testIndex}>${test.name}</a>
-    			</li>
-    		</ul>
+
+    				[<a href=#${test.testIndex}>${test.name}</a>]
+
 	   	</#if>
     </#list>
 
@@ -85,7 +82,7 @@
    		<tr>
 	   		<td id=${test.testIndex}>${test.name}</td>
 	   		<td>${test.comment}</td>
-	   		<td>${test.completeUri}</td>
+	   		<td><a href=${test.completeUri}>${test.completeUri}</a></td>
 	   		<td>${test.method}</td>
 	   		<td>${test.accept}</td>
 	   		<#if test.status == 0>

@@ -3,14 +3,12 @@ package es.eurohelp.ldts;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.io.FileUtils;
 import org.junit.AfterClass;
 import org.junit.Rule;
 import org.junit.Test;
@@ -100,10 +98,7 @@ public class LodTest  {
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains("<h1>CO-2017-01-02</h1>"));
+			assertTrue(requestBean.getResponseString().contains("<h1>CO-2017-01-02</h1>"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -121,10 +116,7 @@ public class LodTest  {
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
+			assertTrue(requestBean.getResponseString().contains(
 					"XXX"));
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -162,12 +154,7 @@ public class LodTest  {
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			
-			// TODO: meter el content del HTTP entity en el Bean, para no tener que leer desde disco
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
+			assertTrue(requestBean.getResponseString().contains(
 					"<ContractEconomicConditions xmlns=\"http://contsem.unizar.es/def/sector-publico/pproc#\" "
 					+ "rdf:datatype=\"http://www.w3.org/2001/XMLSchema#long\">3670496</ContractEconomicConditions>"));
 		} catch (IOException e) {
@@ -187,12 +174,7 @@ public class LodTest  {
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			
-			// TODO: meter el content del HTTP entity en el Bean, para no tener que leer desde disco
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
+			assertTrue(requestBean.getResponseString().contains(
 					"<ContractEconomicConditions xmlns=\"http://contsem.unizar.es/def/sector-publico/pproc#\" "
 					+ "rdf:datatype=\"http://www.w3.org/2001/XMLSchema#long\">3670496</ContractEconomicConditions>"));
 		} catch (IOException e) {
@@ -212,11 +194,8 @@ public class LodTest  {
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
-					"XXX"));
+			assertTrue(requestBean.getResponseString().contains(
+					"<http://contsem.unizar.es/def/sector-publico/pproc#formalizedDate> \"2000-03-31\"^^xsd:date ;"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -234,11 +213,8 @@ public class LodTest  {
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
-					"XXX"));
+			assertTrue(requestBean.getResponseString().contains(
+					"\"@value\" : \"10.0\""));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -256,11 +232,8 @@ public class LodTest  {
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
-					"Trololo"));
+			assertTrue(requestBean.getResponseString().contains(
+					"<occupation xmlns=\"http://dbpedia.org/ontology/\" xml:lang=\"es\">jefe grupo inspector pesca</occupation>"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -278,11 +251,8 @@ public class LodTest  {
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
-					"Trololo"));
+			assertTrue(requestBean.getResponseString().contains(
+					"<http://contsem.unizar.es/def/sector-publico/pproc#formalizedDate> \"2000-03-31\"^^xsd:date ;"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -300,11 +270,8 @@ public class LodTest  {
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
-					"Trololo"));
+			assertTrue(requestBean.getResponseString().contains(
+					"\"@value\" : \"2000-03-31\""));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -341,10 +308,7 @@ public class LodTest  {
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains("\"@value\" : \"jefe grupo inspector pesca\""));
+			assertTrue(requestBean.getResponseString().contains("\"@value\" : \"jefe grupo inspector pesca\""));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -362,10 +326,7 @@ public class LodTest  {
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
+			assertTrue(requestBean.getResponseString().contains(
 					"<http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> "
 					+ "<http://es.euskadi.eus/id/sector-publico/departamento/desarrollo-economico-e-infraestructuras> ;"));
 		} catch (IOException e) {
@@ -385,10 +346,7 @@ public class LodTest  {
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
+			assertTrue(requestBean.getResponseString().contains(
 					"<http://es.euskadi.eus/dataset/id/relaciones-de-puestos-de-trabajo-de-los-departamentos-y-organismos-autonomos-de-la-administracion-de-la-comunidad-autonoma>"));
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -407,10 +365,7 @@ public class LodTest  {
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
+			assertTrue(requestBean.getResponseString().contains(
 					"<http://es.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/cerif/frapo/EmploymentContract> ."));
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -429,10 +384,7 @@ public class LodTest  {
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
+			assertTrue(requestBean.getResponseString().contains(
 					"\"value\" : \"http://es.euskadi.eus/id/sector-publico/departamento/desarrollo-economico-e-infraestructuras\","));
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -451,10 +403,7 @@ public class LodTest  {
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
+			assertTrue(requestBean.getResponseString().contains(
 					"GETResourceTriGContent Response no genera Trig, si no RDF/XML"));
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -473,10 +422,7 @@ public class LodTest  {
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
+			assertTrue(requestBean.getResponseString().contains(
 					"<uri>http://dbpedia.org/ontology/occupation</uri>"));
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -495,10 +441,7 @@ public class LodTest  {
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
+			assertTrue(requestBean.getResponseString().contains(
 					"<http://dbpedia.org/ontology/occupation> \"jefe grupo inspector pesca\"@es ;"));
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -511,16 +454,13 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.RDFXML.mimetypevalue();
-			String pathUri = "def/turismo/alojamiento/Hotel";
+			String pathUri = "def/euskadipedia/Hotel";
 			String name = "GETClassRDFXMLContent";
 			String comment = "Obtener clase en RDF/XML, parsear contenido";
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
+			assertTrue(requestBean.getResponseString().contains(
 					"<owl:ObjectProperty rdf:about=\"http://dbpedia.org/ontology/country\">"));
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -533,7 +473,7 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.HTML.mimetypevalue();
-			String pathUri = "def/turismo/alojamiento/Hotel";
+			String pathUri = "def/euskadipedia/Hotel";
 			String name = "GETClassHTML200";
 			String comment = "Obtener clase en HTML, sin parsear contenido";
 			Map<String, String> parameters = new HashMap<String, String>();
@@ -546,21 +486,37 @@ public class LodTest  {
 	}
 	
 	@Test
+	public final void GETClassHTMLAnchorContent (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.HTML.mimetypevalue();
+			String pathUri = "def/euskadipedia.html#Hotel";
+			String name = "GETClassHTML200";
+			String comment = "Obtener clase en HTML con ancla, parsear contenido";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			assertEquals(requestBean.getStatus(), 200);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	@Test
 	public final void GETPropertyRDFXMLContent (){ 
 		try {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.RDFXML.mimetypevalue();
-			String pathUri = "def/turismo/alojamiento/precio";
+			String pathUri = "def/euskadipedia/precio";
 			String name = "GETPropertyRDFXMLContent";
 			String comment = "Obtener propiedad en RDF/XML, parsear contenido";
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
+			assertTrue(requestBean.getResponseString().contains(
 					"</owl:Class>"));
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -573,7 +529,7 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.HTML.mimetypevalue();
-			String pathUri = "def/turismo/alojamiento/precio";
+			String pathUri = "def/euskadipedia/precio";
 			String name = "GETPropertyHTML200";
 			String comment = "Obtener propiedad en HTML, sin parsear contenido";
 			Map<String, String> parameters = new HashMap<String, String>();
@@ -610,17 +566,33 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.HTML.mimetypevalue();
-			String pathUri = "def/turismo/alojamiento"; // Segun la NTI
-			//String pathUri = "def/Euskadipedia"; // mas realista?
+//			String pathUri = "def/turismo/alojamiento"; // Segun la NTI
+			String pathUri = "def/euskadipedia"; // mas realista?
 			String name = "GETOntologyHTMLContent";
 			String comment = "Obtener ontologia en HTML, parsear contenido";
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains("http://opendata.aragon.es/def/Aragopedia"));
+			assertTrue(requestBean.getResponseString().contains("http://opendata.aragon.es/def/Aragopedia"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETOntologyHTMLContentFileExtensionHTML (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.HTML.mimetypevalue();
+//			String pathUri = "def/turismo/alojamiento"; // Segun la NTI
+			String pathUri = "def/euskadipedia.html"; // mas realista?
+			String name = "GETOntologyHTMLContent";
+			String comment = "Obtener ontologia en HTML con .html, parsear contenido";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			assertTrue(requestBean.getResponseString().contains("http://opendata.aragon.es/def/Aragopedia"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -657,10 +629,7 @@ public class LodTest  {
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains("<owl:Ontology rdf:about=\"http://opendata.aragon.es/def/Aragopedia\">"));
+			assertTrue(requestBean.getResponseString().contains("<owl:Ontology rdf:about=\"http://opendata.aragon.es/def/Aragopedia\">"));
 			
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -673,18 +642,33 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.RDFXML.mimetypevalue();
-			String pathUri = "def/turismo/alojamiento"; // Segun la NTI
-			//String pathUri = "def/Euskadipedia"; // mas realista?
+//			String pathUri = "def/turismo/alojamiento"; // Segun la NTI
+			String pathUri = "def/euskadipedia.owl"; // mas realista?
 			String name = "GETOntologyRDFXMLContent";
 			String comment = "Obtener ontologia en RDF/XML, parsear contenido";
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains("<owl:Ontology rdf:about=\"http://opendata.aragon.es/def/Aragopedia\">"));
-			
+			assertTrue(requestBean.getResponseString().contains("<owl:Ontology rdf:about=\"http://opendata.aragon.es/def/Aragopedia\">"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETOntologyRDFXMLContentFileExtensionOWL (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.RDFXML.mimetypevalue();
+//			String pathUri = "def/turismo/alojamiento"; // Segun la NTI
+			String pathUri = "def/euskadipedia.owl"; // mas realista?
+			String name = "GETOntologyRDFXMLContentFileExtensionOWL ";
+			String comment = "Obtener ontologia en RDF/XML con .owl, parsear contenido";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			assertTrue(requestBean.getResponseString().contains("<owl:Ontology rdf:about=\"http://opendata.aragon.es/def/Aragopedia\">"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -711,12 +695,7 @@ public class LodTest  {
 					+ "}");
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			
-			// TODO: meter el content del HTTP entity en el Bean, para no tener que leer desde disco
-			String resultsPathName = PropertiesManager.getInstance().getProperty("lod.report.path") + requestBean.getTestName();
-			File file = new File(resultsPathName);
-			String response_string = FileUtils.readFileToString(file);
-			assertTrue(response_string.contains(
+			assertTrue(requestBean.getResponseString().contains(
 					"http://es.euskadi.eus/dataset/id/registro-de-contratos-del-sector-publico-de-euskadi,"
 					+ "http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://rdfs.org/ns/void#Dataset"));
 		} catch (IOException e) {
