@@ -86,7 +86,7 @@
    		<tr>
 	   		<td id=${test.testIndex}>${test.name}</td>
 	   		<td>${test.comment}</td>
-	   		<td><a href=${test.completeUri}>LINK</a></td>
+	   		<td><a href=${test.completeUri}>Link</a></td>
 	   		<td>${test.method}</td>
 	   		<td>${test.accept}</td>
 	   		<#if test.status == 0>
