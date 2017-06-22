@@ -74,8 +74,10 @@ public class ReportManager {
         input.put("tests", testList);
 
         // 2.2. Get the template
+        
+        cfg.setClassForTemplateLoading(this.getClass(), "/templates/");
 
-        Template template = cfg.getTemplate("/src/main/resources/schema_template.ftl");
+        Template template = cfg.getTemplate("schema_template.ftl");
 
         // 2.3. Generate the output
 
@@ -83,14 +85,16 @@ public class ReportManager {
         //Writer consoleWriter = new OutputStreamWriter(System.out);
         //template.process(input, consoleWriter);
 
-        String resultsPath = PropertiesManager.getInstance().getProperty("lod.report.path");
+        String resultsPath = PropertiesManager.getInstance().getProperty("lod.report.view");
         // For the sake of example, also write output into a file:
-        Writer fileWriter = new FileWriter(new File(resultsPath + "report.html"));
+        Writer fileWriter = new FileWriter(new File(resultsPath + "report.jsp"));
         try{
                 template.process(input, fileWriter);
         } finally {
                 fileWriter.close();
         }
+        
+        
 	}	
 }
 
