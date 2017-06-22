@@ -2,6 +2,7 @@ package es.eurohelp.ldts.controller;
 
 
 import java.lang.annotation.Annotation;
+
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,11 +13,14 @@ import org.junit.runner.Result;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+
+/**
+ * @author ssantamariap
+ */
 
 @Controller
 public class TestController {
@@ -47,6 +51,8 @@ public class TestController {
 		
 		mav.addObject("lista", allTest);
 		
+		
+		
 		/*
 		logger.info("TestController: test");
 		
@@ -71,6 +77,9 @@ public class TestController {
 	@RequestMapping(value="/execute", method = RequestMethod.POST)
 	public ModelAndView run(@RequestParam("test") ArrayList<String> lista){
 		
+		System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*");
+		System.out.println(lista.toString());
+		System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*");
 		mav = new ModelAndView("/results");
 		
 		long runTime = 0;

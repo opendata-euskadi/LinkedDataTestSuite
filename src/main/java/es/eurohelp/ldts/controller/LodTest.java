@@ -11,7 +11,6 @@ import java.util.Map;
 
 
 import org.junit.AfterClass;
-import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
@@ -801,18 +800,11 @@ public class LodTest  {
 	public static void createReport() {
 		try {
 			ReportManager.getInstance().createReport(tests);
+			tests.removeAll(tests);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
 	}
-	
-	
-
-	
-	
-	
-	
-	
 
 }

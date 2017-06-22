@@ -25,7 +25,7 @@ import freemarker.template.Version;
 
 /**
  * @author grozadilla
- *
+ * @author ssantamariap
  */
 public class ReportManager {
 
@@ -86,15 +86,16 @@ public class ReportManager {
         //template.process(input, consoleWriter);
 
         String resultsPath = PropertiesManager.getInstance().getProperty("lod.report.view");
+        
         // For the sake of example, also write output into a file:
+        
         Writer fileWriter = new FileWriter(new File(resultsPath + "report.jsp"));
         try{
                 template.process(input, fileWriter);
         } finally {
                 fileWriter.close();
         }
-        
-        
+          
 	}	
 }
 

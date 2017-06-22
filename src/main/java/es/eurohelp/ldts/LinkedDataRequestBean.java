@@ -110,5 +110,12 @@ public class LinkedDataRequestBean {
 	public void setResponseString(String responseString) {
 		this.responseString = responseString;
 	}
+
+	@Override
+	public String toString() {
+		return "LinkedDataRequestBean [name=" + name + "]";
+	}
+	
+	
 	
 }
