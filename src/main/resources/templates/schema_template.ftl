@@ -69,6 +69,7 @@
 	<table>
 	   	<thead>
 	   	<tr>
+	   		<th></th>
 	   		<th>Test name</th>
 	   		<th>Test comment</th>
 	   		<th>Target Uri</th>
@@ -80,8 +81,10 @@
 	   	</thead>
    	<tbody>
    	
+   	<form action="execute" method="post">
    	<#list tests as test>
    		<tr>
+   			<td><input type="checkbox" name="test" value="${test.name}" unchecked></td>
 	   		<td id=${test.testIndex}>${test.name}</td>
 	   		<td>${test.comment}</td>
 	   		<td><a href=${test.completeUri}>${test.completeUri}</a></td>
@@ -100,6 +103,8 @@
     </tbody>
     
    </table>
+   <input type="submit" value="Ejecutar">
+   </form>
 
 </body>
 </html>
