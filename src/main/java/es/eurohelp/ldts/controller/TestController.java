@@ -27,6 +27,8 @@ public class TestController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(TestController.class);
 	
+	public static int runningGroupID = 0;
+	
 	private ModelAndView mav;
 	
 	@RequestMapping(value = "/test", method=RequestMethod.GET)
@@ -77,7 +79,7 @@ public class TestController {
 	@RequestMapping(value="/execute", method = RequestMethod.POST)
 	public ModelAndView run(@RequestParam("test") ArrayList<String> lista){
 		
-		System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*");
+		System.out.println("*-*-*-*-*-*-*TEST QUE LLEGAN AL CONTROLADOR-*-*-*-*-*-*-*-*");
 		System.out.println(lista.toString());
 		System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*");
 		mav = new ModelAndView("/results");
@@ -106,7 +108,10 @@ public class TestController {
 		mav.addObject("fails", fails);
 		mav.addObject("runTime", runTime);
 		
+		runningGroupID++;
+		
 		return mav;
+		
 	}
 	
 	@RequestMapping(value="/report")

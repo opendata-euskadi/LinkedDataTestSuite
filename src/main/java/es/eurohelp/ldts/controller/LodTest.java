@@ -11,12 +11,18 @@ import java.util.Map;
 
 
 import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Request;
+import org.junit.runner.Result;
 import org.junit.runners.model.Statement;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import es.eurohelp.ldts.HttpManager;
 import es.eurohelp.ldts.LinkedDataRequestBean;
@@ -29,6 +35,7 @@ import es.eurohelp.ldts.ReportManager;
 /**
  * @author grozadilla
  * @author Mikel Egaña Aranguren
+ * @author ssantamariap
  *
  */
 
@@ -37,7 +44,8 @@ public class LodTest  {
 
 	LinkedDataRequestBean requestBean;
 	static List<LinkedDataRequestBean> tests = new ArrayList<LinkedDataRequestBean>();
-
+	private static final Logger logger = LoggerFactory.getLogger(LodTest.class);
+	
 	@Test
 	public final void GETSPARQLHTML200 () {
 		try {
@@ -773,11 +781,11 @@ public class LodTest  {
 		protected void succeeded(Description description) {
 			try {
 				requestBean.setStatus(0);
+				requestBean.setRunningGroupID(TestController.runningGroupID);
 				tests.add(requestBean);
 			} catch (Exception e1) {
 				System.out.println(e1.getMessage());
 			}finally {
-				//System.out.println(tests.indexOf(requestBean));
 				requestBean.setTestIndex(tests.indexOf(requestBean));
 			}
 		}
@@ -786,11 +794,11 @@ public class LodTest  {
 		protected void failed(Throwable e, Description description) {
 			try {
 				requestBean.setStatus(1);
+				requestBean.setRunningGroupID(TestController.runningGroupID);
 				tests.add(requestBean);
 			} catch (Exception e2) {
 				System.out.println(e2.getMessage());
 			}finally {
-				//System.out.println(tests.indexOf(requestBean));
 				requestBean.setTestIndex(tests.indexOf(requestBean));
 			}
 		}
@@ -798,13 +806,44 @@ public class LodTest  {
 	
 	@AfterClass
 	public static void createReport() {
+		
 		try {
 			ReportManager.getInstance().createReport(tests);
-			tests.removeAll(tests);
 		} catch (Exception e) {
 			e.printStackTrace();
+		}	
+	}
+	
+	/*
+	@BeforeClass
+	public static void prepare(){
+		
+		
+			
+	}*/
+	
+	
+	
+	/*
+	public Result webEnvTestRunner(ArrayList<String> lista){
+		
+		JUnitCore jUnitCore = new JUnitCore();
+		Request request;
+		Result result = null;
+		
+		for(String test:lista){
+
+			request = Request.method(getClass(), test);
+			
+			result = jUnitCore.run(request);
+			
 		}
 		
+		return result;
+				
 	}
+	*/
+	
+	
 
 }

@@ -16,6 +16,7 @@ public class LinkedDataRequestBean {
 	private String location = "";
 	private String comment = "";
 	private String responseString = "";
+	private int runningGroupID = 0;
 
 	public LinkedDataRequestBean(String method, String accept, String baseUri, String pathUri, String name, String comment,Map<String, String> parameters) {
 		super();
@@ -109,6 +110,14 @@ public class LinkedDataRequestBean {
 
 	public void setResponseString(String responseString) {
 		this.responseString = responseString;
+	}
+	
+	public int getRunningGroupID() {
+		return runningGroupID;
+	}
+
+	public void setRunningGroupID(int runningGroupID) {
+		this.runningGroupID = runningGroupID;
 	}
 
 	@Override
