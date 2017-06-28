@@ -46,8 +46,11 @@ public class TestController {
 		
 		//Getting method names from the class to test, filtering by @Test to show all to the user
 		Method [] methods = LodTest.class.getMethods();
+		
 		Annotation [] annotations;
+		
 		for(Method method:methods){
+			
 			annotations = method.getAnnotations();
 			
 			for(Annotation annotation:annotations){
@@ -100,7 +103,7 @@ public class TestController {
 		mav.addObject("fails", fails);
 		mav.addObject("runTime", runTime);
 		
-		runningGroupID++; //grouping by execution time (is needed cause execution was SINGLE)
+		runningGroupID++; //for grouping by execution time (is needed cause execution is SINGLE)
 		
 		return mav;
 		
