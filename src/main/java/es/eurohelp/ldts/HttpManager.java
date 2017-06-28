@@ -32,7 +32,7 @@ import org.apache.http.util.EntityUtils;
  * Utilities to http connections
  * 
  * @author grozadilla
- *
+ * @author ssantamariap
  */
 public class HttpManager {
 

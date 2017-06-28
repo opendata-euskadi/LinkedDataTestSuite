@@ -1,6 +1,5 @@
 package es.eurohelp.ldts.controller;
 
-
 import java.lang.annotation.Annotation;
 
 import java.lang.reflect.Method;
@@ -18,6 +17,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import es.eurohelp.ldts.LodTest;
+
 /**
  * @author ssantamariap
  */
@@ -26,18 +27,24 @@ import org.springframework.web.servlet.ModelAndView;
 public class TestController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(TestController.class);
-	
 	public static int runningGroupID = 0;
-	
+	public static int testCount = 0;
 	private ModelAndView mav;
 	
+	/**
+	 * 
+	 * @return all.jsp (view) con todos los metodos que tengan @Test
+	 */
 	@RequestMapping(value = "/test", method=RequestMethod.GET)
 	public ModelAndView test() {
+		
+		logger.info("TestController: method(test)");
 		
 		List<String> allTest = new ArrayList<>();
 		
 		mav = new ModelAndView("/all");
 		
+		//Getting method names from the class to test, filtering by @Test to show all to the user
 		Method [] methods = LodTest.class.getMethods();
 		Annotation [] annotations;
 		for(Method method:methods){
@@ -48,40 +55,24 @@ public class TestController {
 					allTest.add(method.getName());
 				}
 			}	
-			
 		}
 		
 		mav.addObject("lista", allTest);
-		
-		
-		
-		/*
-		logger.info("TestController: test");
-		
-		JUnitCore jUnitCore = new JUnitCore();
-		//Result result = jUnitCore.run(LodTest.class); EJECUTA TODOS LOS TEST
-		Request request;
-		request = Request.method(LodTest.class, "GETSPARQLHTML200");//EJECUTA POR NOMBRE
-		Result result = jUnitCore.run(request);
-		
-		
-		logger.info("Test ejecutados: " + result.getRunCount());
-		logger.info("Fallos registrados: " + result.getFailureCount());
-		logger.info("Tiempo de ejecución: " + result.getRunTime());
-		*/
-		
-		
-		
+
 		return mav;
 		
 	}
 	
-	@RequestMapping(value="/execute", method = RequestMethod.POST)
+	/**
+	 * 
+	 * @param lista con los test seleccionados por el usuario
+	 * @return results.jsp con los resultados de la ejecucion
+	 */
+	@RequestMapping(value="/run", method = RequestMethod.POST)
 	public ModelAndView run(@RequestParam("test") ArrayList<String> lista){
 		
-		System.out.println("*-*-*-*-*-*-*TEST QUE LLEGAN AL CONTROLADOR-*-*-*-*-*-*-*-*");
-		System.out.println(lista.toString());
-		System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*");
+		testCount = lista.size();
+		
 		mav = new ModelAndView("/results");
 		
 		long runTime = 0;
@@ -92,10 +83,10 @@ public class TestController {
 		Request request;
 		Result result;
 		
+		//Executing SINGLE test by method name
 		for(String test:lista){
 			
 			request = Request.method(LodTest.class, test);
-			
 			result = jUnitCore.run(request);
 			
 			nTest = nTest + result.getRunCount();
@@ -104,16 +95,21 @@ public class TestController {
 			
 		}
 		
+		//Adding results to the view
 		mav.addObject("nTest", nTest);
 		mav.addObject("fails", fails);
 		mav.addObject("runTime", runTime);
 		
-		runningGroupID++;
+		runningGroupID++; //grouping by execution time (is needed cause execution was SINGLE)
 		
 		return mav;
 		
 	}
 	
+	/**
+	 * 
+	 * @return report.jsp with detailed view report.
+	 */
 	@RequestMapping(value="/report")
 	public String report(){
 		return "report";

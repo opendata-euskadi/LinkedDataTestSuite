@@ -1,4 +1,4 @@
-package es.eurohelp.ldts.controller;
+package es.eurohelp.ldts;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -11,15 +11,11 @@ import java.util.Map;
 
 
 import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
-import org.junit.runner.JUnitCore;
-import org.junit.runner.Request;
-import org.junit.runner.Result;
 import org.junit.runners.model.Statement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,7 +26,7 @@ import es.eurohelp.ldts.MIMEtype;
 import es.eurohelp.ldts.Methodtype;
 import es.eurohelp.ldts.PropertiesManager;
 import es.eurohelp.ldts.ReportManager;
-
+import es.eurohelp.ldts.controller.TestController;
 
 /**
  * @author grozadilla
@@ -44,6 +40,7 @@ public class LodTest  {
 	LinkedDataRequestBean requestBean;
 	static List<LinkedDataRequestBean> tests = new ArrayList<LinkedDataRequestBean>();
 	private static final Logger logger = LoggerFactory.getLogger(LodTest.class);
+	private static int executionCount = 0;
 	
 	@Test
 	public final void GETSPARQLHTML200 () {
@@ -804,10 +801,18 @@ public class LodTest  {
 	@AfterClass
 	public static void createReport() {
 		
-		try {
-			ReportManager.getInstance().createReport(tests);
-		} catch (Exception e) {
-			e.printStackTrace();
+		executionCount++;
+		logger.info("Contador: " + executionCount + " Nº de test: " + TestController.testCount);
+		
+		//Generating report just when all single test have been runned.
+		if(executionCount == TestController.testCount){
+			executionCount = 0;
+			try {
+				logger.info("REPORT");
+				ReportManager.getInstance().createReport(tests);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}	
 		}	
 	}
 	

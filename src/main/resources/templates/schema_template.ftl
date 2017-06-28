@@ -81,7 +81,7 @@
 	   	</thead>
    	<tbody>
    	
-   	<form action="execute" method="post">
+   	<form action="run" method="post">
    	<#list tests as test>
    		<tr>
    			<td><input type="checkbox" name="test" value="${test.name}" unchecked></td>
@@ -96,7 +96,7 @@
 	   		<#if test.status == 1>
 	   			<td style="color:red;">ERROR</td>
 	   		</#if>
-	   		<td><a href="${test.testName}">view response</a></td>
+	   		<td><a href="/static/${test.testName}">view response</a></td>
     	</tr>
     </#list>
     

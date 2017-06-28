@@ -56,6 +56,7 @@ public class ReportManager {
 			
 			bean = iterator.next();
 			
+			//Cleaning testList before generating report (removing elements of past executions)
 			if(bean.getRunningGroupID() < TestController.runningGroupID){
 				iterator.remove();
 			}
@@ -80,7 +81,7 @@ public class ReportManager {
         Map<String, Object> input = new HashMap<String, Object>();
         input.put("title", "Linked Data Test Suite Report");
         
-        //Setting system date & time for the current test.
+        //Setting system date & time for the report.
         DateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy HH:mm:ss");
         Date date = new Date();
         String dateTimeView = dateFormat.format(date);
@@ -92,7 +93,7 @@ public class ReportManager {
 
         // 2.2. Get the template
         
-        cfg.setClassForTemplateLoading(this.getClass(), "/templates/");
+        cfg.setClassForTemplateLoading(this.getClass(), "/templates/");//Added new folder
 
         Template template = cfg.getTemplate("schema_template.ftl");
 
@@ -102,6 +103,7 @@ public class ReportManager {
         //Writer consoleWriter = new OutputStreamWriter(System.out);
         //template.process(input, consoleWriter);
 
+        //New path as view
         String resultsPath = PropertiesManager.getInstance().getProperty("lod.report.view");
         
         // For the sake of example, also write output into a file:

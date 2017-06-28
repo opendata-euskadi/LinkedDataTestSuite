@@ -22,7 +22,7 @@ $(document).ready(function() {
 <c:choose>
 	<c:when test="${not empty lista}">
 		<div id="checkboxes">
-			<form:form action="execute" method="post">
+			<form:form action="run" method="post">
 				<c:forEach var="test" items="${lista}">
 	  				<input type="checkbox" name="test" value="${test}" checked>${test}<br>
 				</c:forEach>
