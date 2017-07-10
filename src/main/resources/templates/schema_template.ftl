@@ -1,4 +1,14 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <html>
 
   <head>
@@ -26,7 +36,7 @@
 		th{
 			background-color:grey;
 			padding: 4px;
-    		background-color: rgba(40, 30, 226, 0.59);
+    		background-color: rgb(38, 90, 136);
     		color: #fff;
 		}
 		
@@ -37,12 +47,19 @@
     </style>
   </head>
 
-  <body>
-  
+  <body class="container-fluid">
+  <header class="col-xs-12 text-center">
     <h1>${title}</h1>
     <h2>${dateTime}</h2>
+  </header>
 
     <hr/>
+    
+    <div class="row">
+		<div class="col-xs-12 text-center">
+			<a class="btn btn-primary btn-sm glyphicon glyphicon-home" href="<c:url value='./'/>"></a>
+		</div>
+	</div>
     
     <h3>Test realizados:</h3>
     
@@ -103,8 +120,12 @@
     </tbody>
     
    </table>
-   <input type="submit" value="Ejecutar">
-   </form>
+   <br>
+   <div class="form-group text-center">
+   <button type="submit" class="btn btn-primary">Ejecutar</button>
+   </div>
 
+   </form>
+   
 </body>
 </html>

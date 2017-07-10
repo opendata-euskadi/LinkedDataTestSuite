@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- CODIFICACIÓN DE CARACTERES ESPECIALES
+< : &lt;
+> : &gt;
+& : &amp;
+" : &quot;
+' : &apos;
+espacio en blanco: &#160;  -->
+<testCases>
+	<GETSPARQLHTML200>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>text/html</accept>
+		<pathUri>sparql</pathUri>
+		<name>GETSPARQLHTML200</name>
+		<comment>Ir directo a formulario SPARQL</comment>
+		<contains></contains>
+	</GETSPARQLHTML200>
+	<GETResourceHTMLPageNoRedirect303>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GETNO303</method>
+		<accept>text/html</accept>
+		<name>GETResourceHTMLPageNoRedirect303</name>
+		<pathUri>id/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22</pathUri>
+		<comment>Recurso con pagina bonita, pero sin seguir el 303</comment>
+		<contains>/page/</contains>
+	</GETResourceHTMLPageNoRedirect303>
+	<GETResourceHTMLDocNoRedirect303>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GETNO303</method>
+		<accept>text/html</accept>
+		<name>GETResourceHTMLDocNoRedirect303</name>
+		<pathUri>id/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02</pathUri>
+		<comment>Recurso con pagina bonita, pero sin seguir el 303</comment>
+		<contains>/doc/es/</contains>
+	</GETResourceHTMLDocNoRedirect303>
+	<GETResourceHTMLDoc>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>text/html</accept>
+		<name>GETResourceHTMLDoc</name>
+		<pathUri>id/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02</pathUri>
+		<comment>Recurso con pagina fea</comment>
+		<contains>&lt;h1&gt;CO-2017-01-02&lt;/h1&gt;</contains>
+	</GETResourceHTMLDoc>
+	<GETResourceHTMLPage>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>text/html</accept>
+		<name>GETResourceHTMLPage</name>
+		<pathUri>id/sector-publico/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22</pathUri>
+		<comment>Recurso con pagina bonita que no existe todavia</comment>
+		<contains>XXX</contains>
+	</GETResourceHTMLPage>
+	<GETResourceDirectlyDoc>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>text/html</accept>
+		<name>GETResourceDirectlyDoc</name>
+		<pathUri>doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02</pathUri>
+		<comment>Recurso con pagina fea, ir directamente a pagina /doc sin pasar por /id</comment>
+		<contains></contains>
+	</GETResourceDirectlyDoc>
+	<GETResourceRDFXMLContent>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>application/rdf+xml</accept>
+		<name>GETResourceRDFXMLContent</name>
+		<pathUri>id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</pathUri>
+		<comment>Obtener recurso en RDF/XML, parsear contenido</comment>
+		<contains>&lt;ContractEconomicConditions&#160;xmlns=\&quot;http://contsem.unizar.es/def/sector-publico/pproc#\&quot;&#160;rdf:datatype=\&quot;http://www.w3.org/2001/XMLSchema#long\&quot;&gt;3670496&lt;/ContractEconomicConditions&gt;</contains>
+	</GETResourceRDFXMLContent>
+	<GETResourceDirectlyDataRDFXMLContent>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>application/rdf+xml</accept>
+		<name>GETResourceDirectlyDataRDFXMLContent</name>
+		<pathUri>data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</pathUri>
+		<comment>Obtener recurso en RDF/XML directamente de /data, parsear contenido</comment>
+		<contains>&lt;ContractEconomicConditions&#160;xmlns=\&quot;http://contsem.unizar.es/def/sector-publico/pproc#\&quot;&#160;rdf:datatype=\&quot;http://www.w3.org/2001/XMLSchema#long\&quot;&gt;3670496&lt;/ContractEconomicConditions&gt;</contains>
+	</GETResourceDirectlyDataRDFXMLContent>
+	<GETResourceDirectlyDataTTLContent>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>text/turtle</accept>
+		<name>GETResourceDirectlyDataTTLContent</name>
+		<pathUri>data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</pathUri>
+		<comment>Obtener recurso en TTL directamente de /data, parsear contenido</comment>
+		<contains>&lt;http://contsem.unizar.es/def/sector-publico/pproc#formalizedDate&gt;&#160;\&quot;2000-03-31\&quot;^^xsd:date&#160;;</contains>
+	</GETResourceDirectlyDataTTLContent>
+	<GETResourceDirectlyDataJSONLDContent>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>application/ld+json</accept>
+		<name>GETResourceDirectlyDataJSONLDContent</name>
+		<pathUri>data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</pathUri>
+		<comment>Obtener recurso en JSONLD directamente de /data, parsear contenido</comment>
+		<contains>\&quot;@value\&quot;&#160;:&#160;\&quot;10.0\&quot;</contains>
+	</GETResourceDirectlyDataJSONLDContent>
+	<GETResourceDirectlyDataRDFXMLContentHTMLHeader>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>text/html</accept>
+		<name>GETResourceDirectlyDataRDFXMLContentHTMLHeader</name>
+		<pathUri>data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.rdf</pathUri>
+		<comment>Obtener recurso en RDF/XML (por extension, no cabecera, cabecera HTML) directamente de /data, parsear contenido</comment>
+		<contains>&lt;occupation&#160;xmlns=\&quot;http://dbpedia.org/ontology/\&quot;&#160;xml:lang=\&quot;es\&quot;&gt;jefe&#160;grupo&#160;inspector&#160;pesca&lt;/occupation&gt;</contains>
+	</GETResourceDirectlyDataRDFXMLContentHTMLHeader>
+	<GETResourceDirectlyDataTTLContentHTMLHeader>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>text/html</accept>
+		<name>GETResourceDirectlyDataTTLContentHTMLHeader</name>
+		<pathUri>data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.ttl</pathUri>
+		<comment>Obtener recurso en TTL (por extension, no cabecera, cabecera HTML) directamente de /data, parsear contenido</comment>
+		<contains>&lt;http://contsem.unizar.es/def/sector-publico/pproc#formalizedDate&gt;&#160;\&quot;2000-03-31\&quot;^^xsd:date&#160;;</contains>
+	</GETResourceDirectlyDataTTLContentHTMLHeader>
+	<GETResourceDirectlyDataJSONLDContentHTMLHeader>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>text/html</accept>
+		<name>GETResourceDirectlyDataJSONLDContentHTMLHeader</name>
+		<pathUri>data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.jsonld</pathUri>
+		<comment>Obtener recurso en JSON-LD (por extension, no cabecera, cabecera HTML) directamente de /data, parsear contenido</comment>
+		<contains>\&quot;@value\&quot;&#160;:&#160;\&quot;2000-03-31\&quot;</contains>
+	</GETResourceDirectlyDataJSONLDContentHTMLHeader>
+	<GETResourceJSONLDContent>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>application/ld+json</accept>
+		<name>GETResourceJSONLDContent</name>
+		<pathUri>id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</pathUri>
+		<comment>Obtener recurso en JSON-LD, parsear contenido</comment>
+		<contains>\&quot;@value\&quot;&#160;:&#160;\&quot;jefe grupo inspector pesca\&quot;</contains>
+	</GETResourceJSONLDContent>
+	<GETResourceN3Content>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>text/rdf+n3</accept>
+		<name>GETResourceN3Content</name>
+		<pathUri>id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</pathUri>
+		<comment>Obtener recurso en N3, parsear contenido</comment>
+		<contains>&lt;http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment&gt;&#160;&lt;http://es.euskadi.eus/id/sector-publico/departamento/desarrollo-economico-e-infraestructuras&gt;&#160;;</contains>
+	</GETResourceN3Content>
+	<GETResourceNQuadsContent>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>text/x-nquads</accept>
+		<name>GETResourceNQuadsContent</name>
+		<pathUri>id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</pathUri>
+		<comment>Obtener recurso en NQuads, parsear contenido</comment>
+		<contains>&lt;http://es.euskadi.eus/dataset/id/relaciones-de-puestos-de-trabajo-de-los-departamentos-y-organismos-autonomos-de-la-administracion-de-la-comunidad-autonoma&gt;</contains>
+	</GETResourceNQuadsContent>
+	<GETResourceNTriplesContent>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>text/plain</accept>
+		<name>GETResourceNTriplesContent</name>
+		<pathUri>id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</pathUri>
+		<comment>Obtener recurso en NTriples, parsear contenido</comment>
+		<contains>&lt;http://es.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09&gt;&#160;&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt;&#160;&lt;http://purl.org/cerif/frapo/EmploymentContract&gt;&#160;.</contains>
+	</GETResourceNTriplesContent>
+	<GETResourceRDFJSON200>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>application/rdf+json</accept>
+		<name>GETResourceRDFJSON200</name>
+		<pathUri>id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</pathUri>
+		<comment>Obtener recurso en RDF/JSON, parsear contenido</comment>
+		<contains>\&quot;value\&quot;&#160;:&#160;\&quot;http://es.euskadi.eus/id/sector-publico/departamento/desarrollo-economico-e-infraestructuras\&quot;,</contains>
+	</GETResourceRDFJSON200>
+	<GETResourceTriGContent>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>application/trig</accept>
+		<name>GETResourceTriGContent</name>
+		<pathUri>id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</pathUri>
+		<comment>Obtener recurso en TriG, parsear contenido</comment>
+		<contains>GETResourceTriGContent&#160;Response&#160;no&#160;genera&#160;Trig,&#160;si&#160;no&#160;RDF/XML</contains>
+	</GETResourceTriGContent>
+	<GETResourceTriXContent>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>application/trix</accept>
+		<name>GETResourceTriXContent</name>
+		<pathUri>id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</pathUri>
+		<comment>Obtener recurso en TriX, parsear contenido</comment>
+		<contains>&lt;uri&gt;http://dbpedia.org/ontology/occupation&lt;/uri&gt;</contains>
+	</GETResourceTriXContent>
+	<GETResourceTurtleContent>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>text/turtle</accept>
+		<name>GETResourceTurtleContent</name>
+		<pathUri>id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</pathUri>
+		<comment>Obtener recurso en TTL, parsear contenido</comment>
+		<contains>&lt;http://dbpedia.org/ontology/occupation&gt;&#160;\&quot;jefe&#160;grupo&#160;inspector&#160;pesca\&quot;@es&#160;;</contains>
+	</GETResourceTurtleContent>
+	<GETClassRDFXMLContent>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>application/rdf+xml</accept>
+		<name>GETClassRDFXMLContent</name>
+		<pathUri>def/euskadipedia/Hotel</pathUri>
+		<comment>Obtener clase en RDF/XML, parsear contenido</comment>
+		<contains>&lt;owl:ObjectProperty&#160;rdf:about=\&quot;http://dbpedia.org/ontology/country\&quot;&gt;</contains>
+	</GETClassRDFXMLContent>
+	<GETClassHTML200>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>text/html</accept>
+		<name>GETClassHTML200</name>
+		<pathUri>def/euskadipedia/Hotel</pathUri>
+		<comment>Obtener clase en HTML, sin parsear contenido</comment>
+		<contains></contains>
+	</GETClassHTML200>
+	<GETClassHTMLAnchorContent>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>text/html</accept>
+		<name>GETClassHTMLAnchorContent</name>
+		<pathUri>def/euskadipedia.html#Hotel</pathUri>
+		<comment>Obtener clase en HTML con ancla, parsear contenido</comment>
+		<contains></contains>
+	</GETClassHTMLAnchorContent>
+	<GETPropertyRDFXMLContent>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>application/rdf+xml</accept>
+		<name>GETPropertyRDFXMLContent</name>
+		<pathUri>def/euskadipedia/precio</pathUri>
+		<comment>Obtener propiedad en RDF/XML, parsear contenido</comment>
+		<contains>&lt;/owl:Class&gt;</contains>
+	</GETPropertyRDFXMLContent>
+	<GETPropertyHTML200>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>text/html</accept>
+		<name>GETPropertyHTML200</name>
+		<pathUri>def/euskadipedia/precio</pathUri>
+		<comment>Obtener propiedad en HTML, sin parsear contenido</comment>
+		<contains></contains>
+	</GETPropertyHTML200>
+	<GETOntologyHTMLContent>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>text/html</accept>
+		<name>GETOntologyHTMLContent</name>
+		<pathUri>def/euskadipedia</pathUri>
+		<comment>Obtener ontologia en HTML, parsear contenido</comment>
+		<contains>http://opendata.aragon.es/def/Aragopedia</contains>
+	</GETOntologyHTMLContent>
+	<GETOntologyHTMLContentFileExtensionHTML>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>text/html</accept>
+		<name>GETOntologyHTMLContentFileExtensionHTML</name>
+		<pathUri>def/euskadipedia.html</pathUri>
+		<comment>Obtener ontologia en HTML con .html, parsear contenido</comment>
+		<contains>http://opendata.aragon.es/def/Aragopedia</contains>
+	</GETOntologyHTMLContentFileExtensionHTML>
+	<GETOntologyRDFXMLContentHTMLHeader>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>text/html</accept>
+		<name>GETOntologyRDFXMLContentHTMLHeader</name>
+		<pathUri>def/euskadi.owl</pathUri>
+		<comment>Obtener ontologia en OWL (por extension, no cabecera, cabecera HTML), parsear contenido</comment>
+		<contains>&lt;owl:Ontology&#160;rdf:about=\&quot;http://opendata.aragon.es/def/Aragopedia\&quot;&gt;</contains>
+	</GETOntologyRDFXMLContentHTMLHeader>
+	<GETOntologyRDFXMLContent>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>application/rdf+xml</accept>
+		<name>GETOntologyRDFXMLContent</name>
+		<pathUri>def/euskadipedia.owl</pathUri>
+		<comment>Obtener ontologia en RDF/XML, parsear contenido</comment>
+		<contains>&lt;owl:Ontology&#160;rdf:about=\&quot;http://opendata.aragon.es/def/Aragopedia\&quot;&gt;</contains>
+	</GETOntologyRDFXMLContent>
+	<GETOntologyRDFXMLContentFileExtensionOWL>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept>application/rdf+xml</accept>
+		<name>GETOntologyRDFXMLContentFileExtensionOWL</name>
+		<pathUri>def/euskadipedia.owl</pathUri>
+		<comment>Obtener ontologia en RDF/XML con .owl, parsear contenido</comment>
+		<contains>&lt;owl:Ontology&#160;rdf:about=\&quot;http://opendata.aragon.es/def/Aragopedia\&quot;&gt;</contains>
+	</GETOntologyRDFXMLContentFileExtensionOWL>
+	<SPARQLPOSTNamedGraphsMetadataCSVContent>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>POST</method>
+		<accept>text/csv</accept>
+		<name>SPARQLPOSTNamedGraphsMetadataCSVContent</name>
+		<pathUri>sparql</pathUri>
+		<comment>Consulta sobre datos y metadatos, parsear contenido</comment>
+		<contains>http://es.euskadi.eus/dataset/id/registro-de-contratos-del-sector-publico-de-euskadi,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://rdfs.org/ns/void#Dataset</contains>
+	</SPARQLPOSTNamedGraphsMetadataCSVContent>
+	<SPARQLPOSTMassiveCSV200>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>POST</method>
+		<accept>text/csv</accept>
+		<name>SPARQLPOSTMassiveCSV200</name>
+		<pathUri>sparql</pathUri>
+		<comment>Consulta masiva, sin parsear contenido</comment>
+		<contains></contains>
+	</SPARQLPOSTMassiveCSV200>
+	<SPARQLPOSTInsert400>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>POST</method>
+		<accept>text/csv</accept>
+		<name>SPARQLPOSTInsert400</name>
+		<pathUri>sparql</pathUri>
+		<comment>Insertar datos, deberia fallar</comment>
+		<contains></contains>
+	</SPARQLPOSTInsert400>
+	<p>
+		<baseUri>http://es.euskadi.eus:8008/</baseUri>
+		<method>GET</method>
+		<accept></accept>
+		<name></name>
+		<pathUri></pathUri>
+		<comment></comment>
+		<contains></contains>
+	</p>
+</testCases>

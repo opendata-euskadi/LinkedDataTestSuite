@@ -1,10 +1,12 @@
 # LinkedDataTestSuite (war version)
 Tests and reporting for Linked Data systems, from version 0.0.5.
 
-Requirements and installation:
+## Requirements and installation:
 - Spring Framework
 - Tomcat 7 or higher with next server.xml configuration included:
-	- <Context docBase="contentpath/LinkedDataTestSuite/src/test/resources" path="/static" />
-	where content path must be supplied by user's path.
+	- Context docBase="contentpath/LinkedDataTestSuite/src/test/resources" path="/static"
+	where contentpath must be supplied by user's path.
+- Project contains the file test_template.xml (src/main/resources) for configurating test cases which can be modified
+with the application deployed. Test cases declared in the template also have to be declared in LodTest.java.
 
 Report: https://opendata-euskadi.github.io/LinkedDataTestSuite/src/test/resources/report.html

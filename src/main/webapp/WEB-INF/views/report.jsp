@@ -1,4 +1,14 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <html>
 
   <head>
@@ -26,7 +36,7 @@
 		th{
 			background-color:grey;
 			padding: 4px;
-    		background-color: rgba(40, 30, 226, 0.59);
+    		background-color: rgb(38, 90, 136);
     		color: #fff;
 		}
 		
@@ -37,12 +47,19 @@
     </style>
   </head>
 
-  <body>
-  
+  <body class="container-fluid">
+  <header class="col-xs-12 text-center">
     <h1>Linked Data Test Suite Report</h1>
-    <h2>28-jun-2017 10:26:04</h2>
+    <h2>10-jul-2017 13:01:15</h2>
+  </header>
 
     <hr/>
+    
+    <div class="row">
+		<div class="col-xs-12 text-center">
+			<a class="btn btn-primary btn-sm glyphicon glyphicon-home" href="<c:url value='./'/>"></a>
+		</div>
+	</div>
     
     <h3>Test realizados:</h3>
     
@@ -52,10 +69,7 @@
     GET:
     
 
-    				[<a href=#4>GETPropertyHTML200</a>]
-
-
-    				[<a href=#5>GETOntologyHTMLContent</a>]
+    				[<a href=#4>GETResourceDirectlyDataJSONLDContent</a>]
 
 
 	<table>
@@ -75,31 +89,25 @@
    	
    	<form action="run" method="post">
    		<tr>
-   			<td><input type="checkbox" name="test" value="GETPropertyHTML200" unchecked></td>
-	   		<td id=4>GETPropertyHTML200</td>
-	   		<td>Obtener propiedad en HTML, sin parsear contenido</td>
-	   		<td><a href=http://es.euskadi.eus:8008/def/euskadipedia/precio>http://es.euskadi.eus:8008/def/euskadipedia/precio</a></td>
+   			<td><input type="checkbox" name="test" value="GETResourceDirectlyDataJSONLDContent" unchecked></td>
+	   		<td id=4>GETResourceDirectlyDataJSONLDContent</td>
+	   		<td>Obtener recurso en JSONLD directamente de /data, parsear contenido</td>
+	   		<td><a href=http://es.euskadi.eus:8008/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09>http://es.euskadi.eus:8008/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</a></td>
 	   		<td>GET</td>
-	   		<td>text/html</td>
-	   			<td style="color:green;">OK</td>
-	   		<td><a href="/static/GETtext_htmldef_euskadipedia_precioGETPropertyHTML200">view response</a></td>
-    	</tr>
-   		<tr>
-   			<td><input type="checkbox" name="test" value="GETOntologyHTMLContent" unchecked></td>
-	   		<td id=5>GETOntologyHTMLContent</td>
-	   		<td>Obtener ontologia en HTML, parsear contenido</td>
-	   		<td><a href=http://es.euskadi.eus:8008/def/euskadipedia>http://es.euskadi.eus:8008/def/euskadipedia</a></td>
-	   		<td>GET</td>
-	   		<td>text/html</td>
+	   		<td>application/ld+json</td>
 	   			<td style="color:red;">ERROR</td>
-	   		<td><a href="/static/GETtext_htmldef_euskadipediaGETOntologyHTMLContent">view response</a></td>
+	   		<td><a href="/static/GETapplication_ld+jsondata_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceDirectlyDataJSONLDContent">view response</a></td>
     	</tr>
     
     </tbody>
     
    </table>
-   <input type="submit" value="Ejecutar">
-   </form>
+   <br>
+   <div class="form-group text-center">
+   <button type="submit" class="btn btn-primary">Ejecutar</button>
+   </div>
 
+   </form>
+   
 </body>
 </html>

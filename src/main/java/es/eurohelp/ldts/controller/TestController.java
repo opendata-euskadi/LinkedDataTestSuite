@@ -22,7 +22,6 @@ import es.eurohelp.ldts.LodTest;
 /**
  * @author ssantamariap
  */
-
 @Controller
 public class TestController {
 	
@@ -33,10 +32,11 @@ public class TestController {
 	
 	/**
 	 * 
-	 * @return all.jsp (view) con todos los metodos que tengan @Test
+	 * @return all.jsp (view) with the list of methods that contain the annotation @Test
 	 */
 	@RequestMapping(value = "/test", method=RequestMethod.GET)
 	public ModelAndView test() {
+		
 		
 		logger.info("TestController: method(test)");
 		
@@ -68,12 +68,14 @@ public class TestController {
 	
 	/**
 	 * 
-	 * @param lista con los test seleccionados por el usuario
-	 * @return results.jsp con los resultados de la ejecucion
+	 * @param list with the test cases selected by the user
+	 * @return results.jsp with the execution results
 	 */
 	@RequestMapping(value="/run", method = RequestMethod.POST)
-	public ModelAndView run(@RequestParam("test") ArrayList<String> lista){
+	public ModelAndView run(@RequestParam("test") List<String> lista){
 		
+		logger.info("TestController: method(run)");
+		logger.info(lista.toString());
 		testCount = lista.size();
 		
 		mav = new ModelAndView("/results");
@@ -103,7 +105,7 @@ public class TestController {
 		mav.addObject("fails", fails);
 		mav.addObject("runTime", runTime);
 		
-		runningGroupID++; //for grouping by execution time (is needed cause execution is SINGLE)
+		runningGroupID++; //for grouping by execution time (needed cause execution is SINGLE)
 		
 		return mav;
 		

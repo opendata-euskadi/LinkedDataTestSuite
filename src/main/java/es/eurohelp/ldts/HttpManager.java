@@ -87,11 +87,6 @@ public class HttpManager {
 				}
 
 				httppost.setEntity(new UrlEncodedFormEntity(postParameters));
-
-				/* VERSIÓN NO OPTIMIZADA (EJECUTABA PETICIÓN 2 VECES)
-				final String content = EntityUtils.toString(httpclient.execute(httppost).getEntity());
-				requestBean.setResponseString(content);
-				*/
 				
 				response = httpclient.execute(httppost);
 				
@@ -123,11 +118,6 @@ public class HttpManager {
 					httpget.setParams(params);
 				}
 
-				/* VERSIÓN NO OPTIMIZADA (EJECUTABA PETICIÓN 2 VECES)
-				final String content = EntityUtils.toString(httpclient.execute(httppost).getEntity());
-				requestBean.setResponseString(content);
-				*/
-				
 				response = httpclient.execute(httpget);
 
 				if ("GETNO303".equals(requestBean.getMethod())) {
@@ -143,6 +133,7 @@ public class HttpManager {
 				// if (!file.exists()) {
 				// file.createNewFile();
 				// }
+				
 
 			}
 			
