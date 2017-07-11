@@ -41,6 +41,14 @@ th {
 			<img class="img-responsive center-block" src="${logo}" alt="logo">
 		</div>
 	</div>
+	
+	<div class="row">
+		<div class="col-xs-12 text-center">
+			<a class="btn btn-primary btn-sm glyphicon glyphicon-home" href="<c:url value='./'/>"></a>
+		</div>
+	</div>
+	
+	<br>
 
 <table>
 	<caption>Resultados</caption>

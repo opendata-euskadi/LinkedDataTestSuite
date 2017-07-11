@@ -12,6 +12,7 @@ import org.junit.runner.Result;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -67,52 +68,60 @@ public class TestController {
 	}
 	
 	/**
-	 * 
-	 * @param list with the test cases selected by the user
-	 * @return results.jsp with the execution results
-	 */
+	* @param list with the test cases selected by the user
+	* @return results.jsp with the execution results
+	*/
 	@RequestMapping(value="/run", method = RequestMethod.POST)
-	public ModelAndView run(@RequestParam("test") List<String> lista){
+	public String run(Model model, @RequestParam(value = "test", defaultValue = "null") List<String> lista){
 		
 		logger.info("TestController: method(run)");
-		logger.info(lista.toString());
+		
+		String url = "";
+		
 		testCount = lista.size();
 		
-		mav = new ModelAndView("/results");
-		
-		long runTime = 0;
-		int fails = 0;
-		int nTest = 0;
-		
-		JUnitCore jUnitCore = new JUnitCore();
-		Request request;
-		Result result;
-		
-		//Executing SINGLE test by method name
-		for(String test:lista){
+		if (lista.contains("null")){
 			
-			request = Request.method(LodTest.class, test);
-			result = jUnitCore.run(request);
+			logger.info("TestController: method(run): null list");
+			url = "redirect:/test";
 			
-			nTest = nTest + result.getRunCount();
-			fails = fails + result.getFailureCount();
-			runTime = runTime + result.getRunTime();
+		}else{
+			
+			long runTime = 0;
+			int fails = 0;
+			int nTest = 0;
+			
+			JUnitCore jUnitCore = new JUnitCore();
+			Request request;
+			Result result;
+			
+			//Executing SINGLE test by method name
+			for(String test:lista){
+				
+				request = Request.method(LodTest.class, test);
+				result = jUnitCore.run(request);
+				
+				nTest = nTest + result.getRunCount();
+				fails = fails + result.getFailureCount();
+				runTime = runTime + result.getRunTime();
+				
+			}
+			
+			model.addAttribute("nTest", nTest);
+			model.addAttribute("fails", fails);
+			model.addAttribute("runTime", runTime);
+			
+			runningGroupID++;//for grouping by execution time (needed cause execution is SINGLE)
+			
+			url = "results";
 			
 		}
 		
-		//Adding results to the view
-		mav.addObject("nTest", nTest);
-		mav.addObject("fails", fails);
-		mav.addObject("runTime", runTime);
-		
-		runningGroupID++; //for grouping by execution time (needed cause execution is SINGLE)
-		
-		return mav;
+		return url;
 		
 	}
 	
 	/**
-	 * 
 	 * @return report.jsp with detailed view report.
 	 */
 	@RequestMapping(value="/report")

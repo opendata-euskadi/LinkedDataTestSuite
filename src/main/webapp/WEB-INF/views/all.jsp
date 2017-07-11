@@ -24,6 +24,14 @@
 			<img class="img-responsive center-block" src="${logo}" alt="logo">
 		</div>
 	</div>
+	
+	<div class="row">
+		<div class="col-xs-12 text-center">
+			<a class="btn btn-primary btn-sm glyphicon glyphicon-home" href="<c:url value='./'/>"></a>
+		</div>
+	</div>
+	
+	<br>
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script>
