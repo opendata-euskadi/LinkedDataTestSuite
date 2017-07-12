@@ -126,15 +126,6 @@ public class HttpManager {
 					requestBean.setLocation(LocationHEaderValue);
 				}
 
-				// File file = new File(resultsPath +
-				// requestBean.getTestName());
-				//
-				// // if file doesn't exists, then create it
-				// if (!file.exists()) {
-				// file.createNewFile();
-				// }
-				
-
 			}
 			
 			requestBean.setStatus(response.getStatusLine().getStatusCode());

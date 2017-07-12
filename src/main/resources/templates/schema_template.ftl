@@ -21,7 +21,7 @@
       }
       span {
         display: block;
-        padding-left: 10px;
+        
       }
       
       table {
@@ -38,6 +38,7 @@
 			padding: 4px;
     		background-color: rgb(38, 90, 136);
     		color: #fff;
+    		text-align: center;
 		}
 		
 		ul {
@@ -108,12 +109,12 @@
 	   		<td>${test.method}</td>
 	   		<td>${test.accept}</td>
 	   		<#if test.status == 0>
-	   			<td style="color:green;">OK</td>
+	   			<td style="color:green; text-align: center;"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span></td>
 	   		</#if>
 	   		<#if test.status == 1>
-	   			<td style="color:red;">ERROR</td>
+	   			<td style="color:red; text-align: center;"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></td>
 	   		</#if>
-	   		<td><a href="/static/${test.testName}">view response</a></td>
+	   		<td style="text-align: center;"><a style="color:black;" href="/static/${test.testName}"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a></td>
     	</tr>
     </#list>
     

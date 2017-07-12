@@ -12,6 +12,11 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+/**
+ * 
+ * @author ssantamariap
+ * xml file handler acting class
+ */
 public class XMLUtils {
 	
 	LinkedDataRequestBean requestBean;
@@ -20,6 +25,12 @@ public class XMLUtils {
 	
 	File xmlFile = new File("C:/Users/ssantamaria/git/LinkedDataTestSuite/src/main/resources/templates/test_template.xml");
 	
+	/**
+	 * 
+	 * @param testName
+	 * @return LinkedDataRequestBean object formed according to the data stored 
+	 * on the test_template.xml relative to the testName received. 
+	 */
 	public LinkedDataRequestBean getXMLData(String testName){
 		
 		try {
@@ -59,6 +70,12 @@ public class XMLUtils {
 		
 	}
 	
+	/**
+	 * 
+	 * @param testName
+	 * @return contains called node content, relative to the testName,
+	 * for the cases wich require response comparison 
+	 */
 	public String getXmlContainsNode(String testName){
 		
 		String contains = "";

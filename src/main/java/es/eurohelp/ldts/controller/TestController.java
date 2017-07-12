@@ -38,7 +38,6 @@ public class TestController {
 	@RequestMapping(value = "/test", method=RequestMethod.GET)
 	public ModelAndView test() {
 		
-		
 		logger.info("TestController: method(test)");
 		
 		List<String> allTest = new ArrayList<>();
@@ -61,7 +60,7 @@ public class TestController {
 			}	
 		}
 		
-		mav.addObject("lista", allTest);
+		mav.addObject("lista", allTest); //Adding model to the view
 
 		return mav;
 		
@@ -80,6 +79,7 @@ public class TestController {
 		
 		testCount = lista.size();
 		
+		//when user don't select any test
 		if (lista.contains("null")){
 			
 			logger.info("TestController: method(run): null list");
