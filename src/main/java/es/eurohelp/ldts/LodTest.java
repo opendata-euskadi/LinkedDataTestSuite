@@ -3,7 +3,6 @@ package es.eurohelp.ldts;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -22,9 +21,6 @@ import org.slf4j.LoggerFactory;
 
 import es.eurohelp.ldts.HttpManager;
 import es.eurohelp.ldts.LinkedDataRequestBean;
-import es.eurohelp.ldts.MIMEtype;
-import es.eurohelp.ldts.Methodtype;
-import es.eurohelp.ldts.PropertiesManager;
 import es.eurohelp.ldts.ReportManager;
 import es.eurohelp.ldts.controller.TestController;
 

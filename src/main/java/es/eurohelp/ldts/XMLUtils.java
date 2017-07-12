@@ -87,7 +87,7 @@ public class XMLUtils {
 		}catch(Exception e){
 			e.printStackTrace();
 		}
-		System.out.println("imprimo contains: " + contains);
+		
 		return contains;
 		
 	}
