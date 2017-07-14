@@ -55,23 +55,18 @@ $(document).ready(function() {
 		<div id="checkboxes">
 			<form:form action="run" method="post">
 				<c:forEach var="test" items="${lista}">
-				<div class="col-xs-4">
+				<div class="col-xs-3">
 	  				<input type="checkbox" name="test" value="${test}" checked>${test}<br>
 	  			</div>
 				</c:forEach>
 				
-				
 				<br>
-				
-				
 				
 				<div class="row">
 					<div class="col-xs-12 text-center">
    						<button type="submit" class="btn btn-primary">Ejecutar test seleccionados</button>
    					</div>				
 				</div>
-				
-				
 			</form:form>
 		</div>
 	</c:when>

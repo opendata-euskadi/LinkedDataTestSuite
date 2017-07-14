@@ -1,4 +1,4 @@
-# LinkedDataTestSuite (war version)
+# LinkedDataTestSuite (war version)(14/07/2017)
 Tests and reporting for Linked Data systems, from version 0.0.5.
 
 ## Requirements and installation:
