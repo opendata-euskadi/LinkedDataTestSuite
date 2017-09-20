@@ -32,7 +32,7 @@ import org.apache.http.util.EntityUtils;
  * Utilities to http connections
  * 
  * @author grozadilla
- *
+ * @author ssantamariap
  */
 public class HttpManager {
 
@@ -87,11 +87,6 @@ public class HttpManager {
 				}
 
 				httppost.setEntity(new UrlEncodedFormEntity(postParameters));
-
-				/* VERSIÓN NO OPTIMIZADA (EJECUTABA PETICIÓN 2 VECES)
-				final String content = EntityUtils.toString(httpclient.execute(httppost).getEntity());
-				requestBean.setResponseString(content);
-				*/
 				
 				response = httpclient.execute(httppost);
 				
@@ -123,11 +118,6 @@ public class HttpManager {
 					httpget.setParams(params);
 				}
 
-				/* VERSIÓN NO OPTIMIZADA (EJECUTABA PETICIÓN 2 VECES)
-				final String content = EntityUtils.toString(httpclient.execute(httppost).getEntity());
-				requestBean.setResponseString(content);
-				*/
-				
 				response = httpclient.execute(httpget);
 
 				if ("GETNO303".equals(requestBean.getMethod())) {
@@ -135,14 +125,6 @@ public class HttpManager {
 					System.out.println("Location: " + LocationHEaderValue);
 					requestBean.setLocation(LocationHEaderValue);
 				}
-
-				// File file = new File(resultsPath +
-				// requestBean.getTestName());
-				//
-				// // if file doesn't exists, then create it
-				// if (!file.exists()) {
-				// file.createNewFile();
-				// }
 
 			}
 			

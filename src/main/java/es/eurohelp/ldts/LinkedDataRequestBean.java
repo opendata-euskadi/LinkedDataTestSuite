@@ -12,10 +12,12 @@ public class LinkedDataRequestBean {
 	private Map<String, String> parameters = new HashMap<String, String>();
 	private int status;
 	private int testIndex = 0;
+	private int runningGroupID = 0;
 	private String name = "";
 	private String location = "";
 	private String comment = "";
 	private String responseString = "";
+	
 
 	public LinkedDataRequestBean(String method, String accept, String baseUri, String pathUri, String name, String comment,Map<String, String> parameters) {
 		super();
@@ -109,6 +111,19 @@ public class LinkedDataRequestBean {
 
 	public void setResponseString(String responseString) {
 		this.responseString = responseString;
+	}
+	
+	public int getRunningGroupID() {
+		return runningGroupID;
+	}
+
+	public void setRunningGroupID(int runningGroupID) {
+		this.runningGroupID = runningGroupID;
+	}
+
+	@Override
+	public String toString() {
+		return "LinkedDataRequestBean [name=" + name + "]";
 	}
 	
 }
