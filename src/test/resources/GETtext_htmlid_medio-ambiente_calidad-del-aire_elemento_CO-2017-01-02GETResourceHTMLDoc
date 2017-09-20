@@ -2,22 +2,22 @@
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <title>Search Results</title>
-      <link rel="shortcut icon" href="http://172.16.0.81:8008/elda-assets/images/datagovuk_favicon.png" type="image/x-icon">
+      <link rel="shortcut icon" href="http://localhost:8080/elda-assets/images/datagovuk_favicon.png" type="image/x-icon">
       <link rel="alternate" href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02.json" type="application/json">
       <link rel="alternate" href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02.rdf" type="application/rdf+xml">
       <link rel="alternate" href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02.text" type="text/plain">
       <link rel="alternate" href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02.ttl" type="text/turtle">
       <link rel="alternate" href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02.xml" type="application/xml">
-      <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><script type="text/javascript" src="http://172.16.0.81:8008/elda-assets/scripts/jquery.min.js"></script><script type="text/javascript" src="http://172.16.0.81:8008/elda-assets/scripts/jquery-ui.min.js"></script><script type="text/javascript" src="http://172.16.0.81:8008/elda-assets/scripts/jquery.sparkline.js"></script><script type="text/javascript" src="http://172.16.0.81:8008/elda-assets/scripts/codemirror/codemirror_min.js"></script><script type="text/javascript">
+      <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><script type="text/javascript" src="http://localhost:8080/elda-assets/scripts/jquery.min.js"></script><script type="text/javascript" src="http://localhost:8080/elda-assets/scripts/jquery-ui.min.js"></script><script type="text/javascript" src="http://localhost:8080/elda-assets/scripts/jquery.sparkline.js"></script><script type="text/javascript" src="http://localhost:8080/elda-assets/scripts/codemirror/codemirror_min.js"></script><script type="text/javascript">
 		$(function() {
 			$('.info img')
 				.toggle(function () {
 					$(this)
-						.attr('src', 'http://172.16.0.81:8008/elda-assets/images/green/16x16/Cancel.png')
+						.attr('src', 'http://localhost:8080/elda-assets/images/green/16x16/Cancel.png')
 						.next().show();
 				}, function () {
 					$(this)
-						.attr('src', 'http://172.16.0.81:8008/elda-assets/images/green/16x16/Question.png')
+						.attr('src', 'http://localhost:8080/elda-assets/images/green/16x16/Question.png')
 						.next().fadeOut('slow');
 				});
 			
@@ -45,8 +45,8 @@
 					var lineHeight = parseFloat($(this).css('line-height'), 10);
 					$(this).scrollTop(skipLines * lineHeight);
 					var cm = CodeMirror.fromTextArea(this, {
-						basefiles: ["http://172.16.0.81:8008/elda-assets/scripts/codemirror/codemirror_base_sparql.js"],
-						stylesheet: "http://172.16.0.81:8008/elda-assets/css/sparql.css",
+						basefiles: ["http://localhost:8080/elda-assets/scripts/codemirror/codemirror_base_sparql.js"],
+						stylesheet: "http://localhost:8080/elda-assets/css/sparql.css",
 						textWrapping: false
 					});
 					$(cm.frame).load(function () {
@@ -60,11 +60,11 @@
 			
 			
 		});
-	</script><link rel="stylesheet" href="http://172.16.0.81:8008/elda-assets/css/html5reset-1.6.1.css" type="text/css">
-      <link rel="stylesheet" href="http://172.16.0.81:8008/elda-assets/css/jquery-ui.css" type="text/css">
-      <link rel="stylesheet" href="http://172.16.0.81:8008/elda-assets/css/smoothness/jquery-ui.css" type="text/css">
-      <link rel="stylesheet" href="http://172.16.0.81:8008/elda-assets/css/result.css" type="text/css">
-      <!--[if lt IE 9]><link rel="stylesheet" href="http://172.16.0.81:8008/elda-assets/css/ie.css" type="text/css"></link><![endif]-->
+	</script><link rel="stylesheet" href="http://localhost:8080/elda-assets/css/html5reset-1.6.1.css" type="text/css">
+      <link rel="stylesheet" href="http://localhost:8080/elda-assets/css/jquery-ui.css" type="text/css">
+      <link rel="stylesheet" href="http://localhost:8080/elda-assets/css/smoothness/jquery-ui.css" type="text/css">
+      <link rel="stylesheet" href="http://localhost:8080/elda-assets/css/result.css" type="text/css">
+      <!--[if lt IE 9]><link rel="stylesheet" href="http://localhost:8080/elda-assets/css/ie.css" type="text/css"></link><![endif]-->
    </head>
    <body>
       <div id="page">
@@ -89,9 +89,9 @@
 				};
 			</script><section class="view">
                <h1>View</h1>
-               <div class="info"><img class="open" src="http://172.16.0.81:8008/elda-assets/images/green/16x16/Question.png" alt="help"><p>Choose what information you want to view about each item. There are some pre-defined
+               <div class="info"><img class="open" src="http://localhost:8080/elda-assets/images/green/16x16/Question.png" alt="help"><p>Choose what information you want to view about each item. There are some pre-defined
                      views, but starred properties are always present no matter what the view. You can
-                     star properties by clicking on the <img src="http://172.16.0.81:8008/elda-assets/images/grey/16x16/Star.png" alt="star this property"> icon. The currently starred icons have a <img src="http://172.16.0.81:8008/elda-assets/images/green/16x16/Star.png" alt="unstar this property"> icon; clicking on it will unstar the property.
+                     star properties by clicking on the <img src="http://localhost:8080/elda-assets/images/grey/16x16/Star.png" alt="star this property"> icon. The currently starred icons have a <img src="http://localhost:8080/elda-assets/images/green/16x16/Star.png" alt="unstar this property"> icon; clicking on it will unstar the property.
                   </p>
                </div>
                <ul>
@@ -100,19 +100,15 @@
                   <li><a href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02.html?_view=description" title="switch to description view">description</a></li>
                </ul>
                <ul class="properties">
-                  <li><a rel="nofollow" title="always include this property" href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02.html?_properties=obsValue"><img src="http://172.16.0.81:8008/elda-assets/images/grey/16x16/Star.png" alt="star this property"> obs value</a></li>
-                  <li><a rel="nofollow" title="always include this property" href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02.html?_properties=comment"><img src="http://172.16.0.81:8008/elda-assets/images/grey/16x16/Star.png" alt="star this property"> comment</a></li>
-                  <li><a rel="nofollow" title="always include this property" href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02.html?_properties=type."><img src="http://172.16.0.81:8008/elda-assets/images/grey/16x16/Star.png" alt="star this property"> type</a></li>
-                  <li><a rel="nofollow" title="always include this property" href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02.html?_properties=isPrimaryTopicOf"><img src="http://172.16.0.81:8008/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is primary topic of</a></li>
-                  <li><a rel="nofollow" title="always include this property" href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02.html?_properties=unitMeasure"><img src="http://172.16.0.81:8008/elda-assets/images/grey/16x16/Star.png" alt="star this property"> unit measure</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02.html?_properties=isPrimaryTopicOf"><img src="http://localhost:8080/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is primary topic of</a></li>
                </ul>
             </section>
          </nav>
          <div id="result">
             <div class="panel">
                <header>
-                  <h1>CO-2017-01-02</h1>
-                  <p class="id"><a href="http://es.euskadi.eus/id/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02">http://es.euskadi.eus/id/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02</a></p>
+                  <h1>elda:missingEndpoint</h1>
+                  <p class="id"><a href="elda:missingEndpoint">elda:missingEndpoint</a></p>
                </header>
                <section id="search" style="display: none">
                   <form action="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento">
@@ -126,31 +122,15 @@
                            <td></td>
                         </tr>
                         <tr>
-                           <th class="label"><label for="obsValue">obs value</label></th>
-                           <td class="input"><input name="obsValue" id="obsValue" size="25"></td>
-                        </tr>
-                        <tr>
-                           <th class="label"><label for="comment">comment</label></th>
-                           <td class="input"><input name="comment" id="comment" size="25"></td>
-                        </tr>
-                        <tr>
-                           <th class="label"><label for="type.">type</label></th>
-                           <td class="input"><input name="type." id="type." size="25"></td>
-                        </tr>
-                        <tr>
                            <th class="label"><label for="isPrimaryTopicOf">is primary topic of</label></th>
                            <td class="input"><input name="isPrimaryTopicOf" id="isPrimaryTopicOf" size="25"></td>
-                        </tr>
-                        <tr>
-                           <th class="label"><label for="unitMeasure">unit measure</label></th>
-                           <td class="input"><input name="unitMeasure" id="unitMeasure" size="25"></td>
                         </tr>
                      </table>
                      <p><button type="submit">Search</button></p>
                   </form>
                </section>
                <section>
-                  <table id="w18245aab7">
+                  <table id="w242aab7">
                      <colgroup>
                         <col class="labelWidth">
                         <col class="autoWidth">
@@ -161,35 +141,9 @@
                         <td></td>
                         <td></td>
                      </tr>
-                     <tr class="obsValue">
-                        <th class="label"><a href="http://purl.org/linked-data/sdmx/2009/measure#obsValue">obs value</a></th>
-                        <td class="value">13</td>
-                        <td class="filter"><a rel="nofollow" title="more like this" href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento?obsValue=13"><img src="http://172.16.0.81:8008/elda-assets/images/grey/16x16/Search.png" alt="more like this"></a></td>
-                     </tr>
-                     <tr class="comment">
-                        <th class="label"><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></th>
-                        <td class="value">El valor de CO en una fecha determinada</td>
-                        <td class="filter"><a rel="nofollow" title="more like this" href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento?comment=El%20valor%20de%20CO%20en%20una%20fecha%20determinada"><img src="http://172.16.0.81:8008/elda-assets/images/grey/16x16/Search.png" alt="more like this"></a></td>
-                     </tr>
-                     <tr class="type">
-                        <th class="label"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></th>
-                        <td class="value nested" colspan="2">
-                           <table>
-                              <tr>
-                                 <td class="value"><a href="http://es.euskadi.eus/def/medio-ambiente/medicion/CO">CO</a></td>
-                                 <td class="filter"></td>
-                              </tr>
-                           </table>
-                        </td>
-                     </tr>
-                     <tr class="isPrimaryTopicOf">
+                     <tr class="isPrimaryTopicOf last">
                         <th class="label"><a href="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">is primary topic of</a></th>
-                        <td class="value"><a href="#w18245aa" title="view on this page">CO-2017-01-02.html</a></td>
-                        <td class="filter"></td>
-                     </tr>
-                     <tr class="unitMeasure last">
-                        <th class="label"><a href="http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure">unit measure</a></th>
-                        <td class="value"><a href="http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3">ug.m-3</a></td>
+                        <td class="value"><a href="#w242aa" title="view on this page">CO-2017-01-02.html</a></td>
                         <td class="filter"></td>
                      </tr>
                   </table>
