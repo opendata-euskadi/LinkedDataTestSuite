@@ -12,4 +12,22 @@
 	xmlns:bd="http://www.bigdata.com/rdf#"
 	xmlns:bds="http://www.bigdata.com/rdf/search#">
 
+<rdf:Description rdf:about="http://es.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09">
+	<ContractEconomicConditions xmlns="http://contsem.unizar.es/def/sector-publico/pproc#" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">3670496</ContractEconomicConditions>
+	<formalizedDate xmlns="http://contsem.unizar.es/def/sector-publico/pproc#" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-03-31</formalizedDate>
+	<managingDepartment xmlns="http://contsem.unizar.es/def/sector-publico/pproc#" rdf:resource="http://es.euskadi.eus/id/sector-publico/departamento/desarrollo-economico-e-infraestructuras"/>
+	<occupation xmlns="http://dbpedia.org/ontology/" xml:lang="es">jefe grupo inspector pesca</occupation>
+	<centro-organico xmlns="http://es.euskadi.eus/def/sector-publico/puestos-trabajo/contrato/" xml:lang="es">dir.pesca y acuicultura</centro-organico>
+	<categoria-retributiva xmlns="http://es.euskadi.eus/def/sector-publico/puestos-trabajo/contrato/" rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.0</categoria-retributiva>
+	<cod-centro-destino xmlns="http://es.euskadi.eus/def/sector-publico/puestos-trabajo/contrato/" xml:lang="es">gobierno vasco donostia easo 10</cod-centro-destino>
+	<cod-centro-organico xmlns="http://es.euskadi.eus/def/sector-publico/puestos-trabajo/contrato/" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">33300000000</cod-centro-organico>
+	<cod-departamento xmlns="http://es.euskadi.eus/def/sector-publico/puestos-trabajo/contrato/" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">3</cod-departamento>
+	<cod-puesto xmlns="http://es.euskadi.eus/def/sector-publico/puestos-trabajo/contrato/" rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3024.0</cod-puesto>
+	<dotacion xmlns="http://es.euskadi.eus/def/sector-publico/puestos-trabajo/contrato/" rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1</dotacion>
+	<fecha-descarga xmlns="http://es.euskadi.eus/def/sector-publico/puestos-trabajo/contrato/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-09</fecha-descarga>
+	<perfil-linguistico xmlns="http://es.euskadi.eus/def/sector-publico/puestos-trabajo/contrato/" rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</perfil-linguistico>
+	<rdf:type rdf:resource="http://purl.org/cerif/frapo/EmploymentContract"/>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-05-09</modified>
+</rdf:Description>
+
 </rdf:RDF>

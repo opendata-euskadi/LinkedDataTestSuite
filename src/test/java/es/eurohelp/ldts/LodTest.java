@@ -71,7 +71,8 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GETNO303.methodtypevalue();
 			String accept = MIMEtype.HTML.mimetypevalue();
-			String pathUri = "id/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02";
+			String pathUri = "id/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26";
+//			String pathUri = "id/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02";
 //			String pathUri = "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
 			String name = "GETResourceHTMLDocNoRedirect303";
 			String comment = "Recurso con pagina fea, pero sin seguir 303";
@@ -91,14 +92,20 @@ public class LodTest  {
 			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			String method = Methodtype.GET.methodtypevalue();
 			String accept = MIMEtype.HTML.mimetypevalue();
-			String pathUri = "id/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02";
+			String pathUri = "id/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26";
+//			String pathUri = "id/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02";
 //			String pathUri = "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
 			String name = "GETResourceHTMLDoc";
 			String comment = "Recurso con pagina fea";
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			assertTrue(requestBean.getResponseString().contains("<h1>CO-2017-01-02</h1>"));
+			assertTrue(requestBean.getResponseString().contains("ICAEstacion</a>"));
+//			assertTrue(requestBean.getResponseString().contains("<h1>CO-2017-01-02</h1>"));
+			
+			
+			
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -685,19 +692,11 @@ public class LodTest  {
 			String comment = "Consulta sobre datos y metadatos, parsear contenido";
 			Map<String, String> parameters = new HashMap<String, String>();
 			parameters.put("query",
-					"SELECT DISTINCT ?g ?p ?o "
-					+ "WHERE { "
-					+ "	?g ?p ?o ."
-					+ "	GRAPH ?g "
-					+ "		{"
-					+ "			?sub ?pred ?obj"
-					+ "		} "
-					+ "}");
+					"SELECT DISTINCT ?a ?b WHERE { ?a ?b ?g GRAPH ?g {?sub ?pred ?obj}}");
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
 			assertTrue(requestBean.getResponseString().contains(
-					"http://es.euskadi.eus/dataset/id/registro-de-contratos-del-sector-publico-de-euskadi,"
-					+ "http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://rdfs.org/ns/void#Dataset"));
+					"http://es.euskadi.eus/distribution/calidad-aire-en-euskadi-2017,http://www.w3.org/ns/sparql-service-description#namedGraph"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
