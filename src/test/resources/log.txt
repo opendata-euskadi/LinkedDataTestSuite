@@ -38,7 +38,7 @@ Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapp
 Uri: http://es.euskadi.eus:8008/sparql
 Method: POST
 Accept: text/csv
-Params: {query=SELECT DISTINCT ?g ?p ?o WHERE { 	?g ?p ?o .	GRAPH ?g 		{			?sub ?pred ?obj		} }}
+Params: {query=SELECT DISTINCT ?a ?b WHERE { ?a ?b ?g GRAPH ?g {?sub ?pred ?obj}}}
 Status: 200
 Test name: SPARQLPOSTNamedGraphsMetadataCSVContent
 Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/POSTtext_csvsparqlSPARQLPOSTNamedGraphsMetadataCSVContent
@@ -206,13 +206,13 @@ Test name: GETResourceDirectlyDataRDFXMLContent
 Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapplication_rdf+xmldata_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceDirectlyDataRDFXMLContent
 *********************
 *********************
-Uri: http://es.euskadi.eus:8008/id/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02
+Uri: http://es.euskadi.eus:8008/id/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26
 Method: GET
 Accept: text/html
 Params: {}
 Status: 200
 Test name: GETResourceHTMLDoc
-Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmlid_medio-ambiente_calidad-del-aire_elemento_CO-2017-01-02GETResourceHTMLDoc
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmlid_medio-ambiente_calidad-del-aire_elemento_ICAEstacion-2017-01-26GETResourceHTMLDoc
 *********************
 *********************
 Uri: http://es.euskadi.eus:8008/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.ttl
@@ -288,14 +288,14 @@ Test name: GETResourceRDFXMLContent
 Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapplication_rdf+xmlid_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceRDFXMLContent
 *********************
 *********************
-Uri: http://es.euskadi.eus:8008/id/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02
+Uri: http://es.euskadi.eus:8008/id/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26
 Method: GETNO303
 Accept: text/html
 Params: {}
-Location: http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02
+Location: http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26
 Status: 303
 Test name: GETResourceHTMLDocNoRedirect303
-Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETNO303text_htmlid_medio-ambiente_calidad-del-aire_elemento_CO-2017-01-02GETResourceHTMLDocNoRedirect303
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETNO303text_htmlid_medio-ambiente_calidad-del-aire_elemento_ICAEstacion-2017-01-26GETResourceHTMLDocNoRedirect303
 *********************
 *********************
 Uri: http://es.euskadi.eus:8008/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.rdf
