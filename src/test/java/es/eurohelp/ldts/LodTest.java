@@ -644,26 +644,7 @@ public class LodTest  {
 			e.printStackTrace();
 		}
 	}
-	
-	@Test
-	public final void GETOntologyRDFXMLContent (){ 
-		try {
-			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-			String method = Methodtype.GET.methodtypevalue();
-			String accept = MIMEtype.RDFXML.mimetypevalue();
-//			String pathUri = "def/turismo/alojamiento"; // Segun la NTI
-			String pathUri = "def/euskadipedia.owl"; // mas realista?
-			String name = "GETOntologyRDFXMLContent";
-			String comment = "Obtener ontologia en RDF/XML, parsear contenido";
-			Map<String, String> parameters = new HashMap<String, String>();
-			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
-			HttpManager.getInstance().doRequest(requestBean);
-			assertTrue(requestBean.getResponseString().contains("<owl:Ontology rdf:about=\"http://euskadi.eus/def/euskadipedia\">"));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-	
+		
 	@Test
 	public final void GETOntologyRDFXMLContentFileExtensionOWL (){ 
 		try {
@@ -674,6 +655,28 @@ public class LodTest  {
 			String pathUri = "def/euskadipedia.owl"; // mas realista?
 			String name = "GETOntologyRDFXMLContentFileExtensionOWL ";
 			String comment = "Obtener ontologia en RDF/XML con .owl, parsear contenido";
+			Map<String, String> parameters = new HashMap<String, String>();
+			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
+			HttpManager.getInstance().doRequest(requestBean);
+			assertTrue(requestBean.getResponseString().contains("http://euskadi.eus/def/euskadipedia/0.0.1"));
+			
+//			assertTrue(requestBean.getResponseString().contains("<owl:Ontology rdf:about=\"http://euskadi.eus/def/euskadipedia\">"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public final void GETOntologyRDFXMLContent (){ 
+		try {
+			String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+			String method = Methodtype.GET.methodtypevalue();
+			String accept = MIMEtype.RDFXML.mimetypevalue();
+//			String accept = MIMEtype.HTML.mimetypevalue();
+//			String pathUri = "def/turismo/alojamiento"; // Segun la NTI
+			String pathUri = "def/euskadipedia"; // mas realista?
+			String name = "GETOntologyRDFXMLContent";
+			String comment = "Obtener ontologia en RDF/XML, parsear contenido";
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
