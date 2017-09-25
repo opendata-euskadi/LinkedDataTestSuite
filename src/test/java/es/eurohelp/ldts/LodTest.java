@@ -658,9 +658,8 @@ public class LodTest  {
 			Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
-			assertTrue(requestBean.getResponseString().contains("http://euskadi.eus/def/euskadipedia/0.0.1"));
-			
-//			assertTrue(requestBean.getResponseString().contains("<owl:Ontology rdf:about=\"http://euskadi.eus/def/euskadipedia\">"));
+//			assertTrue(requestBean.getResponseString().contains("http://euskadi.eus/def/euskadipedia/0.0.1"));
+			assertTrue(requestBean.getResponseString().contains("<owl:Ontology rdf:about=\"http://euskadi.eus/def/euskadipedia\">"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
