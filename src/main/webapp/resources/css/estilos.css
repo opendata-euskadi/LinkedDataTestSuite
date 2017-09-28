@@ -1,0 +1,57 @@
+* {
+	font-family: 'Bellefair', serif;
+}
+
+body {
+	font-family: 'Bellefair', serif;
+}
+
+.pageHeader {
+	float: left;
+	clear: none;
+	height: 20%;
+	width: 100%;
+	padding-bottom: 5%;
+}
+
+.pageContent {
+	margin-top: 0%;
+	margin-bottom: 0%;
+	margin-right: 15%;
+	margin-left: 15%;
+	float:center;
+}
+
+#Pruebas {
+	display: grid;
+}
+
+#Parametros {
+	display: grid;
+}
+
+.btn-group, btn-group-vertical {
+	float: center;
+	display: block;
+	padding-bottom: 4%;
+	padding-top: 4%;
+}
+
+
+.dropdown {
+	padding-right: 2%;
+}
+
+.btn-primary {
+	padding-bottom: 1%;
+	padding-top: 1%;
+}
+
+.PruebasCategorias {
+	padding-bottom: 2%;
+	display: inline-flex;
+}
+
+.parametro{
+	padding-bottom: 2%;
+}

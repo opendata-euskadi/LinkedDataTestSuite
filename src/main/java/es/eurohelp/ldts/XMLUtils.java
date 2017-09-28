@@ -23,7 +23,7 @@ public class XMLUtils {
 	
 	String name, pathUri, method, baseUri, accept, comment, parameters;
 	
-	File xmlFile = new File("C:/Users/ssantamaria/git/LinkedDataTestSuite/src/main/resources/templates/test_template.xml");
+	File xmlFile = new File("C:/Users/dmuchuari/git/LinkedDataTestSuite/src/main/resources/templates/test_template.xml");
 	
 	/**
 	 * 

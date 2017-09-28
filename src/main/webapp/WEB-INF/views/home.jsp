@@ -2,6 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <spring:url var="logo" value="/resources/img/opendataeuskadi.jpg"/>
+<spring:url var="estilos" value="/resources/css/estilos.css"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,6 +21,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
 	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
+	<link rel="stylesheet" type="text/css" href="${estilos}">
 </head>
 <body>
 	<div class="row">
@@ -30,6 +32,11 @@
 	<div class="row">
 		<div class="col-xs-12 text-center">
 			<a class="btn btn-primary" href="<c:url value='/test'/>">Iniciar pruebas</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 text-center">
+			<a class="btn btn-primary" href="<c:url value='/junit/'/>">Definir / Modificar Junit</a>
 		</div>
 	</div>
 </body>
