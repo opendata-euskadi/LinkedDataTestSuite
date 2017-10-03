@@ -4,7 +4,7 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <spring:url var="logo" value="/resources/img/opendataeuskadi.jpg" />
-<spring:url var="gestor" value="/resources/js/GestorJunitEditor.js" />
+<spring:url var="gestor" value="/resources/js/GestorJunitCreator.js" />
 <spring:url var="estilos" value="/resources/css/estilos.css" />
 <!DOCTYPE html>
 <html>
@@ -66,61 +66,80 @@
 			<c:url value="/junit/procesarFormulario" var="destino" />
 			<form:form method="POST" action="${destino}" commandName="junit"
 				class="form-group">
-				Nombre: <form:input path="comentario" type="text"
-					class="form-control" /> 
-				Comentario:<form:input path="comentario" type="text"
-					class="form-control" /> 
-				Base Uri: <form:input path="baseUri" type="text"
-					class="form-control" /> 
-				Path Uri: <form:input path="pathUri" type="text"
-					class="form-control" /> 
-				Method: <form:select path="method" class="form-control"
-					id="exampleFormControlSelect1">
-					<form:option value="-">-</form:option>
-					<form:option value="GET">GET</form:option>
-					<form:option value="POST">POST</form:option>
-					<form:option value="GETN0303">GETNO303</form:option>
-				</form:select> 
-				Accept: 
+				Nombre: <form:input path="nombre" type="text" class="form-control" />
+				<p>
+					<form:errors path="nombre" cssClass="campoConError" />
+				<p>
+					Comentario:
+					<form:input path="comentario" type="text" class="form-control" />
+					<form:errors path="comentario" cssClass="campoConError" />
+				<p>
+					Base Uri:
+					<form:input path="baseUri" type="text" class="form-control" />
+					<form:errors path="baseUri" cssClass="campoConError" />
+				<p>
+					Path Uri:
+					<form:input path="pathUri" type="text" class="form-control" />
+					<form:errors path="pathUri" cssClass="campoConError" />
+				<p>
+					Method:
+					<form:select path="method" class="form-control"
+						id="exampleFormControlSelect1">
+						<form:option value="-">-</form:option>
+						<form:option value="GET">GET</form:option>
+						<form:option value="POST">POST</form:option>
+						<form:option value="GETN0303">GETNO303</form:option>
+					</form:select>
+					<form:errors path="method" cssClass="campoConError" />
+				<p>
+					Accept:
 					<form:select path="accept" class="selectpicker form-control"
-					id="exampleFormControlSelect2">
-					<form:option value="-">-</form:option>
-					<form:option value="CSV">CSV</form:option>
-					<form:option value="RDFXML">RDF/XML</form:option>
-					<form:option value="Turtle">Turtle</form:option>
-					<form:option value="TriX">TriX</form:option>
-					<form:option value="TriG">TriG</form:option>
-					<form:option value="JSONLD">JSON/LD</form:option>
-					<form:option value="NQUADS">NQuads</form:option>
-					<form:option value="NTriples">NTriples</form:option>
-					<form:option value="N3">N3</form:option>
-					<form:option value="RDFJSON">RDF/JSON</form:option>
-					<form:option value="BinaryRDF">BinaryRDF</form:option>
-					<form:option value="SPARQLXMLResultsFormat">SPARQLXMLResultsFormat</form:option>
-					<form:option value="SPARQLJSONResultsFormat">SPARQLJSONResultsFormat</form:option>
-					<form:option value="SPARQLBooleanResults">SPARQLBooleanResults</form:option>
-					<form:option value="SPARQLBinaryResults">SPARQLBinaryResults</form:option>
-					<form:option value="TABVAL">TABVAL</form:option>
-					<form:option value="HTML">HTML</form:option>
-				</form:select> Añadir prueba:
+						id="exampleFormControlSelect2">
+						<form:option value="-">-</form:option>
+						<form:option value="CSV">CSV</form:option>
+						<form:option value="RDFXML">RDF/XML</form:option>
+						<form:option value="Turtle">Turtle</form:option>
+						<form:option value="TriX">TriX</form:option>
+						<form:option value="TriG">TriG</form:option>
+						<form:option value="JSONLD">JSON/LD</form:option>
+						<form:option value="NQUADS">NQuads</form:option>
+						<form:option value="NTriples">NTriples</form:option>
+						<form:option value="N3">N3</form:option>
+						<form:option value="RDFJSON">RDF/JSON</form:option>
+						<form:option value="BinaryRDF">BinaryRDF</form:option>
+						<form:option value="SPARQLXMLResultsFormat">SPARQLXMLResultsFormat</form:option>
+						<form:option value="SPARQLJSONResultsFormat">SPARQLJSONResultsFormat</form:option>
+						<form:option value="SPARQLBooleanResults">SPARQLBooleanResults</form:option>
+						<form:option value="SPARQLBinaryResults">SPARQLBinaryResults</form:option>
+						<form:option value="TABVAL">TABVAL</form:option>
+						<form:option value="HTML">HTML</form:option>
+					</form:select>
+					<form:errors path="accept" cssClass="campoConError" />
+				<p>Añadir prueba:
 				<div id="Pruebas">
 					<div class="PruebasCategorias" id="pruebasSelectorTipoPrueba1">
-						<%-- 					<form:select path="tipoPrueba" class="selectpicker form-control"
-							id="1" onchange="setTipoAssert(id)">
-							<form:option value="-">-</form:option>
-							<form:option value="Equals">Equals</form:option>
-							<form:option value="NotEquals">Not Equals</form:option>
-							<form:option value="AssertTrue">AssertTrue</form:option>
-							<form:option value="AssertFalse">AssertFalse</form:option>
-						</form:select>  <form:select path="objetoPrueba" class="selectpicker form-control"
-							id="pruebaSelectorArgumento1">
-							<form:option value="-">-</form:option>
-							<form:option value="Equals" disabled="true">requestBean.getStatus()</form:option>
-							<form:option value="Assert" disabled="true">requestBean.getLocation()</form:option>
-							<form:option value="Assert" disabled="true">requestBean.getResponseString()</form:option>
+						<form:select path="tipoPrueba" class="selectpicker form-control"
+							id="1" onchange="setTipoAssert(id)" multiple="false">
+							<form:option value="-" name="-">-</form:option>
+							<form:option value="Equals" name="Equals">Equals</form:option>
+							<form:option value="NotEquals" name="AssertNotEquals">Not Equals</form:option>
+							<form:option value="AssertTrue" name="AssertTrue">AssertTrue</form:option>
+							<form:option value="AssertFalse" name="AssertFalse">AssertFalse</form:option>
 						</form:select>
-						<!--  <input type="text" class="form-control"
-								placeholder="Introduce valor parametro"> --> --%>
+						<form:select path="objetoPrueba" class="selectpicker form-control"
+							id="pruebaSelectorArgumento1" multiple="false">
+							<form:option id="-" value="-" name="-">-</form:option>
+							<form:option id="Equals" value="requestBean.getStatus()"
+								name="requestBean.getStatus()" disabled="true">requestBean.getStatus()</form:option>
+							<form:option id="Assert" value="requestBean.getLocation()"
+								name="requestBean.getLocation()" disabled="true">requestBean.getLocation()</form:option>
+							<form:option id="Assert" value="requestBean.getResponseString()"
+								name="requestBean.getResponseString()" disabled="true">requestBean.getResponseString()</form:option>
+						</form:select>
+						<p>
+							<form:errors path="objetoPrueba" cssClass="campoConError" />
+						<p>
+							<form:errors path="tipoPrueba" cssClass="campoConError" />
 					</div>
 				</div>
 				<div id="botonAnadirPruebas">
@@ -129,7 +148,7 @@
 						<span class="glyphicon glyphicon-plus"></span>
 					</button>
 				</div>
-				<%-- <div id="Parametros">
+				<div id="Parametros">
 					Añadir parámetro:
 					<div id="parametro1" class="parametro"
 						style="display: inline-flex;">
@@ -137,14 +156,19 @@
 							placeholder="Introduce su nombre" />
 						<form:input path="valorParametro" type="text" class="form-control"
 							placeholder="Introduce su valor" />
-					</div> 
+					</div>
+					<p>
+						<form:errors path="idParametro" cssClass="campoConError" />
+					<p>
+						<form:errors path="valorParametro" cssClass="campoConError" />
 				</div>
 				<div id="botonAnadirParametros">
 					<button type="button" class="btn btn-primary btn-circle"
 						onclick="anadirParametro()">
 						<span class="glyphicon glyphicon-plus"></span>
 					</button>
-				</div>--%>
+				</div>
+				<p>
 				<div class="text-center">
 					<button type="submit" class="btn btn-primary btn-xs">
 						Guardar <span class="glyphicon glyphicon-floppy-disk"></span>

@@ -8,24 +8,24 @@ function anadirPrueba() {
 					"<div class=\"PruebasCategorias\" id=\"pruebasSelectorTipoPrueba"
 							+ numPruebas
 							+ "\">"
-							+ "<select class=\"selectpicker form-control\""
+							+ "<select name=\"tipoPrueba\" class=\"selectpicker form-control\""
 							+ "id=\""
 							+ numPruebas
 							+ "\" onchange=\"setTipoAssert(id)\">"
-							+ "<option>-</option>"
-							+ "<option>Equals</option>"
-							+ "<option>Not Equals</option>"
-							+ "<option>AssertTrue</option>"
-							+ "<option>AssertFalse</option>"
+							+ "<option value=\"-\" name=\"-\">-</option>"
+							+ "<option value=\"Equals\" name=\"Equals\">Equals</option>"
+							+ "<option value=\"Not Equals\" name=\"Not Equals\">Not Equals</option>"
+							+ "<option value=\"AssertTrue\" name=\"AssertTrue\">AssertTrue</option>"
+							+ "<option value=\"AssertFalse\" name=\"AssertFalse\">AssertFalse</option>"
 							+ "</select>"
-							+ "<select class=\"selectpicker form-control\""
+							+ "<select name=\"objetoPrueba\" class=\"selectpicker form-control\""
 							+ "id=\"pruebaSelectorArgumento"
 							+ numPruebas
 							+ "\">"
-							+ "<option>-</option>"
-							+ "<option value=\"Equals\" disabled=\"true\">requestBean.getStatus()</option>"
-							+ "<option value=\"Assert\" disabled=\"true\">requestBean.getLocation()</option>"
-							+ "<option value=\"Assert\" disabled=\"true\">requestBean.getResponseString()</option>"
+							+ "<option id=\"-\" value=\"-\" name=\"-\">-<option>"
+							+ "<option id=\"Equals\" value=\"requestBean.getStatus()\" name=\"requestBean.getStatus()\" disabled=\"true\">requestBean.getStatus()</option>"
+							+ "<option id=\"Assert\" value=\"requestBean.getLocation()\" name=\"requestBean.getStatus()\" disabled=\"true\">requestBean.getLocation()</option>"
+							+ "<option id=\"Assert\" value=\"requestBean.getResponseString()\" name=\"requestBean.getResponseString()\" disabled=\"true\">requestBean.getResponseString()</option>"
 							+ "</select>" + "</div>");
 	if (numPruebas == 2) {
 		var objTo = $("#botonAnadirPruebas")
@@ -59,34 +59,38 @@ function setTipoAssert(id) {
 	// Parte correspondiente a los asserts
 	if (elementoSeleccionado == "AssertTrue"
 			|| elementoSeleccionado == "AssertFalse") {
-		$("#pruebaSelectorArgumento" + id).children("option[value^=Assert]").prop(
+		$("#pruebaSelectorArgumento" + id).children("option[id^=Assert]").prop(
 				"disabled", false);
 		pruebaElement
 				.append("<select class=\"selectpicker form-control\""
-						+ "id=\"valorFormaComparacionAssert"
+						+ "name=\"valorFormaComparacionAssert\" id=\"valorFormaComparacionAssert"
 						+ id
 						+ "\">"
 						+ "<option>-</option>"
 						+ "<option>Contains</option>"
 						+ "<option>Not contains</option>"
 						+ "</select>"
-						+ "<input type=\"text\" class=\"form-control\" id=\"valorComparacionAssert"
-						+ id + "\" placeholder=\"Elemento a probar\">");
+						+ "<input type=\"text\" class=\"form-control\" name=\"valorComparacionAssert\" id=\"valorComparacionAssert"
+						+ id + "\" placeholder=\"Elemento a probar\">" + "<p>"
+						+ "<form:errors path=\"valorComparacionAssert\""
+						+ "cssClass=\"campoConError\" />" + "<p>"
+						+ "<form:errors path=\"formaComparacionAssert\""
+						+ "cssClass=\"campoConError\" />");
 		console.log("entra");
 		pruebaSelectorArgumento.prop("disabled", false)
 		// Parte correspondiente a los equals
 	} else if (elementoSeleccionado == "Equals"
 			|| elementoSeleccionado == "Not Equals") {
-		$("#pruebaSelectorArgumento" + id).children("option[value^=Equals]").prop(
+		$("#pruebaSelectorArgumento" + id).children("option[id^=Equals]").prop(
 				"disabled", false);
 		pruebaElement
-				.append("<input type=\"text\" class=\"form-control\" id=\"valorComparacionEquals"
-						+ id + "\" placeholder=\"Introduce valor esperado\">");
-	} 
-		//else {
-//		$("#valorComparacion" + id).remove();
-//		pruebaSelectorArgumento.prop("disabled", true);
-//	}
+				.append("<input type=\"text\" class=\"form-control\" name=\"valorComparacionEquals\" id=\"valorComparacionEquals"
+						+ id
+						+ "\" placeholder=\"Introduce valor esperado\">"
+						+ "<p>"
+						+ "<form:errors path=\"valorComparacionEquals\""
+						+ "cssClass=\"campoConError\" />");
+	}
 }
 
 function reiniciarBloquePruebas(id) {
@@ -95,11 +99,11 @@ function reiniciarBloquePruebas(id) {
 			.remove();
 	elementoComparacionAnterior = $("#valorComparacionEquals" + id).remove();
 	$("#pruebaSelectorArgumento" + id).prop('selectedIndex', 0);
-	$("#pruebasSelectorTipoPruebas" + id).children("option[value^=Equals]").prop(
+	$("#pruebasSelectorTipoPruebas" + id).children("option[id^=Equals]").prop(
 			"disabled", true);
-	$("#pruebaSelectorArgumento" + id).children("option[value^=Equals]").prop(
+	$("#pruebaSelectorArgumento" + id).children("option[id^=Equals]").prop(
 			"disabled", true);
-	$("#pruebaSelectorArgumento" + id).children("option[value^=Assert]").prop(
+	$("#pruebaSelectorArgumento" + id).children("option[id^=Assert]").prop(
 			"disabled", true);
 }
 
@@ -110,9 +114,9 @@ function anadirParametro() {
 					"<div id=\"parametro"
 							+ numParametros
 							+ "\" class=\"parametro\" style=\"display: inline-flex;\">"
-							+ "<input type=\"text\" class=\"form-control\""
+							+ "<input type=\"text\" id=\"idParametro\" name=\"idParametro\" class=\"form-control\""
 							+ "placeholder=\"Introduce su nombre\"><input "
-							+ "type=\"text\" class=\"form-control\""
+							+ "type=\"text\" id=\"valorParametro\" name=\"valorParametro\" class=\"form-control\""
 							+ "placeholder=\"Introduce su valor\">" + "</div>");
 	if (numParametros == 2) {
 		var objTo = $("#botonAnadirParametros")

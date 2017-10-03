@@ -10,19 +10,40 @@ public class Junit {
 	private String pathUri;
 	private String accept;
 	private String method;
-	private HashMap<String, String> listaParametros;
-	private ArrayList<String> listaPruebas;
+	private String[] idParametro;
+	private String[] valorParametro;
+	private String[] tipoPrueba;
+	private String[] objetoPrueba;
+	private String[] valorComparacionEquals;
+	private String[] valorComparacionAssert;
+	private String[] valorFormaComparacionAssert;
+
+	public String[] getObjetoPrueba() {
+		return objetoPrueba;
+	}
 
 	public String getAccept() {
 		return accept;
+	}
+
+	public String[] getValorComparacionAssert() {
+		return valorComparacionAssert;
+	}
+
+	public String[] getValorComparacionEquals() {
+		return valorComparacionEquals;
+	}
+
+	public String[] getValorFormaComparacionAssert() {
+		return valorFormaComparacionAssert;
 	}
 
 	public String getBaseUri() {
 		return baseUri;
 	}
 
-	public HashMap<String, String> getListaParametros() {
-		return listaParametros;
+	public String[] getIdParametro() {
+		return idParametro;
 	}
 
 	public String getMethod() {
@@ -41,8 +62,16 @@ public class Junit {
 		return pathUri;
 	}
 
-	public ArrayList<String> getListaPruebas() {
-		return listaPruebas;
+	public String[] getValorParametro() {
+		return valorParametro;
+	}
+
+	public String[] getTipoPrueba() {
+		return tipoPrueba;
+	}
+
+	public void setTipoPrueba(String[] tipoPrueba) {
+		this.tipoPrueba = tipoPrueba;
 	}
 
 	public void setAccept(String accept) {
@@ -57,12 +86,8 @@ public class Junit {
 		this.comentario = comentario;
 	}
 
-	public void setListaParametros(HashMap<String, String> listaParametros) {
-		this.listaParametros = listaParametros;
-	}
-
-	public void setListaPruebas(ArrayList<String> listaPruebas) {
-		this.listaPruebas = listaPruebas;
+	public void setIdParametro(String[] idParametro) {
+		this.idParametro = idParametro;
 	}
 
 	public void setMethod(String method) {
@@ -77,4 +102,24 @@ public class Junit {
 		this.pathUri = pathUri;
 	}
 
+	public void setValorParametro(String[] valorParametro) {
+		this.valorParametro = valorParametro;
+	}
+
+	public void setObjetoPrueba(String[] objetoPrueba) {
+		this.objetoPrueba = objetoPrueba;
+	}
+
+	public void setValorComparacionAssert(String[] valorComparacionAssert) {
+		this.valorComparacionAssert = valorComparacionAssert;
+	}
+
+	public void setValorComparacionEquals(String[] valorComparacionEquals) {
+		this.valorComparacionEquals = valorComparacionEquals;
+	}
+
+	public void setValorFormaComparacionAssert(String[] valorFormaComparacionAssert) {
+		this.valorFormaComparacionAssert = valorFormaComparacionAssert;
+	}
+	
 }

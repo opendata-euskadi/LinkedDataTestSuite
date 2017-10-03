@@ -17,9 +17,9 @@ body {
 .pageContent {
 	margin-top: 0%;
 	margin-bottom: 0%;
-	margin-right: 15%;
-	margin-left: 15%;
-	float:center;
+	margin-right: 20%;
+	margin-left: 20%;
+	float: center;
 }
 
 #Pruebas {
@@ -37,7 +37,6 @@ body {
 	padding-top: 4%;
 }
 
-
 .dropdown {
 	padding-right: 2%;
 }
@@ -52,6 +51,10 @@ body {
 	display: inline-flex;
 }
 
-.parametro{
+.parametro {
 	padding-bottom: 2%;
+}
+
+.campoConError {
+	color: red;
 }

@@ -1,6 +1,6 @@
 package es.eurohelp.ldts.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.support.SessionStatus;
 
 import es.eurohelp.ldts.Junit;
+import es.eurohelp.ldts.XML;
 import es.eurohelp.ldts.validator.JunitDataValidator;
 
 @Controller
@@ -30,10 +30,13 @@ public class JunitEditorController {
 
 	@RequestMapping(value = "/procesarFormulario", method = RequestMethod.POST)
 	public String procesarFormularioValidado(@Validated Junit junit, BindingResult result) {
-
 		if (result.hasErrors()) {
+			System.err.println("ERRRRRRRRRRRRRRRRRRRRRRRRRRROR");
 			return "junitCreator";
 		} else {
+			System.out.println("TIO NO TIENE ERRORES");
+			XML xml = new XML();
+			xml.createFile(junit);
 			return "home";
 		}
 	}
