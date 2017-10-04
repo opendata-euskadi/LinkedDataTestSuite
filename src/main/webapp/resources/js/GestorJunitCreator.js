@@ -13,19 +13,19 @@ function anadirPrueba() {
 							+ numPruebas
 							+ "\" onchange=\"setTipoAssert(id)\">"
 							+ "<option value=\"-\" name=\"-\">-</option>"
-							+ "<option value=\"Equals\" name=\"Equals\">Equals</option>"
-							+ "<option value=\"Not Equals\" name=\"Not Equals\">Not Equals</option>"
-							+ "<option value=\"AssertTrue\" name=\"AssertTrue\">AssertTrue</option>"
-							+ "<option value=\"AssertFalse\" name=\"AssertFalse\">AssertFalse</option>"
+							+ "<option value=\"assertEquals\" name=\"assertEquals\">Equals</option>"
+							+ "<option value=\"assertNotEquals\" name=\"assertNotEquals\">Not Equals</option>"
+							+ "<option value=\"assertTrue\" name=\"assertTrue\">AssertTrue</option>"
+							+ "<option value=\"assertFalse\" name=\"assertFalse\">AssertFalse</option>"
 							+ "</select>"
 							+ "<select name=\"objetoPrueba\" class=\"selectpicker form-control\""
 							+ "id=\"pruebaSelectorArgumento"
 							+ numPruebas
 							+ "\">"
-							+ "<option id=\"-\" value=\"-\" name=\"-\">-<option>"
+							+ "<option id=\"-\" value=\"-\" name=\"-\">-</option>"
 							+ "<option id=\"Equals\" value=\"requestBean.getStatus()\" name=\"requestBean.getStatus()\" disabled=\"true\">requestBean.getStatus()</option>"
-							+ "<option id=\"Assert\" value=\"requestBean.getLocation()\" name=\"requestBean.getStatus()\" disabled=\"true\">requestBean.getLocation()</option>"
-							+ "<option id=\"Assert\" value=\"requestBean.getResponseString()\" name=\"requestBean.getResponseString()\" disabled=\"true\">requestBean.getResponseString()</option>"
+							+ "<option id=\"Boolean\" value=\"requestBean.getLocation()\" name=\"requestBean.getStatus()\" disabled=\"true\">requestBean.getLocation()</option>"
+							+ "<option id=\"Boolean\" value=\"requestBean.getResponseString()\" name=\"requestBean.getResponseString()\" disabled=\"true\">requestBean.getResponseString()</option>"
 							+ "</select>" + "</div>");
 	if (numPruebas == 2) {
 		var objTo = $("#botonAnadirPruebas")
@@ -59,7 +59,7 @@ function setTipoAssert(id) {
 	// Parte correspondiente a los asserts
 	if (elementoSeleccionado == "AssertTrue"
 			|| elementoSeleccionado == "AssertFalse") {
-		$("#pruebaSelectorArgumento" + id).children("option[id^=Assert]").prop(
+		$("#pruebaSelectorArgumento" + id).children("option[id^=Boolean]").prop(
 				"disabled", false);
 		pruebaElement
 				.append("<select class=\"selectpicker form-control\""
@@ -67,8 +67,8 @@ function setTipoAssert(id) {
 						+ id
 						+ "\">"
 						+ "<option>-</option>"
-						+ "<option>Contains</option>"
-						+ "<option>Not contains</option>"
+						+ "<option>contains</option>"
+						+ "<option>!contains</option>"
 						+ "</select>"
 						+ "<input type=\"text\" class=\"form-control\" name=\"valorComparacionAssert\" id=\"valorComparacionAssert"
 						+ id + "\" placeholder=\"Elemento a probar\">" + "<p>"
@@ -79,8 +79,8 @@ function setTipoAssert(id) {
 		console.log("entra");
 		pruebaSelectorArgumento.prop("disabled", false)
 		// Parte correspondiente a los equals
-	} else if (elementoSeleccionado == "Equals"
-			|| elementoSeleccionado == "Not Equals") {
+	} else if (elementoSeleccionado.includes("Equals")
+			|| elementoSeleccionado.includes("Not Equals")) {
 		$("#pruebaSelectorArgumento" + id).children("option[id^=Equals]").prop(
 				"disabled", false);
 		pruebaElement
@@ -103,7 +103,7 @@ function reiniciarBloquePruebas(id) {
 			"disabled", true);
 	$("#pruebaSelectorArgumento" + id).children("option[id^=Equals]").prop(
 			"disabled", true);
-	$("#pruebaSelectorArgumento" + id).children("option[id^=Assert]").prop(
+	$("#pruebaSelectorArgumento" + id).children("option[id^=Boolean]").prop(
 			"disabled", true);
 }
 

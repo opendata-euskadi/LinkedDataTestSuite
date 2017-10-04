@@ -36,7 +36,12 @@
 	</div>
 	<div class="row">
 		<div class="col-xs-12 text-center">
-			<a class="btn btn-primary" href="<c:url value='/junit/'/>">Definir / Modificar Junit</a>
+			<a class="btn btn-primary" href="<c:url value='/junitcreator/'/>">Definir Junit</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 text-center">
+			<a class="btn btn-primary" href="<c:url value='/junitdeletor/'/>">Eliminar Junit</a>
 		</div>
 	</div>
 </body>

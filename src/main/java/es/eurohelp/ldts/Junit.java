@@ -1,7 +1,5 @@
 package es.eurohelp.ldts;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Junit {
 	private String nombre;

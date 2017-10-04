@@ -51,7 +51,7 @@
   <body class="container-fluid">
   <header class="col-xs-12 text-center">
     <h1>Linked Data Test Suite Report</h1>
-    <h2>28-sep-2017 09:17:59</h2>
+    <h2>04-oct-2017 16:32:01</h2>
   </header>
 
     <hr/>
@@ -70,9 +70,6 @@
     GET:
     
 
-    				[<a href=#0>GETResourceRDFXMLContent</a>]
-
-
 	<table class="table table-hover">
 	   	<thead>
 	   	<tr>
@@ -89,16 +86,6 @@
    	<tbody>
    	
    	<form action="run" method="post">
-   		<tr>
-   			<td><input type="checkbox" name="test" value="GETResourceRDFXMLContent" unchecked></td>
-	   		<td id=0>GETResourceRDFXMLContent</td>
-	   		<td>Obtener recurso en RDF/XML, parsear contenido</td>
-	   		<td><a href=http://es.euskadi.eus:8008/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09>http://es.euskadi.eus:8008/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</a></td>
-	   		<td>GET</td>
-	   		<td>application/rdf+xml</td>
-	   			<td style="color:green; text-align: center;"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span></td>
-	   		<td style="text-align: center;"><a style="color:black;" href="/static/GETapplication_rdf+xmlid_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceRDFXMLContent"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a></td>
-    	</tr>
     
     </tbody>
     

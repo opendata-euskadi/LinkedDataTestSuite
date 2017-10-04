@@ -63,7 +63,7 @@
 			</nav>
 		</div>
 		<div class="pageContent">
-			<c:url value="/junit/procesarFormulario" var="destino" />
+			<c:url value="/junitcreator/procesarFormulario" var="destino" />
 			<form:form method="POST" action="${destino}" commandName="junit"
 				class="form-group">
 				Nombre: <form:input path="nombre" type="text" class="form-control" />
@@ -120,20 +120,20 @@
 					<div class="PruebasCategorias" id="pruebasSelectorTipoPrueba1">
 						<form:select path="tipoPrueba" class="selectpicker form-control"
 							id="1" onchange="setTipoAssert(id)" multiple="false">
-							<form:option value="-" name="-">-</form:option>
-							<form:option value="Equals" name="Equals">Equals</form:option>
-							<form:option value="NotEquals" name="AssertNotEquals">Not Equals</form:option>
-							<form:option value="AssertTrue" name="AssertTrue">AssertTrue</form:option>
-							<form:option value="AssertFalse" name="AssertFalse">AssertFalse</form:option>
+							<form:option value="-" name="-" selected="false">-</form:option>
+							<form:option value="assertEquals" name="assertEquals">Equals</form:option>
+							<form:option value="assertNotEquals" name="assertNotEquals">Not Equals</form:option>
+							<form:option value="assertTrue" name="assertTrue">AssertTrue</form:option>
+							<form:option value="assertFalse" name="assertFalse">AssertFalse</form:option>
 						</form:select>
 						<form:select path="objetoPrueba" class="selectpicker form-control"
 							id="pruebaSelectorArgumento1" multiple="false">
-							<form:option id="-" value="-" name="-">-</form:option>
+							<form:option id="-" value="-" name="-" selected="false">-</form:option>
 							<form:option id="Equals" value="requestBean.getStatus()"
 								name="requestBean.getStatus()" disabled="true">requestBean.getStatus()</form:option>
-							<form:option id="Assert" value="requestBean.getLocation()"
+							<form:option id="Boolean" value="requestBean.getLocation()"
 								name="requestBean.getLocation()" disabled="true">requestBean.getLocation()</form:option>
-							<form:option id="Assert" value="requestBean.getResponseString()"
+							<form:option id="Boolean" value="requestBean.getResponseString()"
 								name="requestBean.getResponseString()" disabled="true">requestBean.getResponseString()</form:option>
 						</form:select>
 						<p>
@@ -156,11 +156,12 @@
 							placeholder="Introduce su nombre" />
 						<form:input path="valorParametro" type="text" class="form-control"
 							placeholder="Introduce su valor" />
-					</div>
-					<p>
-						<form:errors path="idParametro" cssClass="campoConError" />
-					<p>
-						<form:errors path="valorParametro" cssClass="campoConError" />
+						</div>
+						<p>
+							<form:errors path="idParametro" cssClass="campoConError" />
+						<p>
+							<form:errors path="valorParametro" cssClass="campoConError" />
+					
 				</div>
 				<div id="botonAnadirParametros">
 					<button type="button" class="btn btn-primary btn-circle"
