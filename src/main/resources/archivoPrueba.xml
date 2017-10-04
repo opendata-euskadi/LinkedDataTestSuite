@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xml>
+	<testCases>
+		<junit>
+			<name>GETSPARQLHTML200</name>
+			<comment>Ir directo a formulario SPARQL</comment>
+			<method>GET</method>
+			<accept>HTML</accept>
+			<pathuri>sparql</pathuri>
+			<baseuri>lod.baseUri</baseuri>
+			<parameters />
+			<tests>
+				<test>
+					<type>assertEquals</type>
+					<testObject>requestBean.getStatus()</testObject>
+					<value>200</value>
+				</test>
+			</tests>
+		</junit>
+		<junit>
+			<name>GETResourceHTMLPageNoRedirect303</name>
+			<comment>Recurso con pagina bonita, pero sin seguir el 303</comment>
+			<method>GETN0303</method>
+			<accept>HTML</accept>
+			<pathuri>id/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22
+			</pathuri>
+			<baseuri>lod.baseUri</baseuri>
+			<parameters />
+			<tests>
+				<test>
+					<type>assertTrue</type>
+					<testObject>requestBean.getLocation()</testObject>
+					<comparisonmode>contains</comparisonmode>
+					<value>/page/</value>
+				</test>
+				<test>
+					<type>assertEquals</type>
+					<testObject>requestBean.getStatus()</testObject>
+					<value>303</value>
+				</test>
+			</tests>
+		</junit>
+		<junit>
+			<name>GETResourceHTMLDocNoRedirect303</name>
+			<comment>Recurso con pagina bonita, pero sin seguir el 303</comment>
+			<method>GETN0303</method>
+			<accept>HTML</accept>
+			<pathuri>id/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02
+			</pathuri>
+			<baseuri>lod.baseUri</baseuri>
+			<parameters />
+			<tests>
+				<test>
+					<type>assertTrue</type>
+					<testObject>requestBean.getLocation()</testObject>
+					<comparisonmode>contains</comparisonmode>
+					<value>page</value>
+				</test>
+				<test>
+					<type>assertEquals</type>
+					<testObject>requestBean.getStatus()</testObject>
+					<value>303</value>
+				</test>
+			</tests>
+		</junit>
+	</testCases>
+</xml>
+

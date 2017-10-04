@@ -273,7 +273,7 @@ Uri: http://es.euskadi.eus:8008/id/sector-publico/puestos-trabajo/contrato/aseso
 Method: GETNO303
 Accept: text/html
 Params: {}
-Location: http://es.euskadi.eus/page/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22
+Location: http://es.euskadi.eus:8008/doc/es/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22
 Status: 303
 Test name: GETResourceHTMLPageNoRedirect303
 Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETNO303text_htmlid_sector-publico_puestos-trabajo_contrato_asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22GETResourceHTMLPageNoRedirect303
