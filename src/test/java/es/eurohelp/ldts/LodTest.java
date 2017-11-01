@@ -519,14 +519,16 @@ public class LodTest  {
 			final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			final String method = Methodtype.GET.methodtypevalue();
 			final String accept = MIMEtype.RDFXML.mimetypevalue();
-			final String pathUri = "def/euskadipedia#precio";
+			final String pathUri = "def/euskadipedia#inHistoricTerritory";
 			final String name = "GETPropertyRDFXMLContent";
 			final String comment = "Obtener propiedad en RDF/XML, parsear contenido";
 			final Map<String, String> parameters = new HashMap<String, String>();
 			requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 			HttpManager.getInstance().doRequest(requestBean);
 			assertTrue(requestBean.getResponseString().contains(
-					"</owl:Class>"));
+					"http://euskadi.eus/def/euskadipedia#inHistoricTerritory"));
+			assertTrue(requestBean.getResponseString().contains(
+					"<owl:ObjectProperty"));
 		} catch (final IOException e) {
 			e.printStackTrace();
 		}
@@ -538,7 +540,7 @@ public class LodTest  {
 			final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
 			final String method = Methodtype.GET.methodtypevalue();
 			final String accept = MIMEtype.HTML.mimetypevalue();
-			final String pathUri = "def/euskadipedia#precio";
+			final String pathUri = "def/euskadipedia#inHistoricTerritory";
 			final String name = "GETPropertyHTML200";
 			final String comment = "Obtener propiedad en HTML, sin parsear contenido";
 			final Map<String, String> parameters = new HashMap<String, String>();
