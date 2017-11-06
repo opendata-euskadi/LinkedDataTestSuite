@@ -1,9 +1,291 @@
 *********************
+Uri: http://es.euskadi.eus:8008/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.jsonld
+Method: GET
+Accept: text/html
+Params: {}
+Status: 200
+Test name: GETResourceDirectlyDataJSONLDContentHTMLHeader
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmldata_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09_jsonldGETResourceDirectlyDataJSONLDContentHTMLHeader
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/def/euskadipedia
+Method: GET
+Accept: text/html
+Params: {}
+Status: 200
+Test name: GETOntologyHTMLContent
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmldef_euskadipediaGETOntologyHTMLContent
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/def/euskadipedia.html#Hotel
+Method: GET
+Accept: text/html
+Params: {}
+Status: 200
+Test name: GETClassHTML200
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmldef_euskadipedia_html#HotelGETClassHTML200
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09
+Method: GET
+Accept: application/rdf+json
+Params: {}
+Status: 200
+Test name: GETResourceRDFJSON200
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapplication_rdf+jsonid_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceRDFJSON200
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/sparql
+Method: POST
+Accept: text/csv
+Params: {query=SELECT DISTINCT ?a ?b WHERE { ?a ?b ?g GRAPH ?g {?sub ?pred ?obj}}}
+Status: 200
+Test name: SPARQLPOSTNamedGraphsMetadataCSVContent
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/POSTtext_csvsparqlSPARQLPOSTNamedGraphsMetadataCSVContent
+*********************
+*********************
 Uri: http://es.euskadi.eus:8008/def/euskadipedia.owl
 Method: GET
 Accept: application/rdf+xml
 Params: {}
-Status: 404
+Status: 200
 Test name: GETOntologyRDFXMLContentFileExtensionOWL 
 Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapplication_rdf+xmldef_euskadipedia_owlGETOntologyRDFXMLContentFileExtensionOWL 
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/def/euskadipedia
+Method: GET
+Accept: application/rdf+xml
+Params: {}
+Status: 200
+Test name: GETOntologyRDFXMLContent
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapplication_rdf+xmldef_euskadipediaGETOntologyRDFXMLContent
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09
+Method: GET
+Accept: application/trix
+Params: {}
+Status: 200
+Test name: GETResourceTriXContent
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapplication_trixid_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceTriXContent
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/sparql
+Method: GET
+Accept: text/html
+Params: {}
+Status: 200
+Test name: GETSPARQLHTML200
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmlsparqlGETSPARQLHTML200
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/id/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22
+Method: GET
+Accept: text/html
+Params: {}
+Status: 200
+Test name: GETResourceHTMLPage
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmlid_sector-publico_puestos-trabajo_contrato_asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22GETResourceHTMLPage
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/def/euskadipedia#inHistoricTerritory
+Method: GET
+Accept: text/html
+Params: {}
+Status: 200
+Test name: GETPropertyHTML200
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmldef_euskadipedia#inHistoricTerritoryGETPropertyHTML200
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/def/euskadipedia.html
+Method: GET
+Accept: text/html
+Params: {}
+Status: 200
+Test name: GETOntologyHTMLContentFileExtensionHTML
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmldef_euskadipedia_htmlGETOntologyHTMLContentFileExtensionHTML
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/sparql
+Method: POST
+Accept: text/csv
+Params: {query=INSERT DATA { GRAPH <http://lod.eurohelp.es> { <http://lod.eurohelp.es/mikel> <http://lod.eurohelp.es/position> <http://lod.eurohelp.es/analist> } }}
+Status: 400
+Test name:  SPARQLPOSTInsert400
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/POSTtext_csvsparql SPARQLPOSTInsert400
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/def/euskadipedia.owl
+Method: GET
+Accept: text/html
+Params: {}
+Status: 200
+Test name: GETOntologyRDFXMLContentHTMLHeader
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmldef_euskadipedia_owlGETOntologyRDFXMLContentHTMLHeader
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09
+Method: GET
+Accept: application/ld+json
+Params: {}
+Status: 200
+Test name: GETResourceDirectlyDataJSONLDContent
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapplication_ld+jsondata_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceDirectlyDataJSONLDContent
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02
+Method: GET
+Accept: text/html
+Params: {}
+Status: 200
+Test name: GETResourceDirectlyDoc
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmldoc_es_medio-ambiente_calidad-del-aire_elemento_CO-2017-01-02GETResourceDirectlyDoc
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09
+Method: GET
+Accept: text/turtle
+Params: {}
+Status: 200
+Test name: GETResourceTurtleContent
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_turtleid_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceTurtleContent
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/def/euskadipedia/Hotel
+Method: GET
+Accept: text/html
+Params: {}
+Status: 200
+Test name: GETClassHTML200
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmldef_euskadipedia_HotelGETClassHTML200
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09
+Method: GET
+Accept: text/rdf+n3
+Params: {}
+Status: 200
+Test name: GETResourceN3Content
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_rdf+n3id_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceN3Content
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/def/euskadipedia#inHistoricTerritory
+Method: GET
+Accept: application/rdf+xml
+Params: {}
+Status: 200
+Test name: GETPropertyRDFXMLContent
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapplication_rdf+xmldef_euskadipedia#inHistoricTerritoryGETPropertyRDFXMLContent
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09
+Method: GET
+Accept: application/rdf+xml
+Params: {}
+Status: 200
+Test name: GETResourceDirectlyDataRDFXMLContent
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapplication_rdf+xmldata_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceDirectlyDataRDFXMLContent
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/id/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26
+Method: GET
+Accept: text/html
+Params: {}
+Status: 200
+Test name: GETResourceHTMLDoc
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmlid_medio-ambiente_calidad-del-aire_elemento_ICAEstacion-2017-01-26GETResourceHTMLDoc
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.ttl
+Method: GET
+Accept: text/html
+Params: {}
+Status: 200
+Test name: GETResourceDirectlyDataTTLContentHTMLHeader
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmldata_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09_ttlGETResourceDirectlyDataTTLContentHTMLHeader
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09
+Method: GET
+Accept: application/ld+json
+Params: {}
+Status: 200
+Test name: GETResourceJSONLDContent
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapplication_ld+jsonid_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceJSONLDContent
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/sparql
+Method: POST
+Accept: text/csv
+Params: {query=SELECT ?g ?p ?o WHERE { 	?g ?p ?o .} LIMIT 145000}
+Status: 200
+Test name: SPARQLPOSTMassiveCSV200
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/POSTtext_csvsparqlSPARQLPOSTMassiveCSV200
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09
+Method: GET
+Accept: text/plain
+Params: {}
+Status: 200
+Test name: GETResourceNTriplesContent
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_plainid_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceNTriplesContent
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/def/euskadipedia/Hotel
+Method: GET
+Accept: application/rdf+xml
+Params: {}
+Status: 200
+Test name: GETClassRDFXMLContent
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapplication_rdf+xmldef_euskadipedia_HotelGETClassRDFXMLContent
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09
+Method: GET
+Accept: text/turtle
+Params: {}
+Status: 200
+Test name: GETResourceDirectlyDataTTLContent
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_turtledata_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceDirectlyDataTTLContent
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/id/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22
+Method: GETNO303
+Accept: text/html
+Params: {}
+Location: http://es.euskadi.eus:8008/doc/es/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22
+Status: 303
+Test name: GETResourceHTMLPageNoRedirect303
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETNO303text_htmlid_sector-publico_puestos-trabajo_contrato_asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22GETResourceHTMLPageNoRedirect303
+*********************
+http://es.euskadi.eus:8008/doc/es/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22
+*********************
+Uri: http://es.euskadi.eus:8008/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09
+Method: GET
+Accept: application/rdf+xml
+Params: {}
+Status: 200
+Test name: GETResourceRDFXMLContent
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETapplication_rdf+xmlid_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceRDFXMLContent
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/id/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26
+Method: GETNO303
+Accept: text/html
+Params: {}
+Location: http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26
+Status: 303
+Test name: GETResourceHTMLDocNoRedirect303
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETNO303text_htmlid_medio-ambiente_calidad-del-aire_elemento_ICAEstacion-2017-01-26GETResourceHTMLDocNoRedirect303
+*********************
+*********************
+Uri: http://es.euskadi.eus:8008/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.rdf
+Method: GET
+Accept: text/html
+Params: {}
+Status: 200
+Test name: GETResourceDirectlyDataRDFXMLContentHTMLHeader
+Response file: C:/Users/megana/git/LinkedDataTestSuite/src/test/resources/GETtext_htmldata_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09_rdfGETResourceDirectlyDataRDFXMLContentHTMLHeader
 *********************
