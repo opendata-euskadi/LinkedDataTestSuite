@@ -40,7 +40,7 @@
   <body>
   
     <h1>Linked Data Test Suite Report</h1>
-    <h2>25-oct-2017 09:52:12</h2>
+    <h2>21-nov-2017 16:00:01</h2>
 
     <hr/>
     
@@ -130,22 +130,25 @@
     				[<a href=#25>GETResourceNTriplesContent</a>]
 
 
-    				[<a href=#26>GETClassRDFXMLContent</a>]
+    				[<a href=#26>GETkosHTMLPage</a>]
 
 
-    				[<a href=#27>GETResourceDirectlyDataTTLContent</a>]
+    				[<a href=#27>GETClassRDFXMLContent</a>]
 
 
-    				[<a href=#29>GETResourceRDFXMLContent</a>]
+    				[<a href=#28>GETResourceDirectlyDataTTLContent</a>]
 
 
-    				[<a href=#31>GETResourceDirectlyDataRDFXMLContentHTMLHeader</a>]
+    				[<a href=#30>GETResourceRDFXMLContent</a>]
 
 
-    				[<a href=#28>GETResourceHTMLPageNoRedirect303</a>]
+    				[<a href=#32>GETResourceDirectlyDataRDFXMLContentHTMLHeader</a>]
 
 
-    				[<a href=#30>GETResourceHTMLDocNoRedirect303</a>]
+    				[<a href=#29>GETResourceHTMLPageNoRedirect303</a>]
+
+
+    				[<a href=#31>GETResourceHTMLDocNoRedirect303</a>]
 
 
 	<table>
@@ -172,19 +175,19 @@
    		<tr>
 	   		<td id=1>GETOntologyHTMLContent</td>
 	   		<td>Obtener ontologia en HTML, parsear contenido</td>
-	   		<td><a href=http://es.euskadi.eus:8008/def/euskadipedia>http://es.euskadi.eus:8008/def/euskadipedia</a></td>
+	   		<td><a href=http://euskadi.eus:8008/def/euskadipedia.html>http://euskadi.eus:8008/def/euskadipedia.html</a></td>
 	   		<td>GET</td>
 	   		<td>text/html</td>
-	   			<td style="color:green;">OK</td>
-	   		<td><a href="GETtext_htmldef_euskadipediaGETOntologyHTMLContent">view response</a></td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETtext_htmldef_euskadipedia_htmlGETOntologyHTMLContent">view response</a></td>
     	</tr>
    		<tr>
 	   		<td id=2>GETClassHTML200</td>
 	   		<td>Obtener clase en HTML con ancla, parsear contenido</td>
-	   		<td><a href=http://es.euskadi.eus:8008/def/euskadipedia.html#Hotel>http://es.euskadi.eus:8008/def/euskadipedia.html#Hotel</a></td>
+	   		<td><a href=http://euskadi.eus:8008/def/euskadipedia.html#Hotel>http://euskadi.eus:8008/def/euskadipedia.html#Hotel</a></td>
 	   		<td>GET</td>
 	   		<td>text/html</td>
-	   			<td style="color:green;">OK</td>
+	   			<td style="color:red;">ERROR</td>
 	   		<td><a href="GETtext_htmldef_euskadipedia_html#HotelGETClassHTML200">view response</a></td>
     	</tr>
    		<tr>
@@ -199,20 +202,20 @@
    		<tr>
 	   		<td id=5>GETOntologyRDFXMLContentFileExtensionOWL </td>
 	   		<td>Obtener ontologia en RDF/XML con .owl, parsear contenido</td>
-	   		<td><a href=http://es.euskadi.eus:8008/def/euskadipedia.owl>http://es.euskadi.eus:8008/def/euskadipedia.owl</a></td>
+	   		<td><a href=http://euskadi.eus:8008/def/euskadipedia.owl>http://euskadi.eus:8008/def/euskadipedia.owl</a></td>
 	   		<td>GET</td>
 	   		<td>application/rdf+xml</td>
-	   			<td style="color:green;">OK</td>
+	   			<td style="color:red;">ERROR</td>
 	   		<td><a href="GETapplication_rdf+xmldef_euskadipedia_owlGETOntologyRDFXMLContentFileExtensionOWL ">view response</a></td>
     	</tr>
    		<tr>
 	   		<td id=6>GETOntologyRDFXMLContent</td>
 	   		<td>Obtener ontologia en RDF/XML, parsear contenido</td>
-	   		<td><a href=http://es.euskadi.eus:8008/def/euskadipedia>http://es.euskadi.eus:8008/def/euskadipedia</a></td>
+	   		<td><a href=http://euskadi.eus:8008/def/euskadipedia.html>http://euskadi.eus:8008/def/euskadipedia.html</a></td>
 	   		<td>GET</td>
 	   		<td>application/rdf+xml</td>
-	   			<td style="color:green;">OK</td>
-	   		<td><a href="GETapplication_rdf+xmldef_euskadipediaGETOntologyRDFXMLContent">view response</a></td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETapplication_rdf+xmldef_euskadipedia_htmlGETOntologyRDFXMLContent">view response</a></td>
     	</tr>
    		<tr>
 	   		<td id=7>GETResourceTriXContent</td>
@@ -226,10 +229,10 @@
    		<tr>
 	   		<td id=8>GETSPARQLHTML200</td>
 	   		<td>Ir directo a formulario SPARQL</td>
-	   		<td><a href=http://es.euskadi.eus:8008/sparql>http://es.euskadi.eus:8008/sparql</a></td>
+	   		<td><a href=http://euskadi.eus:8008/sparql>http://euskadi.eus:8008/sparql</a></td>
 	   		<td>GET</td>
 	   		<td>text/html</td>
-	   			<td style="color:green;">OK</td>
+	   			<td style="color:red;">ERROR</td>
 	   		<td><a href="GETtext_htmlsparqlGETSPARQLHTML200">view response</a></td>
     	</tr>
    		<tr>
@@ -244,28 +247,28 @@
    		<tr>
 	   		<td id=10>GETPropertyHTML200</td>
 	   		<td>Obtener propiedad en HTML, sin parsear contenido</td>
-	   		<td><a href=http://es.euskadi.eus:8008/def/euskadipedia#inHistoricTerritory>http://es.euskadi.eus:8008/def/euskadipedia#inHistoricTerritory</a></td>
+	   		<td><a href=http://euskadi.eus:8008/def/euskadipedia#inHistoricTerritory>http://euskadi.eus:8008/def/euskadipedia#inHistoricTerritory</a></td>
 	   		<td>GET</td>
 	   		<td>text/html</td>
-	   			<td style="color:green;">OK</td>
+	   			<td style="color:red;">ERROR</td>
 	   		<td><a href="GETtext_htmldef_euskadipedia#inHistoricTerritoryGETPropertyHTML200">view response</a></td>
     	</tr>
    		<tr>
 	   		<td id=11>GETOntologyHTMLContentFileExtensionHTML</td>
 	   		<td>Obtener ontologia en HTML con .html, parsear contenido</td>
-	   		<td><a href=http://es.euskadi.eus:8008/def/euskadipedia.html>http://es.euskadi.eus:8008/def/euskadipedia.html</a></td>
+	   		<td><a href=http://euskadi.eus:8008/def/euskadipedia.html>http://euskadi.eus:8008/def/euskadipedia.html</a></td>
 	   		<td>GET</td>
 	   		<td>text/html</td>
-	   			<td style="color:green;">OK</td>
+	   			<td style="color:red;">ERROR</td>
 	   		<td><a href="GETtext_htmldef_euskadipedia_htmlGETOntologyHTMLContentFileExtensionHTML">view response</a></td>
     	</tr>
    		<tr>
 	   		<td id=13>GETOntologyRDFXMLContentHTMLHeader</td>
 	   		<td>Obtener ontologia en OWL (por extension, no cabecera, cabecera HTML), parsear contenido</td>
-	   		<td><a href=http://es.euskadi.eus:8008/def/euskadipedia.owl>http://es.euskadi.eus:8008/def/euskadipedia.owl</a></td>
+	   		<td><a href=http://euskadi.eus:8008/def/euskadipedia.owl>http://euskadi.eus:8008/def/euskadipedia.owl</a></td>
 	   		<td>GET</td>
 	   		<td>text/html</td>
-	   			<td style="color:green;">OK</td>
+	   			<td style="color:red;">ERROR</td>
 	   		<td><a href="GETtext_htmldef_euskadipedia_owlGETOntologyRDFXMLContentHTMLHeader">view response</a></td>
     	</tr>
    		<tr>
@@ -298,10 +301,10 @@
    		<tr>
 	   		<td id=17>GETClassHTML200</td>
 	   		<td>Obtener clase en HTML, sin parsear contenido</td>
-	   		<td><a href=http://es.euskadi.eus:8008/def/euskadipedia/Hotel>http://es.euskadi.eus:8008/def/euskadipedia/Hotel</a></td>
+	   		<td><a href=http://euskadi.eus:8008/def/euskadipedia/Hotel>http://euskadi.eus:8008/def/euskadipedia/Hotel</a></td>
 	   		<td>GET</td>
 	   		<td>text/html</td>
-	   			<td style="color:green;">OK</td>
+	   			<td style="color:red;">ERROR</td>
 	   		<td><a href="GETtext_htmldef_euskadipedia_HotelGETClassHTML200">view response</a></td>
     	</tr>
    		<tr>
@@ -316,10 +319,10 @@
    		<tr>
 	   		<td id=19>GETPropertyRDFXMLContent</td>
 	   		<td>Obtener propiedad en RDF/XML, parsear contenido</td>
-	   		<td><a href=http://es.euskadi.eus:8008/def/euskadipedia#inHistoricTerritory>http://es.euskadi.eus:8008/def/euskadipedia#inHistoricTerritory</a></td>
+	   		<td><a href=http://euskadi.eus:8008/def/euskadipedia#inHistoricTerritory>http://euskadi.eus:8008/def/euskadipedia#inHistoricTerritory</a></td>
 	   		<td>GET</td>
 	   		<td>application/rdf+xml</td>
-	   			<td style="color:green;">OK</td>
+	   			<td style="color:red;">ERROR</td>
 	   		<td><a href="GETapplication_rdf+xmldef_euskadipedia#inHistoricTerritoryGETPropertyRDFXMLContent">view response</a></td>
     	</tr>
    		<tr>
@@ -337,7 +340,7 @@
 	   		<td><a href=http://es.euskadi.eus:8008/id/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26>http://es.euskadi.eus:8008/id/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26</a></td>
 	   		<td>GET</td>
 	   		<td>text/html</td>
-	   			<td style="color:green;">OK</td>
+	   			<td style="color:red;">ERROR</td>
 	   		<td><a href="GETtext_htmlid_medio-ambiente_calidad-del-aire_elemento_ICAEstacion-2017-01-26GETResourceHTMLDoc">view response</a></td>
     	</tr>
    		<tr>
@@ -368,16 +371,25 @@
 	   		<td><a href="GETtext_plainid_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceNTriplesContent">view response</a></td>
     	</tr>
    		<tr>
-	   		<td id=26>GETClassRDFXMLContent</td>
+	   		<td id=26>GETkosHTMLPage</td>
+	   		<td>Obtener documento SKOS pidiendo documento Web</td>
+	   		<td><a href=http://es.euskadi.eus:8008/kos/dominio.rdf>http://es.euskadi.eus:8008/kos/dominio.rdf</a></td>
+	   		<td>GET</td>
+	   		<td>text/html</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETtext_htmlkos_dominio_rdfGETkosHTMLPage">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=27>GETClassRDFXMLContent</td>
 	   		<td>Obtener clase en RDF/XML, parsear contenido</td>
-	   		<td><a href=http://es.euskadi.eus:8008/def/euskadipedia/Hotel>http://es.euskadi.eus:8008/def/euskadipedia/Hotel</a></td>
+	   		<td><a href=http://euskadi.eus:8008/def/euskadipedia/Hotel>http://euskadi.eus:8008/def/euskadipedia/Hotel</a></td>
 	   		<td>GET</td>
 	   		<td>application/rdf+xml</td>
-	   			<td style="color:green;">OK</td>
+	   			<td style="color:red;">ERROR</td>
 	   		<td><a href="GETapplication_rdf+xmldef_euskadipedia_HotelGETClassRDFXMLContent">view response</a></td>
     	</tr>
    		<tr>
-	   		<td id=27>GETResourceDirectlyDataTTLContent</td>
+	   		<td id=28>GETResourceDirectlyDataTTLContent</td>
 	   		<td>Obtener recurso en TTL directamente de /data, parsear contenido</td>
 	   		<td><a href=http://es.euskadi.eus:8008/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09>http://es.euskadi.eus:8008/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</a></td>
 	   		<td>GET</td>
@@ -386,7 +398,7 @@
 	   		<td><a href="GETtext_turtledata_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceDirectlyDataTTLContent">view response</a></td>
     	</tr>
    		<tr>
-	   		<td id=29>GETResourceRDFXMLContent</td>
+	   		<td id=30>GETResourceRDFXMLContent</td>
 	   		<td>Obtener recurso en RDF/XML, parsear contenido</td>
 	   		<td><a href=http://es.euskadi.eus:8008/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09>http://es.euskadi.eus:8008/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</a></td>
 	   		<td>GET</td>
@@ -395,7 +407,7 @@
 	   		<td><a href="GETapplication_rdf+xmlid_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09GETResourceRDFXMLContent">view response</a></td>
     	</tr>
    		<tr>
-	   		<td id=31>GETResourceDirectlyDataRDFXMLContentHTMLHeader</td>
+	   		<td id=32>GETResourceDirectlyDataRDFXMLContentHTMLHeader</td>
 	   		<td>Obtener recurso en RDF/XML (por extension, no cabecera, cabecera HTML) directamente de /data, parsear contenido</td>
 	   		<td><a href=http://es.euskadi.eus:8008/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.rdf>http://es.euskadi.eus:8008/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.rdf</a></td>
 	   		<td>GET</td>
@@ -404,7 +416,7 @@
 	   		<td><a href="GETtext_htmldata_sector-publico_puestos-trabajo_contrato_1-gobierno-vasco-donostia-easo-10-3024_0-2016-05-09_rdfGETResourceDirectlyDataRDFXMLContentHTMLHeader">view response</a></td>
     	</tr>
    		<tr>
-	   		<td id=28>GETResourceHTMLPageNoRedirect303</td>
+	   		<td id=29>GETResourceHTMLPageNoRedirect303</td>
 	   		<td>Recurso con pagina bonita, pero sin seguir el 303</td>
 	   		<td><a href=http://es.euskadi.eus:8008/id/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22>http://es.euskadi.eus:8008/id/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22</a></td>
 	   		<td>GETNO303</td>
@@ -413,7 +425,7 @@
 	   		<td><a href="GETNO303text_htmlid_sector-publico_puestos-trabajo_contrato_asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22GETResourceHTMLPageNoRedirect303">view response</a></td>
     	</tr>
    		<tr>
-	   		<td id=30>GETResourceHTMLDocNoRedirect303</td>
+	   		<td id=31>GETResourceHTMLDocNoRedirect303</td>
 	   		<td>Recurso con pagina fea, pero sin seguir 303</td>
 	   		<td><a href=http://es.euskadi.eus:8008/id/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26>http://es.euskadi.eus:8008/id/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26</a></td>
 	   		<td>GETNO303</td>
@@ -424,7 +436,7 @@
    		<tr>
 	   		<td id=4>SPARQLPOSTNamedGraphsMetadataCSVContent</td>
 	   		<td>Consulta sobre datos y metadatos, parsear contenido</td>
-	   		<td><a href=http://es.euskadi.eus:8008/sparql>http://es.euskadi.eus:8008/sparql</a></td>
+	   		<td><a href=http://euskadi.eus:8008/sparql>http://euskadi.eus:8008/sparql</a></td>
 	   		<td>POST</td>
 	   		<td>text/csv</td>
 	   			<td style="color:red;">ERROR</td>
@@ -433,19 +445,19 @@
    		<tr>
 	   		<td id=12> SPARQLPOSTInsert400</td>
 	   		<td>Insertar datos, deberia fallar</td>
-	   		<td><a href=http://es.euskadi.eus:8008/sparql>http://es.euskadi.eus:8008/sparql</a></td>
+	   		<td><a href=http://euskadi.eus:8008/sparql>http://euskadi.eus:8008/sparql</a></td>
 	   		<td>POST</td>
 	   		<td>text/csv</td>
-	   			<td style="color:green;">OK</td>
+	   			<td style="color:red;">ERROR</td>
 	   		<td><a href="POSTtext_csvsparql SPARQLPOSTInsert400">view response</a></td>
     	</tr>
    		<tr>
 	   		<td id=24>SPARQLPOSTMassiveCSV200</td>
 	   		<td>Consulta masiva, sin parsear contenido</td>
-	   		<td><a href=http://es.euskadi.eus:8008/sparql>http://es.euskadi.eus:8008/sparql</a></td>
+	   		<td><a href=http://euskadi.eus:8008/sparql>http://euskadi.eus:8008/sparql</a></td>
 	   		<td>POST</td>
 	   		<td>text/csv</td>
-	   			<td style="color:green;">OK</td>
+	   			<td style="color:red;">ERROR</td>
 	   		<td><a href="POSTtext_csvsparqlSPARQLPOSTMassiveCSV200">view response</a></td>
     	</tr>
     

@@ -67,6 +67,25 @@ public class LodTest  {
 	}
 
 	@Test
+	public final void GETkosHTMLPage (){
+	       try {
+	            final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
+	            final String method = Methodtype.GET.methodtypevalue();
+	            final String accept = MIMEtype.HTML.mimetypevalue();
+	            final String pathUri = "kos/dominio.rdf";
+	            final String name = "GETkosHTMLPage";
+	            final String comment = "Obtener documento SKOS pidiendo documento Web";
+	            final Map<String, String> parameters = new HashMap<String, String>();
+	            requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
+	            HttpManager.getInstance().doRequest(requestBean);
+	            assertTrue(requestBean.getResponseString().contains("<span>Lehendakaritza</span>"));
+	        } catch (final IOException e) {
+	            e.printStackTrace();
+	        }
+	}
+	    
+	
+	@Test
 	public final void GETResourceHTMLPage(){
 		try {
 			final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");

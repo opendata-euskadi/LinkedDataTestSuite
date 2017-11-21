@@ -100,19 +100,15 @@
                   <li><a href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02.html?_view=description" title="switch to description view">description</a></li>
                </ul>
                <ul class="properties">
-                  <li><a rel="nofollow" title="always include this property" href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02.html?_properties=obsValue"><img src="http://es.euskadi.eus:8008/elda-assets/images/grey/16x16/Star.png" alt="star this property"> obs value</a></li>
-                  <li><a rel="nofollow" title="always include this property" href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02.html?_properties=comment"><img src="http://es.euskadi.eus:8008/elda-assets/images/grey/16x16/Star.png" alt="star this property"> comment</a></li>
-                  <li><a rel="nofollow" title="always include this property" href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02.html?_properties=type."><img src="http://es.euskadi.eus:8008/elda-assets/images/grey/16x16/Star.png" alt="star this property"> type</a></li>
                   <li><a rel="nofollow" title="always include this property" href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02.html?_properties=isPrimaryTopicOf"><img src="http://es.euskadi.eus:8008/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is primary topic of</a></li>
-                  <li><a rel="nofollow" title="always include this property" href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02.html?_properties=unitMeasure"><img src="http://es.euskadi.eus:8008/elda-assets/images/grey/16x16/Star.png" alt="star this property"> unit measure</a></li>
                </ul>
             </section>
          </nav>
          <div id="result">
             <div class="panel">
                <header>
-                  <h1>CO-2017-01-02</h1>
-                  <p class="id"><a href="http://es.euskadi.eus/id/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02">http://es.euskadi.eus/id/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02</a></p>
+                  <h1>elda:missingEndpoint</h1>
+                  <p class="id"><a href="elda:missingEndpoint">elda:missingEndpoint</a></p>
                </header>
                <section id="search" style="display: none">
                   <form action="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento">
@@ -126,31 +122,15 @@
                            <td></td>
                         </tr>
                         <tr>
-                           <th class="label"><label for="obsValue">obs value</label></th>
-                           <td class="input"><input name="obsValue" id="obsValue" size="25"></td>
-                        </tr>
-                        <tr>
-                           <th class="label"><label for="comment">comment</label></th>
-                           <td class="input"><input name="comment" id="comment" size="25"></td>
-                        </tr>
-                        <tr>
-                           <th class="label"><label for="type.">type</label></th>
-                           <td class="input"><input name="type." id="type." size="25"></td>
-                        </tr>
-                        <tr>
                            <th class="label"><label for="isPrimaryTopicOf">is primary topic of</label></th>
                            <td class="input"><input name="isPrimaryTopicOf" id="isPrimaryTopicOf" size="25"></td>
-                        </tr>
-                        <tr>
-                           <th class="label"><label for="unitMeasure">unit measure</label></th>
-                           <td class="input"><input name="unitMeasure" id="unitMeasure" size="25"></td>
                         </tr>
                      </table>
                      <p><button type="submit">Search</button></p>
                   </form>
                </section>
                <section>
-                  <table id="w26851aab7">
+                  <table id="w2aab7">
                      <colgroup>
                         <col class="labelWidth">
                         <col class="autoWidth">
@@ -161,35 +141,9 @@
                         <td></td>
                         <td></td>
                      </tr>
-                     <tr class="obsValue">
-                        <th class="label"><a href="http://purl.org/linked-data/sdmx/2009/measure#obsValue">obs value</a></th>
-                        <td class="value">13</td>
-                        <td class="filter"><a rel="nofollow" title="more like this" href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento?obsValue=13"><img src="http://es.euskadi.eus:8008/elda-assets/images/grey/16x16/Search.png" alt="more like this"></a></td>
-                     </tr>
-                     <tr class="comment">
-                        <th class="label"><a href="http://www.w3.org/2000/01/rdf-schema#comment">comment</a></th>
-                        <td class="value">El valor de CO en una fecha determinada</td>
-                        <td class="filter"><a rel="nofollow" title="more like this" href="http://es.euskadi.eus:8008/doc/es/medio-ambiente/calidad-del-aire/elemento?comment=El%20valor%20de%20CO%20en%20una%20fecha%20determinada"><img src="http://es.euskadi.eus:8008/elda-assets/images/grey/16x16/Search.png" alt="more like this"></a></td>
-                     </tr>
-                     <tr class="type">
-                        <th class="label"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></th>
-                        <td class="value nested" colspan="2">
-                           <table>
-                              <tr>
-                                 <td class="value"><a href="http://es.euskadi.eus/def/medio-ambiente/medicion/CO">CO</a></td>
-                                 <td class="filter"></td>
-                              </tr>
-                           </table>
-                        </td>
-                     </tr>
-                     <tr class="isPrimaryTopicOf">
+                     <tr class="isPrimaryTopicOf last">
                         <th class="label"><a href="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">is primary topic of</a></th>
-                        <td class="value"><a href="#w26851aa" title="view on this page">CO-2017-01-02.html</a></td>
-                        <td class="filter"></td>
-                     </tr>
-                     <tr class="unitMeasure last">
-                        <th class="label"><a href="http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure">unit measure</a></th>
-                        <td class="value"><a href="http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3">ug.m-3</a></td>
+                        <td class="value"><a href="#w2aa" title="view on this page">CO-2017-01-02.html</a></td>
                         <td class="filter"></td>
                      </tr>
                   </table>
