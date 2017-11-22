@@ -78,7 +78,7 @@ public class LodTest  {
 	            final Map<String, String> parameters = new HashMap<String, String>();
 	            requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
 	            HttpManager.getInstance().doRequest(requestBean);
-	            assertTrue(requestBean.getResponseString().contains("<span>Lehendakaritza</span>"));
+	            assertTrue(requestBean.getResponseString().contains("http://euskadi.eus/kos/ds-contrataciones"));
 	        } catch (final IOException e) {
 	            e.printStackTrace();
 	        }
