@@ -21,7 +21,7 @@ org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.e
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
 	at es.eurohelp.ldts.HttpManager.doRequest(HttpManager.java:131)
-	at es.eurohelp.ldts.LodTest.GETOntologyHTMLContent(LodTest.java:659)
+	at es.eurohelp.ldts.LodTest.GETOntologyHTMLContent(LodTest.java:661)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -74,7 +74,7 @@ org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.e
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
 	at es.eurohelp.ldts.HttpManager.doRequest(HttpManager.java:131)
-	at es.eurohelp.ldts.LodTest.GETClassHTMLAnchorContent(LodTest.java:581)
+	at es.eurohelp.ldts.LodTest.GETClassHTMLAnchorContent(LodTest.java:583)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -127,7 +127,7 @@ org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.e
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
 	at es.eurohelp.ldts.HttpManager.doRequest(HttpManager.java:131)
-	at es.eurohelp.ldts.LodTest.GETResourceRDFJSON200(LodTest.java:468)
+	at es.eurohelp.ldts.LodTest.GETResourceRDFJSON200(LodTest.java:470)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -181,6 +181,11 @@ Method: GET
 Accept: application/rdf+xml
 Params: {}
 org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.eus refused
+*********************
+Uri: http://euskadi.eus:8008/def/euskadipedia.html
+Method: GET
+Accept: application/rdf+xml
+Params: {}
 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
 	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294)
 	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:643)
@@ -189,7 +194,7 @@ org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.e
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
 	at es.eurohelp.ldts.HttpManager.doRequest(HttpManager.java:131)
-	at es.eurohelp.ldts.LodTest.GETOntologyRDFXMLContentFileExtensionOWL(LodTest.java:735)
+	at es.eurohelp.ldts.LodTest.GETOntologyRDFXMLContentFileExtensionOWL(LodTest.java:737)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -228,11 +233,6 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
 	... 34 more
-*********************
-Uri: http://euskadi.eus:8008/def/euskadipedia.html
-Method: GET
-Accept: application/rdf+xml
-Params: {}
 org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.eus refused
 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
 	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294)
@@ -242,7 +242,7 @@ org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.e
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
 	at es.eurohelp.ldts.HttpManager.doRequest(HttpManager.java:131)
-	at es.eurohelp.ldts.LodTest.GETOntologyRDFXMLContent(LodTest.java:756)
+	at es.eurohelp.ldts.LodTest.GETOntologyRDFXMLContent(LodTest.java:758)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -295,7 +295,7 @@ org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.e
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
 	at es.eurohelp.ldts.HttpManager.doRequest(HttpManager.java:131)
-	at es.eurohelp.ldts.LodTest.GETResourceTriXContent(LodTest.java:506)
+	at es.eurohelp.ldts.LodTest.GETResourceTriXContent(LodTest.java:508)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -366,7 +366,7 @@ org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.e
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
 	at es.eurohelp.ldts.HttpManager.doRequest(HttpManager.java:131)
-	at es.eurohelp.ldts.LodTest.GETResourceHTMLPage(LodTest.java:153)
+	at es.eurohelp.ldts.LodTest.GETResourceHTMLPage(LodTest.java:155)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -419,7 +419,7 @@ org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.e
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
 	at es.eurohelp.ldts.HttpManager.doRequest(HttpManager.java:131)
-	at es.eurohelp.ldts.LodTest.GETPropertyHTML200(LodTest.java:621)
+	at es.eurohelp.ldts.LodTest.GETPropertyHTML200(LodTest.java:623)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -472,7 +472,7 @@ org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.e
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
 	at es.eurohelp.ldts.HttpManager.doRequest(HttpManager.java:131)
-	at es.eurohelp.ldts.LodTest.GETOntologyHTMLContentFileExtensionHTML(LodTest.java:678)
+	at es.eurohelp.ldts.LodTest.GETOntologyHTMLContentFileExtensionHTML(LodTest.java:680)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -534,7 +534,7 @@ org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.e
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
 	at es.eurohelp.ldts.HttpManager.doRequest(HttpManager.java:131)
-	at es.eurohelp.ldts.LodTest.GETOntologyRDFXMLContentHTMLHeader(LodTest.java:715)
+	at es.eurohelp.ldts.LodTest.GETOntologyRDFXMLContentHTMLHeader(LodTest.java:717)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -614,7 +614,7 @@ org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.e
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
 	at es.eurohelp.ldts.HttpManager.doRequest(HttpManager.java:131)
-	at es.eurohelp.ldts.LodTest.GETResourceTurtleContent(LodTest.java:525)
+	at es.eurohelp.ldts.LodTest.GETResourceTurtleContent(LodTest.java:527)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -667,7 +667,7 @@ org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.e
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
 	at es.eurohelp.ldts.HttpManager.doRequest(HttpManager.java:131)
-	at es.eurohelp.ldts.LodTest.GETClassHTML200(LodTest.java:563)
+	at es.eurohelp.ldts.LodTest.GETClassHTML200(LodTest.java:565)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -720,7 +720,7 @@ org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.e
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
 	at es.eurohelp.ldts.HttpManager.doRequest(HttpManager.java:131)
-	at es.eurohelp.ldts.LodTest.GETResourceN3Content(LodTest.java:410)
+	at es.eurohelp.ldts.LodTest.GETResourceN3Content(LodTest.java:412)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -773,7 +773,7 @@ org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.e
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
 	at es.eurohelp.ldts.HttpManager.doRequest(HttpManager.java:131)
-	at es.eurohelp.ldts.LodTest.GETPropertyRDFXMLContent(LodTest.java:600)
+	at es.eurohelp.ldts.LodTest.GETPropertyRDFXMLContent(LodTest.java:602)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -813,7 +813,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
 	... 34 more
 *********************
-Uri: http://es.euskadi.eus:8008/kos/dominio.rdf
+Uri: http://euskadi.eus:8008/kos/dominio.rdf
 Method: GET
 Accept: application/rdf+xml
 Params: {}
@@ -844,7 +844,7 @@ org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.e
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
 	at es.eurohelp.ldts.HttpManager.doRequest(HttpManager.java:131)
-	at es.eurohelp.ldts.LodTest.GETResourceHTMLDoc(LodTest.java:196)
+	at es.eurohelp.ldts.LodTest.GETResourceHTMLDoc(LodTest.java:198)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -906,7 +906,7 @@ org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.e
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
 	at es.eurohelp.ldts.HttpManager.doRequest(HttpManager.java:131)
-	at es.eurohelp.ldts.LodTest.GETResourceJSONLDContent(LodTest.java:392)
+	at es.eurohelp.ldts.LodTest.GETResourceJSONLDContent(LodTest.java:394)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -968,7 +968,7 @@ org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.e
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
 	at es.eurohelp.ldts.HttpManager.doRequest(HttpManager.java:131)
-	at es.eurohelp.ldts.LodTest.GETResourceNTriplesContent(LodTest.java:449)
+	at es.eurohelp.ldts.LodTest.GETResourceNTriplesContent(LodTest.java:451)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1008,7 +1008,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
 	... 34 more
 *********************
-Uri: http://es.euskadi.eus:8008/kos/dominio.rdf
+Uri: http://euskadi.eus:8008/kos/dominio.rdf
 Method: GET
 Accept: text/html
 Params: {}
@@ -1030,7 +1030,7 @@ org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.e
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
 	at es.eurohelp.ldts.HttpManager.doRequest(HttpManager.java:131)
-	at es.eurohelp.ldts.LodTest.GETClassRDFXMLContent(LodTest.java:544)
+	at es.eurohelp.ldts.LodTest.GETClassRDFXMLContent(LodTest.java:546)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1103,7 +1103,7 @@ org.apache.http.conn.HttpHostConnectException: Connection to http://es.euskadi.e
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:784)
 	at es.eurohelp.ldts.HttpManager.doRequest(HttpManager.java:131)
-	at es.eurohelp.ldts.LodTest.GETResourceRDFXMLContent(LodTest.java:238)
+	at es.eurohelp.ldts.LodTest.GETResourceRDFXMLContent(LodTest.java:240)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
