@@ -83,6 +83,60 @@ public class LodTest  {
 	            e.printStackTrace();
 	        }
 	}
+	
+	@Test
+    public final void GETkosRDF (){
+           try {
+                final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
+                final String method = Methodtype.GET.methodtypevalue();
+                final String accept = MIMEtype.RDFXML.mimetypevalue();
+                final String pathUri = "kos/dominio.rdf";
+                final String name = "GETkosRDF";
+                final String comment = "Obtener documento SKOS pidiendo RDF";
+                final Map<String, String> parameters = new HashMap<String, String>();
+                requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
+                HttpManager.getInstance().doRequest(requestBean);
+                assertTrue(requestBean.getResponseString().contains("http://euskadi.eus/kos/ds-contrataciones"));
+            } catch (final IOException e) {
+                e.printStackTrace();
+            }
+    }
+	
+	   @Test
+	    public final void GETErrorRDF (){
+	           try {
+	                final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
+	                final String method = Methodtype.GET.methodtypevalue();
+	                final String accept = MIMEtype.RDFXML.mimetypevalue();
+	                final String pathUri = "trololo";
+	                final String name = "GETErrorRDF";
+	                final String comment = "Obtener un recurso que no existe, en RDF";
+	                final Map<String, String> parameters = new HashMap<String, String>();
+	                requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
+	                HttpManager.getInstance().doRequest(requestBean);
+	                assertTrue(requestBean.getResponseString().contains("http://euskadi.eus/kos/ds-contrataciones"));
+	            } catch (final IOException e) {
+	                e.printStackTrace();
+	            }
+	    }
+	   
+       @Test
+       public final void GETErrorHTML (){
+              try {
+                   final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
+                   final String method = Methodtype.GET.methodtypevalue();
+                   final String accept = MIMEtype.HTML.mimetypevalue();
+                   final String pathUri = "trololo";
+                   final String name = "GETErrorHTML";
+                   final String comment = "Obtener un recurso que no existe, en HTML";
+                   final Map<String, String> parameters = new HashMap<String, String>();
+                   requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
+                   HttpManager.getInstance().doRequest(requestBean);
+                   assertTrue(requestBean.getResponseString().contains("http://euskadi.eus/kos/ds-contrataciones"));
+               } catch (final IOException e) {
+                   e.printStackTrace();
+               }
+       }
 	    
 	
 	@Test
