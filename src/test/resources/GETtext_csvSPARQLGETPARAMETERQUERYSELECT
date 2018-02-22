@@ -1,0 +1,101 @@
+s,p,o
+http://es.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios_csv.zip,http://purl.org/dc/terms/format,_:t56940
+http://es.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios_csv.zip,http://www.w3.org/ns/dcat#accessURL,http://es.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios_csv.zip
+http://es.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios_csv.zip,http://www.w3.org/ns/dcat#byteSize,0.0
+http://es.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios_csv.zip,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
+http://es.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios_csv.zip,http://purl.org/dc/terms/title,Calidad del aire
+http://es.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios.rdf,http://purl.org/dc/terms/format,_:t56938
+http://es.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios.rdf,http://www.w3.org/ns/dcat#accessURL,http://es.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios.rdf
+http://es.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios.rdf,http://www.w3.org/ns/dcat#byteSize,0.0
+http://es.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios.rdf,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
+http://es.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios.rdf,http://purl.org/dc/terms/title,Calidad del aire
+http://es.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios.ttl,http://purl.org/dc/terms/format,_:t56939
+http://es.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios.ttl,http://www.w3.org/ns/dcat#accessURL,http://es.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios.ttl
+http://es.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios.ttl,http://www.w3.org/ns/dcat#byteSize,0.0
+http://es.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios.ttl,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
+http://es.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios.ttl,http://purl.org/dc/terms/title,Calidad del aire
+http://es.euskadi.eus/distribution/calidad-aire-en-euskadi-2017,http://www.w3.org/ns/sparql-service-description#namedGraph,http://es.euskadi.eus/graph/calidad-aire-en-euskadi-2017
+http://es.euskadi.eus/distribution/calidad-aire-en-euskadi-2017,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://schema.org/Distribution
+http://es.euskadi.eus/distribution/calidad-aire-en-euskadi-2017,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
+http://es.euskadi.eus/distribution/calidad-aire-en-euskadi-2017,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://rdfs.org/ns/void#Dataset
+http://es.euskadi.eus/distribution/calidad-aire-en-euskadi-2017,http://purl.org/dc/terms/modified,2008-11-17
+http://es.euskadi.eus/distribution/calidad-aire-en-euskadi-2017,http://purl.org/dc/terms/title,Calidad del aire Linked Data
+http://es.euskadi.eus/distribution/calidad-aire-en-euskadi-2017,http://rdfs.org/ns/void#dataDump,http://es.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios.rdf
+http://es.euskadi.eus/distribution/calidad-aire-en-euskadi-2017,http://rdfs.org/ns/void#dataDump,http://es.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios.ttl
+http://es.euskadi.eus/distribution/calidad-aire-en-euskadi-2017,http://rdfs.org/ns/void#exampleResource,http://es.euskadi.eus/id/es/medio-ambiente/medicion/calidad-del-aire-2017-4-5
+http://es.euskadi.eus/distribution/calidad-aire-en-euskadi-2017,http://rdfs.org/ns/void#feature,http://www.w3.org/ns/formats/RDF_XML
+http://es.euskadi.eus/distribution/calidad-aire-en-euskadi-2017,http://rdfs.org/ns/void#feature,http://www.w3.org/ns/formats/Turtle
+http://es.euskadi.eus/distribution/calidad-aire-en-euskadi-2017,http://rdfs.org/ns/void#rootResource,http://es.euskadi.eus/id/es/medio-ambiente/medicion/calidad-del-aire-2017-4-5
+http://es.euskadi.eus/distribution/calidad-aire-en-euskadi-2017,http://rdfs.org/ns/void#sparqlEndpoint,http://euskadi.eus/sparql/
+http://es.euskadi.eus/distribution/calidad-aire-en-euskadi-2017,http://rdfs.org/ns/void#uriLookupEndpoint,http://es.euskadi.eus/search?qt=term&q=
+http://es.euskadi.eus/distribution/calidad-aire-en-euskadi-2017,http://rdfs.org/ns/void#uriRegexPattern,^http://es.euskadi.eus\.net/resource/*
+http://es.euskadi.eus/distribution/calidad-aire-en-euskadi-2017,http://rdfs.org/ns/void#uriSpace,http://es.euskadi.eus/id/es/medio-ambiente/
+http://es.euskadi.eus/distribution/calidad-aire-en-euskadi-2017,http://rdfs.org/ns/void#vocabulary,http://xmlns.com/foaf/0.1/
+http://es.euskadi.eus/graph/calidad-aire-en-euskadi-2017,http://www.w3.org/ns/prov#wasGeneratedBy,_:t56937
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios_csv.zip,http://purl.org/dc/terms/format,_:t56925
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios_csv.zip,http://www.w3.org/ns/dcat#accessURL,http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios_csv.zip
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios_csv.zip,http://www.w3.org/ns/dcat#byteSize,62628.0
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios_csv.zip,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios_csv.zip,http://purl.org/dc/terms/title,Diarios sin validar (Ãºltimos 45 dÃ­as)
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios_xls.zip,http://purl.org/dc/terms/format,_:t56924
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios_xls.zip,http://www.w3.org/ns/dcat#accessURL,http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios_xls.zip
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios_xls.zip,http://www.w3.org/ns/dcat#byteSize,246579.0
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios_xls.zip,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_diarios_xls.zip,http://purl.org/dc/terms/title,Diarios sin validar (Ãºltimos 45 dÃ­as)
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_historicos_csv.zip,http://purl.org/dc/terms/format,_:t56926
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_historicos_csv.zip,http://www.w3.org/ns/dcat#accessURL,http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_historicos_csv.zip
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_historicos_csv.zip,http://www.w3.org/ns/dcat#byteSize,792136.0
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_historicos_csv.zip,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_historicos_csv.zip,http://purl.org/dc/terms/title,Datos validados - Diarios y horarios
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_historicos_xls.zip,http://purl.org/dc/terms/format,_:t56933
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_historicos_xls.zip,http://www.w3.org/ns/dcat#accessURL,http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_historicos_xls.zip
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_historicos_xls.zip,http://www.w3.org/ns/dcat#byteSize,2862613.0
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_historicos_xls.zip,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_historicos_xls.zip,http://purl.org/dc/terms/title,Datos validados - Diarios y horarios
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_horarios_csv.zip,http://purl.org/dc/terms/format,_:t56931
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_horarios_csv.zip,http://www.w3.org/ns/dcat#accessURL,http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_horarios_csv.zip
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_horarios_csv.zip,http://www.w3.org/ns/dcat#byteSize,860764.0
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_horarios_csv.zip,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_horarios_csv.zip,http://purl.org/dc/terms/title,Horarios sin validar (Ãºltimos 45 dÃ­as)
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_horarios_xls.zip,http://purl.org/dc/terms/format,_:t56923
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_horarios_xls.zip,http://www.w3.org/ns/dcat#accessURL,http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_horarios_xls.zip
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_horarios_xls.zip,http://www.w3.org/ns/dcat#byteSize,3082814.0
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_horarios_xls.zip,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/datos_horarios_xls.zip,http://purl.org/dc/terms/title,Horarios sin validar (Ãºltimos 45 dÃ­as)
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/estaciones.csv,http://purl.org/dc/terms/format,_:t56927
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/estaciones.csv,http://www.w3.org/ns/dcat#accessURL,http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/estaciones.csv
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/estaciones.csv,http://www.w3.org/ns/dcat#byteSize,6697.0
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/estaciones.csv,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/estaciones.csv,http://purl.org/dc/terms/title,Estaciones de mediciÃ³n
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/estaciones.xls,http://purl.org/dc/terms/format,_:t56930
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/estaciones.xls,http://www.w3.org/ns/dcat#accessURL,http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/estaciones.xls
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/estaciones.xls,http://www.w3.org/ns/dcat#byteSize,20992.0
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/estaciones.xls,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
+http://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/estaciones.xls,http://purl.org/dc/terms/title,Estaciones de mediciÃ³n
+http://es.euskadi.eus/distribution/estaciones-meteorologicas-lecturas-recogidas-en-2017,http://www.w3.org/ns/sparql-service-description#namedGraph,http://es.euskadi.eus/graph/estaciones-meteorologicas-lecturas-recogidas-en-2017
+http://es.euskadi.eus/distribution/estaciones-meteorologicas-lecturas-recogidas-en-2017,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
+http://es.euskadi.eus/distribution/estaciones-meteorologicas-lecturas-recogidas-en-2017,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://rdfs.org/ns/void#Dataset
+http://es.euskadi.eus/distribution/estaciones-meteorologicas-lecturas-recogidas-en-2017,http://rdfs.org/ns/void#sparqlEndpoint,http://es.euskadi.eus/sparql/estaciones-meteorologicas-lecturas-recogidas-en-2017
+http://opendata.euskadi.eus/contenidos/ds_meteorologicos/met_stations_ds_2017/opendata/2017.zip,http://purl.org/dc/terms/format,_:t56976
+http://opendata.euskadi.eus/contenidos/ds_meteorologicos/met_stations_ds_2017/opendata/2017.zip,http://www.w3.org/ns/dcat#accessURL,http://opendata.euskadi.eus/contenidos/ds_meteorologicos/met_stations_ds_2017/opendata/2017.zip
+http://opendata.euskadi.eus/contenidos/ds_meteorologicos/met_stations_ds_2017/opendata/2017.zip,http://www.w3.org/ns/dcat#byteSize,11083448.0
+http://opendata.euskadi.eus/contenidos/ds_meteorologicos/met_stations_ds_2017/opendata/2017.zip,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
+http://opendata.euskadi.eus/contenidos/ds_meteorologicos/met_stations_ds_2017/opendata/2017.zip,http://purl.org/dc/terms/title,Lecturas
+http://es.euskadi.eus/distribution/registro-de-contratos-del-sector-publico-de-euskadi,http://www.w3.org/ns/sparql-service-description#namedGraph,http://es.euskadi.eus/graph/registro-de-contratos-del-sector-publico-de-euskadi
+http://es.euskadi.eus/distribution/registro-de-contratos-del-sector-publico-de-euskadi,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
+http://es.euskadi.eus/distribution/registro-de-contratos-del-sector-publico-de-euskadi,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://rdfs.org/ns/void#Dataset
+http://es.euskadi.eus/distribution/registro-de-contratos-del-sector-publico-de-euskadi,http://rdfs.org/ns/void#sparqlEndpoint,http://es.euskadi.eus/sparql/registro-de-contratos-del-sector-publico-de-euskadi
+http://opendata.euskadi.eus/contenidos/ds_contrataciones/contratos_euskadi/es_contracc/adjuntos/contratos_euskadi_csv.zip,http://purl.org/dc/terms/format,_:t57025
+http://opendata.euskadi.eus/contenidos/ds_contrataciones/contratos_euskadi/es_contracc/adjuntos/contratos_euskadi_csv.zip,http://www.w3.org/ns/dcat#accessURL,http://opendata.euskadi.eus/contenidos/ds_contrataciones/contratos_euskadi/es_contracc/adjuntos/contratos_euskadi_csv.zip
+http://opendata.euskadi.eus/contenidos/ds_contrataciones/contratos_euskadi/es_contracc/adjuntos/contratos_euskadi_csv.zip,http://www.w3.org/ns/dcat#byteSize,1468006.0
+http://opendata.euskadi.eus/contenidos/ds_contrataciones/contratos_euskadi/es_contracc/adjuntos/contratos_euskadi_csv.zip,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
+http://opendata.euskadi.eus/contenidos/ds_contrataciones/contratos_euskadi/es_contracc/adjuntos/contratos_euskadi_csv.zip,http://purl.org/dc/terms/title,HistÃ³rico CSV
+http://opendata.euskadi.eus/contenidos/ds_contrataciones/contratos_euskadi/es_contracc/adjuntos/contratos_euskadi_json.zip,http://purl.org/dc/terms/format,_:t57023
+http://opendata.euskadi.eus/contenidos/ds_contrataciones/contratos_euskadi/es_contracc/adjuntos/contratos_euskadi_json.zip,http://www.w3.org/ns/dcat#accessURL,http://opendata.euskadi.eus/contenidos/ds_contrataciones/contratos_euskadi/es_contracc/adjuntos/contratos_euskadi_json.zip
+http://opendata.euskadi.eus/contenidos/ds_contrataciones/contratos_euskadi/es_contracc/adjuntos/contratos_euskadi_json.zip,http://www.w3.org/ns/dcat#byteSize,1918894.0
+http://opendata.euskadi.eus/contenidos/ds_contrataciones/contratos_euskadi/es_contracc/adjuntos/contratos_euskadi_json.zip,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution
+http://opendata.euskadi.eus/contenidos/ds_contrataciones/contratos_euskadi/es_contracc/adjuntos/contratos_euskadi_json.zip,http://purl.org/dc/terms/title,HistÃ³rico JSON
+http://opendata.euskadi.eus/contenidos/ds_contrataciones/contratos_euskadi/es_contracc/adjuntos/contratos_euskadi_xls.zip,http://purl.org/dc/terms/format,_:t57021
+http://opendata.euskadi.eus/contenidos/ds_contrataciones/contratos_euskadi/es_contracc/adjuntos/contratos_euskadi_xls.zip,http://www.w3.org/ns/dcat#accessURL,http://opendata.euskadi.eus/contenidos/ds_contrataciones/contratos_euskadi/es_contracc/adjuntos/contratos_euskadi_xls.zip
+http://opendata.euskadi.eus/contenidos/ds_contrataciones/contratos_euskadi/es_contracc/adjuntos/contratos_euskadi_xls.zip,http://www.w3.org/ns/dcat#byteSize,4110418.0
+http://opendata.euskadi.eus/contenidos/ds_contrataciones/contratos_euskadi/es_contracc/adjuntos/contratos_euskadi_xls.zip,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution

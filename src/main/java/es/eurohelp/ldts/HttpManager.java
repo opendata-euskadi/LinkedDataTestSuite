@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package es.eurohelp.ldts;
 
@@ -30,7 +30,7 @@ import org.apache.http.util.EntityUtils;
 
 /**
  * Utilities to http connections
- * 
+ *
  * @author grozadilla
  *
  */
@@ -38,10 +38,10 @@ public class HttpManager {
 
 	private static HttpManager INSTANCE = null;
 	private BufferedHttpEntity bfHttpEntity;
-	
+
 	/**
 	 * Get a HttpManager instance
-	 * 
+	 *
 	 * @return HttpManager instance
 	 */
 	public synchronized static HttpManager getInstance() {
@@ -53,19 +53,19 @@ public class HttpManager {
 
 	/**
 	 * Executes an Http request
-	 * 
+	 *
 	 * @param requestBean
 	 *            request configuration
 	 * @return the response of the request
 	 */
-	public HttpResponse doRequest(LinkedDataRequestBean requestBean) {
+	public HttpResponse doRequest(final LinkedDataRequestBean requestBean) {
 		System.out.println("*********************");
 		System.out.println("Uri: " + requestBean.getCompleteUri());
 		System.out.println("Method: " + requestBean.getMethod());
 		System.out.println("Accept: " + requestBean.getAccept());
 		System.out.println("Params: " + requestBean.getParameters().toString());
 
-		HttpClient httpclient = new DefaultHttpClient();
+		final HttpClient httpclient = new DefaultHttpClient();
 		HttpPost httppost = null;
 		HttpGet httpget = null;
 		HttpResponse response = null;
@@ -77,12 +77,12 @@ public class HttpManager {
 				httppost.setHeader("accept", requestBean.getAccept());
 				httppost.setHeader("content-type", "application/x-www-form-urlencoded");
 
-				ArrayList<NameValuePair> postParameters = new ArrayList<NameValuePair>();
-				Map<String, String> parameters = requestBean.getParameters();
-				Iterator<String> iterator = parameters.keySet().iterator();
+				final ArrayList<NameValuePair> postParameters = new ArrayList<NameValuePair>();
+				final Map<String, String> parameters = requestBean.getParameters();
+				final Iterator<String> iterator = parameters.keySet().iterator();
 
 				while (iterator.hasNext()) {
-					String key = iterator.next();
+					final String key = iterator.next();
 					postParameters.add(new BasicNameValuePair(key, parameters.get(key)));
 				}
 
@@ -92,16 +92,16 @@ public class HttpManager {
 				final String content = EntityUtils.toString(httpclient.execute(httppost).getEntity());
 				requestBean.setResponseString(content);
 				*/
-				
+
 				response = httpclient.execute(httppost);
-				
+
 			} else {
 				String completeUri = requestBean.getCompleteUri();
 				int numParam = 0;
 
-				Map<String, String> parameters = requestBean.getParameters();
+				final Map<String, String> parameters = requestBean.getParameters();
 
-				Iterator<String> iterator = parameters.keySet().iterator();
+				final Iterator<String> iterator = parameters.keySet().iterator();
 
 				while (iterator.hasNext()) {
 					if (numParam == 0) {
@@ -109,7 +109,7 @@ public class HttpManager {
 					} else {
 						completeUri = completeUri + "&";
 					}
-					String key = iterator.next();
+					final String key = iterator.next();
 					completeUri = completeUri + key + "=" + parameters.get(key);
 					numParam++;
 				}
@@ -118,7 +118,7 @@ public class HttpManager {
 				httpget.setHeader("accept", requestBean.getAccept());
 
 				if ("GETNO303".equals(requestBean.getMethod())) {
-					HttpParams params = new BasicHttpParams();
+					final HttpParams params = new BasicHttpParams();
 					params.setParameter(ClientPNames.HANDLE_REDIRECTS, false);
 					httpget.setParams(params);
 				}
@@ -127,11 +127,12 @@ public class HttpManager {
 				final String content = EntityUtils.toString(httpclient.execute(httppost).getEntity());
 				requestBean.setResponseString(content);
 				*/
-				
+
 				response = httpclient.execute(httpget);
 
-				if ("GETNO303".equals(requestBean.getMethod())) {
-					String LocationHEaderValue = response.getFirstHeader("Location").getValue();
+				if ("GETNO303".equals(requestBean.getMethod())
+						&& response.getFirstHeader("Location") != null) {
+					final String LocationHEaderValue = response.getFirstHeader("Location").getValue();
 					System.out.println("Location: " + LocationHEaderValue);
 					requestBean.setLocation(LocationHEaderValue);
 				}
@@ -145,10 +146,10 @@ public class HttpManager {
 				// }
 
 			}
-			
+
 			requestBean.setStatus(response.getStatusLine().getStatusCode());
 
-			String resultsPath = PropertiesManager.getInstance().getProperty("lod.report.path");
+			final String resultsPath = PropertiesManager.getInstance().getProperty("lod.report.path");
 
 			System.out.println("Status: " + requestBean.getStatus());
 			System.out.println("Test name: " + requestBean.getName());
@@ -157,15 +158,15 @@ public class HttpManager {
 
 			//Con la clase BufferedHttpEntity podemos consumir varias veces la HttpEntity(non-repeatable) de la response
 			bfHttpEntity = new BufferedHttpEntity(response.getEntity());
-			
+
 			// redirect the output
 			InputStream aInStream = null;
 			FileOutputStream aOutStream = null;
-			
+
 			try {
 				aInStream = bfHttpEntity.getContent();
 
-				File file = new File(resultsPath + requestBean.getTestName());
+				final File file = new File(resultsPath + requestBean.getTestName());
 
 				// if file doesn't exists, then create it
 				if (!file.exists()) {
@@ -176,7 +177,7 @@ public class HttpManager {
 
 				IOUtils.copy(aInStream, aOutStream);
 
-			} catch (IOException ioe) {
+			} catch (final IOException ioe) {
 				ioe.printStackTrace();
 			} finally {
 				if (aInStream != null)
@@ -185,21 +186,21 @@ public class HttpManager {
 					aOutStream.close();
 			}
 
-		} catch (UnsupportedEncodingException e) {
+		} catch (final UnsupportedEncodingException e) {
 			e.printStackTrace();
-		} catch (IOException e) {
+		} catch (final IOException e) {
 			e.printStackTrace();
 		}
-		
+
 		try {
-			String responseString = EntityUtils.toString(bfHttpEntity);
+			final String responseString = EntityUtils.toString(bfHttpEntity);
 			requestBean.setResponseString(responseString);
-		} catch (ParseException e) {
+		} catch (final ParseException e) {
 			e.printStackTrace();
-		} catch (IOException e) {
+		} catch (final IOException e) {
 			e.printStackTrace();
 		}
-		
+
 		return response;
 	}
 }
