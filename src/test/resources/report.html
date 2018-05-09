@@ -40,7 +40,7 @@
   <body>
   
     <h1>Linked Data Test Suite Report</h1>
-    <h2>22-feb-2018 14:24:52</h2>
+    <h2>09-may-2018 17:38:28</h2>
 
     <hr/>
     
@@ -49,11 +49,119 @@
     POST:
     
 
-    				[<a href=#0>SPARQLPOSTSERVICE</a>]
+    				[<a href=#4>SPARQLPOSTNamedGraphsMetadataCSVContent</a>]
+
+
+    				[<a href=#14> SPARQLPOSTInsert400</a>]
+
+
+    				[<a href=#28>SPARQLPOSTMassiveCSV200</a>]
 
     <br/>
     GET:
     
+
+    				[<a href=#0>GETResourceDirectlyDataJSONLDContentHTMLHeader</a>]
+
+
+    				[<a href=#1>GETOntologyHTMLContent</a>]
+
+
+    				[<a href=#2>GETClassHTML200</a>]
+
+
+    				[<a href=#3>GETResourceRDFJSON200</a>]
+
+
+    				[<a href=#5>GETOntologyRDFXMLContentFileExtensionOWL </a>]
+
+
+    				[<a href=#6>GETOntologyRDFXMLContent</a>]
+
+
+    				[<a href=#7>SPARQLGETPARAMETERQUERYSELECT</a>]
+
+
+    				[<a href=#8>SPARQLGETHTML200</a>]
+
+
+    				[<a href=#9>GETResourceTriXContent</a>]
+
+
+    				[<a href=#10>GETErrorHTML</a>]
+
+
+    				[<a href=#11>GETResourceHTMLPage</a>]
+
+
+    				[<a href=#12>GETPropertyHTML200</a>]
+
+
+    				[<a href=#13>GETOntologyHTMLContentFileExtensionHTML</a>]
+
+
+    				[<a href=#15>GETOntologyRDFXMLContentHTMLHeader</a>]
+
+
+    				[<a href=#16>GETResourceDirectlyDataJSONLDContent</a>]
+
+
+    				[<a href=#17>GETResourceDirectlyDoc</a>]
+
+
+    				[<a href=#18>GETErrorRDF</a>]
+
+
+    				[<a href=#19>GETResourceTurtleContent</a>]
+
+
+    				[<a href=#20>GETClassHTML200</a>]
+
+
+    				[<a href=#21>GETResourceN3Content</a>]
+
+
+    				[<a href=#22>GETPropertyRDFXMLContent</a>]
+
+
+    				[<a href=#23>GETkosRDF</a>]
+
+
+    				[<a href=#24>GETResourceDirectlyDataRDFXMLContent</a>]
+
+
+    				[<a href=#25>GETResourceHTMLDoc</a>]
+
+
+    				[<a href=#26>GETResourceDirectlyDataTTLContentHTMLHeader</a>]
+
+
+    				[<a href=#27>GETResourceJSONLDContent</a>]
+
+
+    				[<a href=#29>GETResourceNTriplesContent</a>]
+
+
+    				[<a href=#30>GETkosHTMLPage</a>]
+
+
+    				[<a href=#31>GETClassRDFXMLContent</a>]
+
+
+    				[<a href=#32>GETResourceDirectlyDataTTLContent</a>]
+
+
+    				[<a href=#34>GETResourceRDFXMLContent</a>]
+
+
+    				[<a href=#36>GETResourceDirectlyDataRDFXMLContentHTMLHeader</a>]
+
+
+    				[<a href=#33>GETResourceHTMLPageNoRedirect303</a>]
+
+
+    				[<a href=#35>GETResourceHTMLDocNoRedirect303</a>]
+
 
 	<table>
 	   	<thead>
@@ -68,13 +176,337 @@
    	<tbody>
    	
    		<tr>
-	   		<td id=0>SPARQLPOSTSERVICE</td>
-	   		<td>Consulta federada combinando el endpoint ES y EU</td>
-	   		<td><a href=http://euskadi.eus:8008/sparql>http://euskadi.eus:8008/sparql</a></td>
+	   		<td id=0>GETResourceDirectlyDataJSONLDContentHTMLHeader</td>
+	   		<td>Obtener recurso en JSON-LD (por extension, no cabecera, cabecera HTML) directamente de /data, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.jsonld>http://data.euskadi.eus/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.jsonld</a></td>
+	   		<td>GET</td>
+	   		<td>text/html</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETtext_htmlGETResourceDirectlyDataJSONLDContentHTMLHeader">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=1>GETOntologyHTMLContent</td>
+	   		<td>Obtener ontologia en HTML, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/def/euskadipedia.html>http://data.euskadi.eus/def/euskadipedia.html</a></td>
+	   		<td>GET</td>
+	   		<td>text/html</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETtext_htmlGETOntologyHTMLContent">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=2>GETClassHTML200</td>
+	   		<td>Obtener clase en HTML con ancla, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/def/euskadipedia.html#Hotel>http://data.euskadi.eus/def/euskadipedia.html#Hotel</a></td>
+	   		<td>GET</td>
+	   		<td>text/html</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETtext_htmlGETClassHTML200">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=3>GETResourceRDFJSON200</td>
+	   		<td>Obtener recurso en RDF/JSON, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09>http://data.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</a></td>
+	   		<td>GET</td>
+	   		<td>application/rdf+json</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETapplication_rdf+jsonGETResourceRDFJSON200">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=5>GETOntologyRDFXMLContentFileExtensionOWL </td>
+	   		<td>Obtener ontologia en RDF/XML con .owl, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/def/euskadipedia.owl>http://data.euskadi.eus/def/euskadipedia.owl</a></td>
+	   		<td>GET</td>
+	   		<td>application/rdf+xml</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETapplication_rdf+xmlGETOntologyRDFXMLContentFileExtensionOWL ">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=6>GETOntologyRDFXMLContent</td>
+	   		<td>Obtener ontologia en RDF/XML, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/def/euskadipedia.html>http://data.euskadi.eus/def/euskadipedia.html</a></td>
+	   		<td>GET</td>
+	   		<td>application/rdf+xml</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETapplication_rdf+xmlGETOntologyRDFXMLContent">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=7>SPARQLGETPARAMETERQUERYSELECT</td>
+	   		<td>Consulta SPARQL mediante GET ?query=</td>
+	   		<td><a href=http://data.euskadi.eus/sparql/?query=SELECT+*%0AWHERE+%7B%0A%09%3Fs+%3Fp+%3Fo%0A%7D%0ALIMIT+100>http://data.euskadi.eus/sparql/?query=SELECT+*%0AWHERE+%7B%0A%09%3Fs+%3Fp+%3Fo%0A%7D%0ALIMIT+100</a></td>
+	   		<td>GET</td>
+	   		<td>text/csv</td>
+	   			<td style="color:green;">OK</td>
+	   		<td><a href="GETtext_csvSPARQLGETPARAMETERQUERYSELECT">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=8>SPARQLGETHTML200</td>
+	   		<td>Ir directo a formulario SPARQL</td>
+	   		<td><a href=http://data.euskadi.eus/sparql/>http://data.euskadi.eus/sparql/</a></td>
+	   		<td>GET</td>
+	   		<td>text/html</td>
+	   			<td style="color:green;">OK</td>
+	   		<td><a href="GETtext_htmlSPARQLGETHTML200">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=9>GETResourceTriXContent</td>
+	   		<td>Obtener recurso en TriX, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09>http://data.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</a></td>
+	   		<td>GET</td>
+	   		<td>application/trix</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETapplication_trixGETResourceTriXContent">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=10>GETErrorHTML</td>
+	   		<td>Obtener un recurso que no existe, en HTML</td>
+	   		<td><a href=http://data.euskadi.eus/trololo>http://data.euskadi.eus/trololo</a></td>
+	   		<td>GET</td>
+	   		<td>text/html</td>
+	   			<td style="color:green;">OK</td>
+	   		<td><a href="GETtext_htmlGETErrorHTML">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=11>GETResourceHTMLPage</td>
+	   		<td>Recurso con pagina bonita que no existe todavia</td>
+	   		<td><a href=http://data.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22>http://data.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22</a></td>
+	   		<td>GET</td>
+	   		<td>text/html</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETtext_htmlGETResourceHTMLPage">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=12>GETPropertyHTML200</td>
+	   		<td>Obtener propiedad en HTML, sin parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/def/euskadipedia#inHistoricTerritory>http://data.euskadi.eus/def/euskadipedia#inHistoricTerritory</a></td>
+	   		<td>GET</td>
+	   		<td>text/html</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETtext_htmlGETPropertyHTML200">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=13>GETOntologyHTMLContentFileExtensionHTML</td>
+	   		<td>Obtener ontologia en HTML con .html, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/def/euskadipedia.html>http://data.euskadi.eus/def/euskadipedia.html</a></td>
+	   		<td>GET</td>
+	   		<td>text/html</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETtext_htmlGETOntologyHTMLContentFileExtensionHTML">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=15>GETOntologyRDFXMLContentHTMLHeader</td>
+	   		<td>Obtener ontologia en OWL (por extension, no cabecera, cabecera HTML), parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/def/euskadipedia.owl>http://data.euskadi.eus/def/euskadipedia.owl</a></td>
+	   		<td>GET</td>
+	   		<td>text/html</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETtext_htmlGETOntologyRDFXMLContentHTMLHeader">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=16>GETResourceDirectlyDataJSONLDContent</td>
+	   		<td>Obtener recurso en JSONLD directamente de /data, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09>http://data.euskadi.eus/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</a></td>
+	   		<td>GET</td>
+	   		<td>application/ld+json</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETapplication_ld+jsonGETResourceDirectlyDataJSONLDContent">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=17>GETResourceDirectlyDoc</td>
+	   		<td>Recurso con pagina fea, ir directamente a pagina /doc sin pasar por /id</td>
+	   		<td><a href=http://data.euskadi.eus/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02>http://data.euskadi.eus/doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02</a></td>
+	   		<td>GET</td>
+	   		<td>text/html</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETtext_htmlGETResourceDirectlyDoc">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=18>GETErrorRDF</td>
+	   		<td>Obtener un recurso que no existe, en RDF</td>
+	   		<td><a href=http://data.euskadi.eus/trololo>http://data.euskadi.eus/trololo</a></td>
+	   		<td>GET</td>
+	   		<td>application/rdf+xml</td>
+	   			<td style="color:green;">OK</td>
+	   		<td><a href="GETapplication_rdf+xmlGETErrorRDF">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=19>GETResourceTurtleContent</td>
+	   		<td>Obtener recurso en TTL, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09>http://data.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</a></td>
+	   		<td>GET</td>
+	   		<td>text/turtle</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETtext_turtleGETResourceTurtleContent">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=20>GETClassHTML200</td>
+	   		<td>Obtener clase en HTML, sin parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/def/euskadipedia/Hotel>http://data.euskadi.eus/def/euskadipedia/Hotel</a></td>
+	   		<td>GET</td>
+	   		<td>text/html</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETtext_htmlGETClassHTML200">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=21>GETResourceN3Content</td>
+	   		<td>Obtener recurso en N3, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09>http://data.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</a></td>
+	   		<td>GET</td>
+	   		<td>text/rdf+n3</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETtext_rdf+n3GETResourceN3Content">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=22>GETPropertyRDFXMLContent</td>
+	   		<td>Obtener propiedad en RDF/XML, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/def/euskadipedia#inHistoricTerritory>http://data.euskadi.eus/def/euskadipedia#inHistoricTerritory</a></td>
+	   		<td>GET</td>
+	   		<td>application/rdf+xml</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETapplication_rdf+xmlGETPropertyRDFXMLContent">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=23>GETkosRDF</td>
+	   		<td>Obtener documento SKOS pidiendo RDF</td>
+	   		<td><a href=http://data.euskadi.eus/kos/dominio.rdf>http://data.euskadi.eus/kos/dominio.rdf</a></td>
+	   		<td>GET</td>
+	   		<td>application/rdf+xml</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETapplication_rdf+xmlGETkosRDF">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=24>GETResourceDirectlyDataRDFXMLContent</td>
+	   		<td>Obtener recurso en RDF/XML directamente de /data, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09>http://data.euskadi.eus/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</a></td>
+	   		<td>GET</td>
+	   		<td>application/rdf+xml</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETapplication_rdf+xmlGETResourceDirectlyDataRDFXMLContent">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=25>GETResourceHTMLDoc</td>
+	   		<td>Recurso con pagina fea</td>
+	   		<td><a href=http://data.euskadi.eus/id/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26>http://data.euskadi.eus/id/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26</a></td>
+	   		<td>GET</td>
+	   		<td>text/html</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETtext_htmlGETResourceHTMLDoc">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=26>GETResourceDirectlyDataTTLContentHTMLHeader</td>
+	   		<td>Obtener recurso en TTL (por extension, no cabecera, cabecera HTML) directamente de /data, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.ttl>http://data.euskadi.eus/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.ttl</a></td>
+	   		<td>GET</td>
+	   		<td>text/html</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETtext_htmlGETResourceDirectlyDataTTLContentHTMLHeader">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=27>GETResourceJSONLDContent</td>
+	   		<td>Obtener recurso en JSON-LD, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09>http://data.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</a></td>
+	   		<td>GET</td>
+	   		<td>application/ld+json</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETapplication_ld+jsonGETResourceJSONLDContent">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=29>GETResourceNTriplesContent</td>
+	   		<td>Obtener recurso en NTriples, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09>http://data.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</a></td>
+	   		<td>GET</td>
+	   		<td>text/plain</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETtext_plainGETResourceNTriplesContent">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=30>GETkosHTMLPage</td>
+	   		<td>Obtener documento SKOS pidiendo documento Web</td>
+	   		<td><a href=http://data.euskadi.eus/kos/dominio.rdf>http://data.euskadi.eus/kos/dominio.rdf</a></td>
+	   		<td>GET</td>
+	   		<td>text/html</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETtext_htmlGETkosHTMLPage">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=31>GETClassRDFXMLContent</td>
+	   		<td>Obtener clase en RDF/XML, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/def/euskadipedia/Hotel>http://data.euskadi.eus/def/euskadipedia/Hotel</a></td>
+	   		<td>GET</td>
+	   		<td>application/rdf+xml</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETapplication_rdf+xmlGETClassRDFXMLContent">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=32>GETResourceDirectlyDataTTLContent</td>
+	   		<td>Obtener recurso en TTL directamente de /data, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09>http://data.euskadi.eus/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</a></td>
+	   		<td>GET</td>
+	   		<td>text/turtle</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETtext_turtleGETResourceDirectlyDataTTLContent">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=34>GETResourceRDFXMLContent</td>
+	   		<td>Obtener recurso en RDF/XML, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09>http://data.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09</a></td>
+	   		<td>GET</td>
+	   		<td>application/rdf+xml</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETapplication_rdf+xmlGETResourceRDFXMLContent">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=36>GETResourceDirectlyDataRDFXMLContentHTMLHeader</td>
+	   		<td>Obtener recurso en RDF/XML (por extension, no cabecera, cabecera HTML) directamente de /data, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.rdf>http://data.euskadi.eus/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.rdf</a></td>
+	   		<td>GET</td>
+	   		<td>text/html</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETtext_htmlGETResourceDirectlyDataRDFXMLContentHTMLHeader">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=33>GETResourceHTMLPageNoRedirect303</td>
+	   		<td>Recurso con pagina bonita, pero sin seguir el 303</td>
+	   		<td><a href=http://data.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22>http://data.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22</a></td>
+	   		<td>GETNO303</td>
+	   		<td>text/html</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETNO303text_htmlGETResourceHTMLPageNoRedirect303">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=35>GETResourceHTMLDocNoRedirect303</td>
+	   		<td>Recurso con pagina fea, pero sin seguir 303</td>
+	   		<td><a href=http://data.euskadi.eus/id/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26>http://data.euskadi.eus/id/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26</a></td>
+	   		<td>GETNO303</td>
+	   		<td>text/html</td>
+	   			<td style="color:red;">ERROR</td>
+	   		<td><a href="GETNO303text_htmlGETResourceHTMLDocNoRedirect303">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=4>SPARQLPOSTNamedGraphsMetadataCSVContent</td>
+	   		<td>Consulta sobre datos y metadatos, parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/sparql/>http://data.euskadi.eus/sparql/</a></td>
 	   		<td>POST</td>
 	   		<td>text/csv</td>
 	   			<td style="color:red;">ERROR</td>
-	   		<td><a href="POSTtext_csvSPARQLPOSTSERVICE">view response</a></td>
+	   		<td><a href="POSTtext_csvSPARQLPOSTNamedGraphsMetadataCSVContent">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=14> SPARQLPOSTInsert400</td>
+	   		<td>Insertar datos, deberia fallar</td>
+	   		<td><a href=http://data.euskadi.eus/sparql/>http://data.euskadi.eus/sparql/</a></td>
+	   		<td>POST</td>
+	   		<td>text/csv</td>
+	   			<td style="color:green;">OK</td>
+	   		<td><a href="POSTtext_csv SPARQLPOSTInsert400">view response</a></td>
+    	</tr>
+   		<tr>
+	   		<td id=28>SPARQLPOSTMassiveCSV200</td>
+	   		<td>Consulta masiva, sin parsear contenido</td>
+	   		<td><a href=http://data.euskadi.eus/sparql/>http://data.euskadi.eus/sparql/</a></td>
+	   		<td>POST</td>
+	   		<td>text/csv</td>
+	   			<td style="color:green;">OK</td>
+	   		<td><a href="POSTtext_csvSPARQLPOSTMassiveCSV200">view response</a></td>
     	</tr>
     
     </tbody>

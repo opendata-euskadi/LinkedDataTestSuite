@@ -1,7 +1,60 @@
-a,b
-http://es.euskadi.eus/distribution/relaciones-de-puestos-de-trabajo-de-los-departamentos-y-organismos-autonomos-de-la-administracion-de-la-comunidad-autonoma,http://www.w3.org/ns/sparql-service-description#namedGraph
-http://es.euskadi.eus/distribution/calidad-aire-en-euskadi-2017,http://www.w3.org/ns/sparql-service-description#namedGraph
-http://es.euskadi.eus/distribution/guia-comunicacion-gobierno-vasco-datos-contacto-entidades-euskadi,http://www.w3.org/ns/sparql-service-description#namedGraph
-http://es.euskadi.eus/distribution/estaciones-meteorologicas-lecturas-recogidas-en-2017,http://www.w3.org/ns/sparql-service-description#namedGraph
-http://es.euskadi.eus/distribution/registro-de-contratos-del-sector-publico-de-euskadi,http://www.w3.org/ns/sparql-service-description#namedGraph
-http://es.euskadi.eus/distribution/guia-de-la-comunicacion-del-gobierno-vasco-datos-de-contacto-de-los-representantes-y-cargos-de-entidades,http://www.w3.org/ns/sparql-service-description#namedGraph
+SPARQL-QUERY: queryStr=SELECT DISTINCT ?a ?b WHERE { ?a ?b ?g GRAPH ?g {?sub ?pred ?obj}}
+java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: com.bigdata.rdf.sparql.ast.QuadsOperationInTriplesModeException: Use of WITH and GRAPH constructs in query body is not supported in triples mode.
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.bigdata.rdf.sail.webapp.BigdataServlet.submitApiTask(BigdataServlet.java:281)
+	at com.bigdata.rdf.sail.webapp.QueryServlet.doSparqlQuery(QueryServlet.java:653)
+	at com.bigdata.rdf.sail.webapp.QueryServlet.doPost(QueryServlet.java:273)
+	at com.bigdata.rdf.sail.webapp.RESTServlet.doPost(RESTServlet.java:269)
+	at com.bigdata.rdf.sail.webapp.MultiTenancyServlet.doPost(MultiTenancyServlet.java:193)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: com.bigdata.rdf.sparql.ast.QuadsOperationInTriplesModeException: Use of WITH and GRAPH constructs in query body is not supported in triples mode.
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.bigdata.rdf.sail.webapp.QueryServlet$SparqlQueryTask.call(QueryServlet.java:864)
+	at com.bigdata.rdf.sail.webapp.QueryServlet$SparqlQueryTask.call(QueryServlet.java:670)
+	at com.bigdata.rdf.task.ApiTaskForIndexManager.call(ApiTaskForIndexManager.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+Caused by: com.bigdata.rdf.sparql.ast.QuadsOperationInTriplesModeException: Use of WITH and GRAPH constructs in query body is not supported in triples mode.
+	at com.bigdata.rdf.sparql.ast.eval.ASTDeferredIVResolution.fillInIV(ASTDeferredIVResolution.java:1034)
+	at com.bigdata.rdf.sparql.ast.eval.ASTDeferredIVResolution.fillInIV(ASTDeferredIVResolution.java:897)
+	at com.bigdata.rdf.sparql.ast.eval.ASTDeferredIVResolution.fillInIV(ASTDeferredIVResolution.java:897)
+	at com.bigdata.rdf.sparql.ast.eval.ASTDeferredIVResolution.prepare(ASTDeferredIVResolution.java:670)
+	at com.bigdata.rdf.sparql.ast.eval.ASTDeferredIVResolution.resolve(ASTDeferredIVResolution.java:455)
+	at com.bigdata.rdf.sparql.ast.eval.ASTDeferredIVResolution.resolveQuery(ASTDeferredIVResolution.java:269)
+	at com.bigdata.rdf.sparql.ast.eval.ASTEvalHelper.optimizeQuery(ASTEvalHelper.java:408)
+	at com.bigdata.rdf.sparql.ast.eval.ASTEvalHelper.evaluateTupleQuery(ASTEvalHelper.java:211)
+	at com.bigdata.rdf.sail.BigdataSailTupleQuery.evaluate(BigdataSailTupleQuery.java:79)
+	at com.bigdata.rdf.sail.BigdataSailTupleQuery.evaluate(BigdataSailTupleQuery.java:61)
+	at org.openrdf.repository.sail.SailTupleQuery.evaluate(SailTupleQuery.java:75)
+	at com.bigdata.rdf.sail.webapp.BigdataRDFContext$TupleQueryTask.doQuery(BigdataRDFContext.java:1713)
+	at com.bigdata.rdf.sail.webapp.BigdataRDFContext$AbstractQueryTask.innerCall(BigdataRDFContext.java:1569)
+	at com.bigdata.rdf.sail.webapp.BigdataRDFContext$AbstractQueryTask.call(BigdataRDFContext.java:1534)
+	at com.bigdata.rdf.sail.webapp.BigdataRDFContext$AbstractQueryTask.call(BigdataRDFContext.java:747)
+	... 4 more

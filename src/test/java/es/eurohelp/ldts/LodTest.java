@@ -26,25 +26,6 @@ public class LodTest {
 
     LinkedDataRequestBean requestBean;
     static List<LinkedDataRequestBean> tests = new ArrayList<LinkedDataRequestBean>();
-
-    @Test
-    public final void SPARQLPOSTSERVICE() {
-        try {
-            final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-            final String method = Methodtype.POST.methodtypevalue();
-            final String accept = MIMEtype.CSV.mimetypevalue();
-            final String pathUri = "sparql";
-            final String name = "SPARQLPOSTSERVICE";
-            final String comment = "Consulta federada combinando el endpoint ES y EU";
-            final Map<String, String> parameters = new HashMap<String, String>();
-            parameters.put("query", "SELECT * WHERE { ?s ?p ?o SERVICE <http://localhost:9999/blazegraph/namespace/ejieEU/sparql> { ?s ?f ?g } }");
-            requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
-            HttpManager.getInstance().doRequest(requestBean);
-            assertEquals(requestBean.getStatus(), 200);
-        } catch (final IOException e) {
-            e.printStackTrace();
-        }
-    }
     
     @Test
     public final void SPARQLGETPARAMETERQUERYSELECT() {
@@ -52,7 +33,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.CSV.mimetypevalue();
-            final String pathUri = "sparql?query=SELECT+*%0AWHERE+%7B%0A%09%3Fs+%3Fp+%3Fo%0A%7D%0ALIMIT+100";
+            final String pathUri = "sparql/?query=SELECT+*%0AWHERE+%7B%0A%09%3Fs+%3Fp+%3Fo%0A%7D%0ALIMIT+100";
             final String name = "SPARQLGETPARAMETERQUERYSELECT";
             final String comment = "Consulta SPARQL mediante GET ?query=";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -70,7 +51,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.HTML.mimetypevalue();
-            final String pathUri = "sparql";
+            final String pathUri = "sparql/";
             final String name = "SPARQLGETHTML200";
             final String comment = "Ir directo a formulario SPARQL";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -798,7 +779,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
             final String method = Methodtype.POST.methodtypevalue();
             final String accept = MIMEtype.CSV.mimetypevalue();
-            final String pathUri = "sparql";
+            final String pathUri = "sparql/";
             final String name = "SPARQLPOSTNamedGraphsMetadataCSVContent";
             final String comment = "Consulta sobre datos y metadatos, parsear contenido";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -818,7 +799,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
             final String method = Methodtype.POST.methodtypevalue();
             final String accept = MIMEtype.CSV.mimetypevalue();
-            final String pathUri = "sparql";
+            final String pathUri = "sparql/";
             final String name = "SPARQLPOSTMassiveCSV200";
             final String comment = "Consulta masiva, sin parsear contenido";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -837,7 +818,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
             final String method = Methodtype.POST.methodtypevalue();
             final String accept = MIMEtype.CSV.mimetypevalue();
-            final String pathUri = "sparql";
+            final String pathUri = "sparql/";
             final String name = " SPARQLPOSTInsert400";
             final String comment = "Insertar datos, deberia fallar";
             final Map<String, String> parameters = new HashMap<String, String>();
