@@ -52,7 +52,7 @@
 
 	<!-- **** StyleSheet/Javascript resources for content **** -->
 <script type="text/javascript">
-var r01ServerTime = new Date('Wednesday, May 09, 2018');
+var r01ServerTime = new Date('Thursday, May 10, 2018');
 var r01AttachPrefix = ' ';
 var file = ' '
 </script>
@@ -101,11 +101,11 @@ var file = ' '
       
       
       <link rel="shortcut icon" href="/appcont/r01hpLODWebContent/elda-assets/images/datagovuk_favicon.png" type="image/x-icon">
-      <link rel="alternate" href="http://data.euskadi.eus/doc/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22.json" type="application/json">
-      <link rel="alternate" href="http://data.euskadi.eus/doc/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22.rdf" type="application/rdf+xml">
-      <link rel="alternate" href="http://data.euskadi.eus/doc/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22.text" type="text/plain">
-      <link rel="alternate" href="http://data.euskadi.eus/doc/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22.ttl" type="text/turtle">
-      <link rel="alternate" href="http://data.euskadi.eus/doc/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22.xml" type="application/xml">
+      <link rel="alternate" href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.json" type="application/json">
+      <link rel="alternate" href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.rdf" type="application/rdf+xml">
+      <link rel="alternate" href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.text" type="text/plain">
+      <link rel="alternate" href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.ttl" type="text/turtle">
+      <link rel="alternate" href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.xml" type="application/xml">
       <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><link rel="stylesheet" href="/appcont/r01hpLODWebContent/elda-assets/css/html5reset-1.6.1.css" type="text/css">
       <link rel="stylesheet" href="/appcont/r01hpLODWebContent/elda-assets/css/jquery-ui.css" type="text/css">
       <link rel="stylesheet" href="/appcont/r01hpLODWebContent/elda-assets/css/smoothness/jquery-ui.css" type="text/css">
@@ -170,7 +170,7 @@ var file = ' '
 <body class='web01-ejeduki'>
 <script>
 var _r01 = {
-	requestedUri : '/r01hpLODWar/doc/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22',
+	requestedUri : '/r01hpLODWar/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi',
 	clientIp : '172.16.0.205, 172.16.0.205, 127.0.0.1',
 	portalInfo : {
 		portalId : 'web01',
@@ -287,12 +287,12 @@ var _r01 = {
          <nav class="site">
             <section class="formats">
                <ul>
-                  <li class="first"><a href="http://data.euskadi.eus/doc/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22.html" type="text/html" rel="alternate" title="view in html format">html</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22.json" type="application/json" rel="alternate" title="view in json format">json</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22.rdf" type="application/rdf+xml" rel="alternate" title="view in rdf format">rdf</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22.text" type="text/plain" rel="alternate" title="view in text format">text</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22.ttl" type="text/turtle" rel="alternate" title="view in ttl format">ttl</a></li>
-                  <li class="last"><a href="http://data.euskadi.eus/doc/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22.xml" type="application/xml" rel="alternate" title="view in xml format">xml</a></li>
+                  <li class="first"><a href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.html" type="text/html" rel="alternate" title="view in html format">html</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.json" type="application/json" rel="alternate" title="view in json format">json</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.rdf" type="application/rdf+xml" rel="alternate" title="view in rdf format">rdf</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.text" type="text/plain" rel="alternate" title="view in text format">text</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.ttl" type="text/turtle" rel="alternate" title="view in ttl format">ttl</a></li>
+                  <li class="last"><a href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.xml" type="application/xml" rel="alternate" title="view in xml format">xml</a></li>
                </ul>
             </section>
          </nav>
@@ -311,12 +311,12 @@ var _r01 = {
                   </p>
                </div>
                <ul>
-                  <li><a href="http://data.euskadi.eus/doc/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22.html?_view=all" title="switch to all view">all</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22.html?_view=basic" title="switch to basic view">basic</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22.html?_view=description" title="switch to description view">description</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.html?_view=all" title="switch to all view">all</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.html?_view=basic" title="switch to basic view">basic</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.html?_view=description" title="switch to description view">description</a></li>
                </ul>
                <ul class="properties">
-                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22.html?_properties=isPrimaryTopicOf"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is primary topic of</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.html?_properties=isPrimaryTopicOf"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is primary topic of</a></li>
                </ul>
             </section>
          </nav>
@@ -328,7 +328,7 @@ var _r01 = {
                   <p class="id"><a href="elda:missingEndpoint">elda:missingEndpoint</a></p>
                </header>
                <section id="search" style="display: none">
-                  <form action="http://data.euskadi.eus/doc/sector-publico/puestos-trabajo/contrato">
+                  <form action="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion">
                      <table>
                         <colgroup>
                            <col class="labelWidth">
@@ -347,7 +347,7 @@ var _r01 = {
                   </form>
                </section>
                <section>
-                  <table id="w51aab7">
+                  <table id="w2725aab7">
                      <colgroup>
                         <col class="labelWidth">
                         <col class="autoWidth">
@@ -360,7 +360,7 @@ var _r01 = {
                      </tr>
                      <tr class="isPrimaryTopicOf last">
                         <th class="label"><a href="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">is primary topic of</a></th>
-                        <td class="value"><a href="#w51aa" title="view on this page">asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22.html</a></td>
+                        <td class="value"><a href="#w2725aa" title="view on this page">euskadi.html</a></td>
                         <td class="filter"></td>
                      </tr>
                   </table>
@@ -506,7 +506,7 @@ var _r01 = {
 
 
         
-                <img src="/setCookie_ _4_20180509173800?r01_url=/doc/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22?&amp;r01_title=Eusko%20Jaurlaritza%20-%20Euskadi.eus"  alt="" />
+                <img src="/setCookie_ _4_20180510131432?r01_url=/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi?&amp;r01_title=Eusko%20Jaurlaritza%20-%20Euskadi.eus"  alt="" />
         
 
 

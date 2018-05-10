@@ -117,7 +117,7 @@
 <body class='web01-ejeduki'>
 <script>
 var _r01 = {
-	requestedUri : '/r01hpLODWar/data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.rdf',
+	requestedUri : '/r01hpLODWar/data/public-sector/government/GovernmentalAdministrativeRegion/euskadi',
 	clientIp : '172.16.0.205, 172.16.0.205, 127.0.0.1',
 	portalInfo : {
 		portalId : 'web01',

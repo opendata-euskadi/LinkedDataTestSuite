@@ -117,7 +117,7 @@
 <body class='web01-ejeduki'>
 <script>
 var _r01 = {
-	requestedUri : '/r01hpLODWar/id/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22',
+	requestedUri : '/r01hpLODWar/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi',
 	clientIp : '172.16.0.205, 172.16.0.205, 127.0.0.1',
 	portalInfo : {
 		portalId : 'web01',

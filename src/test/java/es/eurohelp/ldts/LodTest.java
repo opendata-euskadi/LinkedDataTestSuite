@@ -24,52 +24,19 @@ import org.junit.runners.model.Statement;
  */
 public class LodTest {
 
+    private static final String urifea = "eli/es-pv/a/1978/06/05/(2)/dof";
+    private static final String uribonita = "id/public-sector/government/GovernmentalAdministrativeRegion/euskadi";
+    
     LinkedDataRequestBean requestBean;
     static List<LinkedDataRequestBean> tests = new ArrayList<LinkedDataRequestBean>();
     
-    @Test
-    public final void SPARQLGETPARAMETERQUERYSELECT() {
-        try {
-            final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-            final String method = Methodtype.GET.methodtypevalue();
-            final String accept = MIMEtype.CSV.mimetypevalue();
-            final String pathUri = "sparql/?query=SELECT+*%0AWHERE+%7B%0A%09%3Fs+%3Fp+%3Fo%0A%7D%0ALIMIT+100";
-            final String name = "SPARQLGETPARAMETERQUERYSELECT";
-            final String comment = "Consulta SPARQL mediante GET ?query=";
-            final Map<String, String> parameters = new HashMap<String, String>();
-            requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
-            HttpManager.getInstance().doRequest(requestBean);
-            assertEquals(requestBean.getStatus(), 200);
-        } catch (final IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Test
-    public final void SPARQLGETHTML200() {
-        try {
-            final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-            final String method = Methodtype.GET.methodtypevalue();
-            final String accept = MIMEtype.HTML.mimetypevalue();
-            final String pathUri = "sparql/";
-            final String name = "SPARQLGETHTML200";
-            final String comment = "Ir directo a formulario SPARQL";
-            final Map<String, String> parameters = new HashMap<String, String>();
-            requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
-            HttpManager.getInstance().doRequest(requestBean);
-            assertEquals(requestBean.getStatus(), 200);
-        } catch (final IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     @Test
     public final void GETResourceHTMLPageNoRedirect303() {
         try {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GETNO303.methodtypevalue();
             final String accept = MIMEtype.HTML.mimetypevalue();
-            final String pathUri = "id/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22";
+            final String pathUri = uribonita;
             final String name = "GETResourceHTMLPageNoRedirect303";
             final String comment = "Recurso con pagina bonita, pero sin seguir el 303";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -78,42 +45,6 @@ public class LodTest {
             System.out.println(requestBean.getLocation());
             assertTrue(requestBean.getLocation().contains("/page/"));
             assertEquals(requestBean.getStatus(), 303);
-        } catch (final IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Test
-    public final void GETkosHTMLPage() {
-        try {
-            final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-            final String method = Methodtype.GET.methodtypevalue();
-            final String accept = MIMEtype.HTML.mimetypevalue();
-            final String pathUri = "kos/dominio.rdf";
-            final String name = "GETkosHTMLPage";
-            final String comment = "Obtener documento SKOS pidiendo documento Web";
-            final Map<String, String> parameters = new HashMap<String, String>();
-            requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
-            HttpManager.getInstance().doRequest(requestBean);
-            assertTrue(requestBean.getResponseString().contains("http://euskadi.eus/kos/ds-contrataciones"));
-        } catch (final IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Test
-    public final void GETkosRDF() {
-        try {
-            final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-            final String method = Methodtype.GET.methodtypevalue();
-            final String accept = MIMEtype.RDFXML.mimetypevalue();
-            final String pathUri = "kos/dominio.rdf";
-            final String name = "GETkosRDF";
-            final String comment = "Obtener documento SKOS pidiendo RDF";
-            final Map<String, String> parameters = new HashMap<String, String>();
-            requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
-            HttpManager.getInstance().doRequest(requestBean);
-            assertTrue(requestBean.getResponseString().contains("http://euskadi.eus/kos/ds-contrataciones"));
         } catch (final IOException e) {
             e.printStackTrace();
         }
@@ -163,7 +94,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.HTML.mimetypevalue();
-            final String pathUri = "id/sector-publico/puestos-trabajo/contrato/asesor-de-la-secretaria-general-de-presidencia-aldekoa-de-la-torre-jon-andoni-lehendakaritza-lehendakaritza-2016-06-22";
+            final String pathUri = uribonita;
             final String name = "GETResourceHTMLPage";
             final String comment = "Recurso con pagina bonita que no existe todavia";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -183,16 +114,13 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GETNO303.methodtypevalue();
             final String accept = MIMEtype.HTML.mimetypevalue();
-            final String pathUri = "id/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26";
-            // String pathUri = "id/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02";
-            // String pathUri =
-            // "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+            final String pathUri = urifea;
             final String name = "GETResourceHTMLDocNoRedirect303";
             final String comment = "Recurso con pagina fea, pero sin seguir 303";
             final Map<String, String> parameters = new HashMap<String, String>();
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
-            assertTrue(requestBean.getLocation().contains("/doc/es/"));
+            assertTrue(requestBean.getLocation().contains("/doc/"));
             assertEquals(requestBean.getStatus(), 303);
         } catch (final IOException e) {
             e.printStackTrace();
@@ -205,16 +133,13 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.HTML.mimetypevalue();
-            final String pathUri = "id/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26";
-            // String pathUri = "id/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02";
-            // String pathUri =
-            // "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+            final String pathUri = urifea;
             final String name = "GETResourceHTMLDoc";
             final String comment = "Recurso con pagina fea";
             final Map<String, String> parameters = new HashMap<String, String>();
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
-            assertTrue(requestBean.getResponseString().contains("ICAEstacion</a>"));
+            assertTrue(requestBean.getResponseString().contains("dof</a>"));
             // assertTrue(requestBean.getResponseString().contains("<h1>CO-2017-01-02</h1>"));
 
         } catch (final IOException e) {
@@ -228,9 +153,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.HTML.mimetypevalue();
-            final String pathUri = "doc/es/medio-ambiente/calidad-del-aire/elemento/CO-2017-01-02";
-            // String pathUri =
-            // "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+            final String pathUri = urifea;
             final String name = "GETResourceDirectlyDoc";
             final String comment = "Recurso con pagina fea, ir directamente a pagina /doc sin pasar por /id";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -248,7 +171,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.RDFXML.mimetypevalue();
-            final String pathUri = "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+            final String pathUri = uribonita;
             final String name = "GETResourceRDFXMLContent";
             final String comment = "Obtener recurso en RDF/XML, parsear contenido";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -268,7 +191,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.RDFXML.mimetypevalue();
-            final String pathUri = "data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+            final String pathUri = uribonita.replace("id", "data");
             final String name = "GETResourceDirectlyDataRDFXMLContent";
             final String comment = "Obtener recurso en RDF/XML directamente de /data, parsear contenido";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -288,7 +211,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.Turtle.mimetypevalue();
-            final String pathUri = "data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+            final String pathUri = uribonita.replace("id", "data");
             final String name = "GETResourceDirectlyDataTTLContent";
             final String comment = "Obtener recurso en TTL directamente de /data, parsear contenido";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -307,7 +230,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.JSONLD.mimetypevalue();
-            final String pathUri = "data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+            final String pathUri = uribonita.replace("id", "data");
             final String name = "GETResourceDirectlyDataJSONLDContent";
             final String comment = "Obtener recurso en JSONLD directamente de /data, parsear contenido";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -325,7 +248,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.HTML.mimetypevalue();
-            final String pathUri = "data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.rdf";
+            final String pathUri = uribonita.replace("id", "data");
             final String name = "GETResourceDirectlyDataRDFXMLContentHTMLHeader";
             final String comment = "Obtener recurso en RDF/XML (por extension, no cabecera, cabecera HTML) directamente de /data, parsear contenido";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -344,7 +267,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.HTML.mimetypevalue();
-            final String pathUri = "data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.ttl";
+            final String pathUri = uribonita.replace("id", "data");
             final String name = "GETResourceDirectlyDataTTLContentHTMLHeader";
             final String comment = "Obtener recurso en TTL (por extension, no cabecera, cabecera HTML) directamente de /data, parsear contenido";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -363,7 +286,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.HTML.mimetypevalue();
-            final String pathUri = "data/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09.jsonld";
+            final String pathUri = uribonita.replace("id", "data");
             final String name = "GETResourceDirectlyDataJSONLDContentHTMLHeader";
             final String comment = "Obtener recurso en JSON-LD (por extension, no cabecera, cabecera HTML) directamente de /data, parsear contenido";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -375,33 +298,13 @@ public class LodTest {
         }
     }
 
-    // Si la respuesta contiene lo que buscamos, ya implica una respuesta 200, luego este test es redundante
-
-    // @Test
-    // public final void GETResourceRDFXML200 (){
-    // try {
-    // String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-    // String method = Methodtype.GET.methodtypevalue();
-    // String accept = MIMEtype.RDFXML.mimetypevalue();
-    // String pathUri =
-    // "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
-    // String name = "GETResourceRDFXML200";
-    // Map<String, String> parameters = new HashMap<String, String>();
-    // requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
-    // HttpManager.getInstance().doRequest(requestBean);
-    // assertEquals(requestBean.getStatus(), 200);
-    // } catch (IOException e) {
-    // e.printStackTrace();
-    // }
-    // }
-
     @Test
     public final void GETResourceJSONLDContent() {
         try {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.JSONLD.mimetypevalue();
-            final String pathUri = "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+            final String pathUri = uribonita;
             final String name = "GETResourceJSONLDContent";
             final String comment = "Obtener recurso en JSON-LD, parsear contenido";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -419,7 +322,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.N3.mimetypevalue();
-            final String pathUri = "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+            final String pathUri = uribonita;
             final String name = "GETResourceN3Content";
             final String comment = "Obtener recurso en N3, parsear contenido";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -432,25 +335,6 @@ public class LodTest {
         }
     }
 
-    // @Test
-    // public final void GETResourceNQuadsContent (){
-    // try {
-    // String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-    // String method = Methodtype.GET.methodtypevalue();
-    // String accept = MIMEtype.NQuads.mimetypevalue();
-    // String pathUri =
-    // "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
-    // String name = "GETResourceNQuadsContent";
-    // String comment = "Obtener recurso en NQuads, parsear contenido";
-    // Map<String, String> parameters = new HashMap<String, String>();
-    // requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
-    // HttpManager.getInstance().doRequest(requestBean);
-    // assertTrue(requestBean.getResponseString().contains(
-    // "<http://es.euskadi.eus/dataset/id/relaciones-de-puestos-de-trabajo-de-los-departamentos-y-organismos-autonomos-de-la-administracion-de-la-comunidad-autonoma>"));
-    // } catch (IOException e) {
-    // e.printStackTrace();
-    // }
-    // }
 
     @Test
     public final void GETResourceNTriplesContent() {
@@ -458,7 +342,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.NTriples.mimetypevalue();
-            final String pathUri = "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+            final String pathUri = uribonita;
             final String name = "GETResourceNTriplesContent";
             final String comment = "Obtener recurso en NTriples, parsear contenido";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -477,7 +361,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.RDFJSON.mimetypevalue();
-            final String pathUri = "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+            final String pathUri = uribonita;
             final String name = "GETResourceRDFJSON200";
             final String comment = "Obtener recurso en RDF/JSON, parsear contenido";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -490,25 +374,7 @@ public class LodTest {
         }
     }
 
-    // @Test
-    // public final void GETResourceTriGContent (){
-    // try {
-    // String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-    // String method = Methodtype.GET.methodtypevalue();
-    // String accept = MIMEtype.TriG.mimetypevalue();
-    // String pathUri =
-    // "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
-    // String name = "GETResourceTriGContent";
-    // String comment = "Obtener recurso en TriG, parsear contenido";
-    // Map<String, String> parameters = new HashMap<String, String>();
-    // requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
-    // HttpManager.getInstance().doRequest(requestBean);
-    // assertTrue(requestBean.getResponseString().contains(
-    // "GETResourceTriGContent Response no genera Trig, si no RDF/XML"));
-    // } catch (IOException e) {
-    // e.printStackTrace();
-    // }
-    // }
+
 
     @Test
     public final void GETResourceTriXContent() {
@@ -516,7 +382,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.TriX.mimetypevalue();
-            final String pathUri = "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+            final String pathUri = uribonita;
             final String name = "GETResourceTriXContent";
             final String comment = "Obtener recurso en TriX, parsear contenido";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -534,240 +400,13 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.Turtle.mimetypevalue();
-            final String pathUri = "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+            final String pathUri = uribonita;
             final String name = "GETResourceTurtleContent";
             final String comment = "Obtener recurso en TTL, parsear contenido";
             final Map<String, String> parameters = new HashMap<String, String>();
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
             assertTrue(requestBean.getResponseString().contains("<http://dbpedia.org/ontology/occupation> \"jefe grupo inspector pesca\"@es ;"));
-        } catch (final IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Test
-    public final void GETClassRDFXMLContent() {
-        try {
-            final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-            final String method = Methodtype.GET.methodtypevalue();
-            final String accept = MIMEtype.RDFXML.mimetypevalue();
-            final String pathUri = "def/euskadipedia/Hotel";
-            final String name = "GETClassRDFXMLContent";
-            final String comment = "Obtener clase en RDF/XML, parsear contenido";
-            final Map<String, String> parameters = new HashMap<String, String>();
-            requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
-            HttpManager.getInstance().doRequest(requestBean);
-            assertTrue(requestBean.getResponseString()
-                    .contains("<owl:ObjectProperty rdf:about=\"http://euskadi.eus/def/euskadipedia#inHistoricTerritory\">"));
-        } catch (final IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Test
-    public final void GETClassHTML200() {
-        try {
-            final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-            final String method = Methodtype.GET.methodtypevalue();
-            final String accept = MIMEtype.HTML.mimetypevalue();
-            final String pathUri = "def/euskadipedia/Hotel";
-            final String name = "GETClassHTML200";
-            final String comment = "Obtener clase en HTML, sin parsear contenido";
-            final Map<String, String> parameters = new HashMap<String, String>();
-            requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
-            HttpManager.getInstance().doRequest(requestBean);
-            assertEquals(requestBean.getStatus(), 200);
-        } catch (final IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Test
-    public final void GETClassHTMLAnchorContent() {
-        try {
-            final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-            final String method = Methodtype.GET.methodtypevalue();
-            final String accept = MIMEtype.HTML.mimetypevalue();
-            final String pathUri = "def/euskadipedia.html#Hotel";
-            final String name = "GETClassHTML200";
-            final String comment = "Obtener clase en HTML con ancla, parsear contenido";
-            final Map<String, String> parameters = new HashMap<String, String>();
-            requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
-            HttpManager.getInstance().doRequest(requestBean);
-            assertEquals(requestBean.getStatus(), 200);
-        } catch (final IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Test
-    public final void GETPropertyRDFXMLContent() {
-        try {
-            final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-            final String method = Methodtype.GET.methodtypevalue();
-            final String accept = MIMEtype.RDFXML.mimetypevalue();
-            final String pathUri = "def/euskadipedia#inHistoricTerritory";
-            final String name = "GETPropertyRDFXMLContent";
-            final String comment = "Obtener propiedad en RDF/XML, parsear contenido";
-            final Map<String, String> parameters = new HashMap<String, String>();
-            requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
-            HttpManager.getInstance().doRequest(requestBean);
-            assertTrue(requestBean.getResponseString().contains("http://euskadi.eus/def/euskadipedia#inHistoricTerritory"));
-            assertTrue(requestBean.getResponseString().contains("<owl:ObjectProperty"));
-        } catch (final IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Test
-    public final void GETPropertyHTML200() {
-        try {
-            final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-            final String method = Methodtype.GET.methodtypevalue();
-            final String accept = MIMEtype.HTML.mimetypevalue();
-            final String pathUri = "def/euskadipedia#inHistoricTerritory";
-            final String name = "GETPropertyHTML200";
-            final String comment = "Obtener propiedad en HTML, sin parsear contenido";
-            final Map<String, String> parameters = new HashMap<String, String>();
-            requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
-            HttpManager.getInstance().doRequest(requestBean);
-            assertEquals(requestBean.getStatus(), 200);
-        } catch (final IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    // @Test
-    // public final void GETOntologyHTML200 (){
-    // try {
-    // String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-    // String method = Methodtype.GET.methodtypevalue();
-    // String accept = MIMEtype.HTML.mimetypevalue();
-    // String pathUri = "def/turismo/alojamiento"; // Segun la NTI
-    // //String pathUri = "def/Euskadipedia"; // mas realista?
-    // String name = "GETOntologyHTML200";
-    // Map<String, String> parameters = new HashMap<String, String>();
-    // requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
-    // HttpManager.getInstance().doRequest(requestBean);
-    // assertEquals(requestBean.getStatus(), 200);
-    // } catch (IOException e) {
-    // e.printStackTrace();
-    // }
-    // }
-
-    @Test
-    public final void GETOntologyHTMLContent() {
-        try {
-            final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-            final String method = Methodtype.GET.methodtypevalue();
-            final String accept = MIMEtype.HTML.mimetypevalue();
-            // String pathUri = "def/turismo/alojamiento"; // Segun la NTI
-            final String pathUri = "def/euskadipedia.html"; // mas realista?
-            final String name = "GETOntologyHTMLContent";
-            final String comment = "Obtener ontologia en HTML, parsear contenido";
-            final Map<String, String> parameters = new HashMap<String, String>();
-            requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
-            HttpManager.getInstance().doRequest(requestBean);
-            assertTrue(requestBean.getResponseString().contains("http://euskadi.eus/def/euskadipedia/0.0.1"));
-        } catch (final IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Test
-    public final void GETOntologyHTMLContentFileExtensionHTML() {
-        try {
-            final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-            final String method = Methodtype.GET.methodtypevalue();
-            final String accept = MIMEtype.HTML.mimetypevalue();
-            // String pathUri = "def/turismo/alojamiento"; // Segun la NTI
-            final String pathUri = "def/euskadipedia.html"; // mas realista?
-            final String name = "GETOntologyHTMLContentFileExtensionHTML";
-            final String comment = "Obtener ontologia en HTML con .html, parsear contenido";
-            final Map<String, String> parameters = new HashMap<String, String>();
-            requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
-            HttpManager.getInstance().doRequest(requestBean);
-            assertTrue(requestBean.getResponseString().contains("<a name=\"http://euskadi.eus/def/euskadipedia#Hotel\"></a>"));
-        } catch (final IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    // @Test
-    // public final void GETOntologyRDFXML200 (){
-    // try {
-    // String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-    // String method = Methodtype.GET.methodtypevalue();
-    // String accept = MIMEtype.RDFXML.mimetypevalue();
-    // String pathUri = "def/turismo/alojamiento"; // Segun la NTI
-    // //String pathUri = "def/Euskadipedia"; // mas realista?
-    // String name = "GETOntologyRDFXML200";
-    // Map<String, String> parameters = new HashMap<String, String>();
-    // requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
-    // HttpManager.getInstance().doRequest(requestBean);
-    // assertEquals(requestBean.getStatus(), 200);
-    // } catch (IOException e) {
-    // e.printStackTrace();
-    // }
-    // }
-
-    @Test
-    public final void GETOntologyRDFXMLContentHTMLHeader() {
-        try {
-            final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-            final String method = Methodtype.GET.methodtypevalue();
-            final String accept = MIMEtype.HTML.mimetypevalue();
-            final String pathUri = "def/euskadipedia.owl"; // Segun la NTI
-            // String pathUri = "def/Euskadipedia"; // mas realista?
-            final String name = "GETOntologyRDFXMLContentHTMLHeader";
-            final String comment = "Obtener ontologia en OWL (por extension, no cabecera, cabecera HTML), parsear contenido";
-            final Map<String, String> parameters = new HashMap<String, String>();
-            requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
-            HttpManager.getInstance().doRequest(requestBean);
-            assertTrue(requestBean.getResponseString()
-                    .contains("<owl:ObjectProperty rdf:about=\"http://euskadi.eus/def/euskadipedia#inHistoricTerritory\">"));
-
-        } catch (final IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Test
-    public final void GETOntologyRDFXMLContentFileExtensionOWL() {
-        try {
-            final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-            final String method = Methodtype.GET.methodtypevalue();
-            final String accept = MIMEtype.RDFXML.mimetypevalue();
-            // String pathUri = "def/turismo/alojamiento"; // Segun la NTI
-            final String pathUri = "def/euskadipedia.owl"; // mas realista?
-            final String name = "GETOntologyRDFXMLContentFileExtensionOWL ";
-            final String comment = "Obtener ontologia en RDF/XML con .owl, parsear contenido";
-            final Map<String, String> parameters = new HashMap<String, String>();
-            requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
-            HttpManager.getInstance().doRequest(requestBean);
-            // assertTrue(requestBean.getResponseString().contains("http://euskadi.eus/def/euskadipedia/0.0.1"));
-            assertTrue(requestBean.getResponseString().contains("<owl:Ontology rdf:about=\"http://euskadi.eus/def/euskadipedia\">"));
-        } catch (final IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Test
-    public final void GETOntologyRDFXMLContent() {
-        try {
-            final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
-            final String method = Methodtype.GET.methodtypevalue();
-            final String accept = MIMEtype.RDFXML.mimetypevalue();
-            // String accept = MIMEtype.HTML.mimetypevalue();
-            // String pathUri = "def/turismo/alojamiento"; // Segun la NTI
-            final String pathUri = "def/euskadipedia.html"; // mas realista?
-            final String name = "GETOntologyRDFXMLContent";
-            final String comment = "Obtener ontologia en RDF/XML, parsear contenido";
-            final Map<String, String> parameters = new HashMap<String, String>();
-            requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
-            HttpManager.getInstance().doRequest(requestBean);
-            assertTrue(requestBean.getResponseString().contains("<owl:Ontology rdf:about=\"http://euskadi.eus/def/euskadipedia\">"));
         } catch (final IOException e) {
             e.printStackTrace();
         }
@@ -831,7 +470,346 @@ public class LodTest {
             e.printStackTrace();
         }
     }
+    
+    @Test
+    public final void SPARQLGETPARAMETERQUERYSELECT() {
+        try {
+            final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+            final String method = Methodtype.GET.methodtypevalue();
+            final String accept = MIMEtype.CSV.mimetypevalue();
+            final String pathUri = "sparql/?query=SELECT+*%0AWHERE+%7B%0A%09%3Fs+%3Fp+%3Fo%0A%7D%0ALIMIT+100";
+            final String name = "SPARQLGETPARAMETERQUERYSELECT";
+            final String comment = "Consulta SPARQL mediante GET ?query=";
+            final Map<String, String> parameters = new HashMap<String, String>();
+            requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
+            HttpManager.getInstance().doRequest(requestBean);
+            assertEquals(requestBean.getStatus(), 200);
+        } catch (final IOException e) {
+            e.printStackTrace();
+        }
+    }
 
+    @Test
+    public final void SPARQLGETHTML200() {
+        try {
+            final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+            final String method = Methodtype.GET.methodtypevalue();
+            final String accept = MIMEtype.HTML.mimetypevalue();
+            final String pathUri = "sparql/";
+            final String name = "SPARQLGETHTML200";
+            final String comment = "Ir directo a formulario SPARQL";
+            final Map<String, String> parameters = new HashMap<String, String>();
+            requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
+            HttpManager.getInstance().doRequest(requestBean);
+            assertEquals(requestBean.getStatus(), 200);
+        } catch (final IOException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    // @Test
+    // public final void GETResourceTriGContent (){
+    // try {
+    // String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+    // String method = Methodtype.GET.methodtypevalue();
+    // String accept = MIMEtype.TriG.mimetypevalue();
+    // String pathUri =
+    // "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+    // String name = "GETResourceTriGContent";
+    // String comment = "Obtener recurso en TriG, parsear contenido";
+    // Map<String, String> parameters = new HashMap<String, String>();
+    // requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
+    // HttpManager.getInstance().doRequest(requestBean);
+    // assertTrue(requestBean.getResponseString().contains(
+    // "GETResourceTriGContent Response no genera Trig, si no RDF/XML"));
+    // } catch (IOException e) {
+    // e.printStackTrace();
+    // }
+    // }
+    
+    // @Test
+    // public final void GETResourceNQuadsContent (){
+    // try {
+    // String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+    // String method = Methodtype.GET.methodtypevalue();
+    // String accept = MIMEtype.NQuads.mimetypevalue();
+    // String pathUri =
+    // "id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09";
+    // String name = "GETResourceNQuadsContent";
+    // String comment = "Obtener recurso en NQuads, parsear contenido";
+    // Map<String, String> parameters = new HashMap<String, String>();
+    // requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
+    // HttpManager.getInstance().doRequest(requestBean);
+    // assertTrue(requestBean.getResponseString().contains(
+    // "<http://es.euskadi.eus/dataset/id/relaciones-de-puestos-de-trabajo-de-los-departamentos-y-organismos-autonomos-de-la-administracion-de-la-comunidad-autonoma>"));
+    // } catch (IOException e) {
+    // e.printStackTrace();
+    // }
+    // }
+    
+//  @Test
+//  public final void GETkosHTMLPage() {
+//      try {
+//          final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+//          final String method = Methodtype.GET.methodtypevalue();
+//          final String accept = MIMEtype.HTML.mimetypevalue();
+//          final String pathUri = "kos/dominio.rdf";
+//          final String name = "GETkosHTMLPage";
+//          final String comment = "Obtener documento SKOS pidiendo documento Web";
+//          final Map<String, String> parameters = new HashMap<String, String>();
+//          requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
+//          HttpManager.getInstance().doRequest(requestBean);
+//          assertTrue(requestBean.getResponseString().contains("http://euskadi.eus/kos/ds-contrataciones"));
+//      } catch (final IOException e) {
+//          e.printStackTrace();
+//      }
+//  }
+
+//  @Test
+//  public final void GETkosRDF() {
+//      try {
+//          final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+//          final String method = Methodtype.GET.methodtypevalue();
+//          final String accept = MIMEtype.RDFXML.mimetypevalue();
+//          final String pathUri = "kos/dominio.rdf";
+//          final String name = "GETkosRDF";
+//          final String comment = "Obtener documento SKOS pidiendo RDF";
+//          final Map<String, String> parameters = new HashMap<String, String>();
+//          requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
+//          HttpManager.getInstance().doRequest(requestBean);
+//          assertTrue(requestBean.getResponseString().contains("http://euskadi.eus/kos/ds-contrataciones"));
+//      } catch (final IOException e) {
+//          e.printStackTrace();
+//      }
+//  }
+
+//  @Test
+//  public final void GETClassRDFXMLContent() {
+//      try {
+//          final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+//          final String method = Methodtype.GET.methodtypevalue();
+//          final String accept = MIMEtype.RDFXML.mimetypevalue();
+//          final String pathUri = "def/euskadipedia/Hotel";
+//          final String name = "GETClassRDFXMLContent";
+//          final String comment = "Obtener clase en RDF/XML, parsear contenido";
+//          final Map<String, String> parameters = new HashMap<String, String>();
+//          requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
+//          HttpManager.getInstance().doRequest(requestBean);
+//          assertTrue(requestBean.getResponseString()
+//                  .contains("<owl:ObjectProperty rdf:about=\"http://euskadi.eus/def/euskadipedia#inHistoricTerritory\">"));
+//      } catch (final IOException e) {
+//          e.printStackTrace();
+//      }
+//  }
+
+//  @Test
+//  public final void GETClassHTML200() {
+//      try {
+//          final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+//          final String method = Methodtype.GET.methodtypevalue();
+//          final String accept = MIMEtype.HTML.mimetypevalue();
+//          final String pathUri = "def/euskadipedia/Hotel";
+//          final String name = "GETClassHTML200";
+//          final String comment = "Obtener clase en HTML, sin parsear contenido";
+//          final Map<String, String> parameters = new HashMap<String, String>();
+//          requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
+//          HttpManager.getInstance().doRequest(requestBean);
+//          assertEquals(requestBean.getStatus(), 200);
+//      } catch (final IOException e) {
+//          e.printStackTrace();
+//      }
+//  }
+
+//  @Test
+//  public final void GETClassHTMLAnchorContent() {
+//      try {
+//          final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+//          final String method = Methodtype.GET.methodtypevalue();
+//          final String accept = MIMEtype.HTML.mimetypevalue();
+//          final String pathUri = "def/euskadipedia.html#Hotel";
+//          final String name = "GETClassHTML200";
+//          final String comment = "Obtener clase en HTML con ancla, parsear contenido";
+//          final Map<String, String> parameters = new HashMap<String, String>();
+//          requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
+//          HttpManager.getInstance().doRequest(requestBean);
+//          assertEquals(requestBean.getStatus(), 200);
+//      } catch (final IOException e) {
+//          e.printStackTrace();
+//      }
+//  }
+
+//  @Test
+//  public final void GETPropertyRDFXMLContent() {
+//      try {
+//          final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+//          final String method = Methodtype.GET.methodtypevalue();
+//          final String accept = MIMEtype.RDFXML.mimetypevalue();
+//          final String pathUri = "def/euskadipedia#inHistoricTerritory";
+//          final String name = "GETPropertyRDFXMLContent";
+//          final String comment = "Obtener propiedad en RDF/XML, parsear contenido";
+//          final Map<String, String> parameters = new HashMap<String, String>();
+//          requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
+//          HttpManager.getInstance().doRequest(requestBean);
+//          assertTrue(requestBean.getResponseString().contains("http://euskadi.eus/def/euskadipedia#inHistoricTerritory"));
+//          assertTrue(requestBean.getResponseString().contains("<owl:ObjectProperty"));
+//      } catch (final IOException e) {
+//          e.printStackTrace();
+//      }
+//  }
+
+//  @Test
+//  public final void GETPropertyHTML200() {
+//      try {
+//          final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+//          final String method = Methodtype.GET.methodtypevalue();
+//          final String accept = MIMEtype.HTML.mimetypevalue();
+//          final String pathUri = "def/euskadipedia#inHistoricTerritory";
+//          final String name = "GETPropertyHTML200";
+//          final String comment = "Obtener propiedad en HTML, sin parsear contenido";
+//          final Map<String, String> parameters = new HashMap<String, String>();
+//          requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
+//          HttpManager.getInstance().doRequest(requestBean);
+//          assertEquals(requestBean.getStatus(), 200);
+//      } catch (final IOException e) {
+//          e.printStackTrace();
+//      }
+//  }
+
+  // @Test
+  // public final void GETOntologyHTML200 (){
+  // try {
+  // String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+  // String method = Methodtype.GET.methodtypevalue();
+  // String accept = MIMEtype.HTML.mimetypevalue();
+  // String pathUri = "def/turismo/alojamiento"; // Segun la NTI
+  // //String pathUri = "def/Euskadipedia"; // mas realista?
+  // String name = "GETOntologyHTML200";
+  // Map<String, String> parameters = new HashMap<String, String>();
+  // requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
+  // HttpManager.getInstance().doRequest(requestBean);
+  // assertEquals(requestBean.getStatus(), 200);
+  // } catch (IOException e) {
+  // e.printStackTrace();
+  // }
+  // }
+
+//  @Test
+//  public final void GETOntologyHTMLContent() {
+//      try {
+//          final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+//          final String method = Methodtype.GET.methodtypevalue();
+//          final String accept = MIMEtype.HTML.mimetypevalue();
+//          // String pathUri = "def/turismo/alojamiento"; // Segun la NTI
+//          final String pathUri = "def/euskadipedia.html"; // mas realista?
+//          final String name = "GETOntologyHTMLContent";
+//          final String comment = "Obtener ontologia en HTML, parsear contenido";
+//          final Map<String, String> parameters = new HashMap<String, String>();
+//          requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
+//          HttpManager.getInstance().doRequest(requestBean);
+//          assertTrue(requestBean.getResponseString().contains("http://euskadi.eus/def/euskadipedia/0.0.1"));
+//      } catch (final IOException e) {
+//          e.printStackTrace();
+//      }
+//  }
+
+//  @Test
+//  public final void GETOntologyHTMLContentFileExtensionHTML() {
+//      try {
+//          final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+//          final String method = Methodtype.GET.methodtypevalue();
+//          final String accept = MIMEtype.HTML.mimetypevalue();
+//          // String pathUri = "def/turismo/alojamiento"; // Segun la NTI
+//          final String pathUri = "def/euskadipedia.html"; // mas realista?
+//          final String name = "GETOntologyHTMLContentFileExtensionHTML";
+//          final String comment = "Obtener ontologia en HTML con .html, parsear contenido";
+//          final Map<String, String> parameters = new HashMap<String, String>();
+//          requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
+//          HttpManager.getInstance().doRequest(requestBean);
+//          assertTrue(requestBean.getResponseString().contains("<a name=\"http://euskadi.eus/def/euskadipedia#Hotel\"></a>"));
+//      } catch (final IOException e) {
+//          e.printStackTrace();
+//      }
+//  }
+
+  // @Test
+  // public final void GETOntologyRDFXML200 (){
+  // try {
+  // String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+  // String method = Methodtype.GET.methodtypevalue();
+  // String accept = MIMEtype.RDFXML.mimetypevalue();
+  // String pathUri = "def/turismo/alojamiento"; // Segun la NTI
+  // //String pathUri = "def/Euskadipedia"; // mas realista?
+  // String name = "GETOntologyRDFXML200";
+  // Map<String, String> parameters = new HashMap<String, String>();
+  // requestBean = new LinkedDataRequestBean(method,accept, baseUri, pathUri, name, comment, parameters);
+  // HttpManager.getInstance().doRequest(requestBean);
+  // assertEquals(requestBean.getStatus(), 200);
+  // } catch (IOException e) {
+  // e.printStackTrace();
+  // }
+  // }
+
+//  @Test
+//  public final void GETOntologyRDFXMLContentHTMLHeader() {
+//      try {
+//          final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+//          final String method = Methodtype.GET.methodtypevalue();
+//          final String accept = MIMEtype.HTML.mimetypevalue();
+//          final String pathUri = "def/euskadipedia.owl"; // Segun la NTI
+//          // String pathUri = "def/Euskadipedia"; // mas realista?
+//          final String name = "GETOntologyRDFXMLContentHTMLHeader";
+//          final String comment = "Obtener ontologia en OWL (por extension, no cabecera, cabecera HTML), parsear contenido";
+//          final Map<String, String> parameters = new HashMap<String, String>();
+//          requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
+//          HttpManager.getInstance().doRequest(requestBean);
+//          assertTrue(requestBean.getResponseString()
+//                  .contains("<owl:ObjectProperty rdf:about=\"http://euskadi.eus/def/euskadipedia#inHistoricTerritory\">"));
+//
+//      } catch (final IOException e) {
+//          e.printStackTrace();
+//      }
+//  }
+
+//  @Test
+//  public final void GETOntologyRDFXMLContentFileExtensionOWL() {
+//      try {
+//          final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+//          final String method = Methodtype.GET.methodtypevalue();
+//          final String accept = MIMEtype.RDFXML.mimetypevalue();
+//          // String pathUri = "def/turismo/alojamiento"; // Segun la NTI
+//          final String pathUri = "def/euskadipedia.owl"; // mas realista?
+//          final String name = "GETOntologyRDFXMLContentFileExtensionOWL ";
+//          final String comment = "Obtener ontologia en RDF/XML con .owl, parsear contenido";
+//          final Map<String, String> parameters = new HashMap<String, String>();
+//          requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
+//          HttpManager.getInstance().doRequest(requestBean);
+//          // assertTrue(requestBean.getResponseString().contains("http://euskadi.eus/def/euskadipedia/0.0.1"));
+//          assertTrue(requestBean.getResponseString().contains("<owl:Ontology rdf:about=\"http://euskadi.eus/def/euskadipedia\">"));
+//      } catch (final IOException e) {
+//          e.printStackTrace();
+//      }
+//  }
+
+//  @Test
+//  public final void GETOntologyRDFXMLContent() {
+//      try {
+//          final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri");
+//          final String method = Methodtype.GET.methodtypevalue();
+//          final String accept = MIMEtype.RDFXML.mimetypevalue();
+//          // String accept = MIMEtype.HTML.mimetypevalue();
+//          // String pathUri = "def/turismo/alojamiento"; // Segun la NTI
+//          final String pathUri = "def/euskadipedia.html"; // mas realista?
+//          final String name = "GETOntologyRDFXMLContent";
+//          final String comment = "Obtener ontologia en RDF/XML, parsear contenido";
+//          final Map<String, String> parameters = new HashMap<String, String>();
+//          requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
+//          HttpManager.getInstance().doRequest(requestBean);
+//          assertTrue(requestBean.getResponseString().contains("<owl:Ontology rdf:about=\"http://euskadi.eus/def/euskadipedia\">"));
+//      } catch (final IOException e) {
+//          e.printStackTrace();
+//      }
+//  }    
+    
     @Rule
     public TestRule watchman = new TestWatcher() {
 

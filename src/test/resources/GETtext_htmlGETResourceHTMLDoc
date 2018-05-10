@@ -52,7 +52,7 @@
 
 	<!-- **** StyleSheet/Javascript resources for content **** -->
 <script type="text/javascript">
-var r01ServerTime = new Date('Wednesday, May 09, 2018');
+var r01ServerTime = new Date('Thursday, May 10, 2018');
 var r01AttachPrefix = ' ';
 var file = ' '
 </script>
@@ -101,11 +101,11 @@ var file = ' '
       
       
       <link rel="shortcut icon" href="/appcont/r01hpLODWebContent/elda-assets/images/datagovuk_favicon.png" type="image/x-icon">
-      <link rel="alternate" href="http://data.euskadi.eus/doc/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26.json" type="application/json">
-      <link rel="alternate" href="http://data.euskadi.eus/doc/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26.rdf" type="application/rdf+xml">
-      <link rel="alternate" href="http://data.euskadi.eus/doc/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26.text" type="text/plain">
-      <link rel="alternate" href="http://data.euskadi.eus/doc/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26.ttl" type="text/turtle">
-      <link rel="alternate" href="http://data.euskadi.eus/doc/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26.xml" type="application/xml">
+      <link rel="alternate" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.json" type="application/json">
+      <link rel="alternate" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.rdf" type="application/rdf+xml">
+      <link rel="alternate" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.text" type="text/plain">
+      <link rel="alternate" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.ttl" type="text/turtle">
+      <link rel="alternate" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.xml" type="application/xml">
       <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><link rel="stylesheet" href="/appcont/r01hpLODWebContent/elda-assets/css/html5reset-1.6.1.css" type="text/css">
       <link rel="stylesheet" href="/appcont/r01hpLODWebContent/elda-assets/css/jquery-ui.css" type="text/css">
       <link rel="stylesheet" href="/appcont/r01hpLODWebContent/elda-assets/css/smoothness/jquery-ui.css" type="text/css">
@@ -170,7 +170,7 @@ var file = ' '
 <body class='web01-ejeduki'>
 <script>
 var _r01 = {
-	requestedUri : '/r01hpLODWar/doc/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26',
+	requestedUri : '/r01hpLODWar/doc/es-pv/a/1978/06/05/(2)/dof',
 	clientIp : '172.16.0.205, 172.16.0.205, 127.0.0.1',
 	portalInfo : {
 		portalId : 'web01',
@@ -287,12 +287,12 @@ var _r01 = {
          <nav class="site">
             <section class="formats">
                <ul>
-                  <li class="first"><a href="http://data.euskadi.eus/doc/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26.html" type="text/html" rel="alternate" title="view in html format">html</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26.json" type="application/json" rel="alternate" title="view in json format">json</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26.rdf" type="application/rdf+xml" rel="alternate" title="view in rdf format">rdf</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26.text" type="text/plain" rel="alternate" title="view in text format">text</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26.ttl" type="text/turtle" rel="alternate" title="view in ttl format">ttl</a></li>
-                  <li class="last"><a href="http://data.euskadi.eus/doc/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26.xml" type="application/xml" rel="alternate" title="view in xml format">xml</a></li>
+                  <li class="first"><a href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.html" type="text/html" rel="alternate" title="view in html format">html</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.json" type="application/json" rel="alternate" title="view in json format">json</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.rdf" type="application/rdf+xml" rel="alternate" title="view in rdf format">rdf</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.text" type="text/plain" rel="alternate" title="view in text format">text</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.ttl" type="text/turtle" rel="alternate" title="view in ttl format">ttl</a></li>
+                  <li class="last"><a href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.xml" type="application/xml" rel="alternate" title="view in xml format">xml</a></li>
                </ul>
             </section>
          </nav>
@@ -311,12 +311,21 @@ var _r01 = {
                   </p>
                </div>
                <ul>
-                  <li><a href="http://data.euskadi.eus/doc/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26.html?_view=all" title="switch to all view">all</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26.html?_view=basic" title="switch to basic view">basic</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26.html?_view=description" title="switch to description view">description</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.html?_view=all" title="switch to all view">all</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.html?_view=basic" title="switch to basic view">basic</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.html?_view=description" title="switch to description view">description</a></li>
                </ul>
                <ul class="properties">
-                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26.html?_properties=isPrimaryTopicOf"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is primary topic of</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.html?_properties=date_applicability"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> date_applicability</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.html?_properties=date_document"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> date_document</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.html?_properties=date_publication"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> date_publication</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.html?_properties=first_date_entry_in_force"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> first_date_entry_in_force</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.html?_properties=is_realized_by.realizes"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is_realized_by › realizes</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.html?_properties=type."><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> type</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.html?_properties=isPrimaryTopicOf"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is primary topic of</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.html?_properties=is_about"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is_about</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.html?_properties=is_member_of"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is_member_of</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)/dof.html?_properties=type_document"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> type_document</a></li>
                </ul>
             </section>
          </nav>
@@ -324,11 +333,11 @@ var _r01 = {
             <div class="panel">
                <header>
                   <p id="openSearch">Show Search Form</p>
-                  <h1>elda:missingEndpoint</h1>
-                  <p class="id"><a href="elda:missingEndpoint">elda:missingEndpoint</a></p>
+                  <h1>dof</h1>
+                  <p class="id"><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof">http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof</a></p>
                </header>
                <section id="search" style="display: none">
-                  <form action="http://data.euskadi.eus/doc/medio-ambiente/calidad-del-aire/elemento">
+                  <form action="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)">
                      <table>
                         <colgroup>
                            <col class="labelWidth">
@@ -339,15 +348,66 @@ var _r01 = {
                            <td></td>
                         </tr>
                         <tr>
+                           <th class="label"><label for="date_applicability">date_applicability</label></th>
+                           <td class="input">exactly: <input name="date_applicability" id="date_applicability" type="date"><br><br><em>or</em> between: <input name="min-date_applicability" type="date"><br>and <input name="max-date_applicability" type="date"></td>
+                        </tr>
+                        <tr>
+                           <th class="label"><label for="date_document">date_document</label></th>
+                           <td class="input">exactly: <input name="date_document" id="date_document" type="date"><br><br><em>or</em> between: <input name="min-date_document" type="date"><br>and <input name="max-date_document" type="date"></td>
+                        </tr>
+                        <tr>
+                           <th class="label"><label for="date_publication">date_publication</label></th>
+                           <td class="input">exactly: <input name="date_publication" id="date_publication" type="date"><br><br><em>or</em> between: <input name="min-date_publication" type="date"><br>and <input name="max-date_publication" type="date"></td>
+                        </tr>
+                        <tr>
+                           <th class="label"><label for="first_date_entry_in_force">first_date_entry_in_force</label></th>
+                           <td class="input">exactly: <input name="first_date_entry_in_force" id="first_date_entry_in_force" type="date"><br><br><em>or</em> between: <input name="min-first_date_entry_in_force" type="date"><br>and <input name="max-first_date_entry_in_force" type="date"></td>
+                        </tr>
+                        <tr>
+                           <th class="label">is_realized_by</th>
+                           <td class="input nested">
+                              <table>
+                                 <colgroup>
+                                    <col class="labelWidth">
+                                    <col class="nestedValueWidth">
+                                 </colgroup>
+                                 <tr>
+                                    <td></td>
+                                    <td></td>
+                                 </tr>
+                                 <tr class="last">
+                                    <th class="label"><label for="is_realized_by.realizes">realizes</label></th>
+                                    <td class="input"><input name="is_realized_by.realizes" id="is_realized_by.realizes" size="25"></td>
+                                 </tr>
+                              </table>
+                           </td>
+                        </tr>
+                        <tr>
+                           <th class="label"><label for="type.">type</label></th>
+                           <td class="input"><input name="type." id="type." size="25"></td>
+                        </tr>
+                        <tr>
                            <th class="label"><label for="isPrimaryTopicOf">is primary topic of</label></th>
                            <td class="input"><input name="isPrimaryTopicOf" id="isPrimaryTopicOf" size="25"></td>
+                        </tr>
+                        <tr>
+                           <th class="label"><label for="is_about">is_about</label></th>
+                           <td class="input"><input name="is_about" id="is_about" size="25"></td>
+                        </tr>
+                        <tr>
+                           <th class="label"><label for="is_member_of">is_member_of</label></th>
+                           <td class="input"><input name="is_member_of" id="is_member_of" size="25"></td>
+                        </tr>
+                        <tr>
+                           <th class="label"><label for="type_document">type_document</label></th>
+                           <td class="input"><input name="type_document" id="type_document" size="25"></td>
                         </tr>
                      </table>
                      <p><button type="submit">Search</button></p>
                   </form>
                </section>
                <section>
-                  <table id="w149aab7">
+                  <table id="w1544aab7">
                      <colgroup>
                         <col class="labelWidth">
                         <col class="autoWidth">
@@ -358,9 +418,104 @@ var _r01 = {
                         <td></td>
                         <td></td>
                      </tr>
-                     <tr class="isPrimaryTopicOf last">
+                     <tr class="date_applicability">
+                        <th class="label"><a href="http://data.europa.eu/eli/ontology#date_applicability">date_applicability</a></th>
+                        <td class="value">
+                           <time datetime="1978-07-02">02/07/1978</time>
+                        </td>
+                        <td class="filter"><a rel="nofollow" title="filter to values less than 1978-07-02" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)?max-date_applicability=1978-07-02"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Left.png" alt="less than 1978-07-02"></a><a rel="nofollow" title="more like this" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)?date_applicability=1978-07-02"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Search.png" alt="more like this"></a><a rel="nofollow" title="more than 1978-07-02" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)?min-date_applicability=1978-07-02"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Right.png" alt="more than 1978-07-02"></a></td>
+                     </tr>
+                     <tr class="date_document">
+                        <th class="label"><a href="http://data.europa.eu/eli/ontology#date_document">date_document</a></th>
+                        <td class="value">
+                           <time datetime="1978-06-05">05/06/1978</time>
+                        </td>
+                        <td class="filter"><a rel="nofollow" title="filter to values less than 1978-06-05" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)?max-date_document=1978-06-05"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Left.png" alt="less than 1978-06-05"></a><a rel="nofollow" title="more like this" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)?date_document=1978-06-05"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Search.png" alt="more like this"></a><a rel="nofollow" title="more than 1978-06-05" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)?min-date_document=1978-06-05"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Right.png" alt="more than 1978-06-05"></a></td>
+                     </tr>
+                     <tr class="date_publication">
+                        <th class="label"><a href="http://data.europa.eu/eli/ontology#date_publication">date_publication</a></th>
+                        <td class="value">
+                           <time datetime="1978-07-01">01/07/1978</time>
+                        </td>
+                        <td class="filter"><a rel="nofollow" title="filter to values less than 1978-07-01" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)?max-date_publication=1978-07-01"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Left.png" alt="less than 1978-07-01"></a><a rel="nofollow" title="more like this" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)?date_publication=1978-07-01"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Search.png" alt="more like this"></a><a rel="nofollow" title="more than 1978-07-01" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)?min-date_publication=1978-07-01"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Right.png" alt="more than 1978-07-01"></a></td>
+                     </tr>
+                     <tr class="first_date_entry_in_force">
+                        <th class="label"><a href="http://data.europa.eu/eli/ontology#first_date_entry_in_force">first_date_entry_in_force</a></th>
+                        <td class="value">
+                           <time datetime="1978-07-02">02/07/1978</time>
+                        </td>
+                        <td class="filter"><a rel="nofollow" title="filter to values less than 1978-07-02" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)?max-first_date_entry_in_force=1978-07-02"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Left.png" alt="less than 1978-07-02"></a><a rel="nofollow" title="more like this" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)?first_date_entry_in_force=1978-07-02"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Search.png" alt="more like this"></a><a rel="nofollow" title="more than 1978-07-02" href="http://data.euskadi.eus/doc/es-pv/a/1978/06/05/(2)?min-first_date_entry_in_force=1978-07-02"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Right.png" alt="more than 1978-07-02"></a></td>
+                     </tr>
+                     <tr class="is_realized_by">
+                        <th class="label"><a href="http://data.europa.eu/eli/ontology#is_realized_by">is_realized_by</a></th>
+                        <td class="value nested" colspan="2">
+                           <table id="w1544aab7b7a">
+                              <caption><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/eus">eus</a></caption>
+                              <colgroup>
+                                 <col class="labelWidth">
+                                 <col class="autoWidth">
+                                 <col class="filterWidth">
+                              </colgroup>
+                              <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                              </tr>
+                              <tr class="realizes last">
+                                 <th class="label"><a href="http://data.europa.eu/eli/ontology#realizes">realizes</a></th>
+                                 <td class="value"><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof">dof</a></td>
+                                 <td class="filter"></td>
+                              </tr>
+                           </table>
+                           <table id="w1544aab7b7b1">
+                              <caption><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/spa">spa</a></caption>
+                              <colgroup>
+                                 <col class="labelWidth">
+                                 <col class="autoWidth">
+                                 <col class="filterWidth">
+                              </colgroup>
+                              <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                              </tr>
+                              <tr class="realizes last">
+                                 <th class="label"><a href="http://data.europa.eu/eli/ontology#realizes">realizes</a></th>
+                                 <td class="value"><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof">dof</a></td>
+                                 <td class="filter"></td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr class="type">
+                        <th class="label"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></th>
+                        <td class="value nested" colspan="2">
+                           <table>
+                              <tr>
+                                 <td class="value"><a href="http://data.europa.eu/eli/ontology#LegalResource">LegalResource</a></td>
+                                 <td class="filter"></td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr class="isPrimaryTopicOf">
                         <th class="label"><a href="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">is primary topic of</a></th>
-                        <td class="value"><a href="#w149aa" title="view on this page">ICAEstacion-2017-01-26.html</a></td>
+                        <td class="value"><a href="#w1544aa" title="view on this page">dof.html</a></td>
+                        <td class="filter"></td>
+                     </tr>
+                     <tr class="is_about">
+                        <th class="label"><a href="http://data.europa.eu/eli/ontology#is_about">is_about</a></th>
+                        <td class="value"><a href="http://data.euskadi.eus/kos/public-sector/sector/sector-publico">sector-publico</a></td>
+                        <td class="filter"></td>
+                     </tr>
+                     <tr class="is_member_of">
+                        <th class="label"><a href="http://data.europa.eu/eli/ontology#is_member_of">is_member_of</a></th>
+                        <td class="value"><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)">(2)</a></td>
+                        <td class="filter"></td>
+                     </tr>
+                     <tr class="type_document last">
+                        <th class="label"><a href="http://data.europa.eu/eli/ontology#type_document">type_document</a></th>
+                        <td class="value"><a href="http://datos.gob.es/resource/authority/resource-type/a">a</a></td>
                         <td class="filter"></td>
                      </tr>
                   </table>
@@ -375,7 +530,8 @@ var _r01 = {
                   <p>This is the SPARQL query that was generated to pull together the data that is provided about the selected item. You can modify it here and re-run the query but you may find more options at the
                      <a href="http://wl11vf0057.ejgvdns:7001/r01hpLODWar/read/blazegraph/namespace/euskadi_db/sparql">endpoint's page</a>.
                   </p>
-                  <form action="http://wl11vf0057.ejgvdns:7001/r01hpLODWar/read/blazegraph/namespace/euskadi_db/sparql" method="post"><textarea name="query" wrap="soft" data-skip-lines="1"># no results, no query.</textarea><p><button type="submit">Run Query</button></p>
+                  <form action="http://wl11vf0057.ejgvdns:7001/r01hpLODWar/read/blazegraph/namespace/euskadi_db/sparql" method="post"><textarea name="query" wrap="soft" data-skip-lines="0">DESCRIBE 
+  &lt;http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof&gt;</textarea><p><button type="submit">Run Query</button></p>
                   </form>
                </div>
             </div>
@@ -506,7 +662,7 @@ var _r01 = {
 
 
         
-                <img src="/setCookie_ _4_20180509173801?r01_url=/doc/medio-ambiente/calidad-del-aire/elemento/ICAEstacion-2017-01-26?&amp;r01_title=Eusko%20Jaurlaritza%20-%20Euskadi.eus"  alt="" />
+                <img src="/setCookie_ _4_20180510131433?r01_url=/doc/es-pv/a/1978/06/05/(2)/dof?&amp;r01_title=Eusko%20Jaurlaritza%20-%20Euskadi.eus"  alt="" />
         
 
 
