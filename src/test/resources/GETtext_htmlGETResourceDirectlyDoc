@@ -407,7 +407,7 @@ var _r01 = {
                   </form>
                </section>
                <section>
-                  <table id="w3372aab7">
+                  <table id="w7687aab7">
                      <colgroup>
                         <col class="labelWidth">
                         <col class="autoWidth">
@@ -449,7 +449,7 @@ var _r01 = {
                      <tr class="is_realized_by">
                         <th class="label"><a href="http://data.europa.eu/eli/ontology#is_realized_by">is_realized_by</a></th>
                         <td class="value nested" colspan="2">
-                           <table id="w3372aab7b7a">
+                           <table id="w7687aab7b7a">
                               <caption><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/eus">eus</a></caption>
                               <colgroup>
                                  <col class="labelWidth">
@@ -467,7 +467,7 @@ var _r01 = {
                                  <td class="filter"></td>
                               </tr>
                            </table>
-                           <table id="w3372aab7b7b1">
+                           <table id="w7687aab7b7b1">
                               <caption><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/spa">spa</a></caption>
                               <colgroup>
                                  <col class="labelWidth">
@@ -500,7 +500,7 @@ var _r01 = {
                      </tr>
                      <tr class="isPrimaryTopicOf">
                         <th class="label"><a href="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">is primary topic of</a></th>
-                        <td class="value"><a href="#w3372aa" title="view on this page">dof.html</a></td>
+                        <td class="value"><a href="#w7687aa" title="view on this page">dof.html</a></td>
                         <td class="filter"></td>
                      </tr>
                      <tr class="is_about">
@@ -662,7 +662,7 @@ var _r01 = {
 
 
         
-                <img src="/setCookie_ _4_20180511102754?r01_url=/doc/es-pv/a/1978/06/05/(2)/dof?&amp;r01_title=Eusko%20Jaurlaritza%20-%20Euskadi.eus"  alt="" />
+                <img src="/setCookie_ _4_20180511115453?r01_url=/doc/es-pv/a/1978/06/05/(2)/dof?&amp;r01_title=Eusko%20Jaurlaritza%20-%20Euskadi.eus"  alt="" />
         
 
 

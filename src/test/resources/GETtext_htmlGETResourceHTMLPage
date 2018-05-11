@@ -317,6 +317,8 @@ var _r01 = {
                </ul>
                <ul class="properties">
                   <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.html?_properties=isPrimaryTopicOf"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is primary topic of</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.html?_properties=mainEntityOfPage"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> main entity of page</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.html?_properties=sameAs"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> same as</a></li>
                </ul>
             </section>
          </nav>
@@ -324,8 +326,8 @@ var _r01 = {
             <div class="panel">
                <header>
                   <p id="openSearch">Show Search Form</p>
-                  <h1>elda:missingEndpoint</h1>
-                  <p class="id"><a href="elda:missingEndpoint">elda:missingEndpoint</a></p>
+                  <h1>euskadi</h1>
+                  <p class="id"><a href="http://data.euskadi.eus/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi">http://data.euskadi.eus/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi</a></p>
                </header>
                <section id="search" style="display: none">
                   <form action="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion">
@@ -342,12 +344,20 @@ var _r01 = {
                            <th class="label"><label for="isPrimaryTopicOf">is primary topic of</label></th>
                            <td class="input"><input name="isPrimaryTopicOf" id="isPrimaryTopicOf" size="25"></td>
                         </tr>
+                        <tr>
+                           <th class="label"><label for="mainEntityOfPage">main entity of page</label></th>
+                           <td class="input"><input name="mainEntityOfPage" id="mainEntityOfPage" size="25"></td>
+                        </tr>
+                        <tr>
+                           <th class="label"><label for="sameAs">same as</label></th>
+                           <td class="input"><input name="sameAs" id="sameAs" size="25"></td>
+                        </tr>
                      </table>
                      <p><button type="submit">Search</button></p>
                   </form>
                </section>
                <section>
-                  <table id="w5836aab7">
+                  <table id="w4783aab7">
                      <colgroup>
                         <col class="labelWidth">
                         <col class="autoWidth">
@@ -358,9 +368,19 @@ var _r01 = {
                         <td></td>
                         <td></td>
                      </tr>
-                     <tr class="isPrimaryTopicOf last">
+                     <tr class="isPrimaryTopicOf">
                         <th class="label"><a href="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">is primary topic of</a></th>
-                        <td class="value"><a href="#w5836aa" title="view on this page">euskadi.html</a></td>
+                        <td class="value"><a href="#w4783aa" title="view on this page">euskadi.html</a></td>
+                        <td class="filter"></td>
+                     </tr>
+                     <tr class="mainEntityOfPage">
+                        <th class="label"><a href="http://schema.org/mainEntityOfPage">main entity of page</a></th>
+                        <td class="value"><a href="http://www.euskadi.eus">www.euskadi.eus</a></td>
+                        <td class="filter"></td>
+                     </tr>
+                     <tr class="sameAs last">
+                        <th class="label"><a href="http://www.w3.org/2002/07/owl#sameAs">same as</a></th>
+                        <td class="value"><a href="http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Pais-Vasco">Pais-Vasco</a></td>
                         <td class="filter"></td>
                      </tr>
                   </table>
@@ -375,7 +395,8 @@ var _r01 = {
                   <p>This is the SPARQL query that was generated to pull together the data that is provided about the selected item. You can modify it here and re-run the query but you may find more options at the
                      <a href="http://wl11vf0057.ejgvdns:7001/r01hpLODWar/read/blazegraph/namespace/euskadi_db/sparql">endpoint's page</a>.
                   </p>
-                  <form action="http://wl11vf0057.ejgvdns:7001/r01hpLODWar/read/blazegraph/namespace/euskadi_db/sparql" method="post"><textarea name="query" wrap="soft" data-skip-lines="1"># no results, no query.</textarea><p><button type="submit">Run Query</button></p>
+                  <form action="http://wl11vf0057.ejgvdns:7001/r01hpLODWar/read/blazegraph/namespace/euskadi_db/sparql" method="post"><textarea name="query" wrap="soft" data-skip-lines="0">DESCRIBE 
+  &lt;http://data.euskadi.eus/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi&gt;</textarea><p><button type="submit">Run Query</button></p>
                   </form>
                </div>
             </div>
@@ -506,7 +527,7 @@ var _r01 = {
 
 
         
-                <img src="/setCookie_ _4_20180511102753?r01_url=/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi?&amp;r01_title=Eusko%20Jaurlaritza%20-%20Euskadi.eus"  alt="" />
+                <img src="/setCookie_ _4_20180511115453?r01_url=/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi?&amp;r01_title=Eusko%20Jaurlaritza%20-%20Euskadi.eus"  alt="" />
         
 
 

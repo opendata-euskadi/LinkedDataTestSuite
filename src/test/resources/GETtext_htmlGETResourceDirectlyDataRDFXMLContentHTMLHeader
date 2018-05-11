@@ -117,7 +117,7 @@
 <body class='web01-ejeduki'>
 <script>
 var _r01 = {
-	requestedUri : '/r01hpLODWar/data/public-sector/government/GovernmentalAdministrativeRegion/euskadi',
+	requestedUri : '/r01hpLODWar/data/public-sector/government/GovernmentalAdministrativeRegion/euskadi.rdf',
 	clientIp : '172.16.0.205, 172.16.0.205, 127.0.0.1',
 	portalInfo : {
 		portalId : 'web01',
@@ -219,11 +219,6 @@ var _r01 = {
 	xmlns:hint="http://www.bigdata.com/queryHints#"
 	xmlns:bd="http://www.bigdata.com/rdf#"
 	xmlns:bds="http://www.bigdata.com/rdf/search#">
-
-<rdf:Description rdf:about="http://data.euskadi.eus/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi">
-	<mainEntityOfPage xmlns="http://schema.org/" rdf:resource="http://www.euskadi.eus"/>
-	<owl:sameAs rdf:resource="http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Pais-Vasco"/>
-</rdf:Description>
 
 </rdf:RDF><!--#endif
 -->	</div>	<!--#endif

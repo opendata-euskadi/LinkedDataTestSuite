@@ -96,7 +96,7 @@ public class LodTest {
             final String accept = MIMEtype.HTML.mimetypevalue();
             final String pathUri = uribonita;
             final String name = "GETResourceHTMLPage";
-            final String comment = "Recurso con pagina bonita que no existe todavia";
+            final String comment = "Recurso con pagina bonita";
             final Map<String, String> parameters = new HashMap<String, String>();
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
@@ -246,7 +246,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.HTML.mimetypevalue();
-            final String pathUri = uribonita.replace("id", "data");
+            final String pathUri = uribonita.replace("id", "data") + ".rdf";
             final String name = "GETResourceDirectlyDataRDFXMLContentHTMLHeader";
             final String comment = "Obtener recurso en RDF/XML (por extension, no cabecera, cabecera HTML) directamente de /data, parsear contenido";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -265,7 +265,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.HTML.mimetypevalue();
-            final String pathUri = uribonita.replace("id", "data");
+            final String pathUri = uribonita.replace("id", "data") + ".ttl";
             final String name = "GETResourceDirectlyDataTTLContentHTMLHeader";
             final String comment = "Obtener recurso en TTL (por extension, no cabecera, cabecera HTML) directamente de /data, parsear contenido";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -284,7 +284,7 @@ public class LodTest {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.HTML.mimetypevalue();
-            final String pathUri = uribonita.replace("id", "data");
+            final String pathUri = uribonita.replace("id", "data") + ".jsonld";
             final String name = "GETResourceDirectlyDataJSONLDContentHTMLHeader";
             final String comment = "Obtener recurso en JSON-LD (por extension, no cabecera, cabecera HTML) directamente de /data, parsear contenido";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -423,7 +423,7 @@ public class LodTest {
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
             assertTrue(requestBean.getResponseString().contains(
-                    "http://es.euskadi.eus/distribution/calidad-aire-en-euskadi-2017,http://www.w3.org/ns/sparql-service-description#namedGraph"));
+                    "http://data.euskadi.eus/distribution/bopv-european-legislation-identifier-eli/lod,http://www.w3.org/ns/sparql-service-description#namedGraph"));
         } catch (final IOException e) {
             e.printStackTrace();
         }
