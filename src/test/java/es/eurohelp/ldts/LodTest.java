@@ -178,8 +178,7 @@ public class LodTest {
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
             assertTrue(requestBean.getResponseString()
-                    .contains("<ContractEconomicConditions xmlns=\"http://contsem.unizar.es/def/sector-publico/pproc#\" "
-                            + "rdf:datatype=\"http://www.w3.org/2001/XMLSchema#long\">3670496</ContractEconomicConditions>"));
+                    .contains("<rdf:Description rdf:about=\"http://data.euskadi.eus/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi\">"));
         } catch (final IOException e) {
             e.printStackTrace();
         }
@@ -198,8 +197,7 @@ public class LodTest {
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
             assertTrue(requestBean.getResponseString()
-                    .contains("<ContractEconomicConditions xmlns=\"http://contsem.unizar.es/def/sector-publico/pproc#\" "
-                            + "rdf:datatype=\"http://www.w3.org/2001/XMLSchema#long\">3670496</ContractEconomicConditions>"));
+                    .contains("<rdf:Description rdf:about=\"http://data.euskadi.eus/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi\">"));
         } catch (final IOException e) {
             e.printStackTrace();
         }
@@ -218,7 +216,7 @@ public class LodTest {
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
             assertTrue(requestBean.getResponseString()
-                    .contains("<http://contsem.unizar.es/def/sector-publico/pproc#formalizedDate> \"2000-03-31\"^^xsd:date ;"));
+                    .contains("<http://data.euskadi.eus/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi> <http://schema.org/mainEntityOfPage> <http://www.euskadi.eus> ;"));
         } catch (final IOException e) {
             e.printStackTrace();
         }
@@ -236,7 +234,7 @@ public class LodTest {
             final Map<String, String> parameters = new HashMap<String, String>();
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
-            assertTrue(requestBean.getResponseString().contains("\"@value\" : \"10.0\""));
+            assertTrue(requestBean.getResponseString().contains("\"@id\" : \"http://www.euskadi.eus\""));
         } catch (final IOException e) {
             e.printStackTrace();
         }
@@ -310,7 +308,7 @@ public class LodTest {
             final Map<String, String> parameters = new HashMap<String, String>();
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
-            assertTrue(requestBean.getResponseString().contains("\"@value\" : \"jefe grupo inspector pesca\""));
+            assertTrue(requestBean.getResponseString().contains("\"@id\" : \"http://www.euskadi.eus\""));
         } catch (final IOException e) {
             e.printStackTrace();
         }
@@ -328,8 +326,7 @@ public class LodTest {
             final Map<String, String> parameters = new HashMap<String, String>();
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
-            assertTrue(requestBean.getResponseString().contains("<http://contsem.unizar.es/def/sector-publico/pproc#managingDepartment> "
-                    + "<http://es.euskadi.eus/id/sector-publico/departamento/desarrollo-economico-e-infraestructuras> ;"));
+            assertTrue(requestBean.getResponseString().contains("<http://data.euskadi.eus/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi> <http://schema.org/mainEntityOfPage> <http://www.euskadi.eus> ;"));
         } catch (final IOException e) {
             e.printStackTrace();
         }
@@ -349,7 +346,7 @@ public class LodTest {
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
             assertTrue(requestBean.getResponseString().contains(
-                    "<http://es.euskadi.eus/id/sector-publico/puestos-trabajo/contrato/1-gobierno-vasco-donostia-easo-10-3024.0-2016-05-09> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/cerif/frapo/EmploymentContract> ."));
+                    "<http://data.euskadi.eus/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi> <http://schema.org/mainEntityOfPage> <http://www.euskadi.eus> ."));
         } catch (final IOException e) {
             e.printStackTrace();
         }
@@ -368,7 +365,7 @@ public class LodTest {
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
             assertTrue(requestBean.getResponseString()
-                    .contains("\"value\" : \"http://es.euskadi.eus/id/sector-publico/departamento/desarrollo-economico-e-infraestructuras\","));
+                    .contains("\"value\" : \"http://www.euskadi.eus\","));
         } catch (final IOException e) {
             e.printStackTrace();
         }
@@ -388,7 +385,7 @@ public class LodTest {
             final Map<String, String> parameters = new HashMap<String, String>();
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
-            assertTrue(requestBean.getResponseString().contains("<uri>http://dbpedia.org/ontology/occupation</uri>"));
+            assertTrue(requestBean.getResponseString().contains("<uri>http://www.euskadi.eus</uri>"));
         } catch (final IOException e) {
             e.printStackTrace();
         }
@@ -406,7 +403,7 @@ public class LodTest {
             final Map<String, String> parameters = new HashMap<String, String>();
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
-            assertTrue(requestBean.getResponseString().contains("<http://dbpedia.org/ontology/occupation> \"jefe grupo inspector pesca\"@es ;"));
+            assertTrue(requestBean.getResponseString().contains("<http://data.euskadi.eus/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi> <http://schema.org/mainEntityOfPage> <http://www.euskadi.eus> ;"));
         } catch (final IOException e) {
             e.printStackTrace();
         }

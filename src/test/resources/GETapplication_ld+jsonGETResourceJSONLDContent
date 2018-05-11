@@ -1,1 +1,9 @@
-[ ]
+[ {
+  "@id" : "http://data.euskadi.eus/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi",
+  "http://schema.org/mainEntityOfPage" : [ {
+    "@id" : "http://www.euskadi.eus"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Pais-Vasco"
+  } ]
+} ]

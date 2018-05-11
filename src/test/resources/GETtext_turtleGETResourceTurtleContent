@@ -9,3 +9,6 @@
 @prefix hint: <http://www.bigdata.com/queryHints#> .
 @prefix bd: <http://www.bigdata.com/rdf#> .
 @prefix bds: <http://www.bigdata.com/rdf/search#> .
+
+<http://data.euskadi.eus/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi> <http://schema.org/mainEntityOfPage> <http://www.euskadi.eus> ;
+	owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Pais-Vasco> .

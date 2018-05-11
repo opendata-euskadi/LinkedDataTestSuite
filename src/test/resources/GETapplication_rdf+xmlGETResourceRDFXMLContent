@@ -12,4 +12,9 @@
 	xmlns:bd="http://www.bigdata.com/rdf#"
 	xmlns:bds="http://www.bigdata.com/rdf/search#">
 
+<rdf:Description rdf:about="http://data.euskadi.eus/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi">
+	<mainEntityOfPage xmlns="http://schema.org/" rdf:resource="http://www.euskadi.eus"/>
+	<owl:sameAs rdf:resource="http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Pais-Vasco"/>
+</rdf:Description>
+
 </rdf:RDF>

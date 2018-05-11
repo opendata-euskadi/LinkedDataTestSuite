@@ -52,7 +52,7 @@
 
 	<!-- **** StyleSheet/Javascript resources for content **** -->
 <script type="text/javascript">
-var r01ServerTime = new Date('Thursday, May 10, 2018');
+var r01ServerTime = new Date('Friday, May 11, 2018');
 var r01AttachPrefix = ' ';
 var file = ' '
 </script>
@@ -347,7 +347,7 @@ var _r01 = {
                   </form>
                </section>
                <section>
-                  <table id="w2725aab7">
+                  <table id="w5836aab7">
                      <colgroup>
                         <col class="labelWidth">
                         <col class="autoWidth">
@@ -360,7 +360,7 @@ var _r01 = {
                      </tr>
                      <tr class="isPrimaryTopicOf last">
                         <th class="label"><a href="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">is primary topic of</a></th>
-                        <td class="value"><a href="#w2725aa" title="view on this page">euskadi.html</a></td>
+                        <td class="value"><a href="#w5836aa" title="view on this page">euskadi.html</a></td>
                         <td class="filter"></td>
                      </tr>
                   </table>
@@ -506,7 +506,7 @@ var _r01 = {
 
 
         
-                <img src="/setCookie_ _4_20180510131432?r01_url=/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi?&amp;r01_title=Eusko%20Jaurlaritza%20-%20Euskadi.eus"  alt="" />
+                <img src="/setCookie_ _4_20180511102753?r01_url=/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi?&amp;r01_title=Eusko%20Jaurlaritza%20-%20Euskadi.eus"  alt="" />
         
 
 

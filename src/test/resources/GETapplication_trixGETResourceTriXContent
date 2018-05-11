@@ -1,3 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <TriX xmlns='http://www.w3.org/2004/03/trix/trix-1/'>
+	<graph>
+		<triple>
+			<uri>http://data.euskadi.eus/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi</uri>
+			<uri>http://schema.org/mainEntityOfPage</uri>
+			<uri>http://www.euskadi.eus</uri>
+		</triple>
+		<triple>
+			<uri>http://data.euskadi.eus/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi</uri>
+			<uri>http://www.w3.org/2002/07/owl#sameAs</uri>
+			<uri>http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Pais-Vasco</uri>
+		</triple>
+	</graph>
 </TriX>
