@@ -19,14 +19,12 @@ public enum MIMEtype {
 	CSV("text/csv"),
 	RDFJSON("application/rdf+json"),
 	JSONLD("application/ld+json"),
-	//TriG("application/trig"),
+	TriG("application/trig"),
 	TriX("application/trix"),
-	//BinaryRDF("application/x-binary-rdf"),
-	//SPARQLXMLResultsFormat("application/sparql-results+xml"),
-	//SPARQLJSONResultsFormat("application/sparql-results+json"),
-	//SPARQLBooleanResults("text/boolean"),
-	//SPARQLBinaryResults("application/x-binary-rdf-results-table"),
-	//TABVAL("text/tab-separated-values"),
+	SPARQLXMLResultsFormat("application/sparql-results+xml"),
+	SPARQLJSONResultsFormat("application/sparql-results+json"),
+	SPARQLBooleanResults("text/boolean"),
+	SPARQLBinaryResults("application/x-binary-rdf-results-table"),
 	HTML("text/html");
 
 	private String mimetypestring;

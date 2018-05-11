@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix hint: <http://www.bigdata.com/queryHints#> .
+@prefix bd: <http://www.bigdata.com/rdf#> .
+@prefix bds: <http://www.bigdata.com/rdf/search#> .
+
+<http://data.euskadi.eus/dataset/bopv-european-legislation-identifier-eli/> <http://www.w3.org/ns/dcat#distribution> <http://data.euskadi.eus/distribution/bopv-european-legislation-identifier-eli/lod> .
+
+<http://data.euskadi.eus/dataset/bopv-european-legislation-identifier-eli> <http://www.w3.org/ns/dcat#distribution> <http://data.euskadi.eus/distribution/bopv-european-legislation-identifier-eli/lod> .
+
+<http://data.euskadi.eus/distribution/bopv-european-legislation-identifier-eli/lod> <http://www.w3.org/ns/sparql-service-description#namedGraph> <http://data.euskadi.eus/graph/bopv-european-legislation-identifier-eli> ;
+	a <http://schema.org/Distribution> , <http://www.w3.org/ns/dcat#Distribution> , <http://rdfs.org/ns/void#Dataset> ;
+	<http://purl.org/dc/terms/title> "Legislación BOPV - ELI (Linked Data)"@es , "EHAA Legedia - ELI (Linked Data)"@eu ;
+	<http://rdfs.org/ns/void#sparqlEndpoint> <http://data.euskadi.eus/sparql/> .

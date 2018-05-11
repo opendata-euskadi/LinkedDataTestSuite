@@ -4,16 +4,8 @@
 
 
 
-
-
 <head>
-
-<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
-<meta http-equiv='content-type' content='text/html; charset=iso-8859-1' />
-<meta http-equiv='X-UA-Compatible' content='IE=edge' />
-<meta name='author' content='Eusko Jaurlaritza - Gobierno Vasco' />
-
-
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <!-- Directiva para la previsualizacización de la plantilla, se borrar, de las páginas -->
 
 
@@ -30,11 +22,54 @@
 <link href="/AVComun/styles/r01ClaimStyle.css" rel="stylesheet" type="text/css" />
 
 		<!-- **** IE only StyleSheet resources for all AV type **** -->
-				
+		<link rel="schema.dc" href="http://purl.org/dc/elements/1.1/" />
+<meta name="dc.description" content="Euskadi.eus Euskal administrazioak Interneten duen Ataria da eta bere helburu nagusia Administrazioa herritarrei hurbiltzea da." />
+<meta name="dc.identifier" content="eu_r01gpd0146a3990af92a6999e523872882821e9b2" />
+<meta name="dc.date" content="" />
+<meta name="dc.language" content="eu" />
+<meta name="dc.title" content="Euskadi.eus - Eusko Jaurlaritzaren informazioa, tramiteak eta zerbitzuak" />
+<meta name="dc.subject" content="r01e00000ff26d461e3a470b8181621308b9c4fdf" />
+<meta name="dc.creator" content="r01epd0122e4ed314423e0db04c97a47b5baa317f,r01e00000fe4e66771ba470b8b16eead1a456352e,r01e00000ff26d4660aa470b86e33e29651f9e31e,r01eD8D7C1E64FE2825A79B634CE8FAD03FFBA38D58D" />
+
+			<title>Euskadi.eus - Eusko Jaurlaritzaren informazioa, tramiteak eta zerbitzuak</title>
 
         <!-- **** MetaTags **** -->
-        
-		
+        <meta name="author" content="Eusko Jaurlaritza - Gobierno Vasco" />
+		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+		<meta name="description" lang="eu"  content="Euskadi.eus Euskal administrazioak Interneten duen Ataria da eta bere helburu nagusia Administrazioa herritarrei hurbiltzea da."/>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -43,34 +78,15 @@
               var r01gIsAdminPage='false';
               var r01gLang='eu';
               var r01gPortalCode='web01';
-              var r01gPageCode='ejeduki';
+              var r01gPageCode='hasiera';
 		</script>
 		<!-- **** Script resources for all AV type **** -->
-		<script type='text/javascript' src='/scripts/web01-ejedukiVAScripts.sjs'></script>
+		<script type='text/javascript' src='/scripts/web01-hasieraVAScripts.sjs'></script>
 		<!-- **** StyleSheet resources for all AV instances **** -->
-		<link rel='stylesheet' type='text/css' href='/styles/web01-ejedukiVAStyles.scss' />
+		<link rel='stylesheet' type='text/css' href='/styles/web01-hasieraVAStyles.scss' />
 
-	<!-- **** StyleSheet/Javascript resources for content **** -->
-<script type="text/javascript">
-var r01ServerTime = new Date('Friday, May 11, 2018');
-var r01AttachPrefix = ' ';
-var file = ' '
-</script>
-<script type="text/javascript" src="/AVComun/scripts/swfobject.js"></script>
-<script type="text/javascript" src="/AVComun/scripts/jwplayer714/jwplayer.js"></script>
-<script type="text/javascript">try{if(typeof(jwplayer) != undefined)jwplayer.key="UtbXfJfGtRz4EyBhra0W7sy9aeOQC/0r+jCiTg==";}catch(e){}</script>
-<link rel="stylesheet" type="text/css" href="/AVComun/scripts/jwplayer714/r01jwplayer_patch.css" />
-		<!-- **** StyleSheet/Javascript TYPE resources for content **** -->
 
-<script type="text/javascript" src="/AVComun/r01gContainerVA/scripts/r01gContentCommonScripts.js"></script>
-<link rel="stylesheet" type="text/css" href="/AVComun/r01gContainerVA/styles/r01gContentCommonScripts.css" />
-
-<!--
-	Este fichero js se encarga de solucionar los problemas con url
-	1. - Adjuntos o imagenes con path relativo al documento  que con url amigables no se resuelven
-	2. - Directivas SSI para pagina y portal que no se resuelven en ficheros .html
- -->
-<script type="text/javascript" src="/AVCustom/r01gContainerVA/scripts/r01gUrlSanitize.js"></script>
+	<link rel="canonical" href="http://www.euskadi.eus/hasiera/" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="apple-touch-icon" sizes="57x57" href="/images/ico/apple-icon-57x57.png">
@@ -97,119 +113,15 @@ var file = ' '
 <![endif]-->
 <link rel="stylesheet" media="only screen and (max-width: 768px)" href="/styles/web01-mugikorra.css" />
 <link rel="stylesheet" href="/styles/web01-print.css" media="print">
-
-      
-      
-      <link rel="shortcut icon" href="/appcont/r01hpLODWebContent/elda-assets/images/datagovuk_favicon.png" type="image/x-icon">
-      <link rel="alternate" href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.json" type="application/json">
-      <link rel="alternate" href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.rdf" type="application/rdf+xml">
-      <link rel="alternate" href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.text" type="text/plain">
-      <link rel="alternate" href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.ttl" type="text/turtle">
-      <link rel="alternate" href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.xml" type="application/xml">
-      <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><link rel="stylesheet" href="/appcont/r01hpLODWebContent/elda-assets/css/html5reset-1.6.1.css" type="text/css">
-      <link rel="stylesheet" href="/appcont/r01hpLODWebContent/elda-assets/css/jquery-ui.css" type="text/css">
-      <link rel="stylesheet" href="/appcont/r01hpLODWebContent/elda-assets/css/smoothness/jquery-ui.css" type="text/css">
-      <link rel="stylesheet" href="/appcont/r01hpLODWebContent/elda-assets/css/result.css" type="text/css">
-      <!--[if lt IE 9]><link rel="stylesheet" href="/appcont/r01hpLODWebContent/elda-assets/css/ie.css" type="text/css"></link><![endif]-->
-   
-<script type="text/javascript" src="/appcont/r01hpLODWebContent/elda-assets/scripts/jquery.min.js"></script><script type="text/javascript" src="/appcont/r01hpLODWebContent/elda-assets/scripts/jquery-ui.min.js"></script><script type="text/javascript" src="/appcont/r01hpLODWebContent/elda-assets/scripts/jquery.sparkline.js"></script><script type="text/javascript" src="/appcont/r01hpLODWebContent/elda-assets/scripts/codemirror/codemirror_min.js"></script><script type="text/javascript">
-		$(function() {
-			$('.info img')
-				.toggle(function () {
-					$(this)
-						.attr('src', '/appcont/r01hpLODWebContent/elda-assets/images/green/16x16/Cancel.png')
-						.next().show();
-				}, function () {
-					$(this)
-						.attr('src', '/appcont/r01hpLODWebContent/elda-assets/images/green/16x16/Question.png')
-						.next().fadeOut('slow');
-				});
-			
-			$('input[type=date]').datepicker({
-				changeMonth: true,
-				changeYear: true,
-				dateFormat: 'yy-mm-dd',
-				autoSize: true
-			});
-			
-			$('#search').hide();
-			
-			$('#openSearch')
-				.toggle(function () {
-					$(this).text('Hide Search Form');
-					$('#search').slideDown('slow');
-				}, function () {
-					$(this).text('Show Search Form');
-					$('#search').slideUp('slow');
-				});
-			
-			$('.provenance textarea')
-				.each(function () {
-					var skipLines = parseFloat($(this).attr('data-skip-lines'), 10);
-					var lineHeight = parseFloat($(this).css('line-height'), 10);
-					$(this).scrollTop(skipLines * lineHeight);
-					var cm = CodeMirror.fromTextArea(this, {
-						basefiles: ["/appcont/r01hpLODWebContent/elda-assets/scripts/codemirror/codemirror_base_sparql.js"],
-						stylesheet: "/appcont/r01hpLODWebContent/elda-assets/css/sparql.css",
-						textWrapping: false
-					});
-					$(cm.frame).load(function () {
-						cm.jumpToLine(skipLines + 1);
-						$(cm.frame)
-							.css('border', 	'1px solid #D3D3D3')
-							.css('border-radius', '5px')
-							.css('-moz-border-radius', '5px');
-					});
-				});
-			
-			
-		});
-	</script>
-<title>Search Results</title>
 </head>
-<body class='web01-ejeduki'>
-<script>
-var _r01 = {
-	requestedUri : '/r01hpLODWar/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi',
-	clientIp : '172.16.0.205, 172.16.0.205, 127.0.0.1',
-	portalInfo : {
-		portalId : 'web01',
-		pageId : 'ejeduki'
-	},
-	lang : {
-		code : 'es',
-		name : 'SPANISH'
-	},
-	userAgent : {
-		os : {
-			producer : '',
-			family : 'UNKNOWN'
-		},
-		typo : {
-			category : 'OTHER',
-			type : 'LIBRARY',
-			family : 'JAKARTA_COMMONS_HTTPCLIENT'
-		},
-		name : 'Apache-HttpClient',
-		producer : 'Apache Software Foundation',
-		header : 'Apache-HttpClient\/4.2.5 (java 1.5)',
-		version : {
-			num : '4.2.5',
-			minor : '2',
-			major : '4',
-			bugFix : '5'
-		}
-	}
-}
-</script>
-<!-- Fichero que se carga despues del tag body en las paginas de portal -->
+<body class="euskadieus_hasiera web01-hasiera"><!-- Fichero que se carga despues del tag body en las paginas de portal -->
 
-<header role="banner">
-  <!-- Goiburua -->
-  
+<!-- Goiburua -->
+
+<header class="barra_beltza" role="banner">
   
 <!-- ************** INIT Visual Area: r01gEditorVA ************** -->
-        <!--@@<xml id='1000'><avInst oid='r01gpd014912d589d61becdb4c105f6d7a187b459' type='r01gEditorVA' /></xml>@@--><div id="pattern" class="pattern">
+        <!--@@<xml id='1000'><avInst oid='r01g0pd01497a3ba844555a55db963cf601138db57' type='r01gEditorVA' /></xml>@@--><div id="pattern" class="pattern">
 <div class="offcanvas-top">
 <div class="o-content">
 <div class="zutabeak">
@@ -226,7 +138,7 @@ var _r01 = {
 <li><a href="/kontaktua/-/harremanetan-jartzeko-internet-telefonoa-eta-aurrez-aurre/">Kontaktua</a></li>
 <li class="inv_mugik"><a href="/bilaketa/">Bilatzailea</a></li>
 <li class="inv_mugik"><a href="/informazioa/-/euskadieus-web-mapa/">Web-mapa</a></li>
-<li class="inv_screen ikus_mugik"><form accept-charset="UTF-8" method="get" action="/bilaketa"><input name="cat" value="Home_mugikorra" type="hidden" /> <label class="inv" for="home_bilaketa_mugikorra">Bilatu euskadi.eus-en</label> <input id="home_bilaketa_mugikorra" title="Bilatu Euskadi.eus-en" name="q" placeholder="Bilatu euskadi.eus-en" type="text" /> <input class="submit botoiak" value="Bilatu" type="submit" /></form></li>
+<li class="inv_screen ikus_mugik"><form accept-charset="UTF-8" method="get" action="/bilaketa"><input name="cat" value="Home_mugikorra" type="hidden" /> <label class="inv" for="home_bilaketa_mugikorra">Bilatu euskadi.eus-en</label> <input id="home_bilaketa_mugikorra" title="Bilatu Euskadi.eus-en" name="q" type="search" placeholder="Bilatu Euskadi.eus-en" /> <input class="submit botoiak" value="Bilatu" type="submit" /></form></li>
 </ul>
 </div>
 <div class="o-content-zutabe"><strong>Informazio Orokorra</strong>
@@ -242,182 +154,234 @@ var _r01 = {
 </div>
 </div>
 </div>
-<div class="goib_hizkuntza"></div>
-<div class="goib_estekak">
-<div class="goib_kontaktu"><a href="/kontaktua/-/harremanetan-jartzeko-internet-telefonoa-eta-aurrez-aurre/">Kontaktua</a></div>
-<div class="scontainer"><form class="searchbox" accept-charset="UTF-8" method="get" action="/bilaketa"><input name="cat" value="Goiburua" type="hidden" /><label class="inv" for="search-input-header">Bilatu euskadi.eus-en</label><input id="search-input-header" onmouseup="buttonUp();" class="searchbox-input" title="Bilatu Euskadi.eus-en" onkeyup="buttonUp();" name="q" placeholder="Bilatu euskadi.eus-en" autocomplete="off" type="text" /> <input class="searchbox-submit" value="Bilatu" type="submit" /> <span class="searchbox-icon">Bilatu</span></form></div>
+<div class="goib_hizkuntza  goib_hizkuntza_hasiera"></div>
+<div class="ongietorri">
+<h1 class="inv_mugik">euskadi.eus</h1>
+<p>Eusko Jaurlaritzaren informazioa, tramiteak eta zerbitzuak</p>
 </div>
+<section><form class="bilatzaile_home" accept-charset="UTF-8" method="get" action="/bilaketa"><input name="cat" value="Home" type="hidden" /> <label class="inv" for="home_bilaketa">Bilatu euskadi.eus-en</label> <input id="home_bilaketa" title="Bilatu euskadi.eus-en" name="q" type="search" placeholder="Bilatu euskadi.eus-en" /> <input class="submit" value="Bilatu" type="submit" /></form></section>
 <!-- ************** END Visual Area: r01gEditorVA ************** -->
 
   <!-- AMAIERA Goiburua-->
 </header>
-<!-- Ogi-papurrak -->
-
-
-<!-- ************** INIT Visual Area: r01gEditorVA ************** -->
-        <!--@@<xml id='1010'><avInst oid='r01g0pd014941ab19b5555a55d9dc9a8c549ea072b' type='r01gEditorVA' /></xml>@@--><nav class="ogi_papurrak"><ol>
-<li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope=""><a href="/hasiera" itemprop="url"><span itemprop="title">Euskadi.net</span> </a></li>
-<li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope=""><a href="/eusko-jaurlaritza/hasiera" itemprop="url"><span itemprop="title">Eusko Jaurlaritza</span> </a></li>
-</ol></nav>
-<!-- ************** END Visual Area: r01gEditorVA ************** -->
-
-<!-- AMAIERA ogi-papurrak-->
-<div class="ej_goiburu_02">
-  <!-- Eduki Goiburua -->
+<main class="edukiontzia" role="main">
   
   
 <!-- ************** INIT Visual Area: r01gEditorVA ************** -->
-        <!--@@<xml id='1020'><avInst oid='r01g0pd0149c77a752653f147558343eba978908a4' type='r01gEditorVA' /></xml>@@--><!--<p><a title="Joan Eusko Jaurlaritzako hasiera-orrira" href="/eusko-jaurlaritza/hasiera">Eusko Jaurlaritza</a></p>-->
+        <!--@@<xml id='2000'><avInst oid='r01gpd00146a39fb8f22a6999e19618429e629bcd' type='r01gEditorVA' /></xml>@@--><section>
+<h1>Bilatuena</h1>
+<ul class="erabilienak hasiera_erabilienak"><!--<li><a class="bi" href="/eusko-jaurlaritza/tramiteak-zerbitzuak/?r01kQry=tT:ayuda_subvencion;pp:r01PageSize.20;cO:r01epd0122e4ed314423e0db04c97a47b5baa317f,r01epd0122e4edf39923e0db0b11fff216b637726;mA:procedureCollection.EQ.0;p:Inter,Inter_portal&amp;r01SearchEngine=meta"><img alt="" src="/images/web01-2014_zerbitzu_erabilienak_02.gif" />Diru-laguntzak</a>
+<p>Eusko Jaurlaritzaren laguntzak eta diru-laguntza guztiak</p>
+</li>-->
+<li><a class="bat" href="https://euskadi.eus/"><img alt="" src="/images/web01-zerbitzu_erabilienak_egoitza.gif" width="85" height="85" />Egoitza elektronikoa</a>
+<p>Izapide elektroniko guztiak, Nire Kudeaketak, ordezkarien erregistro elektronikoa...</p>
+</li>
+<li><a class="bat" href="http://euskadi.eus/ehaa"><img alt="Euskal Herriko Agintzaritza Aldizkaria" src="/images/web01-hasiera_bisitatuena-bopv-ehaa.gif" />EHAA</a>
+<p>Euskal Herriko Aldizkari Ofiziala</p>
+</li>
+<li><a class="hiru" href="http://www.osakidetza.euskadi.eus/r85-ghhome00/eu/"><img alt="" src="/images/web01-hasiera_bisitatuena_osakidetza.gif" />Osakidetza</a>
+<p>Euskal osasun zerbitzua: aurretiko hitzordua, osasun-karpeta, Enplegu Publikorako Eskaintzak (EPE-OPE)...</p>
+</li>
+</ul>
+<h2 class="inv">Beste zerbitzu bilatuenak</h2>
+<ul class="etiketak">
+<li><a href="http://www.euskalmet.euskadi.eus/s07-5853x/eu/meteorologia/pronos.apl?e=8">Euskalmet</a></li>
+<li><a href="/r61-venplegu/eu/">Enplegu publikoa</a></li>
+<li><a href="http://www.hezkuntza.ejgv.euskadi.eus/r43-2591/eu">Hezkuntza</a></li>
+<li><a class="bi" href="/eusko-jaurlaritza/tramiteak-zerbitzuak/?r01kQry=tT:ayuda_subvencion;pp:r01PageSize.20;cO:r01epd0122e4ed314423e0db04c97a47b5baa317f,r01epd0122e4edf39923e0db0b11fff216b637726;mA:procedureCollection.EQ.0;p:Inter,Inter_portal&amp;r01SearchEngine=meta">Laguntzak eta diru-laguntzak</a></li>
+<li><a href="http://www.osanet.euskadi.net/o22War/O22ConexionServicioNuevaCitaServlet?servicio=16&amp;idioma=eus">Aurretiko hitzordua Osakidetzan</a></li>
+<li><a href="http://www.lanbide.euskadi.eus/lanbide-hasiera/">Lanbide</a></li>
+<li><a href="http://www.contratacion.euskadi.eus/w32-1081/eu/v79aWar/comunJSP/v79aCambioIdioma.do?idioma=eu">Kontratatzailearen profila</a></li>
+<li><a href="https://www.euskadi.eus/y22-payment/eu/p12iWar/p12iRPCDispatcherServlet?p12iIdioma=eu">Nire ordainketa on-line</a></li>
+<li><a href="http://www.euskara.euskadi.net/r59-15172x/eu/hizt_el/index.asp">Elhuyar Hiztegia</a></li>
+<li><a href="http://www.euskadi.eus/euskalterm">Euskalterm</a></li>
+<li><a href="http://www.habe.euskadi.eus/s23-5492/eu">HABE</a></li>
+</ul>
+</section>
 <!-- ************** END Visual Area: r01gEditorVA ************** -->
 
-  <!-- AMAIERA Eduki goiburua-->
-</div>
-<main class="edukiontzia bilaketa bilaketa_eduki" role="main">
-  <!-- Edukia -->
   
   
-<!-- ************** INIT Visual Area: r01gContainerVA ************** -->
-        <!--@@<xml id='2000'><avInst oid='r01gtpd015ccfc241d0187ba3628a098c8850c6e21' type='r01gContainerVA' /></xml>@@--><!-- Es un CONTENIDO CARGADO POR URL -->
-<!-- Recurso no encontrado --><div class="goiburu-edukia r01clearfix">
+<!-- ************** INIT Visual Area: r01gEditorVA ************** -->
+        <!--@@<xml id='2010'><avInst oid='r01gpd0146a3a0722e2a6999eae0bf472bb3b2809' type='r01gEditorVA' /></xml>@@--><section>
+<h1>Zerbitzu erabilienak gaika</h1>
+<ul class="gaien_zerrenda">
+<li>
+<h2><a href="/gaiak/-/lana-eta-enplegua/">Lana eta enplegua</a></h2>
+<p>Lana bilatu, prestakuntza lortu, diru-laguntzak, enpresa bat sortu, lan-harremanak, kooperatibak eta lan-sozietateak, lantokien irekitzea...</p>
+</li>
+<li>
+<h2><a href="/gaiak/-/ingurumena-eta-meteorologia/">Ingurumena eta meteorologia</a></h2>
+<p>Eguraldia Euskadin, natura-ondarea eta biodibertsitatea, ura, hondakinak, airea, kutsaduraren prebentzioa, ingurumen-inpaktua...</p>
+</li>
+<li>
+<h2><a href="/gaiak/-/euskara/">Euskara</a></h2>
+<p>EGA, azterketa eta titulu motak, Euskara ikasi, Euskara lanean, Barnetegiak eta Euskaltegiak, hiztegiak eta itzultzaileak...</p>
+</li>
+<li>
+<h2><a href="/gaiak/-/hezkuntza/">Hezkuntza</a></h2>
+<p>Bekak eta diru-laguntzak, Lanbide Heziketa, ikasturte hasierako esleipena, ordezkapenetarako zerrendak, Hizkuntza Eskola Ofizialak, EGA, lehiaketak eta oposizioak...</p>
+</li>
+<li>
+<h2><a href="/gaiak/-/osasuna/">Osasuna</a></h2>
+<p>Osakidetzaren enplegu eskaintzak (EPE/OPE), profesionalarentzako zerbitzuak, eskatu hitzordua, osasun-karpeta, zentroen direktorioa, osasuna zaindu, Osakidetzari buruz...</p>
+</li>
+<li>
+<h2><a href="/gaiak/-/herri-administrazioa/">Herri administrazioa</a></h2>
+<p>Euskal Herriko Agintzaritzaren Aldizkaria (EHAA), Nire Ordainketa (ordainketa-pasabidea), Egoitza Elektronikoa, Ivap, Izenpe, Zuzenean - herritarrentzako zerbitzua...</p>
+</li>
+</ul>
+<ul class="gaien_zerrenda_02">
+<li>
+<h2><a href="/gaiak/-/turismoa-eta-aisia/">Turismoa eta aisia</a></h2>
+<p>Euskadi ezagutzeko eta bisitatzeko baliabideak, ibilbideak eta kirol ekintzak, Gazte-txartela, auzolandegiak...</p>
+</li>
+<li>
+<h2><a href="/gaiak/-/etxebizitza/">Etxebizitza</a></h2>
+<p>Informazio erabilgarria, babestutako etxebizitza lortu, etxebizitza erabiliaren alokairua, diru-laguntzak, jabekideen erkidegoak...</p>
+</li>
+<li>
+<h2><a href="/gaiak/-/enpresa-eta-ekonomia-jarduerak/">Enpresa eta ekonomia-jarduerak</a></h2>
+<p>Euskal Industria eta Esportatzaileen Katalogoa (CIVEX), Kontratazio Publikoa Euskadin, baimenak eta erregistroak, jarduera ekonomikorako laguntzak eta bekak, enpresa bat sortu...</p>
+</li>
+<li>
+<h2><a href="/gaiak/-/kultura-eta-kirola/">Kultura eta kirola</a></h2>
+<p>Euskara, liburutegi publikoak, kultur ondarea, kultur agenda, ibilbideak eta kirol-ekitaldiak, kirol-erakundeen erregistroa, kirol autoktonoa...</p>
+</li>
+<li>
+<h2><a href="/gaiak/-/familia-bikotea-eta-gizarte-gaiak/">Familia, bikotea eta gizarte-gaiak</a></h2>
+<p>Seme eta alabengatiko&nbsp;laguntzak, lana eta familia bateragarri &nbsp;egiteko laguntzak, izatezko bikoteak, gizarte-zerbitzuak, familia ugariak, immigrazioa...</p>
+</li>
+<li>
+<h2><a href="/gaiak/-/trafikoa-garraioak-eta-segurtasuna/">Trafikoa, garraioak eta segurtasuna</a></h2>
+<p>Trafikoaren egoera, garraiolarientzako zerbitzuak, larrialdiak, ertzaintza, joko eta ikuskizun publikoak arautzea eta egiaztatzea...</p>
+</li>
+<li>
+<h2><a href="/gaiak/-/lurraldea-eta-geografia/">Lurraldea eta geografia</a></h2>
+<p>Euskadiko lurralde-antolamendua, antolamendua, paisaia eta informazio geografiko osoena.</p>
+</li>
+<!--
+<li>
+<h2><a href="/gaiak/-/kontsumoa/">Kontsumoa</a></h2>
+<p>Kontsultak, erreklamazioak, arbitrajeak, erakundeak, gaiak, prestakuntza, egunerokotasuna, eskubideak eta betebeharrak, enpresak...</p>
+</li>
+--></ul>
+<!--Gaiak zabaltzeko eta ixteko funtzioa-->
+<script type="text/javascript">
+$(document).ready(function(){	
+    $('.gaien_zerrenda_02').hide().before('<a href="#" id="open-example1" class="ireki_gaiak">Erakutsi gai gehiago</a>');
+	$('.gaien_zerrenda_02').after('<a href="#close-example1" id="close-example1" class="ireki_gaiak">Erakutsi gai gutxiago</a>');
+	$('a#close-example1').hide();
+	$('a#open-example1').click(function() {
+		$('.gaien_zerrenda_02').slideDown(1000);
+		$('a#open-example1').fadeOut(0);
+		$('a#close-example1').fadeIn(1000);
+		return false;
+	});
+	$('a#close-example1').click(function() {
+		$('.gaien_zerrenda_02').slideUp(1000);
+		$('a#open-example1').fadeIn(1000);
+		$('a#close-example1').fadeOut(0);
+		return false;
+	});
+});
+</script>
+</section>
+<!-- ************** END Visual Area: r01gEditorVA ************** -->
+
+  
+  
+<!-- ************** INIT Visual Area: r01gEditorVA ************** -->
+        <!--@@<xml id='2020'><avInst oid='r01gpd0146a3a136202a6999e8ca66504b611dcf3' type='r01gEditorVA' /></xml>@@--><section>
+<h1>Sailak eta beste administrazioak</h1>
+<div class="responsive-tabs">
+<h2>Eusko Jaurlaritzaren Sailak</h2>
+<div>
+<ul class="sailak">
+<li><a href="/eusko-jaurlaritza/lehendakaritza/">Lehendakaritza</a></li>
+<li><a href="/eusko-jaurlaritza/gobernantza-publiko-autogobernu-saila/">Gobernantza Publikoa eta Autogobernua</a></li>
+<li><a href="/eusko-jaurlaritza/ekonomiaren-garapen-azpiegitura-saila/">Ekonomiaren Garapena eta Azpiegiturak</a></li>
+<li><a href="/eusko-jaurlaritza/enplegu-gizarte-politikak-saila/">Enplegua eta Gizarte Politikak</a></li>
+<li><a href="/eusko-jaurlaritza/ingurumen-lurralde-plangintza-etxebizitza-saila/">Ingurumena, Lurralde Plangintza eta Etxebizitza</a></li>
+<li><a href="/eusko-jaurlaritza/ogasun-ekonomia-saila/">Ogasuna eta Ekonomia</a></li>
+<li><a href="/eusko-jaurlaritza/hezkuntza-saila/">Hezkuntza</a></li>
+<li><a href="/eusko-jaurlaritza/osasun-saila">Osasuna</a></li>
+<li><a href="/eusko-jaurlaritza/turismo-merkataritza-kontsumo-saila/">Turismoa, Merkataritza eta Kontsumoa</a></li>
+<li><a href="/eusko-jaurlaritza/kultura-hizkuntza-politika-saila/">Kultura eta Hizkuntza Politika</a></li>
+<li><a href="/eusko-jaurlaritza/segurtasun-saila/">Segurtasuna</a></li>
+<li><a href="/eusko-jaurlaritza/lana-justizia-saila/">Lana eta justizia</a></li>
+</ul>
 </div>
+<h2>Eusko Jaurlaritzaren erakundeak</h2>
+<div>
+<ul class="sailak">
+<li><a href="http://www.emakunde.euskadi.eus">Emakunde</a></li>
+<li><a href="http://eu.eustat.eus/">EUSTAT</a></li>
+<li><a href="http://www.gogora.euskadi.eus/">Gogora Institutoa</a></li>
+<li><a href="http://www.habe.euskadi.eus">HABE</a></li>
+<li><a href="http://www.ivap.euskadi.eus">IVAP</a></li>
+<li><a href="http://www.kontsumobide.euskadi.eus">Kontsumobide</a></li>
+<li><a href="http://www.lanbide.euskadi.eus">Lanbide</a></li>
+<li><a href="http://www.osakidetza.euskadi.eus">Osakidetza</a></li>
+<li><a href="http://www.osalan.euskadi.eus">Osalan</a></li>
+<li><a href="http://www.arkauteakademia.net">Polizia eta Larrialdietako Akademia</a></li>
+<li><a href="http://www2.irekia.euskadi.eus/eu">...erakunde guztiak</a></li>
+</ul>
+</div>
+<h2>Foru eta Toki Administrazioa</h2>
+<div>
+<ul class="sailak">
+<li><a title="Esteka hau leiho berri batean zabalduko da" href="http://www.alava.net/" target="_blank">Arabako Foru Aldundia</a></li>
+<li><a title="Esteka hau leiho berri batean zabalduko da" href="http://www.bizkaia.eus" target="_blank">Bizkaiko Foru Aldundia</a></li>
+<li><a title="Esteka hau leiho berri batean zabalduko da" href="http://www.gipuzkoa.eus" target="_blank">Gipuzkoako Foru Aldundia</a></li>
+<li><a title="Esteka hau leiho berri batean zabalduko da" href="http://bilbao.eus" target="_blank">Bilboko Udala</a></li>
+<li><a title="Esteka hau leiho berri batean zabalduko da" href="http://www.donostia.eus" target="_blank">Donostiako Udala</a></li>
+<li><a title="Esteka hau leiho berri batean zabalduko da" href="http://www.vitoria-gasteiz.org" target="_blank">Vitoria-Gasteizko Udala</a></li>
+<li><a title="Esteka hau leiho berri batean zabalduko da" href="http://www.eudel.eus/eu" target="_blank">EUDEL</a></li>
+</ul>
+</div>
+</div>
+</section>
+<!-- ************** END Visual Area: r01gEditorVA ************** -->
 
-<div id="containereduki_orokorra_goiburua" class="r01gContainer  r01gContainereduki_orokorra_goiburua r01  r01  r01 _ ">
-     			
-      <div id="page">
-         <nav class="site">
-            <section class="formats">
-               <ul>
-                  <li class="first"><a href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.html" type="text/html" rel="alternate" title="view in html format">html</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.json" type="application/json" rel="alternate" title="view in json format">json</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.rdf" type="application/rdf+xml" rel="alternate" title="view in rdf format">rdf</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.text" type="text/plain" rel="alternate" title="view in text format">text</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.ttl" type="text/turtle" rel="alternate" title="view in ttl format">ttl</a></li>
-                  <li class="last"><a href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.xml" type="application/xml" rel="alternate" title="view in xml format">xml</a></li>
-               </ul>
-            </section>
-         </nav>
-         <header>
-            <h1><a href="/">Linked Data API</a></h1>
-         </header>
-         <nav class="topnav"><script type="text/javascript">
-				function initMap() {
-					return null;
-				};
-			</script><section class="view">
-               <h1>View</h1>
-               <div class="info"><img class="open" src="/appcont/r01hpLODWebContent/elda-assets/images/green/16x16/Question.png" alt="help"><p>Choose what information you want to view about each item. There are some pre-defined
-                     views, but starred properties are always present no matter what the view. You can
-                     star properties by clicking on the <img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> icon. The currently starred icons have a <img src="/appcont/r01hpLODWebContent/elda-assets/images/green/16x16/Star.png" alt="unstar this property"> icon; clicking on it will unstar the property.
-                  </p>
-               </div>
-               <ul>
-                  <li><a href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.html?_view=all" title="switch to all view">all</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.html?_view=basic" title="switch to basic view">basic</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.html?_view=description" title="switch to description view">description</a></li>
-               </ul>
-               <ul class="properties">
-                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.html?_properties=isPrimaryTopicOf"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is primary topic of</a></li>
-                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.html?_properties=mainEntityOfPage"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> main entity of page</a></li>
-                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi.html?_properties=sameAs"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> same as</a></li>
-               </ul>
-            </section>
-         </nav>
-         <div id="result">
-            <div class="panel">
-               <header>
-                  <p id="openSearch">Show Search Form</p>
-                  <h1>euskadi</h1>
-                  <p class="id"><a href="http://data.euskadi.eus/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi">http://data.euskadi.eus/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi</a></p>
-               </header>
-               <section id="search" style="display: none">
-                  <form action="http://data.euskadi.eus/doc/public-sector/government/GovernmentalAdministrativeRegion">
-                     <table>
-                        <colgroup>
-                           <col class="labelWidth">
-                           <col class="valueWidth">
-                        </colgroup>
-                        <tr>
-                           <td></td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <th class="label"><label for="isPrimaryTopicOf">is primary topic of</label></th>
-                           <td class="input"><input name="isPrimaryTopicOf" id="isPrimaryTopicOf" size="25"></td>
-                        </tr>
-                        <tr>
-                           <th class="label"><label for="mainEntityOfPage">main entity of page</label></th>
-                           <td class="input"><input name="mainEntityOfPage" id="mainEntityOfPage" size="25"></td>
-                        </tr>
-                        <tr>
-                           <th class="label"><label for="sameAs">same as</label></th>
-                           <td class="input"><input name="sameAs" id="sameAs" size="25"></td>
-                        </tr>
-                     </table>
-                     <p><button type="submit">Search</button></p>
-                  </form>
-               </section>
-               <section>
-                  <table id="w4783aab7">
-                     <colgroup>
-                        <col class="labelWidth">
-                        <col class="autoWidth">
-                        <col class="filterWidth">
-                     </colgroup>
-                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                     </tr>
-                     <tr class="isPrimaryTopicOf">
-                        <th class="label"><a href="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">is primary topic of</a></th>
-                        <td class="value"><a href="#w4783aa" title="view on this page">euskadi.html</a></td>
-                        <td class="filter"></td>
-                     </tr>
-                     <tr class="mainEntityOfPage">
-                        <th class="label"><a href="http://schema.org/mainEntityOfPage">main entity of page</a></th>
-                        <td class="value"><a href="http://www.euskadi.eus">www.euskadi.eus</a></td>
-                        <td class="filter"></td>
-                     </tr>
-                     <tr class="sameAs last">
-                        <th class="label"><a href="http://www.w3.org/2002/07/owl#sameAs">same as</a></th>
-                        <td class="value"><a href="http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Pais-Vasco">Pais-Vasco</a></td>
-                        <td class="filter"></td>
-                     </tr>
-                  </table>
-               </section>
-            </div>
-         </div>
-         <nav class="bottomnav"></nav>
-         <footer>
-            <div class="provenance">
-               <div class=" query col1">
-                  <h2>Viewer</h2>
-                  <p>This is the SPARQL query that was generated to pull together the data that is provided about the selected item. You can modify it here and re-run the query but you may find more options at the
-                     <a href="http://wl11vf0057.ejgvdns:7001/r01hpLODWar/read/blazegraph/namespace/euskadi_db/sparql">endpoint's page</a>.
-                  </p>
-                  <form action="http://wl11vf0057.ejgvdns:7001/r01hpLODWar/read/blazegraph/namespace/euskadi_db/sparql" method="post"><textarea name="query" wrap="soft" data-skip-lines="0">DESCRIBE 
-  &lt;http://data.euskadi.eus/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi&gt;</textarea><p><button type="submit">Run Query</button></p>
-                  </form>
-               </div>
-            </div>
-            <p>Powered by <a href="https://github.com/epimorphics/elda">Elda 1.4.4-SNAPSHOT</a>, an implementation of the <a href="http://code.google.com/p/linked-data-api">Linked Data API</a><br><a href="http://www.axialis.com/free/icons">Icons</a> by <a href="http://www.axialis.com">Axialis Team</a></p>
-         </footer>
-      </div>
-   
-	</div>	<!-- Tags and relations -->
+  
+  
+<!-- ************** INIT Visual Area: r01gEditorVA ************** -->
+        <!--@@<xml id='2030'><avInst oid='r01gpd0146a3a1815c2a6999ea3d4e8fa60107d78' type='r01gEditorVA' /></xml>@@--><section>
+<h1>Nabarmenduak</h1>
+<ul class="nabarmenduak">
+<li><a href="http://www.irekia.euskadi.eus/eu"><img alt="" src="/images/web01-hasiera-irekia.gif" />Irekia, herritarren parte-hartzeko bideak</a></li>
+<li><a href="http://www.gardena.euskadi.eus"><img alt="" src="/images/web01-hasiera-gardentasuna.jpg" />Gardentasuna jaurlaritzaren jardunean eta informazio publikora sartzea</a></li>
+<li><a title="Esteka hau leiho berri batean irekiko da" href="http://www.emakunde.euskadi.eus/publitzitatea-komunikazioa/-/publitzitatea-komunikazioa/#APP" target="_blank"><img alt="" src="/images/saila_ing/web01-hasiera-begira-app-eus.gif" />Begira, publizitate eta komunikazio ez-sexista erabiltzeko aholku Batzordea</a></li>
+<!--
 
 
+<li><a href="http://emakunde.blog.euskadi.eus/eu/2018/02/arduratsu-jokatzeko-eta-egunero-berdintasuna-transmititzeko-eskatzen-die-helduei-emakundek-martxoaren-8rako-eginiko-kanpainan/"><img alt="Berdintasuna ikasi egiten da. Irakatsi berdintasuna. Martxoak 8, Emakumeen Nazioarteko Eguna" src="/images/saila_jusap/web01-martxoak-8-2018-1.jpg" />Martxoak 8</a></li>
 
-<!-- ************** END Visual Area: r01gContainerVA ************** -->
+--></ul>
+<p>&nbsp;</p>
+</section>
+<!-- ************** END Visual Area: r01gEditorVA ************** -->
 
-  <!-- AMAIERA Edukia-->
+  
+  
+<!-- ************** INIT Visual Area: r01gEditorVA ************** -->
+        <!--@@<xml id='2040'><avInst oid='r01g0pd014a15393b9c53f1475cea300b252ab68bb' type='r01gEditorVA' /></xml>@@--><!--Editor hutsa-->
+<!-- ************** END Visual Area: r01gEditorVA ************** -->
+
+  
+  
+<!-- ************** INIT Visual Area: r01gEditorVA ************** -->
+        <!--@@<xml id='2050'><avInst oid='r01g0pd014a15393b9c53f1475cea300b252ab68bb' type='r01gEditorVA' /></xml>@@--><!--Editor hutsa-->
+<!-- ************** END Visual Area: r01gEditorVA ************** -->
+
 </main>
 <footer role="contentinfo">
-  <!-- Orri-oina -->
+  <!-- Oina -->
   
   
 <!-- ************** INIT Visual Area: r01gEditorVA ************** -->
-        <!--@@<xml id='9000'><avInst oid='r01gpd01464ce2d87b18e212acd0da4668f685ced' type='r01gEditorVA' /></xml>@@--><div class="beheko_estekak">
+        <!--@@<xml id='6000'><avInst oid='r01gpd01464ce2d87b18e212acd0da4668f685ced' type='r01gEditorVA' /></xml>@@--><div class="beheko_estekak">
 <h1 class="inv">Esteka orokorrak</h1>
 <div>
 <h2>Informazio orokorra</h2>
@@ -476,13 +440,12 @@ var _r01 = {
 <!--<div class="feedback_eman_behekoa"><a href="/kontaktua/-/zure-iritzia/">euskadi.eus: eman iritzia!</a></div>-->
 <!-- ************** END Visual Area: r01gEditorVA ************** -->
 
+  <!-- AMAIERA Oina-->
   <!-- Hizkuntza aldaketa -->
   
   
 <!-- ************** INIT Visual Area: r01gLangSelectorVA ************** -->
-        <!--@@<xml id='9001'><avInst oid='r01gpd014670db17a114efcb1ec958dcbd051b2e5' type='r01gLangSelectorVA' /></xml>@@-->
-	
-
+        <!--@@<xml id='9100'><avInst oid='r01gpd014670db17a114efcb1ec958dcbd051b2e5' type='r01gLangSelectorVA' /></xml>@@-->
 <ul id="lang-selectorhizkuntza_aldaketa" class="r01gLangSelector_custom"><li class="r01gFirstLang"><!-- Si el idioma de la página coincide con el idioma tratado del AV no hay enlace -->
 
 	<span class="r01gLangSelected"><abbr title="Euskera">eu</abbr></span>
@@ -491,7 +454,7 @@ var _r01 = {
 
 	<!-- Tanto para pagina como para contenido si hay una URL amigable se coge esa por defecto. En caso contrario, usa la URL normal. -->
 	
-		<a href="/ - /es/" hreflang="es" xml:lang="es" class="r01gLangUnSelected" lang="es"><abbr xml:lang="es" lang="es" title="espa&#241;ol">es</abbr></a>
+		<a href="/inicio/" hreflang="es" xml:lang="es" class="r01gLangUnSelected" lang="es"><abbr xml:lang="es" lang="es" title="espa&#241;ol">es</abbr></a>
 	
 
 </li></ul>
@@ -499,7 +462,7 @@ var _r01 = {
 
   <!-- AMAIERA Hizkuntza aldaketa -->
 </footer>
-<script type="text/javascript" src="/scripts/web01-edukiak.sjs"></script> 
+<script type="text/javascript" src="/scripts/web01-hasiera.sjs"></script>    
 <!-- Fichero que se carga antes del tag de cierre de body en las paginas de portal -->
 
 <!-- REGLAS PARA insertar el CLAIM -->
@@ -527,7 +490,7 @@ var _r01 = {
 
 
         
-                <img src="/setCookie_ _4_20180511115453?r01_url=/doc/public-sector/government/GovernmentalAdministrativeRegion/euskadi?&amp;r01_title=Eusko%20Jaurlaritza%20-%20Euskadi.eus"  alt="" />
+                <img src="/setCookie_web01_1_20180511154505?r01_url=/web01-hasiera/eu?&amp;r01_title=Euskadi.eus%20-%20Eusko%20Jaurlaritzaren%20informazioa,%20tramiteak%20eta%20zerbitzuak"  alt="" />
         
 
 
@@ -551,8 +514,5 @@ var _r01 = {
 <!-- ******************************************* -->
 
 
-
-
-
-</body>
+</body> 
 </html>

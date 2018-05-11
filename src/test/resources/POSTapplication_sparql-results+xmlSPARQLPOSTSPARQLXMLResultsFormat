@@ -1,0 +1,1110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sparql xmlns='http://www.w3.org/2005/sparql-results#'>
+	<head>
+		<variable name='g'/>
+		<variable name='p'/>
+		<variable name='o'/>
+	</head>
+	<results>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#date_applicability</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#date'>1936-10-10</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#date_document</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#date'>1936-10-07</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#date_publication</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#date'>1936-10-09</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#first_date_entry_in_force</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#date'>1936-10-10</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#is_about</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/kos/public-sector/sector/sector-publico</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#is_member_of</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#is_realized_by</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/eus</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#is_realized_by</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/spa</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#type_document</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://datos.gob.es/resource/authority/resource-type/a</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.europa.eu/eli/ontology#LegalResource</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/eus</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#language</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://publications.europa.eu/resource/authority/language/EUS</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/eus</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#realizes</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/eus</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#title</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#string'>Euzkadi'ko bitarteko-Jaurlaritzaren aitorpena.</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/eus</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.europa.eu/eli/ontology#LegalExpression</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/eus/pdf</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#embodies</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/eus</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/eus/pdf</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#format</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://www.iana.org/assignments/media-types/text/html</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/eus/pdf</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#licence</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://creativecommons.org/licenses/by/4.0/</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/eus/pdf</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#published_in_format</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://www.euskadi.eus:80/bopv2/datos/1936/10/3600015a.pdf</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/eus/pdf</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#publisher_agent</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://datos.gob.es/recurso/sector-publico/org/Organismo/A16003011</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/eus/pdf</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#rightsholder_agent</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://datos.gob.es/recurso/sector-publico/org/Organismo/A16003011</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/eus/pdf</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.europa.eu/eli/ontology#Format</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/spa</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#language</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://publications.europa.eu/resource/authority/language/SPA</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/spa</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#realizes</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/spa</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#title</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#string'>Declaraci��n del Gobierno provisional del Pa��s Vasco.</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/spa</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.europa.eu/eli/ontology#LegalExpression</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/spa/xml</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#embodies</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/spa</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/spa/xml</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#format</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://www.iana.org/assignments/media-types/text/html</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/spa/xml</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#licence</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://creativecommons.org/licenses/by/4.0/</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/spa/xml</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#published_in_format</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://www.legegunea.euskadi.eus/x59-contfich/eu/contenidos/acuerdo/bopv193600015/es_def/data/bopv</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/spa/xml</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#publisher_agent</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://datos.gob.es/recurso/sector-publico/org/Organismo/A16003011</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/spa/xml</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#rightsholder_agent</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://datos.gob.es/recurso/sector-publico/org/Organismo/A16003011</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1936/10/07/(2)/dof/spa/xml</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.europa.eu/eli/ontology#Format</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#date_applicability</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#date'>1978-05-16</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#date_document</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#date'>1978-04-17</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#date_publication</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#date'>1978-05-15</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#first_date_entry_in_force</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#date'>1978-05-16</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#is_about</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/kos/public-sector/sector/sector-publico</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#is_member_of</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#is_realized_by</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof/eus</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#is_realized_by</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof/spa</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#type_document</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://datos.gob.es/resource/authority/resource-type/a</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.europa.eu/eli/ontology#LegalResource</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof/eus</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#language</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://publications.europa.eu/resource/authority/language/EUS</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof/eus</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#realizes</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof/eus</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#title</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#string'>ALDIZKARI OFIZIALA</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof/eus</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.europa.eu/eli/ontology#LegalExpression</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof/eus/html</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#embodies</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof/eus</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof/eus/html</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#format</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://www.iana.org/assignments/media-types/text/html</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof/eus/html</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#licence</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://creativecommons.org/licenses/by/4.0/</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof/eus/html</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#published_in_format</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://www.legegunea.euskadi.eus/x59-contfich/eu/contenidos/acuerdo/bopv197800001/eu_def/index.shtml</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof/eus/html</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#publisher_agent</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://datos.gob.es/recurso/sector-publico/org/Organismo/A16003011</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof/eus/html</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#rightsholder_agent</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://datos.gob.es/recurso/sector-publico/org/Organismo/A16003011</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof/eus/html</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://schema.org/mainEntityOfPage</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://www.legegunea.euskadi.eus/x59-contfich/eu/contenidos/acuerdo/bopv197800001/eu_def/index.shtml</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/04/17/(0)/dof/eus/html</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.europa.eu/eli/ontology#Format</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#date_applicability</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#date'>1978-07-02</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#date_document</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#date'>1978-06-05</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#date_publication</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#date'>1978-07-01</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#first_date_entry_in_force</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#date'>1978-07-02</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#is_about</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/kos/public-sector/sector/sector-publico</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#is_member_of</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#is_realized_by</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/eus</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#is_realized_by</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/spa</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#type_document</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://datos.gob.es/resource/authority/resource-type/a</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.europa.eu/eli/ontology#LegalResource</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/eus</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#language</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://publications.europa.eu/resource/authority/language/EUS</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/eus</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#realizes</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/eus</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#title</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#string'>Eusko Kontseilu Nagusia Euskal Herriko Gobernu organo bezala sortua izan denez gero, Kontseilu honek Arabako Junta Nagusien antolamendu eta funtzionamendurako proiektu bat elaboratuko du'</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/eus</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.europa.eu/eli/ontology#LegalExpression</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/eus/pdf</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#embodies</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/eus</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/eus/pdf</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#format</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://www.iana.org/assignments/media-types/text/html</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/eus/pdf</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#licence</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://creativecommons.org/licenses/by/4.0/</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/eus/pdf</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#published_in_format</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://www.euskadi.eus:80/bopv2/datos/1978/07/7800034a.pdf</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/eus/pdf</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#publisher_agent</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://datos.gob.es/recurso/sector-publico/org/Organismo/A16003011</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/eus/pdf</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#rightsholder_agent</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://datos.gob.es/recurso/sector-publico/org/Organismo/A16003011</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/eus/pdf</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.europa.eu/eli/ontology#Format</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#date_applicability</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#date'>1979-01-16</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#date_document</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#date'>1978-12-15</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#date_publication</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#date'>1979-01-15</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#first_date_entry_in_force</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#date'>1979-01-16</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#is_about</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/kos/public-sector/sector/sector-publico</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#is_member_of</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#is_realized_by</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof/eus</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#is_realized_by</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof/spa</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#type_document</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://datos.gob.es/resource/authority/resource-type/a</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.europa.eu/eli/ontology#LegalResource</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof/eus</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#language</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://publications.europa.eu/resource/authority/language/EUS</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof/eus</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#realizes</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof/eus</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#title</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#string'>BANDERA</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof/eus</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.europa.eu/eli/ontology#LegalExpression</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof/spa</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#language</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://publications.europa.eu/resource/authority/language/SPA</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof/spa</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#realizes</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof/spa</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#title</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#string'>BANDERA.</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1978/12/15/(1)/dof/spa</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.europa.eu/eli/ontology#LegalExpression</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#date_applicability</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#date'>1979-10-30</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#date_document</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#date'>1979-05-22</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#date_publication</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#date'>1979-10-29</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#first_date_entry_in_force</uri>
+			</binding>
+			<binding name='o'>
+				<literal datatype='http://www.w3.org/2001/XMLSchema#date'>1979-10-30</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#is_about</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/kos/public-sector/sector/sector-publico</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#is_member_of</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)</uri>
+			</binding>
+		</result>
+		<result>
+			<binding name='g'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof</uri>
+			</binding>
+			<binding name='p'>
+				<uri>http://data.europa.eu/eli/ontology#is_realized_by</uri>
+			</binding>
+			<binding name='o'>
+				<uri>http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/eus</uri>
+			</binding>
+		</result>
+	</results>
+</sparql>

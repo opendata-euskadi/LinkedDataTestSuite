@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+
+
+
+
+
+<head>
+
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<meta http-equiv='content-type' content='text/html; charset=iso-8859-1' />
+<meta name='author' content='Eusko Jaurlaritza - Gobierno Vasco' />
+<meta http-equiv='Content-Language' content='eu' />
+<meta name='Author' content='Eusko Jaurlaritza' />
+<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+
+
+<script type='text/javascript'>
+    var ejsarea=" ";
+</script>
+<!-- Directiva para la previsualizacización de la plantilla, se borrar, de las páginas -->
+
+
+<!-- Area visual que contiene parametros del head en cada idioma:title description metas Este VA es OBLIGATORIO!!!! y tiene que estar en la seccion HEAD	-->
+
+
+<!--:************************************************************:-->
+<!--: Euskadi.net: Eusko Jaurlaritza - Gobierno Vasco            :-->
+<!--: Created by:                                                :-->
+<!--:     EJIE, S.A. Eusko Jaurlaritzaren Informatika Elkartea   :-->
+<!--:     Avda. Mediterraneo, 14                                 :-->
+<!--:     01010 Vitoria-Gasteiz                                  :-->
+<!--:************************************************************:-->
+<link href="/AVComun/styles/r01ClaimStyle.css" rel="stylesheet" type="text/css" />
+
+		<!-- **** IE only StyleSheet resources for all AV type **** -->
+				
+
+        <!-- **** MetaTags **** -->
+        
+		
+		
+		
+
+
+
+        <!-- **** JavaScript for the PageTags **** -->
+        <script type='text/javascript'>
+              var r01gIsAdminPage='false';
+              var r01gLang='eu';
+              var r01gPortalCode='w79';
+              var r01gPageCode='dataset';
+		</script>
+		<!-- **** Script resources for all AV type **** -->
+		<script type='text/javascript' src='/scripts/w79-datasetVAScripts.sjs'></script>
+		<!-- **** StyleSheet resources for all AV instances **** -->
+		<link rel='stylesheet' type='text/css' href='/styles/w79-datasetVAStyles.scss' />
+
+	<!-- **** StyleSheet/Javascript resources for content **** -->
+<script type="text/javascript">
+var r01ServerTime = new Date('Friday, May 11, 2018');
+var r01AttachPrefix = ' ';
+var file = ' '
+</script>
+<script type="text/javascript" src="/AVComun/scripts/swfobject.js"></script>
+<script type="text/javascript" src="/AVComun/scripts/jwplayer714/jwplayer.js"></script>
+<script type="text/javascript">try{if(typeof(jwplayer) != undefined)jwplayer.key="UtbXfJfGtRz4EyBhra0W7sy9aeOQC/0r+jCiTg==";}catch(e){}</script>
+<link rel="stylesheet" type="text/css" href="/AVComun/scripts/jwplayer714/r01jwplayer_patch.css" />
+		<!-- **** StyleSheet/Javascript TYPE resources for content **** -->
+
+<script type="text/javascript" src="/AVComun/r01gContainerVA/scripts/r01gContentCommonScripts.js"></script>
+<link rel="stylesheet" type="text/css" href="/AVComun/r01gContainerVA/styles/r01gContentCommonScripts.css" />
+
+<!--
+	Este fichero js se encarga de solucionar los problemas con url
+	1. - Adjuntos o imagenes con path relativo al documento  que con url amigables no se resuelven
+	2. - Directivas SSI para pagina y portal que no se resuelven en ficheros .html
+ -->
+<script type="text/javascript" src="/AVCustom/r01gContainerVA/scripts/r01gUrlSanitize.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link rel="apple-touch-icon" sizes="57x57" href="http://www.euskadi.eus/images/ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="http://www.euskadi.eus/images/ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="http://www.euskadi.eus/images/ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="http://www.euskadi.eus/images/ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="http://www.euskadi.eus/images/ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="http://www.euskadi.eus/images/ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="http://www.euskadi.eus/images/ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="http://www.euskadi.eus/images/ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://www.euskadi.eus/images/ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="http://www.euskadi.eus/images/ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://www.euskadi.eus/images/ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="http://www.euskadi.eus/images/ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://www.euskadi.eus/images/ico/favicon-16x16.png">
+<link rel="manifest" href="http://www.euskadi.eus/images/ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="http://www.euskadi.eus/images/ico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://www.euskadi.eus/styles/web01-reset.css" media="screen" />
+<link rel="stylesheet" href="/styles/w79-screen.css" media="screen" />
+<link rel="stylesheet" href="/styles/w79-screen-opendata.css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="http://www.euskadi.eus/styles/web01-ie.css" media="screen" />
+<![endif]-->
+<link rel="stylesheet" media="only screen and (max-width: 768px)" href="/styles/w79-mugikorra.css" />
+<link rel="stylesheet" media="only screen and (max-width: 768px)" href="/styles/w79-mugikorra-opendata.css" />
+<link rel="stylesheet" media="only screen and (max-width: 900px)" href="/styles/w79-mugikorra-menu-opendata.css" />
+<link rel="stylesheet" href="http://www.euskadi.eus/styles/web01-print.css" media="print">
+<link rel="stylesheet" href="/styles/w79-dataset.css" media="screen" />
+<link rel="stylesheet" href="/styles/w79-rdo-busqueda.css" media="screen" />
+
+
+<script type="text/javascript">
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-9512435-32', 'auto');
+ga('create', 'UA-9512435-41', 'auto', {'name': 'globalEus'});  // Euskadi.eus global.
+ga('globalEus.set', 'dimension1', r01gPortalCode);
+ga('globalEus.set', 'contentGroup3', r01gPortalCode);
+ga('send', 'pageview');
+ga('globalEus.send', 'pageview');
+</script>
+<script type="text/javascript">
+  // Add a script element as a child of the body
+  function downloadGatagJSAtOnload() {
+  	var element = document.createElement("script");
+  	element.src = "/AVCustom/scripts/r01PortalGatag.js";
+  	document.body.appendChild(element);
+  }
+
+  // Check for browser support of event handling capability
+  if (window.addEventListener) {
+  	window.addEventListener("load", downloadGatagJSAtOnload, false);
+  } else if (window.attachEvent) {
+  		window.attachEvent("onload", downloadGatagJSAtOnload);
+  } else {
+  		window.onload = downloadGatagJSAtOnload;
+  }
+</script>
+      
+      
+      <link rel="shortcut icon" href="/appcont/r01hpLODWebContent/elda-assets/images/datagovuk_favicon.png" type="image/x-icon">
+      <link rel="alternate" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.json" type="application/json">
+      <link rel="alternate" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.rdf" type="application/rdf+xml">
+      <link rel="alternate" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.text" type="text/plain">
+      <link rel="alternate" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.ttl" type="text/turtle">
+      <link rel="alternate" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.xml" type="application/xml">
+      <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><link rel="stylesheet" href="/appcont/r01hpLODWebContent/elda-assets/css/html5reset-1.6.1.css" type="text/css">
+      <link rel="stylesheet" href="/appcont/r01hpLODWebContent/elda-assets/css/jquery-ui.css" type="text/css">
+      <link rel="stylesheet" href="/appcont/r01hpLODWebContent/elda-assets/css/smoothness/jquery-ui.css" type="text/css">
+      <link rel="stylesheet" href="/appcont/r01hpLODWebContent/elda-assets/css/result.css" type="text/css">
+      <!--[if lt IE 9]><link rel="stylesheet" href="/appcont/r01hpLODWebContent/elda-assets/css/ie.css" type="text/css"></link><![endif]-->
+   
+<script type="text/javascript" src="/appcont/r01hpLODWebContent/elda-assets/scripts/jquery.min.js"></script><script type="text/javascript" src="/appcont/r01hpLODWebContent/elda-assets/scripts/jquery-ui.min.js"></script><script type="text/javascript" src="/appcont/r01hpLODWebContent/elda-assets/scripts/jquery.sparkline.js"></script><script type="text/javascript" src="/appcont/r01hpLODWebContent/elda-assets/scripts/codemirror/codemirror_min.js"></script><script type="text/javascript">
+		$(function() {
+			$('.info img')
+				.toggle(function () {
+					$(this)
+						.attr('src', '/appcont/r01hpLODWebContent/elda-assets/images/green/16x16/Cancel.png')
+						.next().show();
+				}, function () {
+					$(this)
+						.attr('src', '/appcont/r01hpLODWebContent/elda-assets/images/green/16x16/Question.png')
+						.next().fadeOut('slow');
+				});
+			
+			$('input[type=date]').datepicker({
+				changeMonth: true,
+				changeYear: true,
+				dateFormat: 'yy-mm-dd',
+				autoSize: true
+			});
+			
+			$('#search').hide();
+			
+			$('#openSearch')
+				.toggle(function () {
+					$(this).text('Hide Search Form');
+					$('#search').slideDown('slow');
+				}, function () {
+					$(this).text('Show Search Form');
+					$('#search').slideUp('slow');
+				});
+			
+			$('.provenance textarea')
+				.each(function () {
+					var skipLines = parseFloat($(this).attr('data-skip-lines'), 10);
+					var lineHeight = parseFloat($(this).css('line-height'), 10);
+					$(this).scrollTop(skipLines * lineHeight);
+					var cm = CodeMirror.fromTextArea(this, {
+						basefiles: ["/appcont/r01hpLODWebContent/elda-assets/scripts/codemirror/codemirror_base_sparql.js"],
+						stylesheet: "/appcont/r01hpLODWebContent/elda-assets/css/sparql.css",
+						textWrapping: false
+					});
+					$(cm.frame).load(function () {
+						cm.jumpToLine(skipLines + 1);
+						$(cm.frame)
+							.css('border', 	'1px solid #D3D3D3')
+							.css('border-radius', '5px')
+							.css('-moz-border-radius', '5px');
+					});
+				});
+			
+			
+		});
+	</script>
+<title>Search Results</title>
+</head>
+<body class='w79-dataset'>
+<script>
+var _r01 = {
+	requestedUri : '/r01hpLODWar/doc/eli/es-pv/a/1978/06/05/(2)/dof',
+	clientIp : '172.16.0.205, 172.16.0.205, 127.0.0.1',
+	portalInfo : {
+		portalId : 'w79',
+		pageId : 'dataset'
+	},
+	lang : {
+		code : 'es',
+		name : 'BASQUE'
+	},
+	userAgent : {
+		os : {
+			producer : '',
+			family : 'UNKNOWN'
+		},
+		typo : {
+			category : 'OTHER',
+			type : 'LIBRARY',
+			family : 'JAKARTA_COMMONS_HTTPCLIENT'
+		},
+		name : 'Apache-HttpClient',
+		producer : 'Apache Software Foundation',
+		header : 'Apache-HttpClient\/4.2.5 (java 1.5)',
+		version : {
+			num : '4.2.5',
+			minor : '2',
+			major : '4',
+			bugFix : '5'
+		}
+	}
+}
+</script>
+<!-- Fichero que se carga despues del tag body en las paginas de portal -->
+
+<header role="banner">
+  <!-- Goiburua -->
+  
+  
+<!-- ************** INIT Visual Area: r01gEditorVA ************** -->
+        <!--@@<xml id='1000'><avInst oid='r01gtpd1592b0fd1e618dc51bdbd2147cdcb767da1' type='r01gEditorVA' /></xml>@@--><div id="r01gEditorgoiburua_euskadieus" class="r01gEditor_custom r01gEditorgoiburua_euskadieus"><div id="pattern" class="pattern">
+<div class="offcanvas-top">
+<div class="o-content">
+<div class="zutabeak">
+<div class="o-content-zutabe"><strong>Euskadi.eus</strong>
+<ul>
+<li><a href="http://www.euskadi.eus/hasiera">Hasiera-orria</a></li>
+<li><a href="http://www.euskadi.eus/gaiak/">Gaiak</a></li>
+<li><a href="http://www.euskadi.eus/eusko-jaurlaritza/hasiera">Eusko Jaurlaritza</a></li>
+<li><a href="http://www.euskadi.eus/eusko-jaurlaritza/tramiteak-zerbitzuak/">Diru-laguntzak eta tramiteak</a></li>
+</ul>
+</div>
+<div class="o-content-zutabe"><strong>Tresnak</strong>
+<ul>
+<li><a href="http://opendata.euskadi.eus/orokorra/-/harremanetan-jartzeko-internet-telefonoa-eta-aurrez-aurre/">Kontaktua</a></li>
+<li><a href="http://www.euskadi.eus/kontaktua/-/zure-iritzia/">Eman iritzia</a></li>
+<li class="inv_mugik"><a href="http://www.euskadi.eus/bilaketa">Bilatzailea</a></li>
+<li class="inv_mugik"><a href="http://www.euskadi.eus/informazioa/-/euskadieus-web-mapa/">Web-mapa</a></li>
+<li class="inv_screen ikus_mugik"><form accept-charset="UTF-8" method="get" action="/bilaketa"><input name="cat" value="Home_mugikorra" type="hidden" /> <label class="inv" for="home_bilaketa_mugikorra">Bilatu euskadi.eus-en</label> <input id="home_bilaketa_mugikorra" title="Bilatu Euskadi.eus-en" name="q" placeholder="Bilatu euskadi.eus-en" type="text" /> <input class="submit botoiak" value="Bilatu" type="submit" /></form></li>
+</ul>
+</div>
+<div class="o-content-zutabe"><strong>Informazio Orokorra</strong>
+<ul>
+<li><a href="http://www.euskadi.eus/informazioa/-/erabilerraztasuna-euskadieus/">Erabilerraztasuna</a></li>
+<li><a href="http://opendata.euskadi.eus/orokorra/-/opendatako-lege-informazioa/">Lege-informazioa</a></li>
+<li><a href="http://www.euskadi.eus/eusko-jaurlaritza/-/gobernu-irekia/">Gobernu Irekia</a></li>
+<li><a href="https://www.euskadi.eus">Egoitza Elektronikoa</a></li>
+</ul>
+</div>
+<div class="o-content-zutabe hizkuntza_aldaketa_mgk"><strong>Hizkuntza</strong></div>
+</div>
+</div>
+</div>
+</div>
+<div class="goib_hizkuntza"></div>
+<div class="goib_estekak">
+<div class="goib_kontaktu"><a href="http://opendata.euskadi.eus/orokorra/-/harremanetan-jartzeko-internet-telefonoa-eta-aurrez-aurre/">Kontaktua</a></div>
+<div class="scontainer"><form class="searchbox" accept-charset="UTF-8" method="get" action="/bilaketa"><input name="cat" value="Goiburua" type="hidden" /><label class="inv" for="search-input-header">Bilatu Euskadi.eus-en</label><input id="search-input-header" onmouseup="buttonUp();" class="searchbox-input" title="Bilatu Euskadi.eus-en" onkeyup="buttonUp();" name="q" placeholder="Bilatu euskadi.eus-en" autocomplete="off" type="text" /> <input class="searchbox-submit" value="Bilatu" type="submit" /> <span class="searchbox-icon">Bilatu</span></form></div>
+</div></div>
+<!-- ************** END Visual Area: r01gEditorVA ************** -->
+
+  <!-- AMAIERA Goiburua-->
+
+<script type="text/javascript">
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-9512435-32', 'auto');
+ga('create', 'UA-9512435-41', 'auto', {'name': 'globalEus'});  // Euskadi.eus global.
+ga('globalEus.set', 'dimension1', r01gPortalCode);
+ga('globalEus.set', 'contentGroup3', r01gPortalCode);
+ga('send', 'pageview');
+ga('globalEus.send', 'pageview');
+</script>
+<script type="text/javascript">
+  // Add a script element as a child of the body
+  function downloadGatagJSAtOnload() {
+  	var element = document.createElement("script");
+  	element.src = "/AVCustom/scripts/r01PortalGatag.js";
+  	document.body.appendChild(element);
+  }
+
+  // Check for browser support of event handling capability
+  if (window.addEventListener) {
+  	window.addEventListener("load", downloadGatagJSAtOnload, false);
+  } else if (window.attachEvent) {
+  		window.attachEvent("onload", downloadGatagJSAtOnload);
+  } else {
+  		window.onload = downloadGatagJSAtOnload;
+  }
+</script></header>
+<main class="edukiontzia">
+  <section class="lan_arlo_goiburu">
+    <!-- Open Data Logoa -->
+    
+    
+<!-- ************** INIT Visual Area: r01gEditorVA ************** -->
+        <!--@@<xml id='1020'><avInst oid='r01gtpd15c39e1c32918906b188c5bbe6975cb698e' type='r01gEditorVA' /></xml>@@--><div id="r01gEditorlogo_opendata" class="r01gEditor r01gEditorlogo_opendata"><div class="logo">
+<h1><a title="" href="http://opendata.euskadi.eus/hasiera/"><img alt="Opendata Euskadi" src="/images/w79-logo_opendata.gif" /></a></h1>
+</div></div>
+<!-- ************** END Visual Area: r01gEditorVA ************** -->
+
+    <!-- AMAIERA Open Data Logoa-->
+    <!-- Beste irudi bat -->
+    
+    
+<!-- ************** INIT Visual Area: r01gEditorVA ************** -->
+        <!--@@<xml id='1030'><avInst oid='r01gtpd15c3a81df5118906b18f7af9d859f12e938' type='r01gEditorVA' /></xml>@@--><div id="r01gEditoreditor_hutsa" class="r01gEditor r01gEditoreditor_hutsa"><!--Editor hutsa--></div>
+<!-- ************** END Visual Area: r01gEditorVA ************** -->
+
+    <!-- AMAIERA Beste irudi bat-->
+  </section>
+  <!-- Menu nagusia -->
+  <nav class="menu_webgune_02">
+    
+    
+<!-- ************** INIT Visual Area: r01gMenuVA ************** -->
+        <!--@@<xml id='1500'><avInst oid='r01gtpd15d5ff272481891326c74ec5371356b3607' type='r01gMenuVA' /></xml>@@--><h1 class="title_menu_nagusia2">Menu nagusia</h1><ul id="menu_menu_nagusia2" class="level-1"><li><a href="http://opendata.euskadi.eus/hasiera/">Hasiera</a></li><li class="has-subnav menu_nagusia2_1">Open&nbsp;Datari&nbsp;buruz<ul class="level-2"><li><a href="http://opendata.euskadi.eus/open-datari-buruz/-/datu-irekiei-buruz/">Datu irekiei buruz</a></li><li><a href="http://opendata.euskadi.eus/open-datari-buruz/-/opendata-euskadi/">Open Data Euskadi</a></li><li><a href="http://opendata.euskadi.eus/open-datari-buruz/-/datu-irekien-beste-euskal-ekimen-batzuk/">Beste euskal ekimen batzuk</a></li><li><a href="http://opendata.euskadi.eus/open-datari-buruz/-/open-data-araudia/">Araudia</a></li></ul></li><li class="has-subnav menu_nagusia2_2">Datu-katalogoa<ul class="level-2"><li><a href="http://opendata.euskadi.eus/datu-katalogoa/">Datu-bilatzailea</a></li><li><a href="http://opendata.euskadi.eus/eu/sparql">Sparql gunea</a></li><li><a href="http://opendata.euskadi.eus/lod-eu/-/linked-open-data/" title="Eduki hauek ingelesez daude">Linked Open Data</a></li></ul></li><li class="has-subnav menu_nagusia2_3">Nola&nbsp;berrerabili<ul class="level-2"><li><a href="http://opendata.euskadi.eus/nola-berrerabili/-/datu-irekiak-berrerabili/">Datuak berrerabili</a></li><li><a href="http://opendata.euskadi.eus/lod-eu/-/linked-open-data/" title="Eduki hauek ingelesez daude">Linked Open Data</a></li><li><a href="http://opendata.euskadi.eus/ideiak-adibideak/">Ideiak eta adibideak</a></li></ul></li><li class="has-subnav menu_nagusia2_4">Komunitatea<ul class="level-2"><li><a href="http://opendata.euskadi.eus/opendata-komunitatea/">Berriak</a></li><li><a href="http://opendata.euskadi.eus/datu-irekien-lehiaketak/">Open Data lehiaketak</a></li></ul></li></ul>
+<!-- ************** END Visual Area: r01gMenuVA ************** -->
+ 
+  </nav>
+  <!-- AMAIERA Menu nagusia -->
+  <!-- Edukia ta bilaketak-->
+  
+  
+<!-- ************** INIT Visual Area: r01gContainerVA ************** -->
+        <!--@@<xml id='2000'><avInst oid='r01gpd012795e65edd1da2db04e34f45ed5b4a333' type='r01gContainerVA' /></xml>@@--><!-- Es un CONTENIDO CARGADO POR URL -->
+<div id="containercont2Columnas" class="r01gContainer  r01gContainercont2Columnas r01  r01  r01 _ ">
+     			
+      <div id="page">
+         <nav class="site">
+            <section class="formats">
+               <ul>
+                  <li class="first"><a href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html" type="text/html" rel="alternate" title="view in html format">html</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.json" type="application/json" rel="alternate" title="view in json format">json</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.rdf" type="application/rdf+xml" rel="alternate" title="view in rdf format">rdf</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.text" type="text/plain" rel="alternate" title="view in text format">text</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.ttl" type="text/turtle" rel="alternate" title="view in ttl format">ttl</a></li>
+                  <li class="last"><a href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.xml" type="application/xml" rel="alternate" title="view in xml format">xml</a></li>
+               </ul>
+            </section>
+         </nav>
+         <header>
+            <h1><a href="/">Linked Data API</a></h1>
+         </header>
+         <nav class="topnav"><script type="text/javascript">
+				function initMap() {
+					return null;
+				};
+			</script><section class="view">
+               <h1>View</h1>
+               <div class="info"><img class="open" src="/appcont/r01hpLODWebContent/elda-assets/images/green/16x16/Question.png" alt="help"><p>Choose what information you want to view about each item. There are some pre-defined
+                     views, but starred properties are always present no matter what the view. You can
+                     star properties by clicking on the <img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> icon. The currently starred icons have a <img src="/appcont/r01hpLODWebContent/elda-assets/images/green/16x16/Star.png" alt="unstar this property"> icon; clicking on it will unstar the property.
+                  </p>
+               </div>
+               <ul>
+                  <li><a href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_view=all" title="switch to all view">all</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_view=basic" title="switch to basic view">basic</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_view=description" title="switch to description view">description</a></li>
+               </ul>
+               <ul class="properties">
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_properties=date_applicability"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> date_applicability</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_properties=date_document"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> date_document</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_properties=date_publication"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> date_publication</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_properties=first_date_entry_in_force"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> first_date_entry_in_force</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_properties=is_realized_by.realizes"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is_realized_by â€º realizes</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_properties=type."><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> type</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_properties=isPrimaryTopicOf"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is primary topic of</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_properties=is_about"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is_about</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_properties=is_member_of"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is_member_of</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_properties=type_document"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> type_document</a></li>
+               </ul>
+            </section>
+         </nav>
+         <div id="result">
+            <div class="panel">
+               <header>
+                  <p id="openSearch">Show Search Form</p>
+                  <h1>dof</h1>
+                  <p class="id"><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof">http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof</a></p>
+               </header>
+               <section id="search" style="display: none">
+                  <form action="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)">
+                     <table>
+                        <colgroup>
+                           <col class="labelWidth">
+                           <col class="valueWidth">
+                        </colgroup>
+                        <tr>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th class="label"><label for="date_applicability">date_applicability</label></th>
+                           <td class="input">exactly: <input name="date_applicability" id="date_applicability" type="date"><br><br><em>or</em> between: <input name="min-date_applicability" type="date"><br>and <input name="max-date_applicability" type="date"></td>
+                        </tr>
+                        <tr>
+                           <th class="label"><label for="date_document">date_document</label></th>
+                           <td class="input">exactly: <input name="date_document" id="date_document" type="date"><br><br><em>or</em> between: <input name="min-date_document" type="date"><br>and <input name="max-date_document" type="date"></td>
+                        </tr>
+                        <tr>
+                           <th class="label"><label for="date_publication">date_publication</label></th>
+                           <td class="input">exactly: <input name="date_publication" id="date_publication" type="date"><br><br><em>or</em> between: <input name="min-date_publication" type="date"><br>and <input name="max-date_publication" type="date"></td>
+                        </tr>
+                        <tr>
+                           <th class="label"><label for="first_date_entry_in_force">first_date_entry_in_force</label></th>
+                           <td class="input">exactly: <input name="first_date_entry_in_force" id="first_date_entry_in_force" type="date"><br><br><em>or</em> between: <input name="min-first_date_entry_in_force" type="date"><br>and <input name="max-first_date_entry_in_force" type="date"></td>
+                        </tr>
+                        <tr>
+                           <th class="label">is_realized_by</th>
+                           <td class="input nested">
+                              <table>
+                                 <colgroup>
+                                    <col class="labelWidth">
+                                    <col class="nestedValueWidth">
+                                 </colgroup>
+                                 <tr>
+                                    <td></td>
+                                    <td></td>
+                                 </tr>
+                                 <tr class="last">
+                                    <th class="label"><label for="is_realized_by.realizes">realizes</label></th>
+                                    <td class="input"><input name="is_realized_by.realizes" id="is_realized_by.realizes" size="25"></td>
+                                 </tr>
+                              </table>
+                           </td>
+                        </tr>
+                        <tr>
+                           <th class="label"><label for="type.">type</label></th>
+                           <td class="input"><input name="type." id="type." size="25"></td>
+                        </tr>
+                        <tr>
+                           <th class="label"><label for="isPrimaryTopicOf">is primary topic of</label></th>
+                           <td class="input"><input name="isPrimaryTopicOf" id="isPrimaryTopicOf" size="25"></td>
+                        </tr>
+                        <tr>
+                           <th class="label"><label for="is_about">is_about</label></th>
+                           <td class="input"><input name="is_about" id="is_about" size="25"></td>
+                        </tr>
+                        <tr>
+                           <th class="label"><label for="is_member_of">is_member_of</label></th>
+                           <td class="input"><input name="is_member_of" id="is_member_of" size="25"></td>
+                        </tr>
+                        <tr>
+                           <th class="label"><label for="type_document">type_document</label></th>
+                           <td class="input"><input name="type_document" id="type_document" size="25"></td>
+                        </tr>
+                     </table>
+                     <p><button type="submit">Search</button></p>
+                  </form>
+               </section>
+               <section>
+                  <table id="w5076aab7">
+                     <colgroup>
+                        <col class="labelWidth">
+                        <col class="autoWidth">
+                        <col class="filterWidth">
+                     </colgroup>
+                     <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     </tr>
+                     <tr class="date_applicability">
+                        <th class="label"><a href="http://data.europa.eu/eli/ontology#date_applicability">date_applicability</a></th>
+                        <td class="value">
+                           <time datetime="1978-07-02">02/07/1978</time>
+                        </td>
+                        <td class="filter"><a rel="nofollow" title="filter to values less than 1978-07-02" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?max-date_applicability=1978-07-02"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Left.png" alt="less than 1978-07-02"></a><a rel="nofollow" title="more like this" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?date_applicability=1978-07-02"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Search.png" alt="more like this"></a><a rel="nofollow" title="more than 1978-07-02" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?min-date_applicability=1978-07-02"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Right.png" alt="more than 1978-07-02"></a></td>
+                     </tr>
+                     <tr class="date_document">
+                        <th class="label"><a href="http://data.europa.eu/eli/ontology#date_document">date_document</a></th>
+                        <td class="value">
+                           <time datetime="1978-06-05">05/06/1978</time>
+                        </td>
+                        <td class="filter"><a rel="nofollow" title="filter to values less than 1978-06-05" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?max-date_document=1978-06-05"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Left.png" alt="less than 1978-06-05"></a><a rel="nofollow" title="more like this" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?date_document=1978-06-05"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Search.png" alt="more like this"></a><a rel="nofollow" title="more than 1978-06-05" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?min-date_document=1978-06-05"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Right.png" alt="more than 1978-06-05"></a></td>
+                     </tr>
+                     <tr class="date_publication">
+                        <th class="label"><a href="http://data.europa.eu/eli/ontology#date_publication">date_publication</a></th>
+                        <td class="value">
+                           <time datetime="1978-07-01">01/07/1978</time>
+                        </td>
+                        <td class="filter"><a rel="nofollow" title="filter to values less than 1978-07-01" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?max-date_publication=1978-07-01"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Left.png" alt="less than 1978-07-01"></a><a rel="nofollow" title="more like this" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?date_publication=1978-07-01"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Search.png" alt="more like this"></a><a rel="nofollow" title="more than 1978-07-01" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?min-date_publication=1978-07-01"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Right.png" alt="more than 1978-07-01"></a></td>
+                     </tr>
+                     <tr class="first_date_entry_in_force">
+                        <th class="label"><a href="http://data.europa.eu/eli/ontology#first_date_entry_in_force">first_date_entry_in_force</a></th>
+                        <td class="value">
+                           <time datetime="1978-07-02">02/07/1978</time>
+                        </td>
+                        <td class="filter"><a rel="nofollow" title="filter to values less than 1978-07-02" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?max-first_date_entry_in_force=1978-07-02"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Left.png" alt="less than 1978-07-02"></a><a rel="nofollow" title="more like this" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?first_date_entry_in_force=1978-07-02"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Search.png" alt="more like this"></a><a rel="nofollow" title="more than 1978-07-02" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?min-first_date_entry_in_force=1978-07-02"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Right.png" alt="more than 1978-07-02"></a></td>
+                     </tr>
+                     <tr class="is_realized_by">
+                        <th class="label"><a href="http://data.europa.eu/eli/ontology#is_realized_by">is_realized_by</a></th>
+                        <td class="value nested" colspan="2">
+                           <table id="w5076aab7b7a">
+                              <caption><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/eus">eus</a></caption>
+                              <colgroup>
+                                 <col class="labelWidth">
+                                 <col class="autoWidth">
+                                 <col class="filterWidth">
+                              </colgroup>
+                              <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                              </tr>
+                              <tr class="realizes last">
+                                 <th class="label"><a href="http://data.europa.eu/eli/ontology#realizes">realizes</a></th>
+                                 <td class="value"><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof">dof</a></td>
+                                 <td class="filter"></td>
+                              </tr>
+                           </table>
+                           <table id="w5076aab7b7b1">
+                              <caption><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/spa">spa</a></caption>
+                              <colgroup>
+                                 <col class="labelWidth">
+                                 <col class="autoWidth">
+                                 <col class="filterWidth">
+                              </colgroup>
+                              <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                              </tr>
+                              <tr class="realizes last">
+                                 <th class="label"><a href="http://data.europa.eu/eli/ontology#realizes">realizes</a></th>
+                                 <td class="value"><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof">dof</a></td>
+                                 <td class="filter"></td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr class="type">
+                        <th class="label"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></th>
+                        <td class="value nested" colspan="2">
+                           <table>
+                              <tr>
+                                 <td class="value"><a href="http://data.europa.eu/eli/ontology#LegalResource">LegalResource</a></td>
+                                 <td class="filter"></td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr class="isPrimaryTopicOf">
+                        <th class="label"><a href="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">is primary topic of</a></th>
+                        <td class="value"><a href="#w5076aa" title="view on this page">dof.html</a></td>
+                        <td class="filter"></td>
+                     </tr>
+                     <tr class="is_about">
+                        <th class="label"><a href="http://data.europa.eu/eli/ontology#is_about">is_about</a></th>
+                        <td class="value"><a href="http://data.euskadi.eus/kos/public-sector/sector/sector-publico">sector-publico</a></td>
+                        <td class="filter"></td>
+                     </tr>
+                     <tr class="is_member_of">
+                        <th class="label"><a href="http://data.europa.eu/eli/ontology#is_member_of">is_member_of</a></th>
+                        <td class="value"><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)">(2)</a></td>
+                        <td class="filter"></td>
+                     </tr>
+                     <tr class="type_document last">
+                        <th class="label"><a href="http://data.europa.eu/eli/ontology#type_document">type_document</a></th>
+                        <td class="value"><a href="http://datos.gob.es/resource/authority/resource-type/a">a</a></td>
+                        <td class="filter"></td>
+                     </tr>
+                  </table>
+               </section>
+            </div>
+         </div>
+         <nav class="bottomnav"></nav>
+         <footer>
+            <div class="provenance">
+               <div class=" query col1">
+                  <h2>Viewer</h2>
+                  <p>This is the SPARQL query that was generated to pull together the data that is provided about the selected item. You can modify it here and re-run the query but you may find more options at the
+                     <a href="http://wl11vf0057.ejgvdns:7001/r01hpLODWar/read/blazegraph/namespace/euskadi_db/sparql">endpoint's page</a>.
+                  </p>
+                  <form action="http://wl11vf0057.ejgvdns:7001/r01hpLODWar/read/blazegraph/namespace/euskadi_db/sparql" method="post"><textarea name="query" wrap="soft" data-skip-lines="0">DESCRIBE 
+  &lt;http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof&gt;</textarea><p><button type="submit">Run Query</button></p>
+                  </form>
+               </div>
+            </div>
+            <p>Powered by <a href="https://github.com/epimorphics/elda">Elda 1.4.4-SNAPSHOT</a>, an implementation of the <a href="http://code.google.com/p/linked-data-api">Linked Data API</a><br><a href="http://www.axialis.com/free/icons">Icons</a> by <a href="http://www.axialis.com">Axialis Team</a></p>
+         </footer>
+      </div>
+   
+	</div>	<!-- ************** END Visual Area: r01gContainerVA ************** -->
+
+  <!-- AMAIERA Edukia ta bilaketak -->
+</main>
+<footer role="contentinfo">
+  <!-- Orri-oina -->
+  
+  
+<!-- ************** INIT Visual Area: r01gEditorVA ************** -->
+        <!--@@<xml id='9000'><avInst oid='r01gtpd15c39858a9218906b1863e0333965650e05' type='r01gEditorVA' /></xml>@@--><div id="r01gEditoroina" class="r01gEditor r01gEditoroina"><div class="beheko_estekak">
+<h1 class="inv">Esteka orokorrak</h1>
+<div>
+<h2>Informazio orokorra</h2>
+<ul>
+<li><a href="http://opendata.euskadi.eus/orokorra/-/harremanetan-jartzeko-internet-telefonoa-eta-aurrez-aurre/">Kontaktua</a></li>
+<li><a href="http://www.euskadi.eus/informazioa/-/euskadieus-web-mapa/">Web-mapa</a></li>
+<li><a href="http://www.euskadi.eus/informazioa/-/erabilerraztasuna-euskadieus/">Erabilerraztasuna</a></li>
+<li><a href="https://euskadi.eus">Egoitza Elektronikoa</a></li>
+<li><a href="http://www.euskadi.eus/kontaktua/-/zure-iritzia/">Eman iritzia</a></li>
+<li><a href="http://opendata.euskadi.eus/orokorra/-/opendatako-lege-informazioa/">Lege informazioa</a></li>
+</ul>
+</div>
+<div>
+<h2>Eusko Jaurlaritza</h2>
+<ul>
+<li><a href="http://www.euskadi.eus/eusko-jaurlaritza/hasiera/">Hasiera-orria</a></li>
+<li><a href="http://www.euskadi.eus/eusko-jaurlaritza/-/ezagutu-eusko-jaurlaritza/">Ezagutu Jaurlaritza</a></li>
+<li><a href="http://www.euskadi.eus/eusko-jaurlaritza/-/eusko-jaurlaritzaren-sailak-eta-erakundeak/">Sailak eta erakundeak</a></li>
+<li><a href="http://www.euskadi.eus/eusko-jaurlaritza/albisteak-ekitaldiak/">Albisteak eta ekitaldiak</a></li>
+<li><a href="http://www.euskadi.eus/eusko-jaurlaritza/tramiteak-zerbitzuak/">Tramiteak</a></li>
+<li><a href="http://www.zuzenean.euskadi.eus/s68-home/eu/">Arreta Zerbitzua</a></li>
+<li><a href="http://www.euskadi.eus/eusko-jaurlaritza/-/gobernu-irekia/">Gobernu irekia</a></li>
+</ul>
+</div>
+<div>
+<h2>Tramiteak eta zerbitzuak</h2>
+<ul>
+<li><a href="http://www.euskadi.eus/eusko-jaurlaritza/tramiteak-zerbitzuak/?r01kQry=tT:ayuda_subvencion;pp:r01PageSize.20;cO:r01epd0122e4ed314423e0db04c97a47b5baa317f,r01epd0122e4edf39923e0db0b11fff216b637726;mA:procedureCollection.EQ.0;p:Inter,Inter_portal&amp;r01SearchEngine=meta">Diru-laguntzak</a></li>
+<li><a href="http://www.euskadi.eus/eusko-jaurlaritza/tramiteak-zerbitzuak/?r01kQry=tT:anuncio_contratacion">Kontratazioak</a></li>
+<li><a href="http://www.euskadi.eus/eusko-jaurlaritza/tramiteak-zerbitzuak/?r01kQry=tT:autorizacion">Baimenak</a></li>
+<li><a href="http://www.euskalmet.euskadi.eus/s07-5853x/eu/meteorologia/pronos.apl?e=8">Eguraldia</a></li>
+<li><a href="http://www.trafikoa.net/">Trafikoaren egoera</a></li>
+</ul>
+</div>
+<div class="azkena">
+<h2>Aldizkari ofizialak</h2>
+<ul>
+<li><a href="http://www.euskadi.eus/ehaa">Euskal Herriko&nbsp;Agintaritzaren Aldizkaria</a></li>
+<li><a title="Esteka hau leiho berri batean zabalduko da" href="http://www.alava.net/" target="_blank">Arabako Aldizkari Ofiziala</a></li>
+<li><a title="Esteka hau leiho berri batean zabalduko da" href="http://apps.bizkaia.net/BTWC/BAO_BOB?idi=eu" target="_blank">Bizkaiko Aldizkari Ofiziala</a></li>
+<li><a title="Esteka hau leiho berri batean zabalduko da" href="https://ssl4.gipuzkoa.net/boletin/asp/index.asp" target="_blank">Gipuzkoako Aldizkari Ofiziala</a></li>
+<li><a title="Esteka hau leiho berri batean zabalduko da" href="http://www.boe.es/index.php?lang=eu" target="_blank">Estatuko Aldizkari Ofiziala</a></li>
+<li><a title="Esteka hau leiho berri batean zabalduko da (Gaztelaniaz)" href="http://eur-lex.europa.eu/oj/direct-access.html?locale=es" target="_blank">Europar Batasuneko Aldizkari Ofiziala</a></li>
+</ul>
+</div>
+</div>
+<div class="oina">
+<h1 class="inv">Kontaktua</h1>
+<img alt="Euskadi, auzolana" src="/AVComun/images/r01ClaimH_white_eu.jpg" />
+<p><a href="http://www.euskadi.eus/eusko-jaurlaritza/web-zerbitzua/hasiera/">Eusko Jaurlaritzaren Web Zerbitzuak</a> garatutako eta kudeatutako webgunea</p>
+<ul>
+<li><a class="bb_hizkuntza" href="http://opendata.euskadi.eus/inicio/">Versi&oacute;n en espa&ntilde;ol</a></li>
+<li><a class="arreta" href="http://opendata.euskadi.eus/orokorra/-/harremanetan-jartzeko-internet-telefonoa-eta-aurrez-aurre/">Kontaktua</a></li>
+<li class="scrollup-p"><a class="scrollup" href="#">Itzuli gora</a></li>
+</ul>
+</div></div>
+<!-- ************** END Visual Area: r01gEditorVA ************** -->
+
+  <!-- Hizkuntza aldaketa -->
+  
+  
+<!-- ************** INIT Visual Area: r01gLangSelectorVA ************** -->
+        <!--@@<xml id='9001'><avInst oid='r01gtpd15c39bfd75918906b189f965db758ae4ddf' type='r01gLangSelectorVA' /></xml>@@-->
+<ul id="lang-selectorhizkuntza_aldaketa" class="r01gLangSelector_custom"><li class="r01gFirstLang"><!-- Si el idioma de la página coincide con el idioma tratado del AV no hay enlace -->
+
+	<!-- Tanto para pagina como para contenido si hay una URL amigable se coge esa por defecto. En caso contrario, usa la URL normal. -->
+	
+		<a href="/w79-dataset/es/" hreflang="es" xml:lang="es" class="r01gLangUnSelected" lang="es"><abbr xml:lang="es" lang="es" title="espa&#241;ol">es</abbr></a>
+	
+
+</li><li class="r01gLastLang"><!-- Si el idioma de la página coincide con el idioma tratado del AV no hay enlace -->
+
+	<span class="r01gLangSelected"><abbr title="Euskera">eu</abbr></span>
+
+</li></ul>
+<!-- ************** END Visual Area: r01gLangSelectorVA ************** -->
+
+  <!-- AMAIERA Hizkuntza aldaketa -->
+</footer>
+<script type="text/javascript" src="http://www.euskadi.eus/scripts/web01-modernizr.custom.53538.js"></script>
+<script type="text/javascript" src="http://www.euskadi.eus/scripts/web01-menu_horizontala_02.js"></script> 
+<script type="text/javascript" src="/scripts/w79-orokorra.js"></script>
+<!-- Fichero que se carga antes del tag de cierre de body en las paginas de portal -->
+
+<!-- REGLAS PARA insertar el CLAIM -->
+<!-- *************************************************** -->
+<!-- REGLAS PARA insertar el CLAIM -->
+<!-- *************************************************** -->
+
+        <div class="r01ClaimPersonas">
+    
+	
+                <img class="r01ClaimImage"  alt="Euskadi, auzolana" src="/AVComun/images/r01ClaimH_black_eu.jpg"/>
+	
+    
+        </div>
+
+
+
+
+<!-- REGLAS PARA ESTABLECER LAS COOKIES DE LAS MIGAS DE PAN -->
+<!-- ****************************************************** -->
+
+
+
+
+
+
+        
+                <img src="/setCookie_w79_3_20180511154504?r01_url=/doc/eli/es-pv/a/1978/06/05/(2)/dof?R01HPortal=w79&R01HPage=dataset&R01HLang=eu&amp;r01_title=Open%20Data%20Euskadiko%20datu-multzoa%20-%20Euskadi.eus"  alt="" />
+        
+
+
+
+<!-- REGLAS PARA OBTENER LA URL LOGICA DE UN CONTENIDO -->
+<!-- ************************************************* -->
+
+
+<!-- REGLAS PARA OBTENER LA URL AMIGABLE DE UN CONTENIDO -->
+<!-- *************************************************** -->
+
+
+<!-- REGLAS PARA MOSTRAR LA OPCION DE NAVEGACION ENTRE VISTA CLASICA Y MOVIL DE UNA PAGINA -->
+<!-- ************************************************************************************* -->
+
+
+
+
+
+<!-- REGLAS PARA MOSTRAR TODAS LAS VARIABLES SSI -->
+<!-- ******************************************* -->
+
+
+
+
+
+</body>
+</html>
