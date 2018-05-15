@@ -6,190 +6,7 @@
     "bindings" : [ {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#is_realized_by"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/spa"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#type_document"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://datos.gob.es/resource/authority/resource-type/a"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#LegalResource"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/eus"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#language"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://publications.europa.eu/resource/authority/language/EUS"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/eus"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#realizes"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/eus"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#title"
-      },
-      "o" : {
-        "datatype" : "http://www.w3.org/2001/XMLSchema#string",
-        "type" : "literal",
-        "value" : "Bizkaiko Jaurerriaren Batzar Nagusiek, biltzarre berezian elkarturik, gehiengo osoz eta handikiro erabakitzen dute Eusko Kontseilu Nagusiari lotzea. Eta erabaki hau bertan zeudenetatik %93 Ahaldunek hartzen dutela argi geratzea eskatzen da."
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/eus"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#LegalExpression"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/eus/xml"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#embodies"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/eus"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/eus/xml"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#format"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://www.iana.org/assignments/media-types/text/html"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/eus/xml"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#licence"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://creativecommons.org/licenses/by/4.0/"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/eus/xml"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#published_in_format"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://www.legegunea.euskadi.eus/x59-contfich/eu/contenidos/acuerdo/bopv197900223/eu_def/data/bopv"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/eus/xml"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#publisher_agent"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://datos.gob.es/recurso/sector-publico/org/Organismo/A16003011"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/eus/xml"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#rightsholder_agent"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://datos.gob.es/recurso/sector-publico/org/Organismo/A16003011"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/eus/xml"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#Format"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/spa"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof/spa"
       },
       "p" : {
         "type" : "uri",
@@ -202,7 +19,7 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/spa"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof/spa"
       },
       "p" : {
         "type" : "uri",
@@ -210,12 +27,12 @@
       },
       "o" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/spa"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof/spa"
       },
       "p" : {
         "type" : "uri",
@@ -224,12 +41,12 @@
       "o" : {
         "datatype" : "http://www.w3.org/2001/XMLSchema#string",
         "type" : "literal",
-        "value" : "Las Juntas Generales del Se��or��o de Vizcaya, reunidas en asamblea extraordinaria, deciden su incorporaci��n al Consejo General del Pa��s Vasco por mayor��a absoluta y solemnemente. Se hace constar expresamente que la incorporaci��n al Consejo General del Pa��s Vasco es acordada por el 93% de los Apoderados presentes."
+        "value" : "ACUERDO del Pleno Ordinario del Parlamento Vasco, en sesi��n celebrada el d��a 13 de Marzo de 1987, aprobando la ratificaci��n del Decreto Legislativo 5/1986, de 9 de Septiembre, sobre publicidad enga��osa."
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/spa"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof/spa"
       },
       "p" : {
         "type" : "uri",
@@ -242,7 +59,207 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/spa/html"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#date_applicability"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#date",
+        "type" : "literal",
+        "value" : "1989-05-20"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#date_document"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#date",
+        "type" : "literal",
+        "value" : "1989-05-10"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#date_publication"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#date",
+        "type" : "literal",
+        "value" : "1989-05-19"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#first_date_entry_in_force"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#date",
+        "type" : "literal",
+        "value" : "1989-05-20"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#is_about"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/kos/public-sector/sector/legislacion-justicia"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#is_about"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/kos/public-sector/sector/sector-publico"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#is_member_of"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#is_realized_by"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof/spa"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#is_realized_by"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof/eus"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#type_document"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://datos.gob.es/resource/authority/resource-type/a"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#LegalResource"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof/spa"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#language"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://publications.europa.eu/resource/authority/language/SPA"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof/spa"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#realizes"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof/spa"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#title"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string",
+        "type" : "literal",
+        "value" : "ACUERDO de 10 de Mayo de 1989, del Pleno del Consejo General del Poder Judicial, por el que se dispone la constituci��n del Tribunal Superior de Justicia del Pa��s Vasco."
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof/spa"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#LegalExpression"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof/spa/html"
       },
       "p" : {
         "type" : "uri",
@@ -250,12 +267,12 @@
       },
       "o" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/spa"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof/spa"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/spa/html"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof/spa/html"
       },
       "p" : {
         "type" : "uri",
@@ -268,7 +285,7 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/spa/html"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof/spa/html"
       },
       "p" : {
         "type" : "uri",
@@ -281,7 +298,7 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/spa/html"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof/spa/html"
       },
       "p" : {
         "type" : "uri",
@@ -289,12 +306,12 @@
       },
       "o" : {
         "type" : "uri",
-        "value" : "http://www.legegunea.euskadi.eus/x59-contfich/eu/contenidos/acuerdo/bopv197900223/es_def/index.shtml"
+        "value" : "http://www.legegunea.euskadi.eus/x59-contfich/eu/contenidos/acuerdo/bopv198901382/es_def/index.shtml"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/spa/html"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof/spa/html"
       },
       "p" : {
         "type" : "uri",
@@ -307,7 +324,7 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/spa/html"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof/spa/html"
       },
       "p" : {
         "type" : "uri",
@@ -320,7 +337,7 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/spa/html"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof/spa/html"
       },
       "p" : {
         "type" : "uri",
@@ -328,12 +345,12 @@
       },
       "o" : {
         "type" : "uri",
-        "value" : "http://www.legegunea.euskadi.eus/x59-contfich/eu/contenidos/acuerdo/bopv197900223/es_def/index.shtml"
+        "value" : "http://www.legegunea.euskadi.eus/x59-contfich/eu/contenidos/acuerdo/bopv198901382/es_def/index.shtml"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/05/22/(0)/dof/spa/html"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1989/05/10/535/dof/spa/html"
       },
       "p" : {
         "type" : "uri",
@@ -346,7 +363,7 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof"
       },
       "p" : {
         "type" : "uri",
@@ -355,12 +372,12 @@
       "o" : {
         "datatype" : "http://www.w3.org/2001/XMLSchema#date",
         "type" : "literal",
-        "value" : "1980-01-25"
+        "value" : "1997-11-29"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof"
       },
       "p" : {
         "type" : "uri",
@@ -369,12 +386,12 @@
       "o" : {
         "datatype" : "http://www.w3.org/2001/XMLSchema#date",
         "type" : "literal",
-        "value" : "1979-07-09"
+        "value" : "1997-11-25"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof"
       },
       "p" : {
         "type" : "uri",
@@ -383,12 +400,12 @@
       "o" : {
         "datatype" : "http://www.w3.org/2001/XMLSchema#date",
         "type" : "literal",
-        "value" : "1980-01-24"
+        "value" : "1997-11-28"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof"
       },
       "p" : {
         "type" : "uri",
@@ -397,12 +414,12 @@
       "o" : {
         "datatype" : "http://www.w3.org/2001/XMLSchema#date",
         "type" : "literal",
-        "value" : "1980-01-25"
+        "value" : "1997-11-29"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof"
       },
       "p" : {
         "type" : "uri",
@@ -415,7 +432,7 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof"
       },
       "p" : {
         "type" : "uri",
@@ -423,12 +440,12 @@
       },
       "o" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof"
       },
       "p" : {
         "type" : "uri",
@@ -436,12 +453,12 @@
       },
       "o" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof/eus"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof/eus"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof"
       },
       "p" : {
         "type" : "uri",
@@ -449,12 +466,12 @@
       },
       "o" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof/spa"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof/spa"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof"
       },
       "p" : {
         "type" : "uri",
@@ -467,7 +484,7 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof"
       },
       "p" : {
         "type" : "uri",
@@ -480,7 +497,7 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof/eus"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof/eus"
       },
       "p" : {
         "type" : "uri",
@@ -493,7 +510,7 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof/eus"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof/eus"
       },
       "p" : {
         "type" : "uri",
@@ -501,12 +518,12 @@
       },
       "o" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof/eus"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof/eus"
       },
       "p" : {
         "type" : "uri",
@@ -515,12 +532,12 @@
       "o" : {
         "datatype" : "http://www.w3.org/2001/XMLSchema#string",
         "type" : "literal",
-        "value" : "Araudia egoera berri borri egokitzeko 2gn., 7gn., 8gn., 11 gn. 12gn., 14gn., 16gn., 17gn. eta 24garren atalak aldatzea."
+        "value" : "ERABAKIA, 1997ko azaroaren 25ekoa, Osakidetza Ente Publikoaren Administrazio Kontseiluarena, Ente Publikoaren antolakunde orokorraren egitura organikoa onesten duena."
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof/eus"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof/eus"
       },
       "p" : {
         "type" : "uri",
@@ -533,7 +550,7 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof/eus/pdf"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof/eus/pdf"
       },
       "p" : {
         "type" : "uri",
@@ -541,12 +558,12 @@
       },
       "o" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof/eus"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof/eus"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof/eus/pdf"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof/eus/pdf"
       },
       "p" : {
         "type" : "uri",
@@ -559,7 +576,7 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof/eus/pdf"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof/eus/pdf"
       },
       "p" : {
         "type" : "uri",
@@ -572,7 +589,7 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof/eus/pdf"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof/eus/pdf"
       },
       "p" : {
         "type" : "uri",
@@ -580,12 +597,12 @@
       },
       "o" : {
         "type" : "uri",
-        "value" : "http://www.euskadi.eus:80/bopv2/datos/1980/01/8000424a.pdf"
+        "value" : "http://www.euskadi.eus:80/bopv2/datos/1997/11/9705963a.pdf"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof/eus/pdf"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof/eus/pdf"
       },
       "p" : {
         "type" : "uri",
@@ -598,7 +615,7 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof/eus/pdf"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof/eus/pdf"
       },
       "p" : {
         "type" : "uri",
@@ -611,7 +628,7 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/07/09/(0)/dof/eus/pdf"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/11/25/(0)/dof/eus/pdf"
       },
       "p" : {
         "type" : "uri",
@@ -624,7 +641,7 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof"
       },
       "p" : {
         "type" : "uri",
@@ -633,12 +650,12 @@
       "o" : {
         "datatype" : "http://www.w3.org/2001/XMLSchema#date",
         "type" : "literal",
-        "value" : "1980-03-28"
+        "value" : "1998-01-31"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof"
       },
       "p" : {
         "type" : "uri",
@@ -647,12 +664,12 @@
       "o" : {
         "datatype" : "http://www.w3.org/2001/XMLSchema#date",
         "type" : "literal",
-        "value" : "1979-09-26"
+        "value" : "1997-12-29"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof"
       },
       "p" : {
         "type" : "uri",
@@ -661,12 +678,12 @@
       "o" : {
         "datatype" : "http://www.w3.org/2001/XMLSchema#date",
         "type" : "literal",
-        "value" : "1980-03-27"
+        "value" : "1998-01-30"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof"
       },
       "p" : {
         "type" : "uri",
@@ -675,531 +692,12 @@
       "o" : {
         "datatype" : "http://www.w3.org/2001/XMLSchema#date",
         "type" : "literal",
-        "value" : "1980-03-28"
+        "value" : "1998-01-31"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#is_about"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/kos/public-sector/sector/sector-publico"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#is_about"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/kos/public-sector/sector/urbanismo-infraestructuras"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#is_about"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/kos/public-sector/sector/vivienda"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#is_member_of"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#is_realized_by"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof/eus"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#is_realized_by"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof/spa"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#type_document"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://datos.gob.es/resource/authority/resource-type/a"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#LegalResource"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof/eus"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#language"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://publications.europa.eu/resource/authority/language/EUS"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof/eus"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#realizes"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof/eus"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#title"
-      },
-      "o" : {
-        "datatype" : "http://www.w3.org/2001/XMLSchema#string",
-        "type" : "literal",
-        "value" : "EUSKO KONTSEILU NAGUSIAREN I eta HIRIGINTZA - MINISTERITZAKO LURRALDE ANTOLAKETA ETA INGURUGIRO-IKASKETETARAKO ETXEAREN arteko ITUNEA"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof/eus"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#LegalExpression"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof/spa"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#language"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://publications.europa.eu/resource/authority/language/SPA"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof/spa"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#realizes"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof/spa"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#title"
-      },
-      "o" : {
-        "datatype" : "http://www.w3.org/2001/XMLSchema#string",
-        "type" : "literal",
-        "value" : "CONVENIO entre el CONSEJO GENERAL DEL PAIS VASCO y el CENTRO DE ESTUDIOS DE ORDENACION DEL TERRITORIO Y MEDIO AMBIENTE"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1979/09/26/(0)/dof/spa"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#LegalExpression"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#date_applicability"
-      },
-      "o" : {
-        "datatype" : "http://www.w3.org/2001/XMLSchema#date",
-        "type" : "literal",
-        "value" : "1982-01-22"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#date_document"
-      },
-      "o" : {
-        "datatype" : "http://www.w3.org/2001/XMLSchema#date",
-        "type" : "literal",
-        "value" : "1981-12-23"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#date_publication"
-      },
-      "o" : {
-        "datatype" : "http://www.w3.org/2001/XMLSchema#date",
-        "type" : "literal",
-        "value" : "1982-01-21"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#first_date_entry_in_force"
-      },
-      "o" : {
-        "datatype" : "http://www.w3.org/2001/XMLSchema#date",
-        "type" : "literal",
-        "value" : "1982-01-22"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#is_about"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/kos/public-sector/sector/sector-publico"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#is_member_of"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#is_realized_by"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof/eus"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#is_realized_by"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof/spa"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#type_document"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://datos.gob.es/resource/authority/resource-type/a"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#LegalResource"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof/eus"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#language"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://publications.europa.eu/resource/authority/language/EUS"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof/eus"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#realizes"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof/eus"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#title"
-      },
-      "o" : {
-        "datatype" : "http://www.w3.org/2001/XMLSchema#string",
-        "type" : "literal",
-        "value" : "Eusko Jaurlaritzaren eta Renfe-ren arteko HITZARMENA, Euskal Herriko Autonomia-Arduralaritzaren eta RENFEren arteko Bitariko Batzordea sortaraziz."
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof/eus"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#LegalExpression"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof/spa"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#language"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://publications.europa.eu/resource/authority/language/SPA"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof/spa"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#realizes"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof/spa"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#title"
-      },
-      "o" : {
-        "datatype" : "http://www.w3.org/2001/XMLSchema#string",
-        "type" : "literal",
-        "value" : "CONVENIO entre el Gobierno Vasco y Renfe por el que se crea la Comisi��n Mixta Administraci��n Aut��nomica del Pa��s Vasco-Renfe"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1981/12/23/2/dof/spa"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#LegalExpression"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#date_applicability"
-      },
-      "o" : {
-        "datatype" : "http://www.w3.org/2001/XMLSchema#date",
-        "type" : "literal",
-        "value" : "1987-05-16"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#date_document"
-      },
-      "o" : {
-        "datatype" : "http://www.w3.org/2001/XMLSchema#date",
-        "type" : "literal",
-        "value" : "1987-03-13"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#date_publication"
-      },
-      "o" : {
-        "datatype" : "http://www.w3.org/2001/XMLSchema#date",
-        "type" : "literal",
-        "value" : "1987-05-15"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#first_date_entry_in_force"
-      },
-      "o" : {
-        "datatype" : "http://www.w3.org/2001/XMLSchema#date",
-        "type" : "literal",
-        "value" : "1987-05-16"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof"
-      },
-      "p" : {
-        "type" : "uri",
-        "value" : "http://data.europa.eu/eli/ontology#is_about"
-      },
-      "o" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/kos/public-sector/sector/ciencia-tecnologia"
-      }
-    }, {
-      "g" : {
-        "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof"
       },
       "p" : {
         "type" : "uri",
@@ -1212,7 +710,33 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#is_about"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/kos/public-sector/sector/salud"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#is_about"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/kos/public-sector/sector/sector-publico"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof"
       },
       "p" : {
         "type" : "uri",
@@ -1220,12 +744,12 @@
       },
       "o" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof"
       },
       "p" : {
         "type" : "uri",
@@ -1233,12 +757,12 @@
       },
       "o" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof/eus"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof/eus"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof"
       },
       "p" : {
         "type" : "uri",
@@ -1246,12 +770,12 @@
       },
       "o" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof/spa"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof/spa"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof"
       },
       "p" : {
         "type" : "uri",
@@ -1264,7 +788,7 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof"
       },
       "p" : {
         "type" : "uri",
@@ -1277,7 +801,7 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof/eus"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof/eus"
       },
       "p" : {
         "type" : "uri",
@@ -1290,7 +814,7 @@
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof/eus"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof/eus"
       },
       "p" : {
         "type" : "uri",
@@ -1298,12 +822,12 @@
       },
       "o" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof"
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof/eus"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof/eus"
       },
       "p" : {
         "type" : "uri",
@@ -1312,12 +836,12 @@
       "o" : {
         "datatype" : "http://www.w3.org/2001/XMLSchema#string",
         "type" : "literal",
-        "value" : "Eusko Legebiltzarrak, 1987.eko Martxoaren 13an egindako Osoko Batzarrean, hartutako ERABAKIA, engainabide izan daitekeen publizitateari buruzko Irailaren 9ko 5/1986 Legegintza-Dekretoaren sendespena onartuz."
+        "value" : "ERABAKIA, 1997ko abenduaren 29koa, 'Osakidetza' Ente Publikoaren Administrazio Batzordearena, ente publikoaren erakundeek emandako zerbitzuaren truke jaso beharreko tarifak ezartzen dituena."
       }
     }, {
       "g" : {
         "type" : "uri",
-        "value" : "http://data.euskadi.eus/eli/es-pv/a/1987/03/13/(4)/dof/eus"
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof/eus"
       },
       "p" : {
         "type" : "uri",
@@ -1326,6 +850,483 @@
       "o" : {
         "type" : "uri",
         "value" : "http://data.europa.eu/eli/ontology#LegalExpression"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof/eus/pdf"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#embodies"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof/eus"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof/eus/pdf"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#format"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://www.iana.org/assignments/media-types/text/html"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof/eus/pdf"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#licence"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://creativecommons.org/licenses/by/4.0/"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof/eus/pdf"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#published_in_format"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://www.euskadi.eus:80/bopv2/datos/1998/01/9800478a.pdf"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof/eus/pdf"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#publisher_agent"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://datos.gob.es/recurso/sector-publico/org/Organismo/A16003011"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof/eus/pdf"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#rightsholder_agent"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://datos.gob.es/recurso/sector-publico/org/Organismo/A16003011"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/a/1997/12/29/(0)/dof/eus/pdf"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#Format"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#date_applicability"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#date",
+        "type" : "literal",
+        "value" : "1936-10-10"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#date_document"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#date",
+        "type" : "literal",
+        "value" : "1936-10-07"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#date_publication"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#date",
+        "type" : "literal",
+        "value" : "1936-10-09"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#first_date_entry_in_force"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#date",
+        "type" : "literal",
+        "value" : "1936-10-10"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#is_about"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/kos/public-sector/sector/sector-publico"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#is_member_of"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#is_realized_by"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof/eus"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#is_realized_by"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof/spa"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#type_document"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://datos.gob.es/resource/authority/resource-type/d"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#LegalResource"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof/eus"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#language"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://publications.europa.eu/resource/authority/language/EUS"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof/eus"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#realizes"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof/eus"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#title"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string",
+        "type" : "literal",
+        "value" : "Orgasun zaingoaren Burukide, De la Torre'tar Eliodor izendatzen dun oroagindua."
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof/eus"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#LegalExpression"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof/eus/pdf"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#embodies"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof/eus"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof/eus/pdf"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#format"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://www.iana.org/assignments/media-types/text/html"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof/eus/pdf"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#licence"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://creativecommons.org/licenses/by/4.0/"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof/eus/pdf"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#published_in_format"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://www.euskadi.eus:80/bopv2/datos/1936/10/3600009a.pdf"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof/eus/pdf"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#publisher_agent"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://datos.gob.es/recurso/sector-publico/org/Organismo/A16003011"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof/eus/pdf"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#rightsholder_agent"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://datos.gob.es/recurso/sector-publico/org/Organismo/A16003011"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/07/(7)/dof/eus/pdf"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#Format"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/23/(1)/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#date_applicability"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#date",
+        "type" : "literal",
+        "value" : "1936-10-26"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/23/(1)/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#date_document"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#date",
+        "type" : "literal",
+        "value" : "1936-10-23"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/23/(1)/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#date_publication"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#date",
+        "type" : "literal",
+        "value" : "1936-10-25"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/23/(1)/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#first_date_entry_in_force"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#date",
+        "type" : "literal",
+        "value" : "1936-10-26"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/23/(1)/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#is_about"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/kos/public-sector/sector/cultura-ocio"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/23/(1)/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#is_about"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/kos/public-sector/sector/deporte"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/23/(1)/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#is_member_of"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/23/(1)"
+      }
+    }, {
+      "g" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/23/(1)/dof"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://data.europa.eu/eli/ontology#is_realized_by"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://data.euskadi.eus/eli/es-pv/d/1936/10/23/(1)/dof/eus"
       }
     } ]
   }

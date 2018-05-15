@@ -99,7 +99,7 @@ public class LodTest {
             final Map<String, String> parameters = new HashMap<String, String>();
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
-            assertTrue(requestBean.getResponseString().contains("<span>Lehendakaritza</span>"));
+            assertTrue(requestBean.getResponseString().contains("zerbitzuak</title>"));
         } catch (final IOException e) {
             e.printStackTrace();
         }
@@ -396,7 +396,7 @@ public class LodTest {
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
             assertTrue(requestBean.getResponseString().contains(
-                    "<http://data.euskadi.eus/distribution/bopv-european-legislation-identifier-eli/lod> <http://www.w3.org/ns/sparql-service-description#namedGraph> <http://data.euskadi.eus/graph/bopv-european-legislation-identifier-eli> ;"));
+                    "<http://data.euskadi.eus/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi> <http://schema.org/mainEntityOfPage> <http://www.euskadi.eus> ;"));
         } catch (final IOException e) {
             e.printStackTrace();
         }
@@ -415,20 +415,19 @@ public class LodTest {
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
             assertTrue(requestBean.getResponseString().contains(
-                    "<http://data.euskadi.eus/id/public-sector/government/GovernmentalAdministrativeRegion/euskadi> <http://schema.org/mainEntityOfPage> <http://www.euskadi.eus> ;"));
+                    "<http://data.euskadi.eus/dataset/bopv-european-legislation-identifier-eli/> <http://www.w3.org/ns/dcat#distribution> <http://data.euskadi.eus/distribution/bopv-european-legislation-identifier-eli/lod>"));
         } catch (final IOException e) {
             e.printStackTrace();
         }
     }
 
-    // TODO: cambiar condicion cuando funcione
     @Test
     public final void GETDistributionHTMLDoc() {
         try {
             final String baseUri = PropertiesManager.getInstance().getProperty("lod.baseUri.lang");
             final String method = Methodtype.GET.methodtypevalue();
             final String accept = MIMEtype.HTML.mimetypevalue();
-            final String pathUri = urifea;
+            final String pathUri = uridistribution;
             final String name = "GETDistributionHTMLDoc";
             final String comment = "Pagina fea de distribution";
             final Map<String, String> parameters = new HashMap<String, String>();
@@ -440,7 +439,6 @@ public class LodTest {
         }
     }
 
-    // TODO: cambiar condicion cuando funcione
     @Test
     public final void GETGraphTurtleContent() {
         try {
@@ -491,9 +489,8 @@ public class LodTest {
             parameters.put("query", "SELECT DISTINCT ?a ?b WHERE { ?a ?b ?g GRAPH ?g {?sub ?pred ?obj}}");
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
-            // assertTrue(requestBean.getResponseString().contains(
-            // "http://data.euskadi.eus/distribution/bopv-european-legislation-identifier-eli/lod,http://www.w3.org/ns/sparql-service-description#namedGraph"));
-            assertTrue(requestBean.getResponseString().contains("NO funciona"));
+            assertTrue(requestBean.getResponseString().contains(
+                    "http://data.euskadi.eus/distribution/bopv-european-legislation-identifier-eli/lod,http://www.w3.org/ns/sparql-service-description#namedGraph"));
         } catch (final IOException e) {
             e.printStackTrace();
         }
@@ -531,7 +528,7 @@ public class LodTest {
             parameters.put("query", "SELECT ?g ?p ?o WHERE { ?g ?p ?o .} LIMIT 100");
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
-            assertTrue(requestBean.getResponseString().contains("Definir condicion"));
+            assertTrue(requestBean.getResponseString().contains("applicability</uri>"));
         } catch (final IOException e) {
             e.printStackTrace();
         }
@@ -550,7 +547,7 @@ public class LodTest {
             parameters.put("query", "SELECT ?g ?p ?o WHERE { ?g ?p ?o .} LIMIT 100");
             requestBean = new LinkedDataRequestBean(method, accept, baseUri, pathUri, name, comment, parameters);
             HttpManager.getInstance().doRequest(requestBean);
-            assertTrue(requestBean.getResponseString().contains("Definir condicion"));
+            assertTrue(requestBean.getResponseString().contains("value"));
         } catch (final IOException e) {
             e.printStackTrace();
         }

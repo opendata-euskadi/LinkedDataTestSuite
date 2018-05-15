@@ -59,7 +59,7 @@
 
 	<!-- **** StyleSheet/Javascript resources for content **** -->
 <script type="text/javascript">
-var r01ServerTime = new Date('Friday, May 11, 2018');
+var r01ServerTime = new Date('Tuesday, May 15, 2018');
 var r01AttachPrefix = ' ';
 var file = ' '
 </script>
@@ -146,11 +146,11 @@ ga('globalEus.send', 'pageview');
       
       
       <link rel="shortcut icon" href="/appcont/r01hpLODWebContent/elda-assets/images/datagovuk_favicon.png" type="image/x-icon">
-      <link rel="alternate" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.json" type="application/json">
-      <link rel="alternate" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.rdf" type="application/rdf+xml">
-      <link rel="alternate" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.text" type="text/plain">
-      <link rel="alternate" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.ttl" type="text/turtle">
-      <link rel="alternate" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.xml" type="application/xml">
+      <link rel="alternate" href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli/lod.json" type="application/json">
+      <link rel="alternate" href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli/lod.rdf" type="application/rdf+xml">
+      <link rel="alternate" href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli/lod.text" type="text/plain">
+      <link rel="alternate" href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli/lod.ttl" type="text/turtle">
+      <link rel="alternate" href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli/lod.xml" type="application/xml">
       <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><link rel="stylesheet" href="/appcont/r01hpLODWebContent/elda-assets/css/html5reset-1.6.1.css" type="text/css">
       <link rel="stylesheet" href="/appcont/r01hpLODWebContent/elda-assets/css/jquery-ui.css" type="text/css">
       <link rel="stylesheet" href="/appcont/r01hpLODWebContent/elda-assets/css/smoothness/jquery-ui.css" type="text/css">
@@ -215,7 +215,7 @@ ga('globalEus.send', 'pageview');
 <body class='w79-dataset'>
 <script>
 var _r01 = {
-	requestedUri : '/r01hpLODWar/doc/eli/es-pv/a/1978/06/05/(2)/dof',
+	requestedUri : '/r01hpLODWar/doc/distribution/bopv-european-legislation-identifier-eli/lod',
 	clientIp : '172.16.0.205, 172.16.0.205, 127.0.0.1',
 	portalInfo : {
 		portalId : 'w79',
@@ -370,12 +370,12 @@ ga('globalEus.send', 'pageview');
          <nav class="site">
             <section class="formats">
                <ul>
-                  <li class="first"><a href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html" type="text/html" rel="alternate" title="view in html format">html</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.json" type="application/json" rel="alternate" title="view in json format">json</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.rdf" type="application/rdf+xml" rel="alternate" title="view in rdf format">rdf</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.text" type="text/plain" rel="alternate" title="view in text format">text</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.ttl" type="text/turtle" rel="alternate" title="view in ttl format">ttl</a></li>
-                  <li class="last"><a href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.xml" type="application/xml" rel="alternate" title="view in xml format">xml</a></li>
+                  <li class="first"><a href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli/lod.html" type="text/html" rel="alternate" title="view in html format">html</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli/lod.json" type="application/json" rel="alternate" title="view in json format">json</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli/lod.rdf" type="application/rdf+xml" rel="alternate" title="view in rdf format">rdf</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli/lod.text" type="text/plain" rel="alternate" title="view in text format">text</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli/lod.ttl" type="text/turtle" rel="alternate" title="view in ttl format">ttl</a></li>
+                  <li class="last"><a href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli/lod.xml" type="application/xml" rel="alternate" title="view in xml format">xml</a></li>
                </ul>
             </section>
          </nav>
@@ -394,21 +394,16 @@ ga('globalEus.send', 'pageview');
                   </p>
                </div>
                <ul>
-                  <li><a href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_view=all" title="switch to all view">all</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_view=basic" title="switch to basic view">basic</a></li>
-                  <li><a href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_view=description" title="switch to description view">description</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli/lod.html?_view=all" title="switch to all view">all</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli/lod.html?_view=basic" title="switch to basic view">basic</a></li>
+                  <li><a href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli/lod.html?_view=description" title="switch to description view">description</a></li>
                </ul>
                <ul class="properties">
-                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_properties=date_applicability"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> date_applicability</a></li>
-                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_properties=date_document"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> date_document</a></li>
-                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_properties=date_publication"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> date_publication</a></li>
-                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_properties=first_date_entry_in_force"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> first_date_entry_in_force</a></li>
-                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_properties=is_realized_by.realizes"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is_realized_by › realizes</a></li>
-                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_properties=type."><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> type</a></li>
-                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_properties=isPrimaryTopicOf"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is primary topic of</a></li>
-                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_properties=is_about"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is_about</a></li>
-                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_properties=is_member_of"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is_member_of</a></li>
-                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)/dof.html?_properties=type_document"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> type_document</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli/lod.html?_properties=title."><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> title</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli/lod.html?_properties=type."><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> type</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli/lod.html?_properties=isPrimaryTopicOf"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> is primary topic of</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli/lod.html?_properties=namedGraph"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> named graph</a></li>
+                  <li><a rel="nofollow" title="always include this property" href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli/lod.html?_properties=sparqlEndpoint_8595"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Star.png" alt="star this property"> sparql endpoint_ 8595</a></li>
                </ul>
             </section>
          </nav>
@@ -416,11 +411,11 @@ ga('globalEus.send', 'pageview');
             <div class="panel">
                <header>
                   <p id="openSearch">Show Search Form</p>
-                  <h1>dof</h1>
-                  <p class="id"><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof">http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof</a></p>
+                  <h1>lod</h1>
+                  <p class="id"><a href="http://data.euskadi.eus/distribution/bopv-european-legislation-identifier-eli/lod">http://data.euskadi.eus/distribution/bopv-european-legislation-identifier-eli/lod</a></p>
                </header>
                <section id="search" style="display: none">
-                  <form action="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)">
+                  <form action="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli">
                      <table>
                         <colgroup>
                            <col class="labelWidth">
@@ -431,39 +426,8 @@ ga('globalEus.send', 'pageview');
                            <td></td>
                         </tr>
                         <tr>
-                           <th class="label"><label for="date_applicability">date_applicability</label></th>
-                           <td class="input">exactly: <input name="date_applicability" id="date_applicability" type="date"><br><br><em>or</em> between: <input name="min-date_applicability" type="date"><br>and <input name="max-date_applicability" type="date"></td>
-                        </tr>
-                        <tr>
-                           <th class="label"><label for="date_document">date_document</label></th>
-                           <td class="input">exactly: <input name="date_document" id="date_document" type="date"><br><br><em>or</em> between: <input name="min-date_document" type="date"><br>and <input name="max-date_document" type="date"></td>
-                        </tr>
-                        <tr>
-                           <th class="label"><label for="date_publication">date_publication</label></th>
-                           <td class="input">exactly: <input name="date_publication" id="date_publication" type="date"><br><br><em>or</em> between: <input name="min-date_publication" type="date"><br>and <input name="max-date_publication" type="date"></td>
-                        </tr>
-                        <tr>
-                           <th class="label"><label for="first_date_entry_in_force">first_date_entry_in_force</label></th>
-                           <td class="input">exactly: <input name="first_date_entry_in_force" id="first_date_entry_in_force" type="date"><br><br><em>or</em> between: <input name="min-first_date_entry_in_force" type="date"><br>and <input name="max-first_date_entry_in_force" type="date"></td>
-                        </tr>
-                        <tr>
-                           <th class="label">is_realized_by</th>
-                           <td class="input nested">
-                              <table>
-                                 <colgroup>
-                                    <col class="labelWidth">
-                                    <col class="nestedValueWidth">
-                                 </colgroup>
-                                 <tr>
-                                    <td></td>
-                                    <td></td>
-                                 </tr>
-                                 <tr class="last">
-                                    <th class="label"><label for="is_realized_by.realizes">realizes</label></th>
-                                    <td class="input"><input name="is_realized_by.realizes" id="is_realized_by.realizes" size="25"></td>
-                                 </tr>
-                              </table>
-                           </td>
+                           <th class="label"><label for="title.">title</label></th>
+                           <td class="input"><input name="title." id="title." size="25"></td>
                         </tr>
                         <tr>
                            <th class="label"><label for="type.">type</label></th>
@@ -474,23 +438,19 @@ ga('globalEus.send', 'pageview');
                            <td class="input"><input name="isPrimaryTopicOf" id="isPrimaryTopicOf" size="25"></td>
                         </tr>
                         <tr>
-                           <th class="label"><label for="is_about">is_about</label></th>
-                           <td class="input"><input name="is_about" id="is_about" size="25"></td>
+                           <th class="label"><label for="namedGraph">named graph</label></th>
+                           <td class="input"><input name="namedGraph" id="namedGraph" size="25"></td>
                         </tr>
                         <tr>
-                           <th class="label"><label for="is_member_of">is_member_of</label></th>
-                           <td class="input"><input name="is_member_of" id="is_member_of" size="25"></td>
-                        </tr>
-                        <tr>
-                           <th class="label"><label for="type_document">type_document</label></th>
-                           <td class="input"><input name="type_document" id="type_document" size="25"></td>
+                           <th class="label"><label for="sparqlEndpoint_8595">sparql endpoint_ 8595</label></th>
+                           <td class="input"><input name="sparqlEndpoint_8595" id="sparqlEndpoint_8595" size="25"></td>
                         </tr>
                      </table>
                      <p><button type="submit">Search</button></p>
                   </form>
                </section>
                <section>
-                  <table id="w5076aab7">
+                  <table id="w17122aab7">
                      <colgroup>
                         <col class="labelWidth">
                         <col class="autoWidth">
@@ -501,71 +461,17 @@ ga('globalEus.send', 'pageview');
                         <td></td>
                         <td></td>
                      </tr>
-                     <tr class="date_applicability">
-                        <th class="label"><a href="http://data.europa.eu/eli/ontology#date_applicability">date_applicability</a></th>
-                        <td class="value">
-                           <time datetime="1978-07-02">02/07/1978</time>
-                        </td>
-                        <td class="filter"><a rel="nofollow" title="filter to values less than 1978-07-02" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?max-date_applicability=1978-07-02"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Left.png" alt="less than 1978-07-02"></a><a rel="nofollow" title="more like this" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?date_applicability=1978-07-02"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Search.png" alt="more like this"></a><a rel="nofollow" title="more than 1978-07-02" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?min-date_applicability=1978-07-02"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Right.png" alt="more than 1978-07-02"></a></td>
-                     </tr>
-                     <tr class="date_document">
-                        <th class="label"><a href="http://data.europa.eu/eli/ontology#date_document">date_document</a></th>
-                        <td class="value">
-                           <time datetime="1978-06-05">05/06/1978</time>
-                        </td>
-                        <td class="filter"><a rel="nofollow" title="filter to values less than 1978-06-05" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?max-date_document=1978-06-05"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Left.png" alt="less than 1978-06-05"></a><a rel="nofollow" title="more like this" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?date_document=1978-06-05"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Search.png" alt="more like this"></a><a rel="nofollow" title="more than 1978-06-05" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?min-date_document=1978-06-05"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Right.png" alt="more than 1978-06-05"></a></td>
-                     </tr>
-                     <tr class="date_publication">
-                        <th class="label"><a href="http://data.europa.eu/eli/ontology#date_publication">date_publication</a></th>
-                        <td class="value">
-                           <time datetime="1978-07-01">01/07/1978</time>
-                        </td>
-                        <td class="filter"><a rel="nofollow" title="filter to values less than 1978-07-01" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?max-date_publication=1978-07-01"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Left.png" alt="less than 1978-07-01"></a><a rel="nofollow" title="more like this" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?date_publication=1978-07-01"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Search.png" alt="more like this"></a><a rel="nofollow" title="more than 1978-07-01" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?min-date_publication=1978-07-01"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Right.png" alt="more than 1978-07-01"></a></td>
-                     </tr>
-                     <tr class="first_date_entry_in_force">
-                        <th class="label"><a href="http://data.europa.eu/eli/ontology#first_date_entry_in_force">first_date_entry_in_force</a></th>
-                        <td class="value">
-                           <time datetime="1978-07-02">02/07/1978</time>
-                        </td>
-                        <td class="filter"><a rel="nofollow" title="filter to values less than 1978-07-02" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?max-first_date_entry_in_force=1978-07-02"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Left.png" alt="less than 1978-07-02"></a><a rel="nofollow" title="more like this" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?first_date_entry_in_force=1978-07-02"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Search.png" alt="more like this"></a><a rel="nofollow" title="more than 1978-07-02" href="http://data.euskadi.eus/doc/eli/es-pv/a/1978/06/05/(2)?min-first_date_entry_in_force=1978-07-02"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Arrow3%20Right.png" alt="more than 1978-07-02"></a></td>
-                     </tr>
-                     <tr class="is_realized_by">
-                        <th class="label"><a href="http://data.europa.eu/eli/ontology#is_realized_by">is_realized_by</a></th>
+                     <tr class="title">
+                        <th class="label"><a href="http://purl.org/dc/terms/title">title</a></th>
                         <td class="value nested" colspan="2">
-                           <table id="w5076aab7b7a">
-                              <caption><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/eus">eus</a></caption>
-                              <colgroup>
-                                 <col class="labelWidth">
-                                 <col class="autoWidth">
-                                 <col class="filterWidth">
-                              </colgroup>
+                           <table>
                               <tr>
-                                 <td></td>
-                                 <td></td>
-                                 <td></td>
+                                 <td class="value">EHAA Legedia - ELI (Linked Data)</td>
+                                 <td class="filter"><a rel="nofollow" title="more like this" href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli?title.=EHAA%20Legedia%20-%20ELI%20(Linked%20Data)"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Search.png" alt="more like this"></a></td>
                               </tr>
-                              <tr class="realizes last">
-                                 <th class="label"><a href="http://data.europa.eu/eli/ontology#realizes">realizes</a></th>
-                                 <td class="value"><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof">dof</a></td>
-                                 <td class="filter"></td>
-                              </tr>
-                           </table>
-                           <table id="w5076aab7b7b1">
-                              <caption><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/spa">spa</a></caption>
-                              <colgroup>
-                                 <col class="labelWidth">
-                                 <col class="autoWidth">
-                                 <col class="filterWidth">
-                              </colgroup>
                               <tr>
-                                 <td></td>
-                                 <td></td>
-                                 <td></td>
-                              </tr>
-                              <tr class="realizes last">
-                                 <th class="label"><a href="http://data.europa.eu/eli/ontology#realizes">realizes</a></th>
-                                 <td class="value"><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof">dof</a></td>
-                                 <td class="filter"></td>
+                                 <td class="value">Legislación BOPV - ELI (Linked Data)</td>
+                                 <td class="filter"><a rel="nofollow" title="more like this" href="http://data.euskadi.eus/doc/distribution/bopv-european-legislation-identifier-eli?title.=Legislaci%C3%B3n%20BOPV%20-%20ELI%20(Linked%20Data)"><img src="/appcont/r01hpLODWebContent/elda-assets/images/grey/16x16/Search.png" alt="more like this"></a></td>
                               </tr>
                            </table>
                         </td>
@@ -575,7 +481,15 @@ ga('globalEus.send', 'pageview');
                         <td class="value nested" colspan="2">
                            <table>
                               <tr>
-                                 <td class="value"><a href="http://data.europa.eu/eli/ontology#LegalResource">LegalResource</a></td>
+                                 <td class="value"><a href="http://rdfs.org/ns/void#Dataset">Dataset</a></td>
+                                 <td class="filter"></td>
+                              </tr>
+                              <tr>
+                                 <td class="value"><a href="http://schema.org/Distribution">Distribution</a></td>
+                                 <td class="filter"></td>
+                              </tr>
+                              <tr>
+                                 <td class="value"><a href="http://www.w3.org/ns/dcat#Distribution">Distribution</a></td>
                                  <td class="filter"></td>
                               </tr>
                            </table>
@@ -583,22 +497,17 @@ ga('globalEus.send', 'pageview');
                      </tr>
                      <tr class="isPrimaryTopicOf">
                         <th class="label"><a href="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">is primary topic of</a></th>
-                        <td class="value"><a href="#w5076aa" title="view on this page">dof.html</a></td>
+                        <td class="value"><a href="#w17122aa" title="view on this page">lod.html</a></td>
                         <td class="filter"></td>
                      </tr>
-                     <tr class="is_about">
-                        <th class="label"><a href="http://data.europa.eu/eli/ontology#is_about">is_about</a></th>
-                        <td class="value"><a href="http://data.euskadi.eus/kos/public-sector/sector/sector-publico">sector-publico</a></td>
+                     <tr class="namedGraph">
+                        <th class="label"><a href="http://www.w3.org/ns/sparql-service-description#namedGraph">named graph</a></th>
+                        <td class="value"><a href="http://data.euskadi.eus/graph/bopv-european-legislation-identifier-eli">bopv-european-legislation-identifier-eli</a></td>
                         <td class="filter"></td>
                      </tr>
-                     <tr class="is_member_of">
-                        <th class="label"><a href="http://data.europa.eu/eli/ontology#is_member_of">is_member_of</a></th>
-                        <td class="value"><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)">(2)</a></td>
-                        <td class="filter"></td>
-                     </tr>
-                     <tr class="type_document last">
-                        <th class="label"><a href="http://data.europa.eu/eli/ontology#type_document">type_document</a></th>
-                        <td class="value"><a href="http://datos.gob.es/resource/authority/resource-type/a">a</a></td>
+                     <tr class="sparqlEndpoint_8595 last">
+                        <th class="label"><a href="http://rdfs.org/ns/void#sparqlEndpoint">sparql endpoint_ 8595</a></th>
+                        <td class="value"><a href="http://data.euskadi.eus/sparql/">sparql</a></td>
                         <td class="filter"></td>
                      </tr>
                   </table>
@@ -614,7 +523,7 @@ ga('globalEus.send', 'pageview');
                      <a href="http://wl11vf0057.ejgvdns:7001/r01hpLODWar/read/blazegraph/namespace/euskadi_db/sparql">endpoint's page</a>.
                   </p>
                   <form action="http://wl11vf0057.ejgvdns:7001/r01hpLODWar/read/blazegraph/namespace/euskadi_db/sparql" method="post"><textarea name="query" wrap="soft" data-skip-lines="0">DESCRIBE 
-  &lt;http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof&gt;</textarea><p><button type="submit">Run Query</button></p>
+  &lt;http://data.euskadi.eus/distribution/bopv-european-legislation-identifier-eli/lod&gt;</textarea><p><button type="submit">Run Query</button></p>
                   </form>
                </div>
             </div>
@@ -741,7 +650,7 @@ ga('globalEus.send', 'pageview');
 
 
         
-                <img src="/setCookie_w79_3_20180511154504?r01_url=/doc/eli/es-pv/a/1978/06/05/(2)/dof?R01HPortal=w79&R01HPage=dataset&R01HLang=eu&amp;r01_title=Open%20Data%20Euskadiko%20datu-multzoa%20-%20Euskadi.eus"  alt="" />
+                <img src="/setCookie_w79_3_20180515160510?r01_url=/doc/distribution/bopv-european-legislation-identifier-eli/lod?R01HPortal=w79&R01HPage=dataset&R01HLang=eu&amp;r01_title=Open%20Data%20Euskadiko%20datu-multzoa%20-%20Euskadi.eus"  alt="" />
         
 
 

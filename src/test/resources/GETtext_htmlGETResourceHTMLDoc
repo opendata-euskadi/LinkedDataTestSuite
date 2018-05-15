@@ -59,7 +59,7 @@
 
 	<!-- **** StyleSheet/Javascript resources for content **** -->
 <script type="text/javascript">
-var r01ServerTime = new Date('Friday, May 11, 2018');
+var r01ServerTime = new Date('Tuesday, May 15, 2018');
 var r01AttachPrefix = ' ';
 var file = ' '
 </script>
@@ -490,7 +490,7 @@ ga('globalEus.send', 'pageview');
                   </form>
                </section>
                <section>
-                  <table id="w13498aab7">
+                  <table id="w17685aab7">
                      <colgroup>
                         <col class="labelWidth">
                         <col class="autoWidth">
@@ -532,7 +532,7 @@ ga('globalEus.send', 'pageview');
                      <tr class="is_realized_by">
                         <th class="label"><a href="http://data.europa.eu/eli/ontology#is_realized_by">is_realized_by</a></th>
                         <td class="value nested" colspan="2">
-                           <table id="w13498aab7b7a">
+                           <table id="w17685aab7b7a">
                               <caption><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/eus">eus</a></caption>
                               <colgroup>
                                  <col class="labelWidth">
@@ -550,7 +550,7 @@ ga('globalEus.send', 'pageview');
                                  <td class="filter"></td>
                               </tr>
                            </table>
-                           <table id="w13498aab7b7b1">
+                           <table id="w17685aab7b7b1">
                               <caption><a href="http://data.euskadi.eus/eli/es-pv/a/1978/06/05/(2)/dof/spa">spa</a></caption>
                               <colgroup>
                                  <col class="labelWidth">
@@ -583,7 +583,7 @@ ga('globalEus.send', 'pageview');
                      </tr>
                      <tr class="isPrimaryTopicOf">
                         <th class="label"><a href="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">is primary topic of</a></th>
-                        <td class="value"><a href="#w13498aa" title="view on this page">dof.html</a></td>
+                        <td class="value"><a href="#w17685aa" title="view on this page">dof.html</a></td>
                         <td class="filter"></td>
                      </tr>
                      <tr class="is_about">
@@ -741,7 +741,7 @@ ga('globalEus.send', 'pageview');
 
 
         
-                <img src="/setCookie_w79_3_20180511154507?r01_url=/doc/eli/es-pv/a/1978/06/05/(2)/dof?R01HPortal=w79&R01HPage=dataset&R01HLang=eu&amp;r01_title=Open%20Data%20Euskadiko%20datu-multzoa%20-%20Euskadi.eus"  alt="" />
+                <img src="/setCookie_w79_3_20180515160512?r01_url=/doc/eli/es-pv/a/1978/06/05/(2)/dof?R01HPortal=w79&R01HPage=dataset&R01HLang=eu&amp;r01_title=Open%20Data%20Euskadiko%20datu-multzoa%20-%20Euskadi.eus"  alt="" />
         
 
 
